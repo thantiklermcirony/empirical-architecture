@@ -27,6 +27,10 @@ Three research agents audited biology, Earth integration, and scientific/code va
 
 The real POPGym 1.0.7 environment was used, with 100 development and 200 held-out episodes per task. Observation-only accuracy was 25.92% at lag 3 and 24.63% at lag 15; the selected history register reached 100%. In the current-cue control both reached 100%; unrelated history stayed near chance. This is established sufficient-history behavior, not a novel learned architecture. No model-size reduction, LLM advantage or market cost estimate follows from it. Full seeds, per-episode results and bootstrap intervals accompany the source.
 
+## Current implementation queue
+
+The [contribution scan](https://github.com/thantiklermcirony/empirical-observatory/blob/main/research/contribution-scan/Research_Report.md) now supplies the immediate queue: Graphiti memory-state reproduction, a small python-control interface contribution, and Pertpy's biological prediction evaluator. The broader paper and hardware gates below remain in force. Review active upstream work before implementing or submitting a competing change.
+
 ## Projects and paper updates
 
 1. **TAO: exact flows, composition and control contracts.** Separate the kinematic derivation, numerical implementation, plant assumptions and controller guarantees. Publish the current baseline losses. A second empirical control paper needs sealed new tasks and stronger conventional methods.

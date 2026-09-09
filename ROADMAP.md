@@ -1,5 +1,16 @@
 # Current programme roadmap
 
+## Immediate contribution campaign
+
+Use the [September 9 contribution scan](https://github.com/thantiklermcirony/empirical-observatory/blob/main/research/contribution-scan/Research_Report.md) as the immediate implementation queue. The earlier scientific milestones below remain longer-term acceptance gates.
+
+1. Reproduce Graphiti's reported temporal state transition, retaining concurrent facts and historical answers. Run the LongMemEval evidence and NeuroGym protocol audits as separate small tests.
+2. Prepare one narrow python-control filter-form contribution with an analytic oracle and compatibility checks. Treat it as classical control engineering with explicit state/time semantics.
+3. Build Pertpy's baseline-aware evaluator, then test proposed state representations and IDA selection against equal-information, equal-budget controls.
+4. Present successful reproductions and failures in a Counterexample Observatory. Attribute existing approaches and validate active PRs rather than duplicating them.
+
+The scan supplies 12 priorities and nine further candidates or comparison points, with explicit first gates. It is a bounded inventory of 2,058 returned issues across a 42-repository scope; no general framework advantage follows from issue relevance alone.
+
 The [Empirical Observatory release](https://github.com/thantiklermcirony/empirical-observatory) is now the executable integration layer for the programme. [What shipped and the next acceptance gates](OBSERVATORY_RELEASE.md) supersede the initial sequencing below.
 
 Priority projects: (1) specify and evaluate a learned AI state-revision model against matched recurrent/state-space/Transformer baselines; (2) collect a prospective Earth station-status dataset and freeze a public observation-budget benchmark; (3) reproduce the published TERT assay comparison with permitted Atlas access before claiming a new biological result; (4) separate TAO exact-flow theory, controller contracts and empirical validation.
