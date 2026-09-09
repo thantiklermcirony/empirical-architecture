@@ -4,6 +4,8 @@
 
 | Project | Current status | Start here |
 | --- | --- | --- |
+| Pertpy / biological prediction evaluation | First API submitted; 84 evaluator cases on two Python versions and a 4,553-cell demonstration; awaiting review | [PR #1098](https://github.com/scverse/pertpy/pull/1098), [results and reproduction](https://github.com/thantiklermcirony/empirical-observatory/blob/main/public/research/Pertpy_Evaluation_Report.md), [live feature](https://empirical-observatory.madmanmuzza.chatgpt.site/projects#pertpy) |
+| NeuroGym / observable decisions | Next investigation: reproduce the reported missing decision cue and establish the intended task contract | [Issue #279](https://github.com/neurogym/neurogym/issues/279), [source](https://github.com/neurogym/neurogym) |
 | Graphiti memory correctness | Two tested fixes submitted; awaiting maintainer review | [History PR #1867](https://github.com/getzep/graphiti/pull/1867), [timestamp PR #1866](https://github.com/getzep/graphiti/pull/1866), [evidence](https://github.com/thantiklermcirony/empirical-observatory/blob/main/public/research/Graphiti.md) |
 | TAO / adaptive control | Playable synthetic experiment; PI leads the published tracking comparison | [Enter the chamber](https://empirical-observatory.madmanmuzza.chatgpt.site/#tao), [methods](https://github.com/thantiklermcirony/empirical-observatory/blob/main/research/Methods.md) |
 | Quantum measurement | Playable simulation using established quantum mechanics | [Enter the lab](https://empirical-observatory.madmanmuzza.chatgpt.site/#quantum) |
@@ -11,6 +13,14 @@
 | IDA / StateAtlas | Developing experimental instrument and research prototype | [Source and research](https://github.com/thantiklermcirony/ida-stateatlas) |
 
 The browser experiments can run without an API key. Hardware and AlphaGenome require their own local setup/access. None of these demonstrations establishes biological universality, consciousness measurement or general AI superiority.
+
+## The Pertpy contribution
+
+The evaluator aligns genes, separates training and held-out cells, compares predictions with training-only control and additive baselines, and keeps missing or undefined results visible. In eight held-out Norman gene combinations, the additive baseline had lower mean squared error in seven; one apparently good correlation still hid 3.06 times the no-change baseline’s error.
+
+These are conventional baseline results in one K562 dataset. IDA has not yet been implemented or scored. This first API does not close all of Pertpy issue #1035: nearest-neighbour baselines, log-fold-change scoring and DEG discovery remain outside the submitted scope. [Evidence and limitations](https://github.com/thantiklermcirony/empirical-observatory/blob/main/public/research/Pertpy_Evaluation_Report.md).
+
+The code is committed and [PR #1098](https://github.com/scverse/pertpy/pull/1098) is public. Acceptance depends on upstream review. The next scientific step is to specify an IDA predictor and a fresh held-out comparison before using this evaluator to claim an advantage.
 
 ## The Graphiti contribution
 
