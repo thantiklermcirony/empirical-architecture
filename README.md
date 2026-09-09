@@ -1,5 +1,12 @@
 # The Empirical Architecture
 
+[![Current projects — experiments, evidence and open contributions](current-projects.svg)](https://empirical-observatory.madmanmuzza.chatgpt.site/projects)
+
+**[Browse current projects on GitHub](CURRENT_PROJECTS.md) · [Run the live Observatory](https://empirical-observatory.madmanmuzza.chatgpt.site)**
+
+Latest contribution: tested [Graphiti history](https://github.com/getzep/graphiti/pull/1867) and [timestamp](https://github.com/getzep/graphiti/pull/1866) fixes, submitted for review. [Evidence and limits](https://github.com/thantiklermcirony/empirical-observatory/blob/main/public/research/Graphiti.md).
+
+
 ### A minimal architecture for science, life and intelligence
 
 **We are building common mathematical and computational foundations for how science represents reality, discovers laws and turns knowledge into action.**
