@@ -1,3 +1,15 @@
+# Current programme roadmap
+
+The [Empirical Observatory release](https://github.com/thantiklermcirony/empirical-observatory) is now the executable integration layer for the programme. [What shipped and the next acceptance gates](OBSERVATORY_RELEASE.md) supersede the initial sequencing below.
+
+Priority projects: (1) specify and evaluate a learned AI state-revision model against matched recurrent/state-space/Transformer baselines; (2) collect a prospective Earth station-status dataset and freeze a public observation-budget benchmark; (3) reproduce the published TERT assay comparison with permitted Atlas access before claiming a new biological result; (4) separate TAO exact-flow theory, controller contracts and empirical validation.
+
+Keep the 41-paper corpus and prior UHL work available with explicit historical/supersession status. Replace a manuscript only when a concrete replacement exists. The current integration audit is not a line-by-line review of all 41 papers.
+
+No AI-market reduction percentage is established. Public interest should be earned through reproducible results, inspectable failures and useful adapters.
+
+---
+
 # Build the architecture through results
 
 ## Available in this source tree
