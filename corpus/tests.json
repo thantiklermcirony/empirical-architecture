@@ -1,0 +1,775 @@
+{
+  "date": "2026-09-09",
+  "scope": "Existing 41 principal test families. Grouped, not exhaustive of every prediction or later Version 4 result. Earlier draft publication-route codes have been omitted; the current publication spine is in research/UHL.md.",
+  "entries": [
+    {
+      "id": "AI-1",
+      "domain": "AI",
+      "title": "H1: useful certification",
+      "sources": [
+        7426838
+      ],
+      "status": "Open engineering hypothesis",
+      "next_test": "Compare proposer-plus-kernel with strong retrieval, tool-use and fail-closed systems on one frozen, versioned workload. Match evidence access and report coverage, assertion errors, external falsity, binding and trusted-core cost.",
+      "success_means": "An auditable authority path supplies useful performance within that jurisdiction. It is more than abstaining from everything.",
+      "failure_means": "Inferior useful coverage at comparable cost fails this implementation/workload claim. It does not refute every possible small-kernel architecture.",
+      "depends_on": [],
+      "modules": [
+        "ai",
+        "authority"
+      ]
+    },
+    {
+      "id": "AI-2",
+      "domain": "AI",
+      "title": "H2: proposer-size saturation",
+      "sources": [
+        7426838
+      ],
+      "status": "Open engineering hypothesis",
+      "next_test": "Cross several proposer capacities with the same evidence, binder, verifier, workloads and resource accounting; predefine a practical saturation margin.",
+      "success_means": "For this workload, generating certifiable proposals needs less model capacity than the comparator. Total cost must include evidence and maintenance.",
+      "failure_means": "Material continued gains over the declared size range reject the tested saturation claim; certification can remain useful.",
+      "depends_on": [
+        "AI-1"
+      ],
+      "modules": [
+        "ai",
+        "authority"
+      ]
+    },
+    {
+      "id": "AI-3",
+      "domain": "AI",
+      "title": "Memory that preserves future task distinctions",
+      "sources": [
+        7426838,
+        7427098
+      ],
+      "status": "Finite counterexample established; utility untested",
+      "next_test": "Test summary compression with new queries sensitive to versions, entities, permissions and unresolved commitments; compare strong retrieval and structured-memory baselines.",
+      "success_means": "The retained representation better supports the declared future task family per unit of storage or cost.",
+      "failure_means": "No gain or failures on held-out queries narrow the memory contract; a single demonstration is not a general state verifier.",
+      "depends_on": [],
+      "modules": [
+        "action",
+        "ai",
+        "authority",
+        "state"
+      ]
+    },
+    {
+      "id": "AI-4",
+      "domain": "AI",
+      "title": "Recursive action-sufficient state",
+      "sources": [
+        7427100,
+        7427098
+      ],
+      "status": "New proposed research problem, extending the static result",
+      "next_test": "Construct finite action codes and test whether updates can be computed from code, admitted action and observed record alone; compare existing abstraction and partially observed-control methods.",
+      "success_means": "A compact action code can support repeated operation, rather than only one static selection.",
+      "failure_means": "Inconsistent successor codes show the compression needs refinement or history. A smaller static cover does not establish a smaller recursive controller.",
+      "depends_on": [],
+      "modules": [
+        "action",
+        "ai",
+        "biology",
+        "state"
+      ]
+    },
+    {
+      "id": "BIO-1",
+      "domain": "Biology",
+      "title": "Matched-present state failure and recovery",
+      "sources": [
+        7425878,
+        7426998,
+        7427098
+      ],
+      "status": "Prospective endogenous-biological test; synthetic and designed examples available",
+      "next_test": "Match histories on a frozen measurement, apply common futures, bound matching error and discrepancy, then test an augmented representation on untouched histories and batches.",
+      "success_means": "The original representation loses useful predictive information and the tested addition recovers some or all of the declared predictive scope.",
+      "failure_means": "Equivalence supports adequacy within the panel; unresolved data do not. Failure of augmentation rejects that proposed repair.",
+      "depends_on": [],
+      "modules": [
+        "action",
+        "ai",
+        "biology",
+        "genome",
+        "geometry",
+        "state"
+      ]
+    },
+    {
+      "id": "BIO-2",
+      "domain": "Biology",
+      "title": "A physical carrier of the retained distinction",
+      "sources": [
+        7425878
+      ],
+      "status": "Prospective causal test",
+      "next_test": "Use lineage-linked state/outcome data and an independently characterized intervention on a candidate carrier, with target engagement, off-target and controller-writing controls.",
+      "success_means": "Evidence supports a causal contribution of the candidate carrier within the intervention assumptions.",
+      "failure_means": "Predictive gain without selective causal evidence supports a marker, not necessarily the claimed memory mechanism.",
+      "depends_on": [
+        "BIO-1"
+      ],
+      "modules": [
+        "biology",
+        "genome",
+        "state"
+      ]
+    },
+    {
+      "id": "BIO-3",
+      "domain": "Biology",
+      "title": "Holding effort, reserve and release",
+      "sources": [
+        7425878,
+        7427100,
+        6754498
+      ],
+      "status": "New proposed identifiability and assay problem from the programme backlog",
+      "next_test": "Specify a balance model and actual actuator. Determine which calibrated challenges distinguish production, consumption, maximum capacity and controller response. A holding flux alone measures only net imbalance.",
+      "success_means": "A minimally sufficient probe panel exposes reserve information beyond the steady concentration and net holding effort.",
+      "failure_means": "Observationally equivalent mechanisms require more measurements or a narrower claim; a named reserve score is not a solution by itself.",
+      "depends_on": [
+        "BIO-1"
+      ],
+      "modules": [
+        "action",
+        "ai",
+        "biology",
+        "genome",
+        "state"
+      ]
+    },
+    {
+      "id": "BIO-4",
+      "domain": "Biology",
+      "title": "Restoration after support ends",
+      "sources": [
+        7425878,
+        7426938,
+        7427100
+      ],
+      "status": "Prospective operational test",
+      "next_test": "Measure future-response equivalence and persistence after a defined withdrawal and rechallenge; distinguish temporary compensation from recovered capacity.",
+      "success_means": "Recovery is supported for specified futures, duration and disturbances after removal of the named support.",
+      "failure_means": "Restored snapshots with failed rechallenge do not establish restoration; success under one support policy need not transfer.",
+      "depends_on": [
+        "BIO-1"
+      ],
+      "modules": [
+        "action",
+        "ai",
+        "biology",
+        "genome",
+        "state"
+      ]
+    },
+    {
+      "id": "ACT-1",
+      "domain": "Action",
+      "title": "Action-relevant distinctions",
+      "sources": [
+        7427100
+      ],
+      "status": "Exact finite characterization; empirical action library absent",
+      "next_test": "Estimate a finite state-action success table with simultaneous bounds; test common-action intersections including higher-order conflicts, then evaluate a frozen code on held-out units.",
+      "success_means": "The measured distinction changes acceptable choices, or demonstrates that a cheaper common action suffices.",
+      "failure_means": "An empty conservative confidence-set intersection is failure to certify, not proof that no acceptable action exists.",
+      "depends_on": [
+        "BIO-1"
+      ],
+      "modules": [
+        "action",
+        "ai",
+        "biology",
+        "state"
+      ]
+    },
+    {
+      "id": "ACT-2",
+      "domain": "Action",
+      "title": "Safe diagnosis before rescue closes",
+      "sources": [
+        7427100,
+        7427059
+      ],
+      "status": "Prospective complete-policy test",
+      "next_test": "Compare diagnostic-and-action policies including their delay, measurement disturbance and outcome risk. Use the one-shot total-variation bound only under its stated non-disturbing assumptions.",
+      "success_means": "Obtaining a particular distinction improves operational recovery before the opportunity expires.",
+      "failure_means": "Prediction without net policy benefit does not justify the diagnostic. One failed diagnostic does not prove all safe diagnosis impossible.",
+      "depends_on": [
+        "ACT-1",
+        "BIO-4"
+      ],
+      "modules": [
+        "action",
+        "ai",
+        "biology",
+        "state"
+      ]
+    },
+    {
+      "id": "REDOX-1",
+      "domain": "Redox",
+      "title": "Finite-section fold passage",
+      "sources": [
+        7427059
+      ],
+      "status": "Conditional mathematical law; biological hypothesis unvalidated",
+      "next_test": "Pilot-calibrate the depth axis, then freeze rescue, finite-section family and observation model. Compare fold, cumulative-exposure, fixed-power and hazard models on held-out forcing depths with the same likelihood.",
+      "success_means": "The constrained passage family predicts an operation-specific recoverability boundary and durable fate in the tested regime.",
+      "failure_means": "Failure rejects that operational fold model; asymmetric sections need not have a monotone exponent profile, and population T50 is not automatically deterministic passage.",
+      "depends_on": [],
+      "modules": [
+        "action",
+        "biology"
+      ]
+    },
+    {
+      "id": "REDOX-2",
+      "domain": "Redox",
+      "title": "Supply-limited oxidative collapse",
+      "sources": [
+        6754498,
+        6754360
+      ],
+      "status": "Model calibrated from literature; broader transport unvalidated",
+      "next_test": "Independently measure supply, demand and regeneration parameters, predict new challenge thresholds and test the threshold ordering without fitting the target outcomes.",
+      "success_means": "The calibrated capacity-versus-demand model predicts a new system or preparation.",
+      "failure_means": "Incorrect thresholds within a calibrated regime reject that model/transport; known contraindication recovery alone is not prospective validation.",
+      "depends_on": [],
+      "modules": [
+        "biology"
+      ]
+    },
+    {
+      "id": "REDOX-3",
+      "domain": "Redox",
+      "title": "Reductive fade and the surveillance bridge",
+      "sources": [
+        6754498,
+        6754360
+      ],
+      "status": "Mechanistic extrapolation and conditional oncology forecast",
+      "next_test": "Measure the proposed flux-to-surveillance mapping in the relevant cell type, with tumour and normal-system endpoints; establish whether the proposed biomarker reflects the needed quantity.",
+      "success_means": "A directly calibrated bridge supports the proposed surveillance mechanism and motivates testing downstream outcome forecasts.",
+      "failure_means": "A different mapping or systemic/tumour conflict weakens the forecast; a clinical hazard-ratio magnitude is not validated by the existing model.",
+      "depends_on": [],
+      "modules": [
+        "biology"
+      ]
+    },
+    {
+      "id": "REG-1",
+      "domain": "Regulation",
+      "title": "P13: controller bandwidth versus load reduction",
+      "sources": [
+        6754360
+      ],
+      "status": "Prospective role-specific intervention prediction",
+      "next_test": "First demonstrate kinetic-mismatch failure; independently quantify whether an intervention changes controller speed rather than simply its setpoint/capacity. Compare matched load reduction on a declared outcome.",
+      "success_means": "Changing the measured control timescale improves the relevant pulse-stress outcome beyond the comparator.",
+      "failure_means": "No differential benefit after verified target engagement rejects the tested P13 instance; faster or more abundant NRF2 are not interchangeable measurements.",
+      "depends_on": [],
+      "modules": [
+        "biology"
+      ]
+    },
+    {
+      "id": "REG-2",
+      "domain": "Regulation",
+      "title": "P14: pinning versus surveillance failure",
+      "sources": [
+        6754360
+      ],
+      "status": "Prospective diagnostic and prevalence hypotheses",
+      "next_test": "Measure capacity response to a controlled signal perturbation in appropriately stratified systems. Test the proposed pinned signature and the separate claim that it predominates.",
+      "success_means": "Response dynamics distinguish an upstream pinned controller from the competing surveillance explanation.",
+      "failure_means": "Normal capacity responsiveness in the claimed pinned class rejects that classification or prevalence claim; population correlations alone can mislead.",
+      "depends_on": [],
+      "modules": [
+        "biology"
+      ]
+    },
+    {
+      "id": "REG-3",
+      "domain": "Regulation",
+      "title": "P15–P17: sensing versus calibration",
+      "sources": [
+        6754360
+      ],
+      "status": "Prospective; calibration and selective interventions not established",
+      "next_test": "Characterize compartmental measurements, sensor-restoration and controller-targeted interventions independently; test a locked response signature and any proposed fitness/setpoint relation.",
+      "success_means": "Different faults that yield similar visible readouts are separated by verified intervention responses.",
+      "failure_means": "An ineffective senolytic alone cannot prove controller miscalibration: inadequate engagement, another fault or irreversible damage remain alternatives.",
+      "depends_on": [],
+      "modules": [
+        "biology"
+      ]
+    },
+    {
+      "id": "HORM-1",
+      "domain": "Hormesis",
+      "title": "Biphasic shape, peak location and width",
+      "sources": [
+        6858819
+      ],
+      "status": "Conditional model; retrospective support; quantitative prospective tests remain",
+      "next_test": "Measure activation, damage and capacity independently in one system; predict untouched full curves and check location, width and amplitude separately.",
+      "success_means": "Mechanistic parameters predict the conditional adaptive curve without fitting those outcome curves.",
+      "failure_means": "Incorrect predictions reject the specified adaptive model or approximation, not the existence of hormesis. The approximate 2× activation-dose peak is not universal.",
+      "depends_on": [],
+      "modules": [
+        "biology",
+        "geometry"
+      ]
+    },
+    {
+      "id": "HORM-2",
+      "domain": "Hormesis",
+      "title": "Control-weighted molecular-to-functional transmission",
+      "sources": [
+        6858760
+      ],
+      "status": "First-order model and prospective same-system test",
+      "next_test": "Measure control coefficients and elasticities, then predict transmitted adaptation. Include mixed-sign targets and shared bottlenecks; test finite-induction approximation error.",
+      "success_means": "Control-weighted induction outperforms molecular abundance or target count as an amplitude predictor.",
+      "failure_means": "Failure within the valid perturbative regime rejects the proposed transmission application; a local coefficient cannot automatically predict a large finite change.",
+      "depends_on": [],
+      "modules": [
+        "biology",
+        "geometry"
+      ]
+    },
+    {
+      "id": "HORM-3",
+      "domain": "Hormesis",
+      "title": "Conditional baseline compression",
+      "sources": [
+        6858760
+      ],
+      "status": "Prospective small-perturbation coordinate prediction",
+      "next_test": "Hold network transmission and induction approximately fixed while varying baseline. Test the stated amplitude ratio based on 1−x0² against alternatives.",
+      "success_means": "The bounded-observation factor predicts baseline-dependent attenuation within the controlled regime.",
+      "failure_means": "A baseline shift that also changes network control is confounded; a valid controlled failure rejects the tested observation model.",
+      "depends_on": [
+        "HORM-2"
+      ],
+      "modules": [
+        "biology",
+        "geometry"
+      ]
+    },
+    {
+      "id": "HORM-4",
+      "domain": "Hormesis",
+      "title": "Acute–chronic amplitude split",
+      "sources": [
+        6858760,
+        6754360
+      ],
+      "status": "Prospective; overlaps extension P5 and architecture P11",
+      "next_test": "Declare matched exposure, endpoint and timescales; measure controller response and compare a frozen acute–chronic contrast with a system-justified margin.",
+      "success_means": "The predicted timing-dependent adaptive response is supported in that system.",
+      "failure_means": "Adequately resolved equivalence or opposite direction rejects the scoped contrast; overlapping papers are one prediction family.",
+      "depends_on": [],
+      "modules": [
+        "biology",
+        "geometry"
+      ]
+    },
+    {
+      "id": "HORM-5",
+      "domain": "Hormesis",
+      "title": "Adaptation as improved later capability",
+      "sources": [
+        7425878,
+        7426938,
+        6858760
+      ],
+      "status": "New integrative experimental proposal",
+      "next_test": "After conditioning and withdrawal, test whether predicted adaptation improves an independent later challenge outcome and how reserve changes the beneficial/harmful boundary.",
+      "success_means": "A transient adaptive signal predicts a lasting, task-specific gain in capacity.",
+      "failure_means": "A higher acute endpoint without later benefit does not establish durable adaptive improvement.",
+      "depends_on": [
+        "HORM-1",
+        "BIO-4"
+      ],
+      "modules": [
+        "action",
+        "biology",
+        "genome",
+        "geometry",
+        "state"
+      ]
+    },
+    {
+      "id": "RAD-1",
+      "domain": "Radiation",
+      "title": "Reversal and state recovery",
+      "sources": [
+        7427058,
+        7302362
+      ],
+      "status": "Exact order-blind null; independent published order effects; recovery prospective",
+      "next_test": "Qualify timing and an endpoint-specific reversed pair. After a resolved split, link prechallenge state and future outcome in the same inferential unit and test held-out recovery.",
+      "success_means": "A biological representation improves on equal BED for that endpoint and preparation.",
+      "failure_means": "No resolved split can be equivalence or insufficient precision; a split alone does not identify dimension or mechanism.",
+      "depends_on": [],
+      "modules": [
+        "biology",
+        "state",
+        "testbeds"
+      ]
+    },
+    {
+      "id": "RAD-2",
+      "domain": "Radiation",
+      "title": "Gap spectroscopy versus quadratic degeneracy",
+      "sources": [
+        7426880
+      ],
+      "status": "Conditional theorem; experimental implication unvalidated",
+      "next_test": "Use a qualified gap ladder and multiple priming strengths, with recovery/heterogeneity controls, to test waiting-semigroup closure. More challenge amplitudes alone can be uninformative in the quadratic branch.",
+      "success_means": "Gap response exposes predictive recovery modes hidden by an acute curve.",
+      "failure_means": "Failure of a scalar waiting model demands a revised recovery representation; it is not automatic evidence for a named molecular mechanism.",
+      "depends_on": [],
+      "modules": [
+        "biology",
+        "state",
+        "testbeds"
+      ]
+    },
+    {
+      "id": "GEOM-1",
+      "domain": "Geometry",
+      "title": "Projective observation fingerprint",
+      "sources": [
+        7426998,
+        7347861
+      ],
+      "status": "Conditional classical structure; synthetic test; prospective physical branch",
+      "next_test": "Earn an adequate state and deterministic point-map regime, then test cross-ratios on held-out separated quadruples. Independently examine any proposed physical homogeneous channels.",
+      "success_means": "The tested operation admits the projective description; a physical lift needs separate evidence.",
+      "failure_means": "Cross-ratio failure rejects the tested one-dimensional projective branch, not the broader state-discovery programme.",
+      "depends_on": [
+        "BIO-1"
+      ],
+      "modules": [
+        "geometry",
+        "state"
+      ]
+    },
+    {
+      "id": "GEOM-2",
+      "domain": "Geometry",
+      "title": "Flat/curved defect classification",
+      "sources": [
+        6914800,
+        6800400
+      ],
+      "status": "Axiom-conditional mathematics and synthetic tomography",
+      "next_test": "Independently review the full proof and query an admitted composition oracle across radius shells; control angle noise and test the stated defect assumptions.",
+      "success_means": "A particular system occupies the classified branch with an estimated geometric parameter.",
+      "failure_means": "An out-of-class defect rejects applying the classification; it does not justify a universal boundedness geometry.",
+      "depends_on": [],
+      "modules": [
+        "geometry"
+      ]
+    },
+    {
+      "id": "PHARM-1",
+      "domain": "Pharmacology",
+      "title": "Mechanism-selected combination baselines",
+      "sources": [
+        7426978,
+        6963978,
+        6754362
+      ],
+      "status": "Exact scoped formulas; assay identification remains empirical",
+      "next_test": "Use correct single-agent doses and prespecified mechanisms, including the common-shape n=1 contrast if appropriate; compare with full specialist null models under the actual noise model.",
+      "success_means": "A specific lawful reference improves combination interpretation and experimental discrimination.",
+      "failure_means": "The maximal raw gap near 0.618 is not a universal information optimum; a failed reference may require another scalar model rather than hidden state.",
+      "depends_on": [],
+      "modules": [
+        "biology",
+        "geometry",
+        "testbeds"
+      ]
+    },
+    {
+      "id": "PHARM-2",
+      "domain": "Pharmacology",
+      "title": "Aluminium/SOD chemical testbed",
+      "sources": [
+        7426978,
+        6739201
+      ],
+      "status": "Conditional chemical model",
+      "next_test": "Establish chemical speciation, relevant competition kinetics, compartment and exposure before predicting unused interventions.",
+      "success_means": "The named chemical/compositional model predicts that assay.",
+      "failure_means": "Failure rejects the chemical model in scope; it does not refute the classical additive-generator representation theorem.",
+      "depends_on": [],
+      "modules": [
+        "biology",
+        "geometry",
+        "testbeds"
+      ]
+    },
+    {
+      "id": "NUM-1",
+      "domain": "Number theory",
+      "title": "Frozen prime gap-word prediction",
+      "sources": [
+        7426882,
+        6947578
+      ],
+      "status": "Exact identities plus finite computations; probability assumptions explicit",
+      "next_test": "Independent implementation/enumeration on untouched intervals; preserve positivity/consistency assumptions, covariance and numerical error; compare established prime heuristics and fitted controls.",
+      "success_means": "The finite predictor transports beyond its construction interval and implementation.",
+      "failure_means": "Systematic residuals reject the tested approximation or finite predictor; large in-sample R² is not an asymptotic theorem.",
+      "depends_on": [],
+      "modules": [
+        "state",
+        "testbeds"
+      ]
+    },
+    {
+      "id": "NUM-2",
+      "domain": "Number theory",
+      "title": "Resolution versus residual floor",
+      "sources": [
+        6947578,
+        7426882
+      ],
+      "status": "Alternative hypotheses, not two predictions expected to hold together",
+      "next_test": "Compare sparse-aware lifted models across feasible wheels, higher-order contexts and held-out scales.",
+      "success_means": "Either closure or a persistent resolved finite-scale residual locates what the current representation misses.",
+      "failure_means": "Sparse high-resolution fits cannot establish a positive floor; finite stabilization does not prove an asymptotic limit.",
+      "depends_on": [
+        "NUM-1"
+      ],
+      "modules": [
+        "state",
+        "testbeds"
+      ]
+    },
+    {
+      "id": "ECO-1",
+      "domain": "Ecology",
+      "title": "Currents invisible to abundance histograms",
+      "sources": [
+        6963360
+      ],
+      "status": "Conditional non-identifiability; field diagnostic needs validation",
+      "next_test": "Use labelled temporal community data and held-out prediction; control environmental forcing, nonstationarity, multiplicative noise, exchangeable dynamics and extinctions.",
+      "success_means": "Temporal structure supplies information absent from the stationary abundance distribution.",
+      "failure_means": "Irreversibility alone is not unique evidence of species-specific niche dynamics; lack of power is unresolved.",
+      "depends_on": [],
+      "modules": [
+        "state",
+        "testbeds"
+      ]
+    },
+    {
+      "id": "GEN-1",
+      "domain": "Genetics",
+      "title": "Sample the dominance-sensitive trajectory region",
+      "sources": [
+        6963958
+      ],
+      "status": "Exact coefficient result and simulations",
+      "next_test": "Compare boundary-local and wider-frequency designs using realistic drift-aware inference, equal acquisition budgets and observed response magnitude.",
+      "success_means": "The theory identifies a practically better sampling design for separating selection strength and dominance.",
+      "failure_means": "No practical gain in the tested regime limits the design claim; algebraic identifiability alone is not finite-data accuracy.",
+      "depends_on": [],
+      "modules": [
+        "genome",
+        "testbeds"
+      ]
+    },
+    {
+      "id": "COG-1",
+      "domain": "Intelligence",
+      "title": "Covariance versus intervention-response rank",
+      "sources": [
+        6964098
+      ],
+      "status": "Model-specific theorem and simulations; no decisive transfer dataset",
+      "next_test": "Acquire a randomized multi-intervention/task transfer matrix with target engagement, task-specific channels, duration and signal-to-noise controls.",
+      "success_means": "The intervention family exposes multiple accessible response directions despite a low-dimensional descriptive factor.",
+      "failure_means": "A failed indirect training intervention does not disprove an inaccessible common cause; rank is design- and timescale-relative.",
+      "depends_on": [],
+      "modules": [
+        "ida",
+        "testbeds"
+      ]
+    },
+    {
+      "id": "ENERGY-1",
+      "domain": "Bioenergetics",
+      "title": "c-ring constraint binding versus slack",
+      "sources": [
+        6858880
+      ],
+      "status": "Hypothesis and retrospective-analysis framework",
+      "next_test": "Use engineered/within-lineage comparisons with independently bounded environmental demand and losses; test the demand-by-coupling interaction.",
+      "success_means": "Coupling contributes more predictively near a demonstrated energetic boundary.",
+      "failure_means": "Confounding by phylogeny, unbounded losses or no interaction weakens the proposed explanation.",
+      "depends_on": [],
+      "modules": [
+        "biology",
+        "testbeds"
+      ]
+    },
+    {
+      "id": "EXO-1",
+      "domain": "Exoplanets",
+      "title": "A discriminating multi-face retention boundary",
+      "sources": [
+        6858878
+      ],
+      "status": "Current data do not identify exponent/mechanism; extension proposed",
+      "next_test": "Add a coefficient-locked competing loss face, independent masses and suitable exposure/age information; compare forward models and negative controls.",
+      "success_means": "Data begin separating physical retention models rather than merely permitting a constrained classifier.",
+      "failure_means": "Equivalent fits among many coefficients remain non-identification; fitting the valley is not identifying its cause.",
+      "depends_on": [],
+      "modules": [
+        "testbeds"
+      ]
+    },
+    {
+      "id": "IDA-1",
+      "domain": "IDA",
+      "title": "Return dynamics add predictive information",
+      "sources": [
+        6987278
+      ],
+      "status": "Offline implementation; prospective real-signal test",
+      "next_test": "Predict an independent later outcome from frozen return features; compare static features, dynamic history baselines and matched feature counts with person/session holdouts.",
+      "success_means": "Return dynamics earn a role in measuring the declared recovery task.",
+      "failure_means": "No incremental value rejects the tested read-side input; prediction of a score defined from those same features is circular.",
+      "depends_on": [],
+      "modules": [
+        "action",
+        "biology",
+        "ida"
+      ]
+    },
+    {
+      "id": "IDA-2",
+      "domain": "IDA",
+      "title": "Adaptive feedback earns a control advantage",
+      "sources": [
+        6987278,
+        7427100
+      ],
+      "status": "Prospective intervention hypothesis",
+      "next_test": "After input validation, compare capped adaptive feedback with appropriately matched open-loop/replay, sham and well-tuned conventional feedback; measure independent outcome and exposure.",
+      "success_means": "The measured return state improves a complete control policy, then durability and transport can be tested.",
+      "failure_means": "No advantage rejects this controller implementation/task claim even if the metrics remain useful.",
+      "depends_on": [
+        "IDA-1"
+      ],
+      "modules": [
+        "action",
+        "ai",
+        "biology",
+        "ida",
+        "state"
+      ]
+    },
+    {
+      "id": "TAO-1",
+      "domain": "Interfaces",
+      "title": "Bounded adaptive-world contracts",
+      "sources": [
+        6779487
+      ],
+      "status": "Synthetic controller validation; live estimation/benefit unvalidated",
+      "next_test": "Validate state estimation and actuator meaning, then compare boundary recovery and user-relevant outcomes with strong bounded controllers at matched tuning effort.",
+      "success_means": "Typed interfaces improve a real adaptive environment within a stated contract.",
+      "failure_means": "No benefit beyond ordinary constraints or unreliable state estimation limits the practical architecture.",
+      "depends_on": [],
+      "modules": [
+        "action",
+        "ai",
+        "ida"
+      ]
+    },
+    {
+      "id": "NEURO-1",
+      "domain": "Belief",
+      "title": "Gamma bridge and dyadic sinh coupling",
+      "sources": [
+        6774878
+      ],
+      "status": "Separate postulated physiological and coupling hypotheses",
+      "next_test": "Test the single-agent bridge against behavioural belief measures and artefacts first; if supported, compare independently calibrated dyadic sinh, linear, polynomial and saturating alternatives.",
+      "success_means": "The particular neural/interaction bridge gains support; the coordinate result itself does not establish it.",
+      "failure_means": "Bridge failure blocks the EEG interpretation; coupling failure rejects that potential without invalidating Bayesian log-odds.",
+      "depends_on": [],
+      "modules": [
+        "geometry",
+        "ida"
+      ]
+    },
+    {
+      "id": "RECOVERY-1",
+      "domain": "Recovery",
+      "title": "Capture–policy–host ordering",
+      "sources": [
+        6858922
+      ],
+      "status": "Hypothesis; no new empirical outcomes",
+      "next_test": "Predefine capture before outcomes; use blinded coding and prospective temporal sampling with treatment, common-driver, delayed-feedback and non-recovery controls.",
+      "success_means": "The specified threshold-local sequence adds predictive explanation beyond the alternatives.",
+      "failure_means": "Retrospective narratives or generic support effects do not validate the ordering; no clinical efficacy or belief-based cure follows.",
+      "depends_on": [],
+      "modules": [
+        "action",
+        "biology",
+        "ida"
+      ]
+    },
+    {
+      "id": "ARCHIVE-1",
+      "domain": "Measurement",
+      "title": "Quantum archive channel history",
+      "sources": [
+        6865159
+      ],
+      "status": "Fixed-archive reanalysis; new archive/physical-time validation absent",
+      "next_test": "Acquire timestamps and calibration/batching metadata and fit full-count models on independent archives; compare drift, heterogeneity and exchangeability explanations.",
+      "success_means": "The archive needs a richer channel-state representation for the intended inference.",
+      "failure_means": "A job-index residual is not a physical time constant, Born-rule anomaly or evidence of microscopic memory.",
+      "depends_on": [],
+      "modules": [
+        "physics",
+        "testbeds"
+      ]
+    },
+    {
+      "id": "EVIDENCE-1",
+      "domain": "Evidence",
+      "title": "Match the evidence to the imposed intervention",
+      "sources": [
+        6907938,
+        6858838
+      ],
+      "status": "Review and normative argument; not a natural-law prediction",
+      "next_test": "Maintain an up-to-date comparison of the actual coercive intervention with supported voluntary care and patient-centred outcomes; keep the ethical premise explicit.",
+      "success_means": "Direct evidence can address the incremental intervention that requires justification.",
+      "failure_means": "Evidence about drug efficacy alone does not settle the effect of legal force. This synthesis supplies no new treatment or policy outcome.",
+      "depends_on": [],
+      "modules": [
+        "authority"
+      ]
+    }
+  ]
+}

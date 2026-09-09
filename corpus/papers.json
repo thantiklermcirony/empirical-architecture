@@ -1,0 +1,583 @@
+{
+  "date": "2026-09-09",
+  "records": [
+    {
+      "key": "current-01",
+      "ssrn_id": "7426838",
+      "title": "Epistemic Type Safety for Generative AI: Witnessed Assertion, Fail-Closed Kernels, and Why the Model Need Not Be the World",
+      "domain": "AI authority",
+      "evidence_status": "Conditional certification architecture; finite prototype; H1/H2 untested",
+      "contribution": "Separate a proposal, source support, a current warrant, meaning and action authorization.",
+      "ssrn_url": "https://ssrn.com/abstract=7426838",
+      "modules": [
+        "ai",
+        "authority"
+      ],
+      "catalog_note": "Source-catalog status, not an independent proof or replication audit."
+    },
+    {
+      "key": "current-02",
+      "ssrn_id": "7425878",
+      "title": "A Law of Biological State Sufficiency: History-conditioned prediction, viable continuation, and a test for when the past may be forgotten",
+      "domain": "Biological state",
+      "evidence_status": "Exact quotient and finite testing protocol; prospective biology",
+      "contribution": "History matters only through distinctions a declared future can still read.",
+      "ssrn_url": "https://ssrn.com/abstract=7425878",
+      "modules": [
+        "state",
+        "biology",
+        "genome"
+      ],
+      "catalog_note": "Source-catalog status, not an independent proof or replication audit."
+    },
+    {
+      "key": "current-03",
+      "ssrn_id": "7426880",
+      "title": "The Acute Dose-Response Curve as a Transition Potential: Predictive-State Closure, Quadratic Degeneracy, and Temporal Identifiability",
+      "domain": "Radiation dynamics",
+      "evidence_status": "Conditional mathematical results and experimental design",
+      "contribution": "An acute curve, scalar challenge response and scalar waiting dynamics are different closure claims.",
+      "ssrn_url": "https://ssrn.com/abstract=7426880",
+      "modules": [
+        "state",
+        "biology",
+        "testbeds"
+      ],
+      "catalog_note": "Source-catalog status, not an independent proof or replication audit."
+    },
+    {
+      "key": "current-04",
+      "ssrn_id": "7426882",
+      "title": "Recursive Predictive Closure in the Prime Sieve: Resolution covariance, finite probability consistency, and gap-word prediction",
+      "domain": "Prime prediction",
+      "evidence_status": "Exact CRT identities; restricted probability construction; computational checks",
+      "contribution": "Resolving another prime transfers structure between explicit state and unresolved prediction.",
+      "ssrn_url": "https://ssrn.com/abstract=7426882",
+      "modules": [
+        "state",
+        "testbeds"
+      ],
+      "catalog_note": "Source-catalog status, not an independent proof or replication audit."
+    },
+    {
+      "key": "current-05",
+      "ssrn_id": "7426938",
+      "title": "The Temporal Architecture of Living Nature: Predictive state, robust viability, and the recursive construction of biological futures",
+      "domain": "Living systems",
+      "evidence_status": "Theorems, synthesis, published anchors and prospective extensions",
+      "contribution": "Predictive state, survival-filtered history, viability and organism-environment feedback fit one operational chain.",
+      "ssrn_url": "https://ssrn.com/abstract=7426938",
+      "modules": [
+        "state",
+        "biology",
+        "action"
+      ],
+      "catalog_note": "Source-catalog status, not an independent proof or replication audit."
+    },
+    {
+      "key": "current-06",
+      "ssrn_id": "7426978",
+      "title": "Aczél-Family Composition in Bounded Pharmacology: Mechanism-selected generators, combination effects, and an aluminium-toxicology test",
+      "domain": "Pharmacological composition",
+      "evidence_status": "Classical representation plus exact scoped contrasts; conditional chemistry",
+      "contribution": "Mechanism chooses the additive generator; a failed commutative increment is not automatically failed scalar state.",
+      "ssrn_url": "https://ssrn.com/abstract=7426978",
+      "modules": [
+        "geometry",
+        "biology",
+        "testbeds"
+      ],
+      "catalog_note": "Source-catalog status, not an independent proof or replication audit."
+    },
+    {
+      "key": "current-07",
+      "ssrn_id": "7426998",
+      "title": "The Observer and the World: Predictive state, lawful forgetting, and the geometry of empirical reality",
+      "domain": "Measurement foundations",
+      "evidence_status": "Factorization theorem; conditional projective branch; synthetic demonstration",
+      "contribution": "A law on a measurement exists only if its discarded histories have equal declared future laws.",
+      "ssrn_url": "https://ssrn.com/abstract=7426998",
+      "modules": [
+        "state",
+        "geometry"
+      ],
+      "catalog_note": "Source-catalog status, not an independent proof or replication audit."
+    },
+    {
+      "key": "current-08",
+      "ssrn_id": "7427058",
+      "title": "When Equal BED Is Not Equal Biology: Reversal, Graph Closure, and State Recovery",
+      "domain": "Radiation scheduling",
+      "evidence_status": "Exact reversal null; published external observations; prospective state recovery",
+      "contribution": "Equal BED can identify histories with different endpoint distributions.",
+      "ssrn_url": "https://ssrn.com/abstract=7427058",
+      "modules": [
+        "state",
+        "biology",
+        "testbeds"
+      ],
+      "catalog_note": "Source-catalog status, not an independent proof or replication audit."
+    },
+    {
+      "key": "current-09",
+      "ssrn_id": "7427059",
+      "title": "Finite rescue windows and supply-limited redox commitment in NRF2-active cancer: fold geometry and a discriminating experimental test",
+      "domain": "Redox commitment",
+      "evidence_status": "Conditional fold law; corrected source reanalysis; prospective test",
+      "contribution": "A named rescue window is a different object from injury or antioxidant abundance.",
+      "ssrn_url": "https://ssrn.com/abstract=7427059",
+      "modules": [
+        "biology",
+        "action"
+      ],
+      "catalog_note": "Source-catalog status, not an independent proof or replication audit."
+    },
+    {
+      "key": "current-10",
+      "ssrn_id": "7427098",
+      "title": "Predictive Closure: State, action, and the experimental compression of history",
+      "domain": "State and action",
+      "evidence_status": "Theorem-and-no-go synthesis; computational exemplars",
+      "contribution": "Earn state, action descent, commutation, cumulative amount and scalar composition in that order.",
+      "ssrn_url": "https://ssrn.com/abstract=7427098",
+      "modules": [
+        "state",
+        "action",
+        "ai"
+      ],
+      "catalog_note": "Source-catalog status, not an independent proof or replication audit.",
+      "review_update": "Version 4 text was revisited on 2026-09-09: predictive action, cumulative/temporal fork, temporal grammar, local curvature and Hankel realization are existing manuscript contents. Earlier catalog synopsis is not exhaustive."
+    },
+    {
+      "key": "current-11",
+      "ssrn_id": "7427100",
+      "title": "From Predictive State to Viable Action: Action Sufficiency, Safe Diagnosis, and the Operational Recoverability Bound",
+      "domain": "Viable action",
+      "evidence_status": "Exact finite action-cover result and diagnostic bound; prospective biology",
+      "contribution": "Predictive distinctions, action-relevant distinctions and safely obtainable distinctions differ.",
+      "ssrn_url": "https://ssrn.com/abstract=7427100",
+      "modules": [
+        "action",
+        "state",
+        "ai",
+        "biology"
+      ],
+      "catalog_note": "Source-catalog status, not an independent proof or replication audit."
+    },
+    {
+      "key": "legacy-7347861",
+      "ssrn_id": "7347861",
+      "title": "The Observer and the World Predictive Closure, the Projective Shadow, and a First-principles Grammar of Empirical Science",
+      "domain": "Measurement foundations",
+      "evidence_status": "Earlier conditional theorem and synthetic test; successor governs scope",
+      "contribution": "Physical access selects the empirical quotient; projective geometry needs a particular observation structure.",
+      "ssrn_url": "https://ssrn.com/abstract=7347861",
+      "modules": [
+        "state",
+        "geometry"
+      ],
+      "catalog_note": "Source-catalog status, not an independent proof or replication audit."
+    },
+    {
+      "key": "legacy-7304339",
+      "ssrn_id": "7304339",
+      "title": "Predictive Closure: A Measurement-Admission Theorem for Evolving Systems",
+      "domain": "Measurement foundations",
+      "evidence_status": "Earlier theorem and executable finite protocol",
+      "contribution": "Calibration accuracy does not certify that the selected quantity is an adequate state.",
+      "ssrn_url": "https://ssrn.com/abstract=7304339",
+      "modules": [
+        "state"
+      ],
+      "catalog_note": "Source-catalog status, not an independent proof or replication audit."
+    },
+    {
+      "key": "legacy-7302362",
+      "ssrn_id": "7302362",
+      "title": "When Equal BED Is Not Equal Biology: Reversal, Graph Closure, and State Recovery",
+      "domain": "Radiation scheduling",
+      "evidence_status": "Earlier reversal formulation; corrected successor and supplement",
+      "contribution": "Order reversal tests an order-blind exposure representation; pooling can create graph defects.",
+      "ssrn_url": "https://ssrn.com/abstract=7302362",
+      "modules": [
+        "state",
+        "biology",
+        "testbeds"
+      ],
+      "catalog_note": "Source-catalog status, not an independent proof or replication audit."
+    },
+    {
+      "key": "legacy-7181465",
+      "ssrn_id": "7181465",
+      "title": "Finite rescue windows and supply-limited redox commitment in NRF2-active cancer: fold geometry and a decisive experimental test",
+      "domain": "Redox commitment",
+      "evidence_status": "Earlier hypothesis; corrected successor withdraws specific source interpretations",
+      "contribution": "Finite rescue windows motivate an operational commitment model.",
+      "ssrn_url": "https://ssrn.com/abstract=7181465",
+      "modules": [
+        "biology",
+        "action"
+      ],
+      "catalog_note": "Source-catalog status, not an independent proof or replication audit."
+    },
+    {
+      "key": "legacy-6987278",
+      "ssrn_id": "6987278",
+      "title": "IDA and the Boundedness Engine",
+      "domain": "IDA instrument",
+      "evidence_status": "Typed synthesis; runnable offline engine; untested device hypotheses",
+      "contribution": "Frozen-reference recovery, unresolved displacement and baseline drift propose a read-first controller.",
+      "ssrn_url": "https://ssrn.com/abstract=6987278",
+      "modules": [
+        "ida",
+        "biology",
+        "action"
+      ],
+      "catalog_note": "Source-catalog status, not an independent proof or replication audit."
+    },
+    {
+      "key": "legacy-6964098",
+      "ssrn_id": "6964098",
+      "title": "Intelligence - Two Operators in the g Debate: Correlation Identifies Description, Intervention Tests Cause",
+      "domain": "Intelligence",
+      "evidence_status": "Model-specific non-identifiability theorem; simulations; illustrative transfer matrix",
+      "contribution": "Covariance rank describes a battery; an intervention-response operator asks about accessible causal handles.",
+      "ssrn_url": "https://ssrn.com/abstract=6964098",
+      "modules": [
+        "ida",
+        "testbeds"
+      ],
+      "catalog_note": "Source-catalog status, not an independent proof or replication audit."
+    },
+    {
+      "key": "legacy-6963978",
+      "ssrn_id": "6963978",
+      "title": "Lawful Coordinates in Bounded Science: Measurement, Composition, and the Euclidean Error",
+      "domain": "Lawful coordinates",
+      "evidence_status": "Classical composition representation; analytical bias; small illustration",
+      "contribution": "A meaningful operation can license arithmetic in its generator coordinate.",
+      "ssrn_url": "https://ssrn.com/abstract=6963978",
+      "modules": [
+        "geometry",
+        "testbeds"
+      ],
+      "catalog_note": "Source-catalog status, not an independent proof or replication audit."
+    },
+    {
+      "key": "legacy-6963958",
+      "ssrn_id": "6963958",
+      "title": "Dominance Hides in the Bend: Boundary Identifiability and Sampling Design in Diploid Selection",
+      "domain": "Population genetics",
+      "evidence_status": "Exact coefficient inversion; information analysis; simulations",
+      "contribution": "Rare alleles expose hs; trajectory state dependence supplies information separating h from s.",
+      "ssrn_url": "https://ssrn.com/abstract=6963958",
+      "modules": [
+        "testbeds",
+        "genome"
+      ],
+      "catalog_note": "Source-catalog status, not an independent proof or replication audit."
+    },
+    {
+      "key": "legacy-6963360",
+      "ssrn_id": "6963360",
+      "title": "Projection Geometry of the Niche-Neutral Debate: Hidden Probability Currents in Community Dynamics",
+      "domain": "Ecology",
+      "evidence_status": "Conditional density/current non-identifiability; proposed diagnostics",
+      "contribution": "An unordered abundance distribution erases circulating dynamics.",
+      "ssrn_url": "https://ssrn.com/abstract=6963360",
+      "modules": [
+        "testbeds",
+        "state"
+      ],
+      "catalog_note": "Source-catalog status, not an independent proof or replication audit."
+    },
+    {
+      "key": "legacy-6947578",
+      "ssrn_id": "6947578",
+      "title": "Prime-Residue Projection Tomography of Consecutive-Prime Biases: Primorial Recovery and Gap-Word Order Asymmetry",
+      "domain": "Prime prediction",
+      "evidence_status": "Finite-scale numerical study with held-out checks",
+      "contribution": "Larger CRT-aligned state recovers much coarse recurrence dependence; residual order remains.",
+      "ssrn_url": "https://ssrn.com/abstract=6947578",
+      "modules": [
+        "testbeds",
+        "state"
+      ],
+      "catalog_note": "Source-catalog status, not an independent proof or replication audit."
+    },
+    {
+      "key": "legacy-6914800",
+      "ssrn_id": "6914800",
+      "title": "A Classification of Bounded Composition Laws with Isometric Reassociation Defects: flat rapidity addition, Einstein gyroaddition, and the holonomy that chooses between them",
+      "domain": "Composition geometry",
+      "evidence_status": "Axiom-conditional classification; synthetic defect tomography",
+      "contribution": "A specified reassociation-isometry structure distinguishes flat and curved branches.",
+      "ssrn_url": "https://ssrn.com/abstract=6914800",
+      "modules": [
+        "geometry"
+      ],
+      "catalog_note": "Source-catalog status, not an independent proof or replication audit."
+    },
+    {
+      "key": "legacy-6907938",
+      "ssrn_id": "6907938",
+      "title": "Does Sustained Compulsory Antipsychotic Treatment Meet the Evidentiary Standard That Removal of Consent Requires? A Structured Critical Review",
+      "domain": "Evidence and consent",
+      "evidence_status": "Structured critical review plus explicit normative premise",
+      "contribution": "Drug efficacy does not establish the incremental efficacy of imposing legal force.",
+      "ssrn_url": "https://ssrn.com/abstract=6907938",
+      "modules": [
+        "authority"
+      ],
+      "catalog_note": "Source-catalog status, not an independent proof or replication audit."
+    },
+    {
+      "key": "legacy-6865159",
+      "ssrn_id": "6865159",
+      "title": "The Invariance Signature of Public Quantum Measurement Archives: Factorizing Exchangeability Failure, Calibration Sensitivity, Overdispersion, and Job-Index Channel Structure in Leggett-Garg/Time-Order Data",
+      "domain": "Quantum archives",
+      "evidence_status": "Reanalysis of a fixed public archive; no foundational quantum anomaly",
+      "contribution": "Job-index dependence survives some controls, favouring latent channel drift or batching.",
+      "ssrn_url": "https://ssrn.com/abstract=6865159",
+      "modules": [
+        "testbeds",
+        "physics"
+      ],
+      "catalog_note": "Source-catalog status, not an independent proof or replication audit."
+    },
+    {
+      "key": "legacy-6858922",
+      "ssrn_id": "6858922",
+      "title": "Precision-Gated Attractor Reversal: A Triple-Threshold Hypothesis for Exceptional Recovery",
+      "domain": "Recovery hypothesis",
+      "evidence_status": "Prospective biological hypothesis; no new outcomes",
+      "contribution": "Evidence capture, policy transduction and accessible host control are separate proposed gates.",
+      "ssrn_url": "https://ssrn.com/abstract=6858922",
+      "modules": [
+        "biology",
+        "ida",
+        "action"
+      ],
+      "catalog_note": "Source-catalog status, not an independent proof or replication audit."
+    },
+    {
+      "key": "legacy-6858880",
+      "ssrn_id": "6858880",
+      "title": "c-Ring Stoichiometry, Energetic Slack, and the Limits of Molecular Optimality",
+      "domain": "Bioenergetics",
+      "evidence_status": "Binding/slack hypothesis; selected published cases",
+      "contribution": "Coupling geometry should matter most near a non-circular energetic constraint.",
+      "ssrn_url": "https://ssrn.com/abstract=6858880",
+      "modules": [
+        "biology",
+        "testbeds"
+      ],
+      "catalog_note": "Source-catalog status, not an independent proof or replication audit."
+    },
+    {
+      "key": "legacy-6858878",
+      "ssrn_id": "6858878",
+      "title": "A Coefficient-Locked Test of Atmospheric-Loss Geometry in the Exoplanet Radius Valley",
+      "domain": "Exoplanets",
+      "evidence_status": "Public-data analysis with a negative identifiability result",
+      "contribution": "A locked coordinate can fit without its coefficient or physical mechanism being identified.",
+      "ssrn_url": "https://ssrn.com/abstract=6858878",
+      "modules": [
+        "testbeds"
+      ],
+      "catalog_note": "Source-catalog status, not an independent proof or replication audit."
+    },
+    {
+      "key": "legacy-6858838",
+      "ssrn_id": "6858838",
+      "title": "The Measurement Gap in Coercive Psychiatry: When the Justification for Compulsory Antipsychotic Treatment Cannot Meet the Standard the Compulsion Requires",
+      "domain": "Evidence and consent",
+      "evidence_status": "Earlier argument; later structured review available",
+      "contribution": "The imposed intervention differs from the intervention studied in consenting drug trials.",
+      "ssrn_url": "https://ssrn.com/abstract=6858838",
+      "modules": [
+        "authority"
+      ],
+      "catalog_note": "Source-catalog status, not an independent proof or replication audit."
+    },
+    {
+      "key": "legacy-6858819",
+      "ssrn_id": "6858819",
+      "title": "Hormesis as a Geometric Necessity of Bounded Adaptive Systems: Quantitative Predictions from First Principles",
+      "domain": "Hormesis",
+      "evidence_status": "Conditional adaptive model; retrospective agreement; published journal development",
+      "contribution": "Earlier repair activation and later dominating damage produce biphasic response within the model.",
+      "ssrn_url": "https://ssrn.com/abstract=6858819",
+      "modules": [
+        "biology",
+        "geometry"
+      ],
+      "catalog_note": "Source-catalog status, not an independent proof or replication audit."
+    },
+    {
+      "key": "legacy-6858760",
+      "ssrn_id": "6858760",
+      "title": "Response-Coefficient Attenuation Predicts Hormetic Peak Amplitude: A Metabolic-Control Extension of Bounded Adaptive Systems",
+      "domain": "Hormesis amplitude",
+      "evidence_status": "First-order control-transmission extension; genome-scale supporting premise",
+      "contribution": "Molecular induction and phenotypic control differ; summed response coefficients predict transmitted adaptation.",
+      "ssrn_url": "https://ssrn.com/abstract=6858760",
+      "modules": [
+        "biology",
+        "geometry"
+      ],
+      "catalog_note": "Source-catalog status, not an independent proof or replication audit."
+    },
+    {
+      "key": "legacy-6800400",
+      "ssrn_id": "6800400",
+      "title": "Bounded Compositional Geometry: Interior-Identity Universality and the One-Dimensional Möbius Enrichment",
+      "domain": "Composition geometry",
+      "evidence_status": "Conditional theorem synthesis with explicit projective selector",
+      "contribution": "Additional chart compatibility selects a geometric branch; boundedness alone does not.",
+      "ssrn_url": "https://ssrn.com/abstract=6800400",
+      "modules": [
+        "geometry"
+      ],
+      "catalog_note": "Source-catalog status, not an independent proof or replication audit."
+    },
+    {
+      "key": "legacy-6779487",
+      "ssrn_id": "6779487",
+      "title": "Thresholded Adaptive Orchestration: Typed Bounded-State Interfaces and Boundary-Stress Testing for Generative Interactive Worlds",
+      "domain": "Adaptive interfaces",
+      "evidence_status": "Typed controller architecture; synthetic benchmark",
+      "contribution": "World generation, state estimation and admissible world changes need separate contracts.",
+      "ssrn_url": "https://ssrn.com/abstract=6779487",
+      "modules": [
+        "ai",
+        "ida",
+        "action"
+      ],
+      "catalog_note": "Source-catalog status, not an independent proof or replication audit."
+    },
+    {
+      "key": "legacy-6774878",
+      "ssrn_id": "6774878",
+      "title": "Rapidity Coordinates for Bounded Belief,A Resource-Constrained Predictive Processing Framework with a Falsifiable Inter-Brain Synchrony Test",
+      "domain": "Belief and EEG",
+      "evidence_status": "Bayesian-coordinate result plus separately postulated physiological/coupling bridges",
+      "contribution": "The neural gamma bridge and dyadic sinh coupling are hypotheses beyond the coordinate algebra.",
+      "ssrn_url": "https://ssrn.com/abstract=6774878",
+      "modules": [
+        "ida",
+        "geometry"
+      ],
+      "catalog_note": "Source-catalog status, not an independent proof or replication audit."
+    },
+    {
+      "key": "legacy-6773218",
+      "ssrn_id": "6773218",
+      "title": "Bounded Composition Forces Interior Existence A Self-Contained Theorem",
+      "domain": "Interval composition",
+      "evidence_status": "Conditional interval theorem; historical interpretation narrowed by public notice",
+      "contribution": "An admitted total operation remains inside its open interval under finite composition.",
+      "ssrn_url": "https://ssrn.com/abstract=6773218",
+      "modules": [
+        "geometry"
+      ],
+      "catalog_note": "Source-catalog status, not an independent proof or replication audit."
+    },
+    {
+      "key": "legacy-6767896",
+      "ssrn_id": "6767896",
+      "title": "Bounded Reflection and Möbius Composition: A First-Principles Derivation",
+      "domain": "Reflection geometry",
+      "evidence_status": "Historical derivation with an explicit scope correction",
+      "contribution": "Physical transfer laws support engineering formulas; the broad boundedness-to-artanh inference does not.",
+      "ssrn_url": "https://ssrn.com/abstract=6767896",
+      "modules": [
+        "geometry",
+        "physics",
+        "testbeds"
+      ],
+      "catalog_note": "Source-catalog status, not an independent proof or replication audit."
+    },
+    {
+      "key": "legacy-6761570",
+      "ssrn_id": "6761570",
+      "title": "An Architectural Classification of Bounded Adaptive Systems",
+      "domain": "Biological architecture",
+      "evidence_status": "Historical classificatory synthesis; broad claims publicly narrowed",
+      "contribution": "Plant, sensor, controller and surveillance organize a specified biological model class.",
+      "ssrn_url": "https://ssrn.com/abstract=6761570",
+      "modules": [
+        "biology"
+      ],
+      "catalog_note": "Source-catalog status, not an independent proof or replication audit."
+    },
+    {
+      "key": "legacy-6756063",
+      "ssrn_id": "6756063",
+      "title": "Bounded Composition and Deformed Kinematics: An Axiomatic Route to Hyperbolic Momentum Space",
+      "domain": "Momentum kinematics",
+      "evidence_status": "Historical conditional construction with a scope correction",
+      "contribution": "Kinematic and quantization consequences depend on the extra structure selecting the branch.",
+      "ssrn_url": "https://ssrn.com/abstract=6756063",
+      "modules": [
+        "geometry",
+        "physics"
+      ],
+      "catalog_note": "Source-catalog status, not an independent proof or replication audit."
+    },
+    {
+      "key": "legacy-6754498",
+      "ssrn_id": "6754498",
+      "title": "Two Failure Modes of Glutathione Homeostasis: A Calibrated Dynamical Model Recovers G6PD Severe-Deficiency Contraindications and Forecasts a Phase II NSCLC Trial Outcome",
+      "domain": "Glutathione homeostasis",
+      "evidence_status": "Biochemically calibrated model; conditional oncology forecast; journal development",
+      "contribution": "Pool, regeneration capacity and surveillance flux can support distinct failure regimes.",
+      "ssrn_url": "https://ssrn.com/abstract=6754498",
+      "modules": [
+        "biology"
+      ],
+      "catalog_note": "Source-catalog status, not an independent proof or replication audit."
+    },
+    {
+      "key": "legacy-6754362",
+      "ssrn_id": "6754362",
+      "title": "The five Möbius composition laws on the bounded interval",
+      "domain": "Pharmacological geometry",
+      "evidence_status": "Marked-point classification; later scope clarification",
+      "contribution": "Five canonical flows organize a restricted projective branch.",
+      "ssrn_url": "https://ssrn.com/abstract=6754362",
+      "modules": [
+        "geometry"
+      ],
+      "catalog_note": "Source-catalog status, not an independent proof or replication audit."
+    },
+    {
+      "key": "legacy-6754360",
+      "ssrn_id": "6754360",
+      "title": "A Plant–Sensor–Controller–Surveillance Architecture for Bounded Adaptive Homeostasis: Four Threshold-Typed Failure Modes, with the Redox/NRF2 System as Exemplar",
+      "domain": "Biological architecture",
+      "evidence_status": "Detailed class-specific model; mixed calibration and prospective predictions",
+      "contribution": "Plant/controller failures differ from sensor/surveillance operating regimes; timing and pinning matter.",
+      "ssrn_url": "https://ssrn.com/abstract=6754360",
+      "modules": [
+        "biology"
+      ],
+      "catalog_note": "Source-catalog status, not an independent proof or replication audit."
+    },
+    {
+      "key": "legacy-6739201",
+      "ssrn_id": "6739201",
+      "title": "A Universal Composition Law for Bounded Pharmacological Observables:The Aczél-Family Structure of Dose-Response, Combination Effects,and Aluminium Toxicology",
+      "domain": "Pharmacological composition",
+      "evidence_status": "Historical formulation; current 06 supplies corrected scope",
+      "contribution": "Additive-generator correspondences and combination baselines depend on specific mechanisms.",
+      "ssrn_url": "https://ssrn.com/abstract=6739201",
+      "modules": [
+        "geometry",
+        "biology",
+        "testbeds"
+      ],
+      "catalog_note": "Source-catalog status, not an independent proof or replication audit."
+    }
+  ]
+}

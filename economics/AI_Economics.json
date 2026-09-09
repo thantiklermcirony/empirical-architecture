@@ -1,0 +1,477 @@
+{
+  "date": "2026-09-09",
+  "currency": "USD",
+  "price_unit": "per million tokens",
+  "status": "Published prices plus assumed workload and performance; no generative benchmark run.",
+  "workload": {
+    "input_tokens_per_attempt": 6000,
+    "billed_output_tokens_per_attempt": 1000,
+    "baseline_attempts": 1,
+    "same_data_access_required": true,
+    "same_number_of_tokens_is_not_same_text_across_tokenizers": true,
+    "base_case_caching": false,
+    "base_case_batching": false,
+    "baseline_non_model_overhead": 0,
+    "candidate_overhead_note": "Incremental operational cost assumption; not measured. Fixed development, maintenance and human review are separate."
+  },
+  "prices": [
+    {
+      "id": "astra",
+      "model": "GPT-6 Astra",
+      "input": 10.0,
+      "cached_input": 1.0,
+      "output": 50.0,
+      "url": "https://developers.openai.com/api/docs/models/gpt-6-astra"
+    },
+    {
+      "id": "sol",
+      "model": "GPT-5.6 Sol",
+      "input": 4.0,
+      "cached_input": 0.4,
+      "output": 20.0,
+      "url": "https://developers.openai.com/api/docs/models/gpt-5.6-sol"
+    },
+    {
+      "id": "terra",
+      "model": "GPT-5.6 Terra",
+      "input": 2.0,
+      "cached_input": 0.2,
+      "output": 12.0,
+      "url": "https://developers.openai.com/api/docs/models/gpt-5.6-terra"
+    },
+    {
+      "id": "luna",
+      "model": "GPT-5.6 Luna",
+      "input": 0.2,
+      "cached_input": 0.02,
+      "output": 1.2,
+      "url": "https://developers.openai.com/api/docs/models/gpt-5.6-luna"
+    },
+    {
+      "id": "opus",
+      "model": "Claude Opus 5",
+      "input": 5.0,
+      "cached_input": 0.5,
+      "output": 25.0,
+      "url": "https://claude.com/pricing"
+    },
+    {
+      "id": "sonnet",
+      "model": "Claude Sonnet 5",
+      "input": 2.0,
+      "cached_input": 0.2,
+      "output": 10.0,
+      "url": "https://claude.com/pricing"
+    },
+    {
+      "id": "haiku",
+      "model": "Claude Haiku 4.5",
+      "input": 1.0,
+      "cached_input": 0.1,
+      "output": 5.0,
+      "url": "https://claude.com/pricing"
+    },
+    {
+      "id": "flashlite",
+      "model": "Gemini 3.1 Flash-Lite",
+      "input": 0.25,
+      "cached_input": 0.025,
+      "output": 1.5,
+      "url": "https://ai.google.dev/gemini-api/docs/pricing"
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "lean",
+      "name": "One proposal; inexpensive local evidence",
+      "attempts": 1.0,
+      "overhead": 0.0002,
+      "cost_per_request": 0.0026
+    },
+    {
+      "id": "central",
+      "name": "1.5 proposals; $0.001 operational overhead",
+      "attempts": 1.5,
+      "overhead": 0.001,
+      "cost_per_request": 0.0046
+    },
+    {
+      "id": "costly",
+      "name": "Three proposals; $0.010 operational overhead",
+      "attempts": 3.0,
+      "overhead": 0.01,
+      "cost_per_request": 0.0172
+    }
+  ],
+  "comparisons": [
+    {
+      "scenario": "lean",
+      "baseline": "GPT-6 Astra",
+      "baseline_token_cost": 0.11,
+      "candidate_cost": 0.0026,
+      "raw_cost_ratio": 42.30769230769231,
+      "raw_saving_fraction": 0.9763636363636363,
+      "million_request_savings": 107400.0,
+      "quality_adjusted_ratio_if_baseline_q_095_candidate_q_090": 40.08097165991903,
+      "quality_break_even_candidate_q_if_baseline_q_095": 0.022454545454545453
+    },
+    {
+      "scenario": "lean",
+      "baseline": "GPT-5.6 Sol",
+      "baseline_token_cost": 0.044,
+      "candidate_cost": 0.0026,
+      "raw_cost_ratio": 16.923076923076923,
+      "raw_saving_fraction": 0.9409090909090909,
+      "million_request_savings": 41400.0,
+      "quality_adjusted_ratio_if_baseline_q_095_candidate_q_090": 16.032388663967613,
+      "quality_break_even_candidate_q_if_baseline_q_095": 0.05613636363636364
+    },
+    {
+      "scenario": "lean",
+      "baseline": "GPT-5.6 Terra",
+      "baseline_token_cost": 0.024,
+      "candidate_cost": 0.0026,
+      "raw_cost_ratio": 9.230769230769232,
+      "raw_saving_fraction": 0.8916666666666667,
+      "million_request_savings": 21400.000000000004,
+      "quality_adjusted_ratio_if_baseline_q_095_candidate_q_090": 8.744939271255062,
+      "quality_break_even_candidate_q_if_baseline_q_095": 0.10291666666666667
+    },
+    {
+      "scenario": "lean",
+      "baseline": "GPT-5.6 Luna",
+      "baseline_token_cost": 0.0024,
+      "candidate_cost": 0.0026,
+      "raw_cost_ratio": 0.923076923076923,
+      "raw_saving_fraction": -0.08333333333333348,
+      "million_request_savings": -200.00000000000009,
+      "quality_adjusted_ratio_if_baseline_q_095_candidate_q_090": 0.8744939271255061,
+      "quality_break_even_candidate_q_if_baseline_q_095": 1.0291666666666668
+    },
+    {
+      "scenario": "lean",
+      "baseline": "Claude Opus 5",
+      "baseline_token_cost": 0.055,
+      "candidate_cost": 0.0026,
+      "raw_cost_ratio": 21.153846153846153,
+      "raw_saving_fraction": 0.9527272727272728,
+      "million_request_savings": 52400.0,
+      "quality_adjusted_ratio_if_baseline_q_095_candidate_q_090": 20.040485829959515,
+      "quality_break_even_candidate_q_if_baseline_q_095": 0.044909090909090905
+    },
+    {
+      "scenario": "lean",
+      "baseline": "Claude Sonnet 5",
+      "baseline_token_cost": 0.022,
+      "candidate_cost": 0.0026,
+      "raw_cost_ratio": 8.461538461538462,
+      "raw_saving_fraction": 0.8818181818181818,
+      "million_request_savings": 19400.0,
+      "quality_adjusted_ratio_if_baseline_q_095_candidate_q_090": 8.016194331983806,
+      "quality_break_even_candidate_q_if_baseline_q_095": 0.11227272727272727
+    },
+    {
+      "scenario": "lean",
+      "baseline": "Claude Haiku 4.5",
+      "baseline_token_cost": 0.011,
+      "candidate_cost": 0.0026,
+      "raw_cost_ratio": 4.230769230769231,
+      "raw_saving_fraction": 0.7636363636363637,
+      "million_request_savings": 8400.0,
+      "quality_adjusted_ratio_if_baseline_q_095_candidate_q_090": 4.008097165991903,
+      "quality_break_even_candidate_q_if_baseline_q_095": 0.22454545454545455
+    },
+    {
+      "scenario": "lean",
+      "baseline": "Gemini 3.1 Flash-Lite",
+      "baseline_token_cost": 0.003,
+      "candidate_cost": 0.0026,
+      "raw_cost_ratio": 1.153846153846154,
+      "raw_saving_fraction": 0.13333333333333341,
+      "million_request_savings": 400.00000000000017,
+      "quality_adjusted_ratio_if_baseline_q_095_candidate_q_090": 1.0931174089068827,
+      "quality_break_even_candidate_q_if_baseline_q_095": 0.8233333333333334
+    },
+    {
+      "scenario": "central",
+      "baseline": "GPT-6 Astra",
+      "baseline_token_cost": 0.11,
+      "candidate_cost": 0.0046,
+      "raw_cost_ratio": 23.91304347826087,
+      "raw_saving_fraction": 0.9581818181818181,
+      "million_request_savings": 105400.0,
+      "quality_adjusted_ratio_if_baseline_q_095_candidate_q_090": 22.654462242562932,
+      "quality_break_even_candidate_q_if_baseline_q_095": 0.03972727272727272
+    },
+    {
+      "scenario": "central",
+      "baseline": "GPT-5.6 Sol",
+      "baseline_token_cost": 0.044,
+      "candidate_cost": 0.0046,
+      "raw_cost_ratio": 9.565217391304348,
+      "raw_saving_fraction": 0.8954545454545455,
+      "million_request_savings": 39400.0,
+      "quality_adjusted_ratio_if_baseline_q_095_candidate_q_090": 9.061784897025174,
+      "quality_break_even_candidate_q_if_baseline_q_095": 0.09931818181818182
+    },
+    {
+      "scenario": "central",
+      "baseline": "GPT-5.6 Terra",
+      "baseline_token_cost": 0.024,
+      "candidate_cost": 0.0046,
+      "raw_cost_ratio": 5.217391304347826,
+      "raw_saving_fraction": 0.8083333333333333,
+      "million_request_savings": 19400.0,
+      "quality_adjusted_ratio_if_baseline_q_095_candidate_q_090": 4.942791762013731,
+      "quality_break_even_candidate_q_if_baseline_q_095": 0.18208333333333332
+    },
+    {
+      "scenario": "central",
+      "baseline": "GPT-5.6 Luna",
+      "baseline_token_cost": 0.0024,
+      "candidate_cost": 0.0046,
+      "raw_cost_ratio": 0.5217391304347826,
+      "raw_saving_fraction": -0.9166666666666667,
+      "million_request_savings": -2200.0,
+      "quality_adjusted_ratio_if_baseline_q_095_candidate_q_090": 0.49427917620137307,
+      "quality_break_even_candidate_q_if_baseline_q_095": 1.8208333333333333
+    },
+    {
+      "scenario": "central",
+      "baseline": "Claude Opus 5",
+      "baseline_token_cost": 0.055,
+      "candidate_cost": 0.0046,
+      "raw_cost_ratio": 11.956521739130435,
+      "raw_saving_fraction": 0.9163636363636364,
+      "million_request_savings": 50400.0,
+      "quality_adjusted_ratio_if_baseline_q_095_candidate_q_090": 11.327231121281466,
+      "quality_break_even_candidate_q_if_baseline_q_095": 0.07945454545454544
+    },
+    {
+      "scenario": "central",
+      "baseline": "Claude Sonnet 5",
+      "baseline_token_cost": 0.022,
+      "candidate_cost": 0.0046,
+      "raw_cost_ratio": 4.782608695652174,
+      "raw_saving_fraction": 0.7909090909090909,
+      "million_request_savings": 17400.0,
+      "quality_adjusted_ratio_if_baseline_q_095_candidate_q_090": 4.530892448512587,
+      "quality_break_even_candidate_q_if_baseline_q_095": 0.19863636363636364
+    },
+    {
+      "scenario": "central",
+      "baseline": "Claude Haiku 4.5",
+      "baseline_token_cost": 0.011,
+      "candidate_cost": 0.0046,
+      "raw_cost_ratio": 2.391304347826087,
+      "raw_saving_fraction": 0.5818181818181818,
+      "million_request_savings": 6399.999999999999,
+      "quality_adjusted_ratio_if_baseline_q_095_candidate_q_090": 2.2654462242562934,
+      "quality_break_even_candidate_q_if_baseline_q_095": 0.3972727272727273
+    },
+    {
+      "scenario": "central",
+      "baseline": "Gemini 3.1 Flash-Lite",
+      "baseline_token_cost": 0.003,
+      "candidate_cost": 0.0046,
+      "raw_cost_ratio": 0.6521739130434783,
+      "raw_saving_fraction": -0.5333333333333332,
+      "million_request_savings": -1599.9999999999998,
+      "quality_adjusted_ratio_if_baseline_q_095_candidate_q_090": 0.6178489702517164,
+      "quality_break_even_candidate_q_if_baseline_q_095": 1.4566666666666666
+    },
+    {
+      "scenario": "costly",
+      "baseline": "GPT-6 Astra",
+      "baseline_token_cost": 0.11,
+      "candidate_cost": 0.0172,
+      "raw_cost_ratio": 6.395348837209302,
+      "raw_saving_fraction": 0.8436363636363636,
+      "million_request_savings": 92800.0,
+      "quality_adjusted_ratio_if_baseline_q_095_candidate_q_090": 6.05875152998776,
+      "quality_break_even_candidate_q_if_baseline_q_095": 0.14854545454545454
+    },
+    {
+      "scenario": "costly",
+      "baseline": "GPT-5.6 Sol",
+      "baseline_token_cost": 0.044,
+      "candidate_cost": 0.0172,
+      "raw_cost_ratio": 2.5581395348837206,
+      "raw_saving_fraction": 0.6090909090909091,
+      "million_request_savings": 26799.999999999996,
+      "quality_adjusted_ratio_if_baseline_q_095_candidate_q_090": 2.423500611995104,
+      "quality_break_even_candidate_q_if_baseline_q_095": 0.3713636363636364
+    },
+    {
+      "scenario": "costly",
+      "baseline": "GPT-5.6 Terra",
+      "baseline_token_cost": 0.024,
+      "candidate_cost": 0.0172,
+      "raw_cost_ratio": 1.3953488372093024,
+      "raw_saving_fraction": 0.2833333333333333,
+      "million_request_savings": 6800.000000000001,
+      "quality_adjusted_ratio_if_baseline_q_095_candidate_q_090": 1.3219094247246024,
+      "quality_break_even_candidate_q_if_baseline_q_095": 0.6808333333333333
+    },
+    {
+      "scenario": "costly",
+      "baseline": "GPT-5.6 Luna",
+      "baseline_token_cost": 0.0024,
+      "candidate_cost": 0.0172,
+      "raw_cost_ratio": 0.13953488372093023,
+      "raw_saving_fraction": -6.166666666666667,
+      "million_request_savings": -14800.0,
+      "quality_adjusted_ratio_if_baseline_q_095_candidate_q_090": 0.13219094247246024,
+      "quality_break_even_candidate_q_if_baseline_q_095": 6.8083333333333345
+    },
+    {
+      "scenario": "costly",
+      "baseline": "Claude Opus 5",
+      "baseline_token_cost": 0.055,
+      "candidate_cost": 0.0172,
+      "raw_cost_ratio": 3.197674418604651,
+      "raw_saving_fraction": 0.6872727272727273,
+      "million_request_savings": 37800.0,
+      "quality_adjusted_ratio_if_baseline_q_095_candidate_q_090": 3.02937576499388,
+      "quality_break_even_candidate_q_if_baseline_q_095": 0.29709090909090907
+    },
+    {
+      "scenario": "costly",
+      "baseline": "Claude Sonnet 5",
+      "baseline_token_cost": 0.022,
+      "candidate_cost": 0.0172,
+      "raw_cost_ratio": 1.2790697674418603,
+      "raw_saving_fraction": 0.21818181818181814,
+      "million_request_savings": 4799.999999999999,
+      "quality_adjusted_ratio_if_baseline_q_095_candidate_q_090": 1.211750305997552,
+      "quality_break_even_candidate_q_if_baseline_q_095": 0.7427272727272728
+    },
+    {
+      "scenario": "costly",
+      "baseline": "Claude Haiku 4.5",
+      "baseline_token_cost": 0.011,
+      "candidate_cost": 0.0172,
+      "raw_cost_ratio": 0.6395348837209301,
+      "raw_saving_fraction": -0.5636363636363637,
+      "million_request_savings": -6200.000000000001,
+      "quality_adjusted_ratio_if_baseline_q_095_candidate_q_090": 0.605875152998776,
+      "quality_break_even_candidate_q_if_baseline_q_095": 1.4854545454545456
+    },
+    {
+      "scenario": "costly",
+      "baseline": "Gemini 3.1 Flash-Lite",
+      "baseline_token_cost": 0.003,
+      "candidate_cost": 0.0172,
+      "raw_cost_ratio": 0.1744186046511628,
+      "raw_saving_fraction": -4.733333333333333,
+      "million_request_savings": -14200.0,
+      "quality_adjusted_ratio_if_baseline_q_095_candidate_q_090": 0.1652386780905753,
+      "quality_break_even_candidate_q_if_baseline_q_095": 5.446666666666666
+    }
+  ],
+  "cache_sensitivity": [
+    {
+      "cache_fraction": 0,
+      "baseline": "GPT-5.6 Sol",
+      "baseline_cost": 0.044,
+      "candidate_cost": 0.0046,
+      "raw_ratio": 9.565217391304348
+    },
+    {
+      "cache_fraction": 0,
+      "baseline": "Claude Sonnet 5",
+      "baseline_cost": 0.022,
+      "candidate_cost": 0.0046,
+      "raw_ratio": 4.782608695652174
+    },
+    {
+      "cache_fraction": 0,
+      "baseline": "GPT-6 Astra",
+      "baseline_cost": 0.11,
+      "candidate_cost": 0.0046,
+      "raw_ratio": 23.91304347826087
+    },
+    {
+      "cache_fraction": 0.5,
+      "baseline": "GPT-5.6 Sol",
+      "baseline_cost": 0.0332,
+      "candidate_cost": 0.00379,
+      "raw_ratio": 8.759894459102902
+    },
+    {
+      "cache_fraction": 0.5,
+      "baseline": "Claude Sonnet 5",
+      "baseline_cost": 0.0166,
+      "candidate_cost": 0.00379,
+      "raw_ratio": 4.379947229551451
+    },
+    {
+      "cache_fraction": 0.5,
+      "baseline": "GPT-6 Astra",
+      "baseline_cost": 0.083,
+      "candidate_cost": 0.00379,
+      "raw_ratio": 21.899736147757256
+    },
+    {
+      "cache_fraction": 0.9,
+      "baseline": "GPT-5.6 Sol",
+      "baseline_cost": 0.02456,
+      "candidate_cost": 0.003142,
+      "raw_ratio": 7.8166772756206235
+    },
+    {
+      "cache_fraction": 0.9,
+      "baseline": "Claude Sonnet 5",
+      "baseline_cost": 0.01228,
+      "candidate_cost": 0.003142,
+      "raw_ratio": 3.9083386378103118
+    },
+    {
+      "cache_fraction": 0.9,
+      "baseline": "GPT-6 Astra",
+      "baseline_cost": 0.0614,
+      "candidate_cost": 0.003142,
+      "raw_ratio": 19.54169318905156
+    }
+  ],
+  "large_model_verification": [
+    {
+      "baseline": "GPT-5.6 Sol",
+      "candidate_plus_one_equal_size_baseline_model_verification": 0.0486,
+      "raw_ratio": 0.9053497942386831
+    },
+    {
+      "baseline": "Claude Sonnet 5",
+      "candidate_plus_one_equal_size_baseline_model_verification": 0.0266,
+      "raw_ratio": 0.8270676691729323
+    },
+    {
+      "baseline": "GPT-6 Astra",
+      "candidate_plus_one_equal_size_baseline_model_verification": 0.11460000000000001,
+      "raw_ratio": 0.9598603839441535
+    }
+  ],
+  "market_arithmetic_scenarios": [
+    {
+      "eligible_share": 0.1,
+      "adoption_within_eligible": 0.25,
+      "saving_on_adopted_work": 0.8,
+      "fixed_volume_spend_reduction": 0.020000000000000004,
+      "demand_growth_factor_restoring_spend": 1.0204081632653061
+    },
+    {
+      "eligible_share": 0.3,
+      "adoption_within_eligible": 0.5,
+      "saving_on_adopted_work": 0.9,
+      "fixed_volume_spend_reduction": 0.135,
+      "demand_growth_factor_restoring_spend": 1.1560693641618498
+    },
+    {
+      "eligible_share": 0.6,
+      "adoption_within_eligible": 0.75,
+      "saving_on_adopted_work": 0.9,
+      "fixed_volume_spend_reduction": 0.40499999999999997,
+      "demand_growth_factor_restoring_spend": 1.680672268907563
+    }
+  ]
+}

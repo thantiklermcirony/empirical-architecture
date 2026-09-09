@@ -1,0 +1,226 @@
+{
+  "date": "2026-09-09",
+  "scope": "Distinct GitHub PDF versions preserved before repository consolidation. This is not the full SSRN manuscript corpus.",
+  "records": [
+    {
+      "repository_id": "R01",
+      "original_repository": "Einstein-Velocity-Addition-from-Associativity-and-Boundary-Fixing-M-bius-Translations",
+      "original_filename": "Einstein Velocity Addition from Associativity and Boundary Fixing Möbius Translations.pdf",
+      "kind": "current_pdfs",
+      "file": "papers/R01/f73fcf2d451b.pdf",
+      "sha256": "f73fcf2d451b90d1a3b82e4ac4b181a9962ebede500ba1d6a6ee1b3ed5018400",
+      "original_source_url": "https://github.com/thantiklermcirony/Einstein-Velocity-Addition-from-Associativity-and-Boundary-Fixing-M-bius-Translations/blob/93fc2ec012cec0ea0d8f064b8c05f4c2d3a6055f/Einstein%20Velocity%20Addition%20from%20Associativity%20and%20Boundary%20Fixing%20M%C3%B6bius%20Translations.pdf",
+      "bytes": 357321
+    },
+    {
+      "repository_id": "R03",
+      "original_repository": "Geometric-Origin-of-Quantum-Bounds",
+      "original_filename": "Geometric Origin of Quantum Bounds Deriving the Uncertainty Principle from Hyperbolic Phase Space Curvature.pdf",
+      "kind": "current_pdfs",
+      "file": "papers/R03/95e024b240cf.pdf",
+      "sha256": "95e024b240cf952b313a909174b914f6794964f693a208f7e4c79e46e2d34bda",
+      "original_source_url": "https://github.com/thantiklermcirony/Geometric-Origin-of-Quantum-Bounds/blob/7c42236d8a644264a119ac62252ab80551a26430/Geometric%20Origin%20of%20Quantum%20Bounds%20Deriving%20the%20Uncertainty%20Principle%20from%20Hyperbolic%20Phase%20Space%20Curvature.pdf",
+      "bytes": 191433
+    },
+    {
+      "repository_id": "R04",
+      "original_repository": "Hyperbolic-Partial-Separation-and-Spin-Enhanced-Microtubule-Coherence",
+      "original_filename": "Hyperbolic Partial Separation and Spin Enhanced Microtubule Coherence.pdf",
+      "kind": "current_pdfs",
+      "file": "papers/R04/f979928783d7.pdf",
+      "sha256": "f979928783d7df2a212a4c14dac239bd70748fbc4f5939281442cb0dfe19c54f",
+      "original_source_url": "https://github.com/thantiklermcirony/Hyperbolic-Partial-Separation-and-Spin-Enhanced-Microtubule-Coherence/blob/66efac3bcf99d13c358a7f9fffb3ee2057851c65/Hyperbolic%20Partial%20Separation%20and%20Spin%20Enhanced%20Microtubule%20Coherence.pdf",
+      "bytes": 340802
+    },
+    {
+      "repository_id": "R05",
+      "original_repository": "hyperbolic-Risidual-Composition---An-axiomatic-approach-to-Bounded-World-Models-1-",
+      "original_filename": "Hyperbolic_Residual_Composition.pdf",
+      "kind": "current_pdfs",
+      "file": "papers/R05/99c9df0b614e.pdf",
+      "sha256": "99c9df0b614e6279f899df2b72747a5343a15e7cf1cc7a979e32aa982f241405",
+      "original_source_url": "https://github.com/thantiklermcirony/hyperbolic-Risidual-Composition---An-axiomatic-approach-to-Bounded-World-Models-1-/blob/bf140ceb7083dfcfa74aa4fdd901b44ca7ed5fc4/Hyperbolic_Residual_Composition.pdf",
+      "bytes": 222335
+    },
+    {
+      "repository_id": "R06",
+      "original_repository": "Negentropic-Birth-Death-Theory-of-Everything",
+      "original_filename": "b118ae3188d858e300608b5616ca88233d489686.pdf",
+      "kind": "historical_pdfs",
+      "file": "papers/R06/49c201e1e102.pdf",
+      "sha256": "49c201e1e102af0640d8ca27e7698fca57590f8d97b94053307a4e235e754ad3",
+      "original_source_url": null,
+      "bytes": 911327
+    },
+    {
+      "repository_id": "R08",
+      "original_repository": "Part-III-Scientific-Validity-Questions-in-Antipsychotic-Research",
+      "original_filename": "Part III Scientific Validity Questions in Antipsychotic Research.pdf",
+      "kind": "current_pdfs",
+      "file": "papers/R08/7b90d7e26d2b.pdf",
+      "sha256": "7b90d7e26d2b72f6f451b7abfd099e08098dc8f0761ee9883395ce2a7f274151",
+      "original_source_url": "https://github.com/thantiklermcirony/Part-III-Scientific-Validity-Questions-in-Antipsychotic-Research/blob/4ebc779842ea83e788fb718c0dbda5ca13b30fcf/Part%20III%20Scientific%20Validity%20Questions%20in%20Antipsychotic%20Research.pdf",
+      "bytes": 294298
+    },
+    {
+      "repository_id": "R09",
+      "original_repository": "Part-IV-Documented-Iatrogenic-Harms-by-Drug-Class",
+      "original_filename": "Part IV Documented Iatrogenic Harms by Drug Class.pdf",
+      "kind": "current_pdfs",
+      "file": "papers/R09/a8047615a11c.pdf",
+      "sha256": "a8047615a11cd6e95f5b55d9051694437e12f412529c6cd7352d6ec96fb7005f",
+      "original_source_url": "https://github.com/thantiklermcirony/Part-IV-Documented-Iatrogenic-Harms-by-Drug-Class/blob/d28a329cfc9d6015f062b983fc0989c5abc5df85/Part%20IV%20Documented%20Iatrogenic%20Harms%20by%20Drug%20Class.pdf",
+      "bytes": 333707
+    },
+    {
+      "repository_id": "R10",
+      "original_repository": "Part-V-Non-Pharmacological-Alternatives-and-the-Completion-of-the-Evidentiary-Proof",
+      "original_filename": "Part V Non Pharmacological Alternatives and the Completion of the Evidentiary Proof.pdf",
+      "kind": "current_pdfs",
+      "file": "papers/R10/37786c0e5119.pdf",
+      "sha256": "37786c0e51195ccb630d40fe55b787638f0e50d875c54cac2d15ef69004a9191",
+      "original_source_url": "https://github.com/thantiklermcirony/Part-V-Non-Pharmacological-Alternatives-and-the-Completion-of-the-Evidentiary-Proof/blob/8ce9247c192b0d25841ee536c0767da30aad81d5/Part%20V%20Non%20Pharmacological%20Alternatives%20and%20the%20Completion%20of%20the%20Evidentiary%20Proof.pdf",
+      "bytes": 337815
+    },
+    {
+      "repository_id": "R11",
+      "original_repository": "Pharmacological-Hegemony-and-the-Failure-of-Evidence",
+      "original_filename": "Pharmacological Hegemony and the Failure of Evidence A Critical Systematic Review of Australia's Mental Health Treatment Framework.pdf",
+      "kind": "current_pdfs",
+      "file": "papers/R11/014131505d8f.pdf",
+      "sha256": "014131505d8f1404666a5811cd56feb34b6608342283ca3db15397368e28c826",
+      "original_source_url": "https://github.com/thantiklermcirony/Pharmacological-Hegemony-and-the-Failure-of-Evidence/blob/3d0fbc8f613a48bdf39b5e1f7e9663530913193d/Pharmacological%20Hegemony%20and%20the%20Failure%20of%20Evidence%20A%20Critical%20Systematic%20Review%20of%20Australia%27s%20Mental%20Health%20Treatment%20Framework.pdf",
+      "bytes": 559901
+    },
+    {
+      "repository_id": "R12",
+      "original_repository": "The-Dirac-Transposition-Deriving-the-Clifford-Algebra-from-the-Universal-Hyperbolic-Law",
+      "original_filename": "The Dirac Transposition Deriving the Clifford Algebra from the Universal Hyperbolic Law.pdf",
+      "kind": "current_pdfs",
+      "file": "papers/R12/be1d63450723.pdf",
+      "sha256": "be1d63450723ec82b175dbadddb9011f6cd09a5de9f6d681f5da0a2951d4c05a",
+      "original_source_url": "https://github.com/thantiklermcirony/The-Dirac-Transposition-Deriving-the-Clifford-Algebra-from-the-Universal-Hyperbolic-Law/blob/cab32a74387406f11ff4b89ad12359c87f83a92d/The%20Dirac%20Transposition%20Deriving%20the%20Clifford%20Algebra%20from%20the%20Universal%20Hyperbolic%20Law.pdf",
+      "bytes": 226322
+    },
+    {
+      "repository_id": "R13",
+      "original_repository": "The-Hyperbolic-Dirac-Equation-Integrating-the-HCCR-and-the-Geometric-Origin-of-Spinor",
+      "original_filename": "The Hyperbolic Dirac Equation Integrating the HCCR and the Geometric Origin of Spinor Structure.pdf",
+      "kind": "current_pdfs",
+      "file": "papers/R13/770d46a8b700.pdf",
+      "sha256": "770d46a8b7005975b3368696493707b7b66901e2694441d92d05059afaebdb16",
+      "original_source_url": "https://github.com/thantiklermcirony/The-Hyperbolic-Dirac-Equation-Integrating-the-HCCR-and-the-Geometric-Origin-of-Spinor/blob/8c0cd39b880d790c227d9581d0900f5774f021a8/The%20Hyperbolic%20Dirac%20Equation%20Integrating%20the%20HCCR%20and%20the%20Geometric%20Origin%20of%20Spinor%20Structure.pdf",
+      "bytes": 221273
+    },
+    {
+      "repository_id": "R14",
+      "original_repository": "The-Hyperbolic-Structure-of-Bounded-Dynamical-Systems",
+      "original_filename": "The Hyperbolic Structure of Bounded Dynamical Systems.pdf",
+      "kind": "current_pdfs",
+      "file": "papers/R14/c7e8f114aa4e.pdf",
+      "sha256": "c7e8f114aa4e0bf76b0ae1eb83c1343ac3f48a1616923c5b05478406c5a5ec13",
+      "original_source_url": "https://github.com/thantiklermcirony/The-Hyperbolic-Structure-of-Bounded-Dynamical-Systems/blob/267fff08cb66bebaa3e33fd81290e22156cab69e/The%20Hyperbolic%20Structure%20of%20Bounded%20Dynamical%20Systems.pdf",
+      "bytes": 296283
+    },
+    {
+      "repository_id": "R15",
+      "original_repository": "The-Murray-Reality-Equation",
+      "original_filename": "The Murray Reality Equation.pdf",
+      "kind": "current_pdfs",
+      "file": "papers/R15/f8dbbd0e67ab.pdf",
+      "sha256": "f8dbbd0e67ab665e6996f5d707e571fb0dadf0812c74ddff0504fe88f80c08ea",
+      "original_source_url": "https://github.com/thantiklermcirony/The-Murray-Reality-Equation/blob/4d463dbfd4567dc5e8afeee65b6ac1f800022dc4/The%20Murray%20Reality%20Equation.pdf",
+      "bytes": 813812
+    },
+    {
+      "repository_id": "R16",
+      "original_repository": "The-Universal-Hyperbolic-Law-A-Unified-Framework-for-Quantum-Yang-Mills-Existence-Clifford-Algebra..",
+      "original_filename": "The_Universal_Hyperbolic_Law__A_Unified_Framework_for_Quantum_Yang_Mills_Existence__Clifford_Algebra__and_the_Observer_Coupling_Constant.pdf",
+      "kind": "current_pdfs",
+      "file": "papers/R16/79e0d293096d.pdf",
+      "sha256": "79e0d293096d013bd264202248f7398e66cf7688b67ded6567d27860310b686e",
+      "original_source_url": "https://github.com/thantiklermcirony/The-Universal-Hyperbolic-Law-A-Unified-Framework-for-Quantum-Yang-Mills-Existence-Clifford-Algebra../blob/e8400d87a7aee7a51b6b5082271f1bdaf5f4f20b/The_Universal_Hyperbolic_Law__A_Unified_Framework_for_Quantum_Yang_Mills_Existence__Clifford_Algebra__and_the_Observer_Coupling_Constant.pdf",
+      "bytes": 239405
+    },
+    {
+      "repository_id": "R17",
+      "original_repository": "The-Yang-Mills-Existence-Framework-Construction-Mass-Gap-at-Cutoff-and-the-Conditional-Clay-Theorem",
+      "original_filename": "The Yang–Mills Existence Framework Construction, Mass Gap at Cutoff, and the Conditional Clay Theorem.pdf",
+      "kind": "current_pdfs",
+      "file": "papers/R17/17a2fd125b04.pdf",
+      "sha256": "17a2fd125b0447e6fdee4e866bc6bf8240d4f15d648f57f8f88fa9140f21ee9c",
+      "original_source_url": "https://github.com/thantiklermcirony/The-Yang-Mills-Existence-Framework-Construction-Mass-Gap-at-Cutoff-and-the-Conditional-Clay-Theorem/blob/1db70855d129ee0cb3800ac2347b4c39dd28195f/The%20Yang%E2%80%93Mills%20Existence%20Framework%20Construction%2C%20Mass%20Gap%20at%20Cutoff%2C%20and%20the%20Conditional%20Clay%20Theorem.pdf",
+      "bytes": 252106
+    },
+    {
+      "repository_id": "R17",
+      "original_repository": "The-Yang-Mills-Existence-Framework-Construction-Mass-Gap-at-Cutoff-and-the-Conditional-Clay-Theorem",
+      "original_filename": "b0fe786e5ef56f6f8b6974e8f87dbba80b1be560.pdf",
+      "kind": "historical_pdfs",
+      "file": "papers/R17/b482ef70f5ec.pdf",
+      "sha256": "b482ef70f5ecbcca8b406e641f9e6961b52775c7eb83e0af05c37401ff80836d",
+      "original_source_url": null,
+      "bytes": 259233
+    },
+    {
+      "repository_id": "R18",
+      "original_repository": "The-Yang-Mills-Existence-Framework-LCP-Uniform-Clustering-and-the-Conditional-Mass-Gap-Lower-Bound",
+      "original_filename": "The Yang–Mills Existence Framework LCP-Uniform Clustering and the Conditional Mass Gap Lower Bound.pdf",
+      "kind": "current_pdfs",
+      "file": "papers/R18/ba8826e11d5d.pdf",
+      "sha256": "ba8826e11d5dba5f0784a2911cb2f938ad0116e8829462226fddabb327aa8e4b",
+      "original_source_url": "https://github.com/thantiklermcirony/The-Yang-Mills-Existence-Framework-LCP-Uniform-Clustering-and-the-Conditional-Mass-Gap-Lower-Bound/blob/2f732fbca772d708ae4bf07e6ac231bb28480a7a/The%20Yang%E2%80%93Mills%20Existence%20Framework%20LCP-Uniform%20Clustering%20and%20the%20Conditional%20Mass%20Gap%20Lower%20Bound.pdf",
+      "bytes": 234717
+    },
+    {
+      "repository_id": "R19",
+      "original_repository": "Transpositions-of-a-Universal-Hyperbolic-Law-Invariants-Rigidity-and-Cross-Domain-Predictions",
+      "original_filename": "Transpositions of a Universal Hyperbolic Law-Invariants Rigidity and Cross Domain Predictions.pdf",
+      "kind": "current_pdfs",
+      "file": "papers/R19/3611cb631f7b.pdf",
+      "sha256": "3611cb631f7b878780791e87ae928b17bb923a5f4811bf2eb4253849a7debbcd",
+      "original_source_url": "https://github.com/thantiklermcirony/Transpositions-of-a-Universal-Hyperbolic-Law-Invariants-Rigidity-and-Cross-Domain-Predictions/blob/7617afb8386d380fd48d347061c08d1d28b38374/Transpositions%20of%20a%20Universal%20Hyperbolic%20Law-Invariants%20Rigidity%20and%20Cross%20Domain%20Predictions.pdf",
+      "bytes": 262602
+    },
+    {
+      "repository_id": "R21",
+      "original_repository": "UHL_RG-Grand-Unification",
+      "original_filename": "UHL_RG_GrandUnification.pdf",
+      "kind": "current_pdfs",
+      "file": "papers/R21/8b12b957a558.pdf",
+      "sha256": "8b12b957a558a7aab9d95acc4495580e23987dcbd8d15738f3e008152774bca8",
+      "original_source_url": "https://github.com/thantiklermcirony/UHL_RG-Grand-Unification/blob/ee50809ed76799a2fd6e2f3282d3fb376c8db3b4/UHL_RG_GrandUnification.pdf",
+      "bytes": 20239
+    },
+    {
+      "repository_id": "R21",
+      "original_repository": "UHL_RG-Grand-Unification",
+      "original_filename": "84fe260e5aa32f056f7b4142b05c27a653a939e1.pdf",
+      "kind": "historical_pdfs",
+      "file": "papers/R21/2158e183bf68.pdf",
+      "sha256": "2158e183bf68b37fc0ea26849a0a955219954a8db5a3465df1304695aa241197",
+      "original_source_url": null,
+      "bytes": 20020
+    },
+    {
+      "repository_id": "R22",
+      "original_repository": "Unified-Geometric-Foundations-",
+      "original_filename": "Unified Geometric Foundations The Hyperbolic Canonical Commutation Relation and Scalar Curvature Resolution in Bounded Quantum Manifolds.pdf",
+      "kind": "current_pdfs",
+      "file": "papers/R22/78f6792f4ee9.pdf",
+      "sha256": "78f6792f4ee9ce1b51fe7e743694cf8490ddddaa6c34c790823185d4a5a0f2a8",
+      "original_source_url": "https://github.com/thantiklermcirony/Unified-Geometric-Foundations-/blob/039e488e02b9be9bdb74b192fa690bfc098587ba/Unified%20Geometric%20Foundations%20The%20Hyperbolic%20Canonical%20Commutation%20Relation%20and%20Scalar%20Curvature%20Resolution%20in%20Bounded%20Quantum%20Manifolds.pdf",
+      "bytes": 253180
+    },
+    {
+      "repository_id": "R23",
+      "original_repository": "Universal-Hyperbolic-Information-Geometry",
+      "original_filename": "Universal Hyperbolic Information Geometry.pdf",
+      "kind": "current_pdfs",
+      "file": "papers/R23/979d08089849.pdf",
+      "sha256": "979d08089849eb0340568a9b958bacb146e7655ecec1d7d5abd12ce426dccfe3",
+      "original_source_url": "https://github.com/thantiklermcirony/Universal-Hyperbolic-Information-Geometry/blob/5a51728b56d9be5d8e6d8f2ee238d51290dbd332/Universal%20Hyperbolic%20Information%20Geometry.pdf",
+      "bytes": 506568
+    }
+  ]
+}

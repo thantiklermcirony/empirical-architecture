@@ -1,2 +1,106 @@
-# empirical-architecture
-A minimal architecture for science, life and intelligence. Predictive state, transformation, adaptation, scientific AI and IDA.
+# The Empirical Architecture
+
+### A minimal architecture for science, life and intelligence
+
+**We are building common mathematical and computational foundations for how science represents reality, discovers laws and turns knowledge into action.**
+
+The programme asks what makes a scientific description adequate: what it must remember, which transformations it can represent, what its observations conceal, and which futures remain accessible to an observer. Its ambition is a change in how scientific models and intelligent systems are built.
+
+[Read the manifesto](MANIFESTO.md) · [Explore the programme](research/PROGRAMME.md) · [Browse 41 manuscripts](corpus/README.md) · [See the research roadmap](ROADMAP.md) · [Contribute](CONTRIBUTING.md)
+
+## Start with four small experiments
+
+Two systems can show the same reading and respond differently. Two intervention sequences can contain the same ingredients and produce different results. Two communities can share a stationary distribution while one circulates through its states. An AI statement can agree with a source yet fail to answer the version of the question being asked.
+
+Clone the project and run the reference examples with Python 3.10 or newer:
+
+```sh
+git clone https://github.com/thantiklermcirony/empirical-architecture.git
+cd empirical-architecture
+```
+
+```sh
+python reference_demo.py
+python -m unittest discover -s tests -v
+```
+
+The examples require no API key, network connection or third-party package. They are synthetic and mathematical demonstrations of the questions the architecture asks. They are not empirical validations or a generative-model benchmark.
+
+| Example | What you can inspect |
+|---|---|
+| State | An identical observed value with different future response because a capacity variable was omitted. |
+| Transformation | Order dependence on a sufficient bounded scalar state: changing a plotting coordinate cannot make the actions commute. |
+| Ecology | Identical stationary distributions with different probability currents. |
+| AI | A structured assertion accepted or rejected using explicit evidence, query meaning and version. |
+
+## The idea
+
+A scientific state is a claim about what can safely be forgotten. If two histories have the same state, every future the model claims to predict should treat them equivalently. When an experiment distinguishes them, the state needs refinement or the claim needs a narrower scope.
+
+Once state is established, interventions define transformations. Sometimes their order can be forgotten and a cumulative description is adequate. Sometimes order carries predictive information. The resulting structure can support additive coordinates, temporal grammar, geometric models or other representations, depending on what has been established.
+
+Living systems add adaptation, material and energetic constraints, and actions that alter their later environment. Scientific observers and AI systems add measurement, memory, evidence and decisions. These belong within one explicit architecture while retaining the mechanisms of each domain.
+
+```mermaid
+flowchart TD
+    H[History and possible future tests] --> S[Predictive state]
+    S --> A[Admitted transformations]
+    A --> C[Cumulative branch]
+    A --> T[Temporal branch]
+    C --> R[Predictive realization and geometric models]
+    T --> R
+    R --> D[Domain mechanisms and constraints]
+    D --> V[Viable action]
+    V --> O[Observer, instrument and environment]
+    O --> H
+    E[Evidence and scientific AI] --> O
+    R --> E
+```
+
+The arrows describe an architecture of scientific work. Individual implications and the conditions for each branch are documented in the manuscripts.
+
+## A programme across science
+
+| Research line | Central question |
+|---|---|
+| Foundations of science | When do observations define sufficient state, lawful transformation and justified scientific claims? |
+| UHL and geometry | Which composition laws and geometric structures follow from specified transformations and symmetries? |
+| Dynamical systems | How do temporal order, hidden modes, constraints and observation determine what can be identified? |
+| Adaptation and hormesis | How do control, capacity and history determine beneficial adaptation, failure and recovery? |
+| Ecology and evolution | Which mechanisms are hidden by abundance distributions or insufficiently informative trajectories? |
+| Genome and cellular state | Which context and turnover measurements preserve predictions of cellular response? |
+| Cognition and consciousness | Which distinctions alter experience reports, access, metacognition and response to intervention? |
+| Artificial intelligence | How should generation, evidence, memory, model revision and action be organized? |
+| Physical foundations | Which additional dynamical and scale-limit results connect kinematic structures to physical theories? |
+
+The corpus also contains radiation scheduling, pharmacological composition, prime-sieve prediction, bioenergetic constraints, exoplanet tests, quantum-archive analysis and evidence/consent research. [Full scientific map](research/PROGRAMME.md).
+
+## The first software frontier: evidence and state for AI
+
+We are investigating an AI architecture in which generative models propose explanations and actions, evidence and explicit inference support assertions, and persistent state preserves what future tasks need. The system should discover when its description is inadequate and help choose the experiment that resolves the problem.
+
+The consequential question is whether this architecture can deliver useful reliability and discovery with more interchangeable, less expensive proposers. That requires comparisons against strong systems using the same evidence, tools and inexpensive models. [AI thesis and benchmark](research/AI.md) · [Price-based economic scenarios](economics/AI_Economics.md).
+
+[IDA / StateAtlas](https://github.com/thantiklermcirony/ida-stateatlas) is the programme's developing experimental instrument: a way to map histories, probe responses, refine state and investigate intervention options. Its current finite prototype is a foundation for the larger biological and cognitive programme.
+
+## What exists and what comes next
+
+The programme has a corpus of 41 manuscript records, mathematical results with specified assumptions, computational and domain studies, and an IDA prototype. This repository supplies a common entrance, a complete corpus index and small executable reference examples.
+
+The next releases target an actual generative-model comparison, finite-data state/action inference, and empirical studies connecting measurements to useful intervention predictions. The current examples do not establish AI cost savings, clinical benefit, a theory of consciousness or a continuum solution in fundamental physics.
+
+“Minimal” describes the aim of using a small reusable architecture; exact minimality theorems apply in their declared settings. The project invites tests of both the individual results and the larger synthesis.
+
+## Build with us
+
+Reproduce an example. Find a counterexample. Add a model adapter. Contribute a domain case where the usual observation hides different futures. Formalize a result. Propose a discriminating experiment. Every contribution can stand on its own evidence.
+
+[Contribution guide](CONTRIBUTING.md) · [Current roadmap](ROADMAP.md) · [UHL development and historical lineage](research/UHL.md)
+
+Founded by **Daniel J. Murray**. Research and software development continue openly through explicit claims, reproducible artifacts and independent criticism.
+
+## Source history and reuse
+
+[Historical manuscript archive](history/README.md) · [MIT License](LICENSE) · [Licensing and attribution](LICENSING.md)
+
+The historical archive preserves the PDF versions collected before the repository consolidation. Current research is organized through the programme and corpus indexes above.
