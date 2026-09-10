@@ -4,7 +4,7 @@
 
 | Project | Current status | Start here |
 | --- | --- | --- |
-| Ray Serve / controller recovery | Validated scoped candidate; 60/60 correct HTTP probes after replacement; 30 Linux tests pass; not submitted | [Results and patch](https://github.com/thantiklermcirony/empirical-architecture/blob/main/research/ray-campaign/Ray_Contribution_Report.md), [live feature](https://empirical-observatory.madmanmuzza.chatgpt.site/projects#ray) |
+| Ray Serve / controller recovery | Submitted as [PR #66039](https://github.com/ray-project/ray/pull/66039); 60/60 correct HTTP probes after replacement; 30 Linux tests pass; awaiting review | [Results and patch](https://github.com/thantiklermcirony/empirical-architecture/blob/main/research/ray-campaign/Ray_Contribution_Report.md), [live feature](https://empirical-observatory.madmanmuzza.chatgpt.site/projects#ray) |
 | NeuroGym / observable decisions | Cue correction submitted; 132 full-suite tests pass on one Windows/Python runtime; 240-trial preservation check; awaiting review | [PR #295](https://github.com/neurogym/neurogym/pull/295), [results](https://github.com/thantiklermcirony/empirical-observatory/blob/main/public/research/NeuroGym_Contribution_Report.md), [live feature](https://empirical-observatory.madmanmuzza.chatgpt.site/projects#neurogym) |
 | Pertpy / biological prediction evaluation | First API submitted; 84 evaluator cases on two Python versions and a 4,553-cell demonstration; awaiting review | [PR #1098](https://github.com/scverse/pertpy/pull/1098), [results and reproduction](https://github.com/thantiklermcirony/empirical-observatory/blob/main/public/research/Pertpy_Evaluation_Report.md), [live feature](https://empirical-observatory.madmanmuzza.chatgpt.site/projects#pertpy) |
 | Graphiti memory correctness | Two tested fixes submitted; awaiting maintainer review | [History PR #1867](https://github.com/getzep/graphiti/pull/1867), [timestamp PR #1866](https://github.com/getzep/graphiti/pull/1866), [evidence](https://github.com/thantiklermcirony/empirical-observatory/blob/main/public/research/Graphiti.md) |
@@ -21,7 +21,7 @@ The same observation-driven policy responds prematurely four times on the origin
 
 ## Next three investigations
 
-The [new focused scan](https://github.com/thantiklermcirony/empirical-observatory/blob/main/public/research/Next_Big_Three.md) checks current ownership, existing attempts, resources, independent tests and public demonstrations. Ray now has a tested recovery candidate. Dask and F Prime remain follow-on investigations with their existing contribution gates. We prioritize a useful upstream contribution over duplicating someone else's open patch.
+The [new focused scan](https://github.com/thantiklermcirony/empirical-observatory/blob/main/public/research/Next_Big_Three.md) checks current ownership, existing attempts, resources, independent tests and public demonstrations. Ray now has a tested recovery contribution submitted for review. Dask and F Prime remain follow-on investigations with their existing contribution gates. We prioritize a useful upstream contribution over duplicating someone else's open patch.
 
 ## The Pertpy contribution
 
