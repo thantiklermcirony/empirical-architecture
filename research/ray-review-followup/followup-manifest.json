@@ -1,0 +1,32 @@
+{
+  "base_commit": "80142bad1d1db176f19c7e3aff6b6448631e66c2",
+  "submitted_commit": "3f7ccd74a11a64e813e6e4e158ac0c994a1c2a8c",
+  "submitted_repository": "thantiklermcirony/ray",
+  "changed_files": [
+    "python/ray/serve/_private/long_poll.py",
+    "python/ray/serve/tests/test_long_poll_reconnect.py",
+    "python/ray/serve/tests/unit/test_haproxy_manager_shutdown.py"
+  ],
+  "files": {
+    "python/ray/serve/_private/long_poll.py": {
+      "submitted_sha256": "e7c696a1567800690f45ec1a2efe135d1060e98fabc57f294108adf29636c325",
+      "candidate_sha256": "e197243a091a34c0439317d47c60d6dce57110c48b7437891e855520a2ba5e6c"
+    },
+    "python/ray/serve/tests/test_long_poll_reconnect.py": {
+      "submitted_sha256": "fd07a240b4ecc1ed16c15ef226decc81a2b27b51672506efc7205784b94a1134",
+      "candidate_sha256": "a61a571bbb3ffb9ae797cb979dfe5025994d51420ba44e5c5980a10e651ba917"
+    },
+    "python/ray/serve/tests/unit/test_haproxy_manager_shutdown.py": {
+      "submitted_sha256": "964d0f3476d50fe997a2b308da78912f5bc25b8224e2723c69714c18ec5f36bf",
+      "candidate_sha256": "067f76357cd508f3232ebced8fdcb23d157d546ea706fe061c28c3e05c79683f"
+    },
+    "python/ray/serve/_private/haproxy.py": {
+      "submitted_sha256": "4e47476c97505e4508169c7abaf8e86bae01de13f5a6a6fdbb2cb9b6caeaec28",
+      "candidate_sha256": "4e47476c97505e4508169c7abaf8e86bae01de13f5a6a6fdbb2cb9b6caeaec28"
+    }
+  },
+  "expected_local_tests": 16,
+  "scope": "Specific GetTimeoutError retry policy, terminal-error regression cases, and two test entrypoints; no live GCS outage claim",
+  "delta_sha256": "ed1680fe02bb545cfa95c67093152190c37336a4bd56611f0bab8a445c88a0e5",
+  "pytest_checker_sha256": "b7e1ea224106eaa9a6aae6dde7d7d015fef2406354a27315eddc3948743982cf"
+}

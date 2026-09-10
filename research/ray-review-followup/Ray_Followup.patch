@@ -1,0 +1,93 @@
+--- a/python/ray/serve/_private/long_poll.py
++++ b/python/ray/serve/_private/long_poll.py
+@@ -123,8 +123,9 @@
+           disables itself.
+         host_actor_resolver: optional synchronous callback that looks up a
+           replacement host after an actor error. It runs off the event loop
+-          and should raise ValueError while the host is unavailable. The owner
+-          must call stop() when it no longer wants to receive updates.
++          and should raise ValueError while the host is unavailable or
++          GetTimeoutError when lookup times out. The owner must call stop()
++          when it no longer wants to receive updates.
+     """
+ 
+     def __init__(
+@@ -201,7 +202,7 @@
+                     # ray.get_actor can block. Keep discovery off the client's
+                     # event loop, with only one lookup in flight at a time.
+                     host_actor = await self.event_loop.run_in_executor(None, resolver)
+-                except ValueError:
++                except (ValueError, ray.exceptions.GetTimeoutError):
+                     continue
+                 except Exception:
+                     logger.exception(
+--- a/python/ray/serve/tests/test_long_poll_reconnect.py
++++ b/python/ray/serve/tests/test_long_poll_reconnect.py
+@@ -395,13 +395,14 @@
+ 
+ 
+ @pytest.mark.asyncio
+-async def test_unexpected_resolver_error_is_terminal(hosts):
++@pytest.mark.parametrize("error_type", [RuntimeError, ray.exceptions.RaySystemError])
++async def test_unexpected_resolver_error_is_terminal(hosts, error_type):
+     old = await hosts.create("controller", {"state": "old"})
+     received, calls = [], []
+ 
+     def resolve():
+         calls.append(True)
+-        raise RuntimeError("Resolver configuration is invalid")
++        raise error_type("Resolver configuration is invalid")
+ 
+     client = hosts.client(old, {"state": received.append}, resolve)
+     await wait_until(lambda: received == ["old"])
+@@ -474,3 +475,38 @@
+     await wait_until(lambda: not client.is_running)
+     await asyncio.sleep(0.1)
+     assert received == [1]
++
++
++@pytest.mark.asyncio
++async def test_named_lookup_timeouts_are_retried(hosts):
++    old = await hosts.create("controller", {"state": "old"})
++    received, calls = [], []
++    timed_out = threading.Event()
++
++    def resolve():
++        calls.append(True)
++        if len(calls) <= 2:
++            # ActorManager maps a timed-out GCS lookup to GetTimeoutError.
++            # Inject that known result; this is not a live GCS outage test.
++            timed_out.set()
++            raise ray.exceptions.GetTimeoutError("Named actor lookup timed out")
++        return ray.get_actor("controller", namespace=hosts.namespace)
++
++    client = hosts.client(old, {"state": received.append}, resolve)
++    await wait_until(lambda: received == ["old"])
++    await hosts.retire(old, "controller")
++    await wait_until(timed_out.is_set)
++    new = await hosts.create("controller", {"state": "new"})
++    await wait_until(lambda: received == ["old", "new"] or not client.is_running)
++
++    assert client.is_running
++    assert received == ["old", "new"]
++    assert len(calls) >= 3
++    assert client.host_actor._actor_id == new._actor_id
++    assert (await actor_result(new.stats.remote()))["requests"][0] == {"state": -1}
++
++
++if __name__ == "__main__":
++    import sys
++
++    sys.exit(pytest.main(["-v", "-s", __file__]))
+--- a/python/ray/serve/tests/unit/test_haproxy_manager_shutdown.py
++++ b/python/ray/serve/tests/unit/test_haproxy_manager_shutdown.py
+@@ -93,3 +93,9 @@
+             if not task.done():
+                 task.cancel()
+         await asyncio.gather(*tasks, return_exceptions=True)
++
++
++if __name__ == "__main__":
++    import sys
++
++    sys.exit(pytest.main(["-v", "-s", __file__]))

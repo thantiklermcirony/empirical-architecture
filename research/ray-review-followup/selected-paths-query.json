@@ -1,0 +1,20 @@
+{
+  "query": {
+    "rule": [
+      {
+        "@name": "//python/ray/serve/tests:test_long_poll_reconnect",
+        "label": {
+          "@name": "main",
+          "@value": "//python/ray/serve/tests:test_long_poll_reconnect.py"
+        }
+      },
+      {
+        "@name": "//python/ray/serve/tests/unit:test_haproxy_manager_shutdown",
+        "label": {
+          "@name": "main",
+          "@value": "//python/ray/serve/tests/unit:test_haproxy_manager_shutdown.py"
+        }
+      }
+    ]
+  }
+}
