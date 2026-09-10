@@ -126,6 +126,7 @@ def run_worker(args):
     }
     ray = None
     managers = {}
+    fallback_handles = {}
 
     def checkpoint(phase):
         data["phase"] = phase
@@ -254,7 +255,26 @@ def run_worker(args):
             raise TimeoutError(f"Timed out: {label}; last={last!r}")
 
         def proxies():
-            return ray.get(controller.get_proxies.remote(), timeout=5)
+            nonlocal fallback_handles
+            handles = ray.get(controller.get_proxies.remote(), timeout=5)
+            # ProxyStateManager.get_proxy_handles() returns native HAProxy
+            # managers under node IDs AND its separate fallback ProxyActor
+            # under "fallback-<head_node_id>". Keep the latter out of manager
+            # count/identity checks, but retain its identities as evidence.
+            fallback_handles = {
+                str(key): handle for key, handle in handles.items()
+                if str(key).startswith("fallback-")
+            }
+            native_managers = {
+                str(key): handle for key, handle in handles.items()
+                if not str(key).startswith("fallback-")
+            }
+            data.setdefault("proxy_discoveries", []).append({
+                "controller_id": controller._actor_id.hex(),
+                "manager_ids": ids(native_managers),
+                "fallback_actor_ids": ids(fallback_handles),
+            })
+            return native_managers
 
         def ids(handles):
             return {str(node): handle._actor_id.hex() for node, handle in handles.items()}
@@ -294,6 +314,7 @@ def run_worker(args):
         old_controller_id = controller._actor_id.hex()
         initial_ids = ids(managers)
         data["before"] = {"controller_id": old_controller_id, "manager_ids": initial_ids,
+                          "fallback_actor_ids": ids(fallback_handles),
                           "managers": snapshots(managers), "probe": request(ROUTE + "/check")}
 
         checkpoint("replace_controller")
@@ -324,6 +345,7 @@ def run_worker(args):
         wait_for(lambda: app_running("catchall"), "catch-all recovered from checkpoint")
         wait_for(lambda: exact(request("/"), OLD_BODY), "catch-all survives replacement")
         data["replacement"] = {"controller_id": new_controller_id, "manager_ids": ids(current),
+                               "fallback_actor_ids": ids(fallback_handles),
                                "managers": snapshots(managers)}
 
         checkpoint("deploy_new_route")
@@ -342,6 +364,7 @@ def run_worker(args):
         final_proxies = proxies()
         final = snapshots(managers)
         data["after"] = {"controller_id": controller._actor_id.hex(),
+                         "fallback_actor_ids": ids(fallback_handles),
                          "manager_ids": ids(final_proxies), "managers": final,
                          "catch_all_probe": request("/")}
         assert ids(final_proxies) == initial_ids, "Manager identity changed during observation."

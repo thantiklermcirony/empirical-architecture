@@ -105,7 +105,7 @@ def main():
         proc = None
         print(f"START {name}", flush=True)
         try:
-            with (evidence / f"{name}.log").open("w") as log:
+            with (evidence / f"{name}-stage.log").open("w") as log:
                 proc = subprocess.Popen(command, cwd=cwd, env=env, stdout=log,
                                         stderr=subprocess.STDOUT, start_new_session=True)
                 try:
@@ -130,6 +130,10 @@ def main():
                                 and not record.get("cleanup", {}).get("remaining_owned_pids"))
             write_json(summary_path, summary)
         print(f"END {name}: {'PASS' if record['passed'] else 'FAIL'}", flush=True)
+        if not record["passed"]:
+            log_path = evidence / f"{name}-stage.log"
+            if log_path.exists():
+                print("\n".join(log_path.read_text(errors="replace").splitlines()[-60:]), flush=True)
         return record["passed"]
 
     try:
@@ -148,7 +152,7 @@ def main():
         if not run("fixture-imports", [sys.executable, "-c",
                     "import ray; import ray.tests.conftest; import ray.serve.tests.conftest; "
                     f"assert ray.__commit__ == '{PIN}'; print(ray.__version__, ray.__commit__)"], 60):
-            raise RuntimeError("Standard fixture imports failed; see fixture-imports.log")
+            raise RuntimeError("Standard fixture imports failed; see fixture-imports-stage.log")
 
         common = [sys.executable, str(harness_path), "run", "--source-root", str(source),
                   "--total-timeout", "300"]
@@ -185,7 +189,13 @@ def main():
             groups.append(("changed-unit-tests", unit_files, 180))
         summary["changed_unit_test_files"] = unit_files
         for name, files, timeout in groups:
-            command = [sys.executable, "-m", "pytest", "-q", "--import-mode=importlib",
+            # Import the verified installed native package before pytest walks
+            # source parents. The checkout's ray/__init__.py is not a native
+            # build; Serve and test subpackages are linked by setup-dev.
+            launcher = ("import ray, pytest; "
+                        f"assert ray.__commit__ == '{PIN}'; "
+                        "raise SystemExit(pytest.main())")
+            command = [sys.executable, "-c", launcher, "-q", "--import-mode=importlib",
                        "--timeout=90", "--timeout-method=thread",
                        "-o", "asyncio_mode=auto", "-o", "asyncio_default_fixture_loop_scope=function",
                        f"--junitxml={evidence / (name + '.xml')}", *files]
