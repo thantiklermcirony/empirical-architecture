@@ -1,6 +1,6 @@
 # Ray Serve: restoring routing after controller replacement
 
-**A tested reliability candidate for AI infrastructure. Not submitted upstream.**
+**A tested reliability contribution for AI infrastructure. [Submitted as Ray PR #66039](https://github.com/ray-project/ray/pull/66039); awaiting review.**
 
 Replacing Ray Serve's controller can leave a surviving HAProxy manager subscribed to the dead actor. The service still answers HTTP requests, but newly deployed routes can keep returning the old catch-all application. Our candidate resolves the controller through its stable name, resets snapshot versions for the new incarnation and resumes updates. Shutdown stops recovery and waits for pending configuration cleanup.
 
@@ -57,8 +57,8 @@ The evidence directory must be new. The driver records exact subprocess commands
 
 ## Upstream handoff
 
-This work relates to [issue #63784](https://github.com/ray-project/ray/issues/63784). The existing [PR #63785](https://github.com/ray-project/ray/pull/63785) addresses checkpoint compatibility and diagnostics; our opt-in subscription recovery addresses a different remaining behavior. No competing Ray PR or upstream comment has been posted. The existing discussion and any new competing work must be checked again before submission.
+This work relates to [issue #63784](https://github.com/ray-project/ray/issues/63784). The existing [PR #63785](https://github.com/ray-project/ray/pull/63785) addresses checkpoint compatibility and diagnostics; our opt-in subscription recovery addresses a different remaining behavior. The fresh duplicate-work check found no existing implementation of this scoped recovery change. The distinction was [explained in the issue](https://github.com/ray-project/ray/issues/63784#issuecomment-5611518583) before opening [PR #66039](https://github.com/ray-project/ray/pull/66039).
 
-AI assistance was used for investigation, code, tests and this report. Ray's [contribution policy](https://github.com/ray-project/ray/blob/80142bad1d1db176f19c7e3aff6b6448631e66c2/AGENTS.md) requires the submitting human to understand and defend the change, review every changed line and run relevant tests locally before requesting review. It also requires AI disclosure, duplicate-work explanation and DCO sign-off. Agent-run local tests and our own CI do not satisfy the human requirement by themselves.
+AI assistance was used for investigation, code, tests and this report. Ray's [contribution policy](https://github.com/ray-project/ray/blob/80142bad1d1db176f19c7e3aff6b6448631e66c2/AGENTS.md) requires the submitting human to understand and defend the change, review every changed line and run relevant tests locally before requesting review. It also requires AI disclosure, duplicate-work explanation and DCO sign-off. The submitting human confirmed reviewing every changed line and running all 14 new local tests. The signed commit `3f7ccd74a11a64e813e6e4e158ac0c994a1c2a8c` contains the exact tested patch; the [submission workflow](https://github.com/thantiklermcirony/ray/actions/runs/34427825241) ran the full upstream pre-commit hook automatically and verified the committed diff byte-for-byte.
 
-Prepared 10 September 2026. This is a contribution candidate and review package, not maintainer acceptance.
+Updated 10 September 2026 after upstream submission. The downloadable evidence ZIP preserves the pre-submission validation record. Submission is not maintainer acceptance.

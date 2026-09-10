@@ -1,5 +1,5 @@
 {
-  "status": "Validated scoped candidate; not submitted upstream",
+  "status": "Submitted upstream; awaiting maintainer review; not merged",
   "source_commit": "80142bad1d1db176f19c7e3aff6b6448631e66c2",
   "patch_sha256": "eee705a017b381dbcf78bfcdcd6a6c1d507941a6cc4595bf2f76e81e561fad3c",
   "workflow_url": "https://github.com/thantiklermcirony/empirical-architecture/actions/runs/34425598056",
@@ -133,5 +133,13 @@
     "long-duration reliability"
   ],
   "cleanup_note": "Both HTTP runs logged a controller shutdown timeout after 30 seconds, then returned from Serve/Ray shutdown without forced supervisor cleanup. The existing upstream test group left two marked processes, which the scoped supervisor terminated. No inspectable marked processes remained; three inaccessible same-user process environments could not be inspected.",
-  "earlier_invalid_run": "34425109302: test harness initially counted the fallback proxy as a HAProxy manager; pytest also selected an unbuilt source package. These setup errors were corrected without changing candidate.patch."
+  "earlier_invalid_run": "34425109302: test harness initially counted the fallback proxy as a HAProxy manager; pytest also selected an unbuilt source package. These setup errors were corrected without changing candidate.patch.",
+  "upstream_pr": "https://github.com/ray-project/ray/pull/66039",
+  "contribution_commit": "3f7ccd74a11a64e813e6e4e158ac0c994a1c2a8c",
+  "submission_workflow": "https://github.com/thantiklermcirony/ray/actions/runs/34427825241",
+  "human_confirmation": {
+    "reviewed_every_changed_line": true,
+    "ran_14_new_local_tests": true,
+    "basis": "Explicit submitting-user confirmation on 10 September 2026"
+  }
 }

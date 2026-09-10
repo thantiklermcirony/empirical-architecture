@@ -1,9 +1,17 @@
 {
   "source_commit": "80142bad1d1db176f19c7e3aff6b6448631e66c2",
   "patch_sha256": "eee705a017b381dbcf78bfcdcd6a6c1d507941a6cc4595bf2f76e81e561fad3c",
-  "status": "Validated scoped candidate; not submitted upstream",
+  "status": "Submitted upstream; awaiting maintainer review; not merged",
   "validation_run": "https://github.com/thantiklermcirony/empirical-architecture/actions/runs/34425598056",
   "linux_tests_passed": 30,
   "local_tests_passed": 14,
-  "http_comparison_passed": true
+  "http_comparison_passed": true,
+  "upstream_pr": "https://github.com/ray-project/ray/pull/66039",
+  "contribution_commit": "3f7ccd74a11a64e813e6e4e158ac0c994a1c2a8c",
+  "submission_workflow": "https://github.com/thantiklermcirony/ray/actions/runs/34427825241",
+  "human_confirmation": {
+    "reviewed_every_changed_line": true,
+    "ran_14_new_local_tests": true,
+    "basis": "Explicit submitting-user confirmation on 10 September 2026"
+  }
 }

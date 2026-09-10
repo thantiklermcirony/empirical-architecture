@@ -2,7 +2,7 @@
 
 Candidate investigation for [ray-project/ray#63784](https://github.com/ray-project/ray/issues/63784), based on source and native runtime `80142bad1d1db176f19c7e3aff6b6448631e66c2`.
 
-**Status: validated scoped candidate, not submitted upstream or accepted by Ray.** [Linux run 34425598056](https://github.com/thantiklermcirony/empirical-architecture/actions/runs/34425598056) passes the real HTTP comparison, all 30 selected tests and applicable source checks. The original returns the old application in all 60 probes; the candidate returns the new application in all 60 probes, over a 30-second observation window. Both preserve their original HAProxy manager while replacing the controller actor.
+**Status: [PR #66039 submitted to Ray](https://github.com/ray-project/ray/pull/66039); awaiting maintainer review, not merged.** [Linux run 34425598056](https://github.com/thantiklermcirony/empirical-architecture/actions/runs/34425598056) passes the real HTTP comparison, all 30 selected tests and applicable source checks. The original returns the old application in all 60 probes; the candidate returns the new application in all 60 probes, over a 30-second observation window. Both preserve their original HAProxy manager while replacing the controller actor.
 
 Read [the contribution report](Ray_Contribution_Report.md), [validation record](Ray_Validation.json), or [download the complete evidence package](Ray_Contribution_Package.zip).
 
@@ -33,5 +33,5 @@ The local baseline delivers only `epoch-A` and stops; the candidate delivers `ep
 
 Only HAProxyManager enables replacement discovery. Standard proxy, router and metrics consumers have separate ownership and retained-handle concerns. The long-poll protocol also distinguishes a published empty value from a key that a new host never publishes; resetting versions does not invent a missing publication.
 
-Ray's [contribution policy](https://github.com/ray-project/ray/blob/80142bad1d1db176f19c7e3aff6b6448631e66c2/AGENTS.md) requires human review, human-run local tests, AI disclosure, duplicate-work checks and signed-off commits. This evidence package is preparation for that review. It is not a claim of maintainer endorsement or an upstream pull request.
+Ray's [contribution policy](https://github.com/ray-project/ray/blob/80142bad1d1db176f19c7e3aff6b6448631e66c2/AGENTS.md) requires human review, human-run local tests, AI disclosure, duplicate-work checks and signed-off commits. The submitting human confirmed reviewing every changed line and running all 14 new local tests. The exact tested patch was committed with DCO as `3f7ccd74a11a64e813e6e4e158ac0c994a1c2a8c` after automatic upstream pre-commit checks passed. [Submission workflow](https://github.com/thantiklermcirony/ray/actions/runs/34427825241). The downloadable ZIP preserves the pre-submission validation record; this README and the PR record the current submission status. Maintainer acceptance remains pending.
 
