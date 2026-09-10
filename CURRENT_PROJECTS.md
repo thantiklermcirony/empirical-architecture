@@ -4,6 +4,7 @@
 
 | Project | Current status | Start here |
 | --- | --- | --- |
+| Virtual Cell / first flight | Real-data explorer and reproducible CPU benchmark; 4 held-out contexts, 2,052 targets, 6,642 measured genes; first adjustment failed its success threshold | [Open the explorer](https://empirical-observatory.madmanmuzza.chatgpt.site/cell), [all code and results](https://github.com/thantiklermcirony/empirical-observatory/tree/main/research/virtual-cell) |
 | Ray Serve / controller recovery | Submitted as [PR #66039](https://github.com/ray-project/ray/pull/66039); 60/60 correct HTTP probes after replacement; 30 Linux tests pass; awaiting review | [Results and patch](https://github.com/thantiklermcirony/empirical-architecture/blob/main/research/ray-campaign/Ray_Contribution_Report.md), [live feature](https://empirical-observatory.madmanmuzza.chatgpt.site/projects#ray) |
 | NeuroGym / observable decisions | Cue correction submitted; 132 full-suite tests pass on one Windows/Python runtime; 240-trial preservation check; awaiting review | [PR #295](https://github.com/neurogym/neurogym/pull/295), [results](https://github.com/thantiklermcirony/empirical-observatory/blob/main/public/research/NeuroGym_Contribution_Report.md), [live feature](https://empirical-observatory.madmanmuzza.chatgpt.site/projects#neurogym) |
 | Pertpy / biological prediction evaluation | First API submitted; 71 maintained tests pass on each of Python 3.12 and 3.14, 99.11% measured evaluator line coverage, and a 4,553-cell demonstration; awaiting review | [PR #1098](https://github.com/scverse/pertpy/pull/1098), [latest test results](https://github.com/thantiklermcirony/pertpy/actions/runs/34429620981), [results and reproduction](https://github.com/thantiklermcirony/empirical-observatory/blob/main/public/research/Pertpy_Evaluation_Report.md), [live feature](https://empirical-observatory.madmanmuzza.chatgpt.site/projects#pertpy) |
@@ -19,7 +20,9 @@ The browser experiments can run without an API key. Hardware and AlphaGenome req
 
 The same observation-driven policy responds prematurely four times on the original task and zero times after correction in each of four controlled rollouts. Both versions still award reward 1: this fixes the missing signal, not the existing early-action reward rules. Twenty of the 32 new cases fail on the original; all pass with the patch. No trained-model advantage is claimed. Maintainers will decide the observation compatibility policy.
 
-## Next three investigations
+## Flagship and follow-on investigations
+
+Virtual Cell is now the flagship: acquire correctly licensed destination-cell baseline measurements, test conventional context-conditioned models under the same information budget, and validate on fresh contexts. The completed first flight remains a development result with a failed superiority gate.
 
 The [new focused scan](https://github.com/thantiklermcirony/empirical-observatory/blob/main/public/research/Next_Big_Three.md) checks current ownership, existing attempts, resources, independent tests and public demonstrations. Ray now has a tested recovery contribution submitted for review. Dask and F Prime remain follow-on investigations with their existing contribution gates. We prioritize a useful upstream contribution over duplicating someone else's open patch.
 
