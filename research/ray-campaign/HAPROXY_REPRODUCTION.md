@@ -1,8 +1,8 @@
 # Linux Serve + HAProxy integration reproduction
 
-Status: **authored and statically checked; not executed against Linux, Ray, or HAProxy in this task.** No success/failure JSON has been fabricated. The companion `reproduce_haproxy.py` is an experiment to run, not evidence that the implementation works.
+Status: **executed on Linux with real Ray and HAProxy.** [Run 34425598056](https://github.com/thantiklermcirony/empirical-architecture/actions/runs/34425598056) reproduces the stale route on the baseline and recovers it with the candidate. The companion JSON records, environment hashes and raw logs are included in the evidence package.
 
-The source contract is Ray commit `80142bad1d1db176f19c7e3aff6b6448631e66c2`, plus the candidate Python patch. The motivating report is [ray-project/ray#63784](https://github.com/ray-project/ray/issues/63784). Root owns duplicate checks and the LongPoll implementation; this harness changes neither Ray nor an external service.
+The source contract is Ray commit `80142bad1d1db176f19c7e3aff6b6448631e66c2`, plus the candidate Python patch. The motivating report is [ray-project/ray#63784](https://github.com/ray-project/ray/issues/63784). This harness runs isolated local services; it does not post upstream or alter a shared cluster.
 
 ## What the experiment establishes
 

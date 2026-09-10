@@ -2,7 +2,9 @@
 
 Candidate investigation for [ray-project/ray#63784](https://github.com/ray-project/ray/issues/63784), based on source and native runtime `80142bad1d1db176f19c7e3aff6b6448631e66c2`.
 
-**Status: experimental candidate, not submitted upstream or accepted by Ray.** Local actor recovery tests pass. The Linux workflow records the real HAProxy HTTP experiment separately; a green test setup alone is not evidence of restored routing.
+**Status: validated scoped candidate, not submitted upstream or accepted by Ray.** [Linux run 34425598056](https://github.com/thantiklermcirony/empirical-architecture/actions/runs/34425598056) passes the real HTTP comparison, all 30 selected tests and applicable source checks. The original returns the old application in all 60 probes; the candidate returns the new application in all 60 probes, over a 30-second observation window. Both preserve their original HAProxy manager while replacing the controller actor.
+
+Read [the contribution report](Ray_Contribution_Report.md), [validation record](Ray_Validation.json), or [download the complete evidence package](Ray_Contribution_Package.zip).
 
 ## The problem
 

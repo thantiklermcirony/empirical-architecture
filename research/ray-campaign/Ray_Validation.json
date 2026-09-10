@@ -1,0 +1,137 @@
+{
+  "status": "Validated scoped candidate; not submitted upstream",
+  "source_commit": "80142bad1d1db176f19c7e3aff6b6448631e66c2",
+  "patch_sha256": "eee705a017b381dbcf78bfcdcd6a6c1d507941a6cc4595bf2f76e81e561fad3c",
+  "workflow_url": "https://github.com/thantiklermcirony/empirical-architecture/actions/runs/34425598056",
+  "workflow_source_commit": "f7eef3696bdf3356b71eacab4d4045101f05b826",
+  "local_tests": {
+    "passed": 14,
+    "platform": "Windows",
+    "native_commit": "80142bad1d1db176f19c7e3aff6b6448631e66c2"
+  },
+  "linux_tests": {
+    "changed-unit-tests": {
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "long-poll-existing": {
+      "tests": 16,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "long-poll-reconnect": {
+      "tests": 13,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "comparison": {
+    "baseline_reproduced": true,
+    "candidate_recovered": true,
+    "correct_labels": true,
+    "no_owned_processes_remain": true,
+    "same_haproxy_sha256": true,
+    "same_harness": true,
+    "same_packages": true,
+    "same_pin": true,
+    "same_platform": true,
+    "same_protocol": true,
+    "same_python": true,
+    "same_ray_commit": true,
+    "same_ray_core_sha256": true,
+    "same_ray_version": true
+  },
+  "http": {
+    "baseline": {
+      "classification": "stale_reproduced",
+      "responses": 60,
+      "bodies": [
+        "catch-all:issue63784"
+      ],
+      "controller_ids": [
+        "efaca051a8fdc583f7c5e1e101000000",
+        "0a66c2d2409f1ab595b1746801000000"
+      ],
+      "manager_ids_before": {
+        "8bec23acde5e4f5e7339fa76f049d0405573473270e7b69f111d95e6": "17b343120f2cb9133c6d977701000000"
+      },
+      "manager_ids_after": {
+        "8bec23acde5e4f5e7339fa76f049d0405573473270e7b69f111d95e6": "17b343120f2cb9133c6d977701000000"
+      },
+      "worker_cleanup": [
+        "serve.shutdown completed",
+        "ray.shutdown completed"
+      ],
+      "supervisor_cleanup": {
+        "forced_cleanup_pids": [],
+        "inaccessible_same_uid_pids": [
+          1149,
+          1167,
+          2024
+        ],
+        "remaining_owned_pids": [],
+        "scope": "exact inherited random run token; no global process-name cleanup"
+      }
+    },
+    "candidate": {
+      "classification": "recovered",
+      "responses": 60,
+      "bodies": [
+        "new-route:issue63784"
+      ],
+      "controller_ids": [
+        "c6913e9d511d61fe876e949f01000000",
+        "ee2d248c826f17c9a9f2cae901000000"
+      ],
+      "manager_ids_before": {
+        "0113576d231e1c0786be060beefa2872b8581d2b7c1fa92adaa79435": "2cba9c22211ff863409b4ef801000000"
+      },
+      "manager_ids_after": {
+        "0113576d231e1c0786be060beefa2872b8581d2b7c1fa92adaa79435": "2cba9c22211ff863409b4ef801000000"
+      },
+      "worker_cleanup": [
+        "serve.shutdown completed",
+        "ray.shutdown completed"
+      ],
+      "supervisor_cleanup": {
+        "forced_cleanup_pids": [],
+        "inaccessible_same_uid_pids": [
+          1149,
+          1167,
+          2024
+        ],
+        "remaining_owned_pids": [],
+        "scope": "exact inherited random run token; no global process-name cleanup"
+      }
+    }
+  },
+  "linux_hooks": {
+    "buildifier": true,
+    "buildifier-lint": true,
+    "mypy": true,
+    "pyrefly-serve": true,
+    "docstyle": true,
+    "ruff": true,
+    "black": true,
+    "pydoclint": true,
+    "trailing-whitespace": true,
+    "end-of-file-fixer": true,
+    "check-ast": true
+  },
+  "linux_artifact_sha256": "3eaf523060e7d81c47d3291847c1bd417462dcd6f1bd6bdf13b1a9194f27a2f5",
+  "lint_artifact_sha256": "6558d874137c82341dc6b3ed842378043c975d9312bbd7b51339400c159306ae",
+  "limits": [
+    "multi-node EKS",
+    "models/GPU",
+    "gRPC",
+    "autoscaling",
+    "all controller-owned client lifetimes",
+    "long-duration reliability"
+  ],
+  "cleanup_note": "Both HTTP runs logged a controller shutdown timeout after 30 seconds, then returned from Serve/Ray shutdown without forced supervisor cleanup. The existing upstream test group left two marked processes, which the scoped supervisor terminated. No inspectable marked processes remained; three inaccessible same-user process environments could not be inspected.",
+  "earlier_invalid_run": "34425109302: test harness initially counted the fallback proxy as a HAProxy manager; pytest also selected an unbuilt source package. These setup errors were corrected without changing candidate.patch."
+}
