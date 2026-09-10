@@ -1,5 +1,9 @@
 # The Empirical Architecture
 
+**[TRY ACTIVE CONTEXT: RESUME WITH EVIDENCE →](https://empirical-observatory.madmanmuzza.chatgpt.site/active-context)**
+
+A usable local tool for coding agents, with a recorded demonstration, explicit evidence boundaries and a fully published comparison. Part of the broader scientific programme below.
+
 [![Current projects — experiments, evidence and open contributions](current-projects.svg)](https://empirical-observatory.madmanmuzza.chatgpt.site/projects)
 
 **[Browse current projects on GitHub](CURRENT_PROJECTS.md) · [Run the live Observatory](https://empirical-observatory.madmanmuzza.chatgpt.site)**
@@ -135,7 +139,7 @@ We are investigating an AI architecture in which generative models propose expla
 
 The consequential question is whether this architecture can deliver useful reliability and discovery with more interchangeable, less expensive proposers. That requires comparisons against strong systems using the same evidence, tools and inexpensive models. [AI thesis and benchmark](research/AI.md) · [Price-based economic scenarios](economics/AI_Economics.md).
 
-[Active Context](https://github.com/thantiklermcirony/empirical-observatory/blob/main/public/research/AI_Active_Context_Plan.md) is the next proposed AI product: give an agent source-linked context, identify assumptions whose applicability may have changed, and select a useful check before acting. Its SDK and agent benchmark are **not yet built**. The next delivery is a narrow adapter and a frozen comparison against full context, ordinary retrieval, temporal memory and simple dependency-refresh policies, using the same agent, tools and total cost budget. [Independent product critique](https://github.com/thantiklermcirony/empirical-observatory/blob/main/public/research/AI_Product_Review.md).
+[Active Context 0.1](https://empirical-observatory.madmanmuzza.chatgpt.site/active-context) is now a working local CLI and read-only MCP interface for coding-agent continuations. It records real command results, checks whether their declared inputs changed, preserves failed attempts and proposes relevant rechecks. In 30 constructed continuations it tied conventional dependency tracking on all decisions and all 25 continuation checks; it was 5.26% slower in the single timing run, so the superiority gate failed. [Source and setup](https://github.com/thantiklermcirony/empirical-observatory/blob/main/automation/active-context/README.md) · [Complete results and limitations](https://github.com/thantiklermcirony/empirical-observatory/blob/main/public/research/Active_Context_Results.md). Automatic dependency discovery and improved AI task performance remain unproven. The next milestone is five independent real uses and measured repeat use, following the [adoption plan](https://github.com/thantiklermcirony/empirical-observatory/blob/main/public/research/Active_Context_Adoption_Plan.md).
 
 [IDA / StateAtlas](https://github.com/thantiklermcirony/ida-stateatlas) is the programme's developing experimental instrument: a way to map histories, probe responses, refine state and investigate intervention options. Its current finite prototype is a foundation for the larger biological and cognitive programme.
 
