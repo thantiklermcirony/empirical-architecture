@@ -21,6 +21,9 @@ def main():
     value = manifest(Path(__file__).resolve().parent)
     wheel_record = (output.parent / "wheel.sha256").read_text(encoding="utf-8").split()
     assert wheel_record[0] == WHEEL_SHA, "Missing or incorrect verified wheel provenance"
+    # Match the prior validated `python -c` launch from the checkout root. This
+    # adds the repository root, never its unbuilt python/ray package directory.
+    sys.path.insert(0, str(source))
     # Import native ray first, before pytest traverses the checkout's parents.
     import ray
     import ray._raylet
