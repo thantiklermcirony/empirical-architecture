@@ -4,6 +4,8 @@
 
 **[Browse current projects on GitHub](CURRENT_PROJECTS.md) · [Run the live Observatory](https://empirical-observatory.madmanmuzza.chatgpt.site)**
 
+**New: [Research Atlas — explore the whole programme](https://empirical-observatory.madmanmuzza.chatgpt.site/atlas).** Rotate a perspective map of the research lines, inspect their evidence and next tests, and run an experiment whose next question changes with its observations. The adaptive loop is implemented in a declared simulation; learning a better policy across projects remains a future test. [Architecture, independent review and reproducible results](https://github.com/thantiklermcirony/empirical-observatory/blob/main/public/research/observatory-evolution/README.md).
+
 **Flagship: [Virtual Cell — Predict. Reveal. Challenge.](https://empirical-observatory.madmanmuzza.chatgpt.site/cell)** A reproducible first flight across 4 held-out cell contexts, 2,052 target genes and 6,642 measured genes. Reveal real responses and explore why lower error need not mean a better direction. The first disagreement adjustment failed its success threshold; all comparisons and reproduction code are public. [Inspect the source and results](https://github.com/thantiklermcirony/empirical-observatory/tree/main/research/virtual-cell). The next experiment needs destination-cell measurements and fresh independent validation.
 
 **Latest contribution: [Ray Serve controller recovery — PR #66039](https://github.com/ray-project/ray/pull/66039).** In a real Linux HTTP experiment, the original returned the wrong application in all 60 probes; the candidate returned the new application in all 60. Thirty selected Linux tests and the source checks pass, with 16 recovery and shutdown checks also passing on Windows. One CPU node was tested. Submitted after human review and local tests; awaiting maintainer review. [Evidence and limits](https://github.com/thantiklermcirony/empirical-architecture/blob/main/research/ray-campaign/Ray_Contribution_Report.md).
@@ -21,6 +23,8 @@ The programme asks what makes a scientific description adequate: what it must re
 [Read the manifesto](MANIFESTO.md) · [Explore the programme](research/PROGRAMME.md) · [Browse 41 manuscripts](corpus/README.md) · [See the research roadmap](ROADMAP.md) · [Contribute](CONTRIBUTING.md)
 
 ## Enter the Empirical Observatory
+
+The [living Observatory architecture](https://github.com/thantiklermcirony/empirical-observatory/blob/main/public/research/observatory-evolution/Architecture.md) keeps evidence and experiment contracts traceable while allowing models, representations and even the central framing to change through explicit versions. Its next biology pilot has audited DMSO control inputs for 50 cell lines; candidate specification and response-scale checks must precede inspection of response outcomes. This is a separate chemical assay, not a new biological prediction result.
 
 The programme now has a [playable, open-source research station](https://github.com/thantiklermcirony/empirical-observatory): TAO control experiments, quantum measurement, local behaviour and an instrument dock, plus Earth, AI and Genome expeditions.
 
@@ -150,4 +154,3 @@ Founded by **Daniel J. Murray**. Research and software development continue open
 [Historical manuscript archive](history/README.md) · [MIT License](LICENSE) · [Licensing and attribution](LICENSING.md)
 
 The historical archive preserves the PDF versions collected before the repository consolidation. Current research is organized through the programme and corpus indexes above.
-

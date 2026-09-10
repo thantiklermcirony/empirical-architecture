@@ -1,5 +1,7 @@
 # Current projects
 
+**[Research Atlas: explore, test, revise →](https://empirical-observatory.madmanmuzza.chatgpt.site/atlas)** A perspective programme map with evidence dossiers, an adaptive test-selection simulation and replayable local records. Its policy is fixed; cross-project self-improvement is not yet implemented. [What works and what comes next](https://github.com/thantiklermcirony/empirical-observatory/blob/main/public/research/observatory-evolution/Architecture.md).
+
 **[Open the live project board →](https://empirical-observatory.madmanmuzza.chatgpt.site/projects)** · [Enter the Observatory](https://empirical-observatory.madmanmuzza.chatgpt.site)
 
 | Project | Current status | Start here |
@@ -21,6 +23,8 @@ The browser experiments can run without an API key. Hardware and AlphaGenome req
 The same observation-driven policy responds prematurely four times on the original task and zero times after correction in each of four controlled rollouts. Both versions still award reward 1: this fixes the missing signal, not the existing early-action reward rules. Twenty of the 32 new cases fail on the original; all pass with the patch. No trained-model advantage is claimed. Maintainers will decide the observation compatibility policy.
 
 ## Flagship and follow-on investigations
+
+The next input audit has verified Tahoe's published DMSO controls across 50 cell lines, 14 plates and 62,710 gene identifiers. A compact plate-1 panel, acquisition checks, whole-cell-line split and draft experiment are [available to reproduce](https://empirical-observatory.madmanmuzza.chatgpt.site/research/Virtual_Cell_Next_Inputs.zip). Response values remain unopened; the candidate equation, tuning grids and scale contract must be frozen before the new chemical-perturbation pilot proceeds. Existing context and subspace methods remain required comparators.
 
 Virtual Cell is now the flagship: acquire correctly licensed destination-cell baseline measurements, test conventional context-conditioned models under the same information budget, and validate on fresh contexts. The completed first flight remains a development result with a failed superiority gate.
 
