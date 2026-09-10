@@ -103,6 +103,7 @@ def manager_snapshot(actor):
         "target_groups": [group.model_dump(mode="json") for group in actor._target_groups],
         "haproxy_pid": process.pid if process is not None else None,
         "haproxy_returncode": process.returncode if process is not None else None,
+        "reload_in_progress": actor._reload_lock.locked(),
         "config_path": str(cfg),
         "config_sha256": hashlib.sha256(raw).hexdigest(),
         "config_mtime_ns": cfg.stat().st_mtime_ns if cfg.exists() else None,
@@ -280,15 +281,30 @@ def run_worker(args):
             return {str(node): handle._actor_id.hex() for node, handle in handles.items()}
 
         def snapshots(handles):
-            result = {str(node): ray.get(handle.__ray_call__.remote(manager_snapshot), timeout=5)
-                      for node, handle in handles.items()}
-            for value in result.values():
-                assert value["class_name"] == "HAProxyManager", value
-                assert value["haproxy_pid"] and value["haproxy_returncode"] is None, value
-                assert Path(value["config_path"]).resolve().is_relative_to(run_dir), value
-                for name in ("long_poll", "haproxy"):
-                    assert value["source_sha256"][name] == modules[name]["sha256"]
-            return result
+            def read_stable():
+                result = {str(node): ray.get(handle.__ray_call__.remote(manager_snapshot), timeout=5)
+                          for node, handle in handles.items()}
+                for value in result.values():
+                    assert value["class_name"] == "HAProxyManager", value
+                    assert Path(value["config_path"]).resolve().is_relative_to(run_dir), value
+                    for name in ("long_poll", "haproxy"):
+                        assert value["source_sha256"][name] == modules[name]["sha256"]
+                # During graceful reload, _proc can still name the old worker
+                # after it exits, while the new worker is awaiting readiness.
+                if any(value["reload_in_progress"] for value in result.values()):
+                    data.setdefault("snapshot_waits", []).append({
+                        "phase": data["phase"],
+                        "managers": [{key: value[key] for key in (
+                            "actor_id", "manager_pid", "haproxy_pid",
+                            "haproxy_returncode", "reload_in_progress")}
+                            for value in result.values()],
+                    })
+                    return None
+                for value in result.values():
+                    assert value["haproxy_pid"] and value["haproxy_returncode"] is None, value
+                return result
+
+            return wait_for(read_stable, "HAProxy reload to finish before snapshot")
 
         def app_running(name):
             details = ray.get(controller.get_serve_instance_details.remote(), timeout=5)
