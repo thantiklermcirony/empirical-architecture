@@ -1,0 +1,136 @@
+name: Ray controller replacement validation
+
+"on":
+  workflow_dispatch:
+  push:
+    paths:
+      - 'research/ray-campaign/**'
+      - '.github/workflows/ray-recovery.yml'
+  pull_request:
+    paths:
+      - 'research/ray-campaign/**'
+      - '.github/workflows/ray-recovery.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  linux-validation:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    env:
+      RAY_USAGE_STATS_ENABLED: '0'
+      PYTHONUNBUFFERED: '1'
+      PYTHONDONTWRITEBYTECODE: '1'
+      PIP_DISABLE_PIP_VERSION_CHECK: '1'
+    steps:
+      - name: Check out the research harness
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+
+      - name: Check out exact Ray source and standard test fixtures
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          repository: ray-project/ray
+          ref: 80142bad1d1db176f19c7e3aff6b6448631e66c2
+          path: _ray_source
+          persist-credentials: false
+          sparse-checkout: |
+            python/ray/serve
+            python/ray/tests
+          fetch-depth: 1
+
+      - name: Set up CPython 3.12
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+
+      - name: Install the verified wheel and test dependencies once
+        timeout-minutes: 7
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p evidence/ray-campaign
+          exec > >(tee evidence/ray-campaign/environment-setup.log) 2>&1
+          python -m venv "$RUNNER_TEMP/ray-validation-venv"
+          "$RUNNER_TEMP/ray-validation-venv/bin/python" -m pip install --upgrade pip
+          wheel="$RUNNER_TEMP/ray-3.0.0.dev0-cp312-cp312-manylinux2014_x86_64.whl"
+          curl --fail --location --retry 3 --max-time 180 \
+            'https://s3-us-west-2.amazonaws.com/ray-wheels/master/80142bad1d1db176f19c7e3aff6b6448631e66c2/ray-3.0.0.dev0-cp312-cp312-manylinux2014_x86_64.whl' \
+            --output "$wheel"
+          printf '%s  %s\n' '59d62dcfdf70053b47875c4e354e04bcbfaab107e8f8365b03d1e8644f7f7a41' "$wheel" | sha256sum --check
+          "$RUNNER_TEMP/ray-validation-venv/bin/python" -m pip install \
+            "$wheel[serve]" 'pytest==9.1.1' 'pytest-asyncio==1.4.0' \
+            'pytest-timeout==2.4.0' 'psutil==7.2.2' 'httpx==0.28.1' jinja2 numpy
+          "$RUNNER_TEMP/ray-validation-venv/bin/python" _ray_source/python/ray/setup-dev.py -y --allow serve
+          # The wheel omits ray.tests; Serve's real conftest imports it.
+          "$RUNNER_TEMP/ray-validation-venv/bin/python" _ray_source/python/ray/setup-dev.py -y --allow tests
+          "$RUNNER_TEMP/ray-validation-venv/bin/python" -m pip freeze --all > evidence/ray-campaign/installed-packages.txt
+          sha256sum "$wheel" > evidence/ray-campaign/wheel.sha256
+
+      - name: Run baseline, apply the patch, then run candidate and tests
+        timeout-minutes: 22
+        shell: bash
+        run: |
+          set -euo pipefail
+          "$RUNNER_TEMP/ray-validation-venv/bin/python" research/ray-campaign/run_validation.py \
+            --source-root "$GITHUB_WORKSPACE/_ray_source" \
+            --evidence-dir "$GITHUB_WORKSPACE/evidence/ray-campaign"
+
+      - name: Preserve evidence, including setup errors and failing runs
+        if: ${{ always() }}
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: ray-controller-replacement-${{ github.run_id }}-${{ github.run_attempt }}
+          path: evidence/ray-campaign/
+          if-no-files-found: warn
+          retention-days: 14
+
+  linux-lint:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    env:
+      PYTHONUNBUFFERED: '1'
+      PIP_DISABLE_PIP_VERSION_CHECK: '1'
+    steps:
+      - name: Check out the candidate patch
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Check out full pinned Ray source for cross-module type resolution
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          repository: ray-project/ray
+          ref: 80142bad1d1db176f19c7e3aff6b6448631e66c2
+          path: _ray_source
+          persist-credentials: false
+          fetch-depth: 1
+      - name: Set up CPython 3.12
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Install the upstream-required pre-commit version
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p evidence/ray-lint
+          python -m venv "$RUNNER_TEMP/ray-lint-venv"
+          "$RUNNER_TEMP/ray-lint-venv/bin/python" -m pip install 'pre-commit==3.5.0'
+      - name: Run applicable upstream hooks and preserve every result
+        timeout-minutes: 25
+        shell: bash
+        run: |
+          set -euo pipefail
+          "$RUNNER_TEMP/ray-lint-venv/bin/python" research/ray-campaign/run_lint.py \
+            --source-root "$GITHUB_WORKSPACE/_ray_source" \
+            --patch "$GITHUB_WORKSPACE/research/ray-campaign/candidate.patch" \
+            --evidence-dir "$GITHUB_WORKSPACE/evidence/ray-lint"
+      - name: Preserve Linux lint evidence even after failure
+        if: ${{ always() }}
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: ray-controller-replacement-lint-${{ github.run_id }}-${{ github.run_attempt }}
+          path: evidence/ray-lint/
+          if-no-files-found: warn
+          retention-days: 14
