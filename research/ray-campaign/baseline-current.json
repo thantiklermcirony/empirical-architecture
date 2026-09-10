@@ -1,0 +1,22 @@
+{
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "ray_version": "3.0.0.dev0",
+  "ray_native_commit": "80142bad1d1db176f19c7e3aff6b6448631e66c2",
+  "long_poll_sha256": "b40bce4493b01baecc962f839b99e72c9b8f85decd39e114fdcfec9624057b22",
+  "resolver_enabled": false,
+  "host_ids_differ": true,
+  "old_actor_id": "872af0a204da11ecb553f77a01000000",
+  "new_actor_id": "288ec29df4549e41ae21696c01000000",
+  "host_snapshot_ids": [
+    7,
+    7
+  ],
+  "observed_payloads": [
+    "epoch-A"
+  ],
+  "received_replacement": false,
+  "client_running_before_stop": false,
+  "elapsed_after_replacement_s": 5.078000000008615,
+  "limit": "Real actor and LongPollClient path; this is not a HAProxy HTTP integration."
+}

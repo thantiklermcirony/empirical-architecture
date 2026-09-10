@@ -1,0 +1,9 @@
+{
+  "native_commit": "80142bad1d1db176f19c7e3aff6b6448631e66c2",
+  "version": "3.0.0.dev0",
+  "baseline": false,
+  "files": {
+    "serve/_private/long_poll.py": "e7c696a1567800690f45ec1a2efe135d1060e98fabc57f294108adf29636c325",
+    "serve/_private/haproxy.py": "4e47476c97505e4508169c7abaf8e86bae01de13f5a6a6fdbb2cb9b6caeaec28"
+  }
+}

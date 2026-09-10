@@ -1,0 +1,5 @@
+{
+  "source_commit": "80142bad1d1db176f19c7e3aff6b6448631e66c2",
+  "patch_sha256": "eee705a017b381dbcf78bfcdcd6a6c1d507941a6cc4595bf2f76e81e561fad3c",
+  "status": "Candidate: local actor tests pass; Linux HTTP validation pending; no upstream PR."
+}
