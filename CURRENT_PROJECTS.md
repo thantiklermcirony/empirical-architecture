@@ -4,8 +4,8 @@
 
 | Project | Current status | Start here |
 | --- | --- | --- |
+| NeuroGym / observable decisions | Cue correction submitted; 132 full-suite tests pass on one Windows/Python runtime; 240-trial preservation check; awaiting review | [PR #295](https://github.com/neurogym/neurogym/pull/295), [results](https://github.com/thantiklermcirony/empirical-observatory/blob/main/public/research/NeuroGym_Contribution_Report.md), [live feature](https://empirical-observatory.madmanmuzza.chatgpt.site/projects#neurogym) |
 | Pertpy / biological prediction evaluation | First API submitted; 84 evaluator cases on two Python versions and a 4,553-cell demonstration; awaiting review | [PR #1098](https://github.com/scverse/pertpy/pull/1098), [results and reproduction](https://github.com/thantiklermcirony/empirical-observatory/blob/main/public/research/Pertpy_Evaluation_Report.md), [live feature](https://empirical-observatory.madmanmuzza.chatgpt.site/projects#pertpy) |
-| NeuroGym / observable decisions | Next investigation: reproduce the reported missing decision cue and establish the intended task contract | [Issue #279](https://github.com/neurogym/neurogym/issues/279), [source](https://github.com/neurogym/neurogym) |
 | Graphiti memory correctness | Two tested fixes submitted; awaiting maintainer review | [History PR #1867](https://github.com/getzep/graphiti/pull/1867), [timestamp PR #1866](https://github.com/getzep/graphiti/pull/1866), [evidence](https://github.com/thantiklermcirony/empirical-observatory/blob/main/public/research/Graphiti.md) |
 | TAO / adaptive control | Playable synthetic experiment; PI leads the published tracking comparison | [Enter the chamber](https://empirical-observatory.madmanmuzza.chatgpt.site/#tao), [methods](https://github.com/thantiklermcirony/empirical-observatory/blob/main/research/Methods.md) |
 | Quantum measurement | Playable simulation using established quantum mechanics | [Enter the lab](https://empirical-observatory.madmanmuzza.chatgpt.site/#quantum) |
@@ -13,6 +13,14 @@
 | IDA / StateAtlas | Developing experimental instrument and research prototype | [Source and research](https://github.com/thantiklermcirony/ida-stateatlas) |
 
 The browser experiments can run without an API key. Hardware and AlphaGenome require their own local setup/access. None of these demonstrations establishes biological universality, consciousness measurement or general AI superiority.
+
+## The NeuroGym contribution
+
+The same observation-driven policy responds prematurely four times on the original task and zero times after correction in each of four controlled rollouts. Both versions still award reward 1: this fixes the missing signal, not the existing early-action reward rules. Twenty of the 32 new cases fail on the original; all pass with the patch. No trained-model advantage is claimed. Maintainers will decide the observation compatibility policy.
+
+## Next three investigations
+
+The [new focused scan](https://github.com/thantiklermcirony/empirical-observatory/blob/main/public/research/Next_Big_Three.md) checks current ownership, existing attempts, resources, independent tests and public demonstrations. Its candidates are not yet reproduced or fixed by us. We prioritize a useful upstream contribution over duplicating someone else's open patch.
 
 ## The Pertpy contribution
 

@@ -4,10 +4,9 @@
 
 **[Browse current projects on GitHub](CURRENT_PROJECTS.md) · [Run the live Observatory](https://empirical-observatory.madmanmuzza.chatgpt.site)**
 
-**Latest contribution: [Pertpy biological evaluator — PR #1098](https://github.com/scverse/pertpy/pull/1098).** A tested way to compare cellular predictions with simple baselines, separate training from testing, and preserve failed or undefined scores. [Real-cell results and reproduction](https://github.com/thantiklermcirony/empirical-observatory/blob/main/public/research/Pertpy_Evaluation_Report.md). Submitted for maintainer review; not merged.
+**Latest contribution: [NeuroGym decision cue — PR #295](https://github.com/neurogym/neurogym/pull/295).** A task could require different answers after identical visible histories. Our proposed correction makes its intended action window observable. All 132 candidate-suite tests pass on the tested Windows/Python 3.12 runtime; 240 seeded trials preserve all other observation channels, targets and timings. [Results and reproduction](https://github.com/thantiklermcirony/empirical-observatory/blob/main/public/research/NeuroGym_Contribution_Report.md). Submitted for maintainer review; not merged.
 
-Earlier contributions: [Graphiti history](https://github.com/getzep/graphiti/pull/1867) and [timestamp](https://github.com/getzep/graphiti/pull/1866) repairs. [Evidence and limits](https://github.com/thantiklermcirony/empirical-observatory/blob/main/public/research/Graphiti.md).
-
+Earlier contributions: [Pertpy biological evaluator](https://github.com/scverse/pertpy/pull/1098), [Graphiti history](https://github.com/getzep/graphiti/pull/1867) and [Graphiti timestamps](https://github.com/getzep/graphiti/pull/1866). All remain submitted for review. [Next three contribution investigations](https://github.com/thantiklermcirony/empirical-observatory/blob/main/public/research/Next_Big_Three.md).
 
 ### A minimal architecture for science, life and intelligence
 
@@ -27,7 +26,7 @@ The current tests do not establish universal biological laws, a new neural archi
 
 ## Solve real open-source problems
 
-The [current contribution scan](https://github.com/thantiklermcirony/empirical-observatory/blob/main/research/contribution-scan/Research_Report.md) maps 42 repositories, 2,058 returned open-issue leads and 12 priorities. Its [21 detailed opportunity records](https://github.com/thantiklermcirony/empirical-observatory/blob/main/research/contribution-scan/Opportunities.json) include existing attempts, proposed tests and stopping rules. The Graphiti campaign produced two submitted memory-correctness repairs. Pertpy now has our submitted first evaluator API, 84 evaluator tests on two Python versions, and a conventional-baseline demonstration on real cells. Next we are investigating whether NeuroGym’s context decision-making task makes its action window observable. python-control remains a later numerical-systems candidate.
+The [current contribution scan](https://github.com/thantiklermcirony/empirical-observatory/blob/main/research/contribution-scan/Research_Report.md) maps 42 repositories, 2,058 returned open-issue leads and 12 priorities. Its [21 detailed opportunity records](https://github.com/thantiklermcirony/empirical-observatory/blob/main/research/contribution-scan/Opportunities.json) include existing attempts, proposed tests and stopping rules. The Graphiti campaign produced two submitted memory-correctness repairs. Pertpy now has our submitted first evaluator API, 84 evaluator tests on two Python versions, and a conventional-baseline demonstration on real cells. NeuroGym now has our submitted decision-cue correction, with 132 passing candidate-suite tests and a 240-trial preservation check. The [new focused scan](https://github.com/thantiklermcirony/empirical-observatory/blob/main/public/research/Next_Big_Three.md) ranks the next investigations and distinguishes new implementation opportunities from support for existing work.
 
 The [scanner and research package](https://github.com/thantiklermcirony/empirical-observatory/tree/main/research/contribution-scan) are reproducible. A useful contribution must survive the host project's tests and strong conventional baselines. The scan does not establish general AI superiority or a market cost reduction.
 
