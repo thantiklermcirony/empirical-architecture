@@ -1,0 +1,350 @@
+{
+  "identity": {
+    "id": "atlas-connections-001",
+    "package_version": "0.1.0",
+    "created_date": "2026-09-12",
+    "parent": "proposed extension of integrated-inquiry-programme-rules; common inquiry contract0.1"
+  },
+  "question": {
+    "original": "Which structures survive cross-domain transfer?",
+    "target": "Projective invariance with order effects, multimode recovery, residue metric failure and pure-boost lemma counterexample",
+    "scope": "four exact mathematical examples and a positive diagonal filter",
+    "intended_user": "domain and integration leads",
+    "useful_output": "Cross-ratio4/3 with noncommuting maps; recovery defect1/64; two source-specific counterexamples"
+  },
+  "system": {
+    "entities": [
+      "projective coordinate",
+      "positive repair modes",
+      "leaky trajectory scores",
+      "complex disk sections",
+      "two-state filter"
+    ],
+    "boundary": "separate declared examples",
+    "environment": "external operation selection and calibration",
+    "coupling": "structural maps only; no common physical mechanism asserted"
+  },
+  "observer": {
+    "measurement": "ratios, contrast, mode-weighted recovery and separately linear/quadratic residue",
+    "actions": [
+      "ordered maps",
+      "wait1 or2 units",
+      "positive diagonal filter"
+    ],
+    "resolution": "exact rational instances",
+    "noise": "none",
+    "memory": "retains ordered operations, mode weights and filter success probability",
+    "clock": "declared wait parameter",
+    "experimental_unit": "mathematical states",
+    "physical_effects_of_measurement": "filter conditions on success; phase dynamics not modeled"
+  },
+  "quantities": [
+    {
+      "id": "q",
+      "meaning": "positive projective ratio",
+      "domain": "(0,infinity)",
+      "units": "dimensionless",
+      "representation": "real; exact rational instance"
+    },
+    {
+      "id": "m(t)",
+      "meaning": "weighted recovery",
+      "domain": "[0,1]",
+      "units": "dimensionless",
+      "representation": "real; exact rational instance"
+    },
+    {
+      "id": "r_i",
+      "meaning": "unit-time modal attenuation",
+      "domain": "(0,1]",
+      "units": "dimensionless",
+      "representation": "real; exact rational instance"
+    },
+    {
+      "id": "a,z",
+      "meaning": "disk points",
+      "domain": "complex unit disk",
+      "units": "dimensionless",
+      "representation": "real; exact rational instance"
+    }
+  ],
+  "operations": [
+    {
+      "id": "A,B",
+      "maps": [
+        "A(q)=2q",
+        "B(q)=q+1"
+      ],
+      "composition": "retain full ordered maps"
+    },
+    {
+      "id": "recovery",
+      "map": "m(t)=sum_i w_i*r_i^t",
+      "admissibility": "fixed positive weights sum1"
+    },
+    {
+      "id": "section",
+      "map": "L_a=B_a R_theta(|a|\u00b2); theta(0)=0",
+      "admissibility": "smooth disk automorphism section"
+    },
+    {
+      "id": "filter",
+      "map": "p_next=a*p/[a*p+b*(1-p)]",
+      "admissibility": "0<=a,b<=1; success>0; retain success mass"
+    }
+  ],
+  "constraints": [
+    "cross-ratio denominators nonzero",
+    "shared recovery weights across gaps",
+    "linear and quadratic scores are different objects",
+    "boost counterexample concerns only premises listed in Lemma2.1",
+    "diagonal probability sector does not determine quantum phase"
+  ],
+  "mechanism": {
+    "family": "exact structural comparisons",
+    "calibration": "toy inputs only",
+    "alternative": "mechanism-specific observations may violate any transfer premise"
+  },
+  "premises": [
+    {
+      "id": "COMP-03.P1",
+      "statement": "One-dimensional projective maps with nonzero denominators, distinct test points, same chart",
+      "status": "assumed",
+      "scope": "formal model"
+    },
+    {
+      "id": "REC-03.P1",
+      "statement": "Fixed nonnegative weights sum1 and positive exponential mode attenuations",
+      "status": "assumed",
+      "scope": "formal model"
+    },
+    {
+      "id": "IDA-02.P1",
+      "statement": "Residue uses a positive fixed leak measure; compared paths may differ freely",
+      "status": "assumed",
+      "scope": "formal model"
+    },
+    {
+      "id": "GEOM-01.P1",
+      "statement": "Only L0=id,La(0)=a and identity gyrations are supplied; full covariance/loop axioms not invoked",
+      "status": "assumed",
+      "scope": "formal model"
+    },
+    {
+      "id": "QUANT-01.P1",
+      "statement": "Known diagonal filter in fixed basis, positive success event; no statement about coherences",
+      "status": "assumed",
+      "scope": "formal model"
+    }
+  ],
+  "execution": {
+    "method_id": "authored-connections-certificate",
+    "version": "0.1.0",
+    "command": "python certify_connections.py",
+    "dependencies": "Python>=3.10 standard library; local pinned rational algebra used only where stated",
+    "input_hashes": {
+      "current-07": "9570999564f6b8f0aa4f4088ed1c371b61ff761e50afe95b52c19f7b5fe2278a",
+      "current-03": "9cfd90c4786ed42be10b5ca0a702f17937b55e9fa2b93272da022c5a4ab8ca26",
+      "current-10": "5245c3e1f1e7d4eaeebbac454f85483005454e14e484d3b0ade2c266d3ef7af3",
+      "legacy-6987278": "f985548fe1a5bf02dcb6dc634662449fd814087094eabbd69688fc70c144eb95",
+      "legacy-6800400": "3ded6275e1d202acc6e7799df0c0b1302557e1be2132529eee97d0e04858d2e3"
+    },
+    "steps": [
+      {
+        "id": "projective",
+        "rule_id": "COMP-03",
+        "depends_on": [
+          "COMP-03.P1"
+        ],
+        "artifact": "receipts/connections.json"
+      },
+      {
+        "id": "recovery",
+        "rule_id": "REC-03",
+        "depends_on": [
+          "REC-03.P1"
+        ],
+        "artifact": "receipts/connections.json"
+      },
+      {
+        "id": "metric_counterexample",
+        "rule_id": "IDA-02",
+        "depends_on": [
+          "IDA-02.P1"
+        ],
+        "artifact": "receipts/connections.json"
+      },
+      {
+        "id": "section_counterexample",
+        "rule_id": "GEOM-01",
+        "depends_on": [
+          "GEOM-01.P1"
+        ],
+        "artifact": "receipts/connections.json"
+      }
+    ],
+    "tolerances": "exact Fraction arithmetic and polynomial identities; supplied real-analysis arguments separate",
+    "proof_obligations": [
+      {
+        "id": "ATLAS-PROOF-VARIANCE",
+        "status": "supplied_argument",
+        "artifact": "PROOFS.md",
+        "section": "Connection certificates",
+        "sha256": "6e58ed856cbdbc63b5229ef407ef5b8be1baf0364e77807f10f3bb1ce4ac87ed",
+        "machine_checked": false,
+        "admission": "Reviewer must accept stated real-analysis/group argument; no proof-assistant certification"
+      },
+      {
+        "id": "ATLAS-PROOF-SECTION",
+        "status": "supplied_argument",
+        "artifact": "PROOFS.md",
+        "section": "Connection certificates",
+        "sha256": "6e58ed856cbdbc63b5229ef407ef5b8be1baf0364e77807f10f3bb1ce4ac87ed",
+        "machine_checked": false,
+        "admission": "Reviewer must accept stated real-analysis/group argument; no proof-assistant certification"
+      }
+    ]
+  },
+  "results": [
+    {
+      "id": "invariance_order",
+      "value": {
+        "CR": "4/3",
+        "order_gap": "1"
+      },
+      "units": "declared per quantity",
+      "uncertainty": "exact conditional calculation",
+      "result_kind": "formal_under_premises",
+      "status": "established_in_scope",
+      "depends_on": [
+        "COMP-03.P1"
+      ],
+      "scope": "Closed scalar projective example"
+    },
+    {
+      "id": "recovery_defect",
+      "value": "1/64",
+      "units": "declared per quantity",
+      "uncertainty": "exact conditional calculation",
+      "result_kind": "formal_under_premises",
+      "status": "established_in_scope",
+      "depends_on": [
+        "REC-03.P1"
+      ],
+      "scope": "Two positive modes with unit attenuation1/2,1/4"
+    },
+    {
+      "id": "boost_counterexample",
+      "value": {
+        "rotated": "(15+16i)/37",
+        "pure": "5/7"
+      },
+      "units": "declared per quantity",
+      "uncertainty": "exact conditional calculation",
+      "result_kind": "formal_under_premises",
+      "status": "established_in_scope",
+      "depends_on": [
+        "GEOM-01.P1"
+      ],
+      "scope": "Refutes listed lemma inference only"
+    }
+  ],
+  "contrast": {
+    "removed": "REC-03.P1",
+    "expected": "Variance interpretation unresolved; a positive defect alone does not identify repair mechanism",
+    "counterexample": "linear leaky score1 can correspond to quadratic score1 or2"
+  },
+  "next_question": {
+    "authorship": "authored",
+    "question": "Which held-out operation, gap or record distinguishes the surviving models without changing the calibration or experimental unit?"
+  },
+  "provenance": {
+    "sources": [
+      {
+        "id": "current-07",
+        "path": "sources/current-07.txt",
+        "sha256": "9570999564f6b8f0aa4f4088ed1c371b61ff761e50afe95b52c19f7b5fe2278a",
+        "line_ranges": [
+          [
+            312,
+            402
+          ]
+        ],
+        "version": "local supplied snapshot; public/live parity unverified"
+      },
+      {
+        "id": "current-03",
+        "path": "sources/current-03.txt",
+        "sha256": "9cfd90c4786ed42be10b5ca0a702f17937b55e9fa2b93272da022c5a4ab8ca26",
+        "line_ranges": [
+          [
+            663,
+            710
+          ],
+          [
+            888,
+            952
+          ]
+        ],
+        "version": "local supplied snapshot; public/live parity unverified"
+      },
+      {
+        "id": "current-10",
+        "path": "sources/current-10.txt",
+        "sha256": "5245c3e1f1e7d4eaeebbac454f85483005454e14e484d3b0ade2c266d3ef7af3",
+        "line_ranges": [
+          [
+            633,
+            658
+          ]
+        ],
+        "version": "local supplied snapshot; public/live parity unverified"
+      },
+      {
+        "id": "legacy-6987278",
+        "path": "sources/legacy-6987278.txt",
+        "sha256": "f985548fe1a5bf02dcb6dc634662449fd814087094eabbd69688fc70c144eb95",
+        "line_ranges": [
+          [
+            282,
+            378
+          ]
+        ],
+        "version": "local supplied snapshot; public/live parity unverified"
+      },
+      {
+        "id": "legacy-6800400",
+        "path": "sources/legacy-6800400.txt",
+        "sha256": "3ded6275e1d202acc6e7799df0c0b1302557e1be2132529eee97d0e04858d2e3",
+        "line_ranges": [
+          [
+            314,
+            342
+          ]
+        ],
+        "version": "local supplied snapshot; public/live parity unverified"
+      }
+    ],
+    "source_access_date": "2026-09-12",
+    "data": "illustrative exact model inputs, no empirical observations",
+    "base_register_sha256": "190063d0b30cacad1bc3e18ee2b924f7948d3982c24bf44166a41bc309f44220",
+    "code_sha256": "f5de2719024e367a6e9bd756ac3b4cfb06050a90f9ad8a6dc1f66e7ee213a07f",
+    "support_files": [
+      {
+        "path": "certificate_support.py",
+        "sha256": "fac12d5cdc7f616b7d33e27c5cad4163bec0c083da3d854290404f62b9850d53"
+      },
+      {
+        "path": "vendor/algebra.py",
+        "sha256": "51f9ba41ae512187b8fba86f45e80c7399046f7e234dbf8d8d90b1427ba54f83"
+      },
+      {
+        "path": "PROOFS.md",
+        "sha256": "6e58ed856cbdbc63b5229ef407ef5b8be1baf0364e77807f10f3bb1ce4ac87ed"
+      }
+    ],
+    "revision_distinction": "Public distribution 0.1.1 of the reviewed local atlas 0.1.0; source-text hashes unchanged. Site deployment and empirical validation are not implied.",
+    "licensing": "supplied manuscripts and authorized internal kernel snapshot; no broader redistribution license inferred",
+    "public_base_register_sha256": "8bced9c77b305cdcdae42c2746c57914949c29623fa029de590e19cb7a803602"
+  }
+}

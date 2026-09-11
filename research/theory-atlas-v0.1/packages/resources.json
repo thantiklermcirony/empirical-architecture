@@ -1,0 +1,333 @@
+{
+  "identity": {
+    "id": "atlas-resources-001",
+    "package_version": "0.1.0",
+    "created_date": "2026-09-12",
+    "parent": "proposed extension of integrated-inquiry-programme-rules; common inquiry contract0.1"
+  },
+  "question": {
+    "original": "Can delayed induction clear a sustained load before reserve runs out?",
+    "target": "Necessary duration exclusion from a stoichiometric balance and a capacity envelope",
+    "scope": "declared four-species ledger plus optional slow induction",
+    "intended_user": "mechanism and engine leads",
+    "useful_output": "T>2 excluded in toy units; deficit1/4 at T3; boundary and removed-closure countermodels"
+  },
+  "system": {
+    "entities": [
+      "GSH G",
+      "GSSG O",
+      "NADPH N",
+      "NADP P",
+      "induced capacity a"
+    ],
+    "boundary": "one fixed-volume modeled compartment",
+    "environment": "peroxide demand and regeneration supply; optional external GSH synthesis/import",
+    "coupling": "Jp,Jgr,Jreg,Jg; Jg measured as GSH amount per time"
+  },
+  "observer": {
+    "measurement": "species pools and fluxes are declared mathematical state variables",
+    "actions": [
+      "hold demand",
+      "induce capacity",
+      "add GSH source in contrast"
+    ],
+    "resolution": "exact amounts in example",
+    "noise": "none",
+    "memory": "retains all pools and a",
+    "clock": "time from demand onset",
+    "preparation": "B0=1,a0=0",
+    "experimental_unit": "one mathematical compartment",
+    "physical_effects_of_measurement": "not modeled"
+  },
+  "quantities": [
+    {
+      "id": "G,O,N,P",
+      "meaning": "four chemical pools",
+      "domain": "[0,infinity)",
+      "units": "amount in fixed compartment",
+      "representation": "real; exact rational instance"
+    },
+    {
+      "id": "B",
+      "meaning": "G/2+N reducing-equivalent clearance budget",
+      "domain": "[0,infinity)",
+      "units": "peroxide-clearance amount",
+      "representation": "real; exact rational instance"
+    },
+    {
+      "id": "Jp,Jgr,Jreg",
+      "meaning": "reaction extents per time",
+      "domain": "[0,infinity)",
+      "units": "clearance amount/time",
+      "representation": "real; exact rational instance"
+    },
+    {
+      "id": "Jg",
+      "meaning": "GSH synthesis/import",
+      "domain": "[0,infinity)",
+      "units": "GSH amount/time",
+      "representation": "real; exact rational instance"
+    },
+    {
+      "id": "a",
+      "meaning": "induced fractional capacity",
+      "domain": "[0,1]",
+      "units": "dimensionless",
+      "representation": "real; exact rational instance"
+    },
+    {
+      "id": "T,tau",
+      "meaning": "duration, induction time",
+      "domain": "(0,infinity)",
+      "units": "time",
+      "representation": "real; exact rational instance"
+    }
+  ],
+  "operations": [
+    {
+      "id": "stoichiometric_flow",
+      "inputs": [
+        "Jp",
+        "Jgr",
+        "Jreg",
+        "Jg"
+      ],
+      "outputs": [
+        "Gdot",
+        "Odot",
+        "Ndot",
+        "Pdot"
+      ],
+      "equations": [
+        "Gdot=-2Jp+2Jgr+Jg",
+        "Odot=Jp-Jgr",
+        "Ndot=Jreg-Jgr",
+        "Pdot=Jgr-Jreg"
+      ],
+      "duration": "[0,T] while pools remain nonnegative",
+      "admissibility": "absolutely continuous species; measurable integrable fluxes"
+    },
+    {
+      "id": "induction",
+      "equation": "tau*adot=s-a; 0<=s<=1; a(0)=0",
+      "composition": "time evolution, not UHL parameter addition"
+    }
+  ],
+  "constraints": [
+    "closed GSH boundary Jg=0 in main case",
+    "Jreg<=1/4+a/2",
+    "tau=2",
+    "Jp=1 for full clearance",
+    "B0=1"
+  ],
+  "mechanism": {
+    "family": "stoichiometric budget and linear induction bound",
+    "calibration": "illustrative normalized constants only",
+    "alternative": "external GSH source or changed demand/capacity can defeat exclusion",
+    "boundary_semantics": "stops applicability at pool violation; no automatic depleted equilibrium"
+  },
+  "premises": [
+    {
+      "id": "RES-03.P1",
+      "statement": "Declared stoichiometry and absolutely continuous nonnegative pools hold on the entire test interval",
+      "status": "assumed",
+      "scope": "formal model"
+    },
+    {
+      "id": "RES-03.P2",
+      "statement": "Jg=0; no unrecorded import/synthesis or extra reductant channel",
+      "status": "assumed",
+      "scope": "formal model"
+    },
+    {
+      "id": "RES-04.P1",
+      "statement": "tau=2,a0=0,0<=s<=1 and Jreg<=1/4+a/2 throughout",
+      "status": "assumed",
+      "scope": "formal model"
+    },
+    {
+      "id": "RES-04.P2",
+      "statement": "Full clearance requires Jp=1 throughout and initial B=1",
+      "status": "assumed",
+      "scope": "formal model"
+    },
+    {
+      "id": "ADAPT-03.P1",
+      "statement": "Separate illustrative clipped two-state model uses A=2,K=1,b=1/2,kappa=1/2,z0=0,tau_z=1",
+      "status": "assumed",
+      "scope": "formal model"
+    }
+  ],
+  "execution": {
+    "method_id": "authored-resources-certificate",
+    "version": "0.1.0",
+    "command": "python certify_resources.py",
+    "dependencies": "Python>=3.10 standard library; local pinned rational algebra used only where stated",
+    "input_hashes": {
+      "current-05": "852560940e384108f7af61024b07cdef647a05cb2f41d8c8de16cf7d9421297d",
+      "legacy-6754498": "43bcb86cacd71a49eddb58ac9a7ce666102fe2f0ed82905939a4f8cab7da1f1c",
+      "legacy-6987278": "f985548fe1a5bf02dcb6dc634662449fd814087094eabbd69688fc70c144eb95"
+    },
+    "steps": [
+      {
+        "id": "balance",
+        "rule_id": "RES-03",
+        "depends_on": [
+          "RES-03.P1"
+        ],
+        "artifact": "receipts/resources.json"
+      },
+      {
+        "id": "capacity_comparison",
+        "rule_id": "RES-04",
+        "depends_on": [
+          "RES-04.P1"
+        ],
+        "proof": "PROOFS.md#resources"
+      },
+      {
+        "id": "duration_exclusion",
+        "rule_id": "RES-04",
+        "depends_on": [
+          "balance",
+          "capacity_comparison",
+          "RES-03.P2",
+          "RES-04.P2"
+        ],
+        "artifact": "receipts/resources.json"
+      }
+    ],
+    "tolerances": "exact Fraction arithmetic and polynomial identities; supplied real-analysis arguments separate",
+    "proof_obligations": [
+      {
+        "id": "ATLAS-PROOF-RESOURCE-FTC",
+        "status": "supplied_argument",
+        "artifact": "PROOFS.md",
+        "section": "Resources",
+        "sha256": "6e58ed856cbdbc63b5229ef407ef5b8be1baf0364e77807f10f3bb1ce4ac87ed",
+        "machine_checked": false,
+        "admission": "Reviewer must accept stated real-analysis/group argument; no proof-assistant certification"
+      },
+      {
+        "id": "ATLAS-PROOF-INDUCTION",
+        "status": "supplied_argument",
+        "artifact": "PROOFS.md",
+        "section": "Resources",
+        "sha256": "6e58ed856cbdbc63b5229ef407ef5b8be1baf0364e77807f10f3bb1ce4ac87ed",
+        "machine_checked": false,
+        "admission": "Reviewer must accept stated real-analysis/group argument; no proof-assistant certification"
+      }
+    ]
+  },
+  "results": [
+    {
+      "id": "budget",
+      "value": {
+        "T": "3",
+        "budget_upper": "11/4",
+        "shortfall": "1/4",
+        "duration_necessary": "T<=2"
+      },
+      "units": "declared per quantity",
+      "uncertainty": "exact conditional calculation",
+      "result_kind": "formal_under_premises",
+      "status": "established_in_scope",
+      "depends_on": [
+        "RES-03.P1",
+        "RES-03.P2",
+        "RES-04.P1",
+        "RES-04.P2"
+      ],
+      "scope": "Necessary exclusion only, no viable trajectory asserted"
+    },
+    {
+      "id": "initial_slope",
+      "value": {
+        "zdot": "-1/2",
+        "xdot": "-1/2"
+      },
+      "units": "declared per quantity",
+      "uncertainty": "exact conditional calculation",
+      "result_kind": "formal_under_premises",
+      "status": "established_in_scope",
+      "depends_on": [
+        "ADAPT-03.P1"
+      ],
+      "scope": "Exact at specified initial point; tanh derivative imported; shared interval receipt remains unresolved"
+    }
+  ],
+  "contrast": {
+    "removed": "RES-03.P2",
+    "expected": "Budget exclusion unresolved while stoichiometric identity survives",
+    "countermodel": "Jg=2,Jp=1,Jgr=Jreg=1/4 gives G=1+t/2,O=1/2+3t/4,N=P=1/2; positive on[0,3]"
+  },
+  "next_question": {
+    "authorship": "authored",
+    "question": "Which absolute pool, replenishment flux and induction-speed bounds can be measured on the same compartment and timescale?"
+  },
+  "provenance": {
+    "sources": [
+      {
+        "id": "current-05",
+        "path": "sources/current-05.txt",
+        "sha256": "852560940e384108f7af61024b07cdef647a05cb2f41d8c8de16cf7d9421297d",
+        "line_ranges": [
+          [
+            270,
+            355
+          ],
+          [
+            699,
+            749
+          ]
+        ],
+        "version": "local supplied snapshot; public/live parity unverified"
+      },
+      {
+        "id": "legacy-6754498",
+        "path": "sources/legacy-6754498.txt",
+        "sha256": "43bcb86cacd71a49eddb58ac9a7ce666102fe2f0ed82905939a4f8cab7da1f1c",
+        "line_ranges": [
+          [
+            170,
+            223
+          ]
+        ],
+        "version": "local supplied snapshot; public/live parity unverified"
+      },
+      {
+        "id": "legacy-6987278",
+        "path": "sources/legacy-6987278.txt",
+        "sha256": "f985548fe1a5bf02dcb6dc634662449fd814087094eabbd69688fc70c144eb95",
+        "line_ranges": [
+          [
+            282,
+            378
+          ]
+        ],
+        "version": "local supplied snapshot; public/live parity unverified"
+      }
+    ],
+    "source_access_date": "2026-09-12",
+    "data": "illustrative exact model inputs, no empirical observations",
+    "base_register_sha256": "190063d0b30cacad1bc3e18ee2b924f7948d3982c24bf44166a41bc309f44220",
+    "code_sha256": "f9007fee70e59011c92c09a7d00c8d347b4e458c5b751e26eae1892b58c50cce",
+    "support_files": [
+      {
+        "path": "certificate_support.py",
+        "sha256": "fac12d5cdc7f616b7d33e27c5cad4163bec0c083da3d854290404f62b9850d53"
+      },
+      {
+        "path": "vendor/algebra.py",
+        "sha256": "51f9ba41ae512187b8fba86f45e80c7399046f7e234dbf8d8d90b1427ba54f83"
+      },
+      {
+        "path": "PROOFS.md",
+        "sha256": "6e58ed856cbdbc63b5229ef407ef5b8be1baf0364e77807f10f3bb1ce4ac87ed"
+      }
+    ],
+    "revision_distinction": "Public distribution 0.1.1 of the reviewed local atlas 0.1.0; source-text hashes unchanged. Site deployment and empirical validation are not implied.",
+    "licensing": "supplied manuscripts and authorized internal kernel snapshot; no broader redistribution license inferred",
+    "public_base_register_sha256": "8bced9c77b305cdcdae42c2746c57914949c29623fa029de590e19cb7a803602"
+  }
+}

@@ -1,0 +1,480 @@
+{
+  "version": "0.1.0",
+  "scope": "Trusted four-fixture admission specification; review before root import",
+  "cases": {
+    "composition": {
+      "model_sha256": "a09129b426e7e42266978d6d1ababdbd2fc3275f7477b3d3a5e5fef263cae6f6",
+      "package_object_sha256": "08e408d670fbf485a9f1a308bdcc22409d5f30e921f07af6169dd784c9d269b0",
+      "receipt_semantic_sha256": "3e1718bce9ba2d6bde49043f6c126ee5c3c6ba85f24d77a11554affaa43a279b",
+      "premise_statements": {
+        "COMP-02.P1": "x,u,v lie in the open interval (-1,1).",
+        "COMP-02.P2": "The admitted action is T_u(x)=(x+u)/(1+u*x); if inferred as a physical family, the endpoint-fixing projective hypothesis and parameter calibration must be independently admitted.",
+        "COMP-02.P3": "All compositions use the same state coordinate and declared action convention."
+      },
+      "proofs": {
+        "ATLAS-PROOF-UHL-DOMAIN": {
+          "id": "ATLAS-PROOF-UHL-DOMAIN",
+          "status": "supplied_argument",
+          "artifact": "PROOFS.md",
+          "section": "Composition",
+          "sha256": "6e58ed856cbdbc63b5229ef407ef5b8be1baf0364e77807f10f3bb1ce4ac87ed",
+          "machine_checked": false,
+          "admission": "Reviewer must accept stated real-analysis/group argument; no proof-assistant certification"
+        },
+        "ATLAS-PROOF-H-BIJECTION": {
+          "id": "ATLAS-PROOF-H-BIJECTION",
+          "status": "supplied_argument",
+          "artifact": "PROOFS.md",
+          "section": "Composition",
+          "sha256": "6e58ed856cbdbc63b5229ef407ef5b8be1baf0364e77807f10f3bb1ce4ac87ed",
+          "machine_checked": false,
+          "admission": "Reviewer must accept stated real-analysis/group argument; no proof-assistant certification"
+        }
+      },
+      "sources": {
+        "current-06": {
+          "id": "current-06",
+          "path": "sources/current-06.txt",
+          "sha256": "eaee5f28c7170353ff6530588d4ce31fcc76a617294ac9491a42a34f9494bb8d",
+          "line_ranges": [
+            [
+              57,
+              81
+            ],
+            [
+              248,
+              275
+            ]
+          ],
+          "version": "local revised September 2026 snapshot; external parity unverified"
+        },
+        "current-07": {
+          "id": "current-07",
+          "path": "sources/current-07.txt",
+          "sha256": "9570999564f6b8f0aa4f4088ed1c371b61ff761e50afe95b52c19f7b5fe2278a",
+          "line_ranges": [
+            [
+              312,
+              402
+            ],
+            [
+              903,
+              942
+            ]
+          ],
+          "version": "local revised September 2026 snapshot; external parity unverified"
+        },
+        "current-10": {
+          "id": "current-10",
+          "path": "sources/current-10.txt",
+          "sha256": "5245c3e1f1e7d4eaeebbac454f85483005454e14e484d3b0ade2c266d3ef7af3",
+          "line_ranges": [
+            [
+              418,
+              431
+            ]
+          ],
+          "version": "local revised September 2026 snapshot; external parity unverified"
+        }
+      },
+      "conclusions": {
+        "combined_operation": {
+          "required_premises": [
+            "COMP-02.P1",
+            "COMP-02.P2",
+            "COMP-02.P3"
+          ],
+          "required_proofs": [
+            "ATLAS-PROOF-UHL-DOMAIN"
+          ],
+          "value_reference": "receipts/composition.json#/final_state"
+        },
+        "bounded_countermodel": {
+          "required_premises": [],
+          "required_proofs": [
+            "ATLAS-PROOF-H-BIJECTION"
+          ],
+          "value_reference": "receipts/composition.json#/bounded_alternative",
+          "requires_model_match": false
+        }
+      }
+    },
+    "resources": {
+      "model_sha256": "2872494371b083a2d90d395f185ccc2dd5bed4ceea309c9573aa855d29a8230e",
+      "package_object_sha256": "8af1e104df6f5820da4fca9713c8a1938322f31dd4925b59abb3d79da05ee31d",
+      "receipt_semantic_sha256": "cf73a7d453c114bf9980819f51e753804a3057635baa91cee0e0fffe7220380f",
+      "premise_statements": {
+        "RES-03.P1": "Declared stoichiometry and absolutely continuous nonnegative pools hold on the entire test interval",
+        "RES-03.P2": "Jg=0; no unrecorded import/synthesis or extra reductant channel",
+        "RES-04.P1": "tau=2,a0=0,0<=s<=1 and Jreg<=1/4+a/2 throughout",
+        "RES-04.P2": "Full clearance requires Jp=1 throughout and initial B=1",
+        "ADAPT-03.P1": "Separate illustrative clipped two-state model uses A=2,K=1,b=1/2,kappa=1/2,z0=0,tau_z=1"
+      },
+      "proofs": {
+        "ATLAS-PROOF-RESOURCE-FTC": {
+          "id": "ATLAS-PROOF-RESOURCE-FTC",
+          "status": "supplied_argument",
+          "artifact": "PROOFS.md",
+          "section": "Resources",
+          "sha256": "6e58ed856cbdbc63b5229ef407ef5b8be1baf0364e77807f10f3bb1ce4ac87ed",
+          "machine_checked": false,
+          "admission": "Reviewer must accept stated real-analysis/group argument; no proof-assistant certification"
+        },
+        "ATLAS-PROOF-INDUCTION": {
+          "id": "ATLAS-PROOF-INDUCTION",
+          "status": "supplied_argument",
+          "artifact": "PROOFS.md",
+          "section": "Resources",
+          "sha256": "6e58ed856cbdbc63b5229ef407ef5b8be1baf0364e77807f10f3bb1ce4ac87ed",
+          "machine_checked": false,
+          "admission": "Reviewer must accept stated real-analysis/group argument; no proof-assistant certification"
+        }
+      },
+      "sources": {
+        "current-05": {
+          "id": "current-05",
+          "path": "sources/current-05.txt",
+          "sha256": "852560940e384108f7af61024b07cdef647a05cb2f41d8c8de16cf7d9421297d",
+          "line_ranges": [
+            [
+              270,
+              355
+            ],
+            [
+              699,
+              749
+            ]
+          ],
+          "version": "local supplied snapshot; public/live parity unverified"
+        },
+        "legacy-6754498": {
+          "id": "legacy-6754498",
+          "path": "sources/legacy-6754498.txt",
+          "sha256": "43bcb86cacd71a49eddb58ac9a7ce666102fe2f0ed82905939a4f8cab7da1f1c",
+          "line_ranges": [
+            [
+              170,
+              223
+            ]
+          ],
+          "version": "local supplied snapshot; public/live parity unverified"
+        },
+        "legacy-6987278": {
+          "id": "legacy-6987278",
+          "path": "sources/legacy-6987278.txt",
+          "sha256": "f985548fe1a5bf02dcb6dc634662449fd814087094eabbd69688fc70c144eb95",
+          "line_ranges": [
+            [
+              282,
+              378
+            ]
+          ],
+          "version": "local supplied snapshot; public/live parity unverified"
+        }
+      },
+      "conclusions": {
+        "balance": {
+          "required_premises": [
+            "RES-03.P1"
+          ],
+          "required_proofs": [],
+          "value_reference": "receipts/resources.json#/identities/reducing_equivalent_balance"
+        },
+        "duration_exclusion": {
+          "required_premises": [
+            "RES-03.P1",
+            "RES-03.P2",
+            "RES-04.P1",
+            "RES-04.P2"
+          ],
+          "required_proofs": [
+            "ATLAS-PROOF-RESOURCE-FTC",
+            "ATLAS-PROOF-INDUCTION"
+          ],
+          "value_reference": "receipts/resources.json#/duration_exclusion"
+        },
+        "initial_slope": {
+          "required_premises": [
+            "ADAPT-03.P1"
+          ],
+          "required_proofs": [],
+          "value_reference": "receipts/resources.json#/adaptation/initial_z_slope"
+        }
+      }
+    },
+    "action_evidence": {
+      "model_sha256": "4993a3ea19641f0876467ed11648b92c1ee455352203125b0da32fd4139c0c29",
+      "package_object_sha256": "71b33ec89f463e18035a7f93a390c031146ea43c7303152525e6cf158667d366",
+      "receipt_semantic_sha256": "42d60cc3fed92b87bac9c0eb028781628d96a415a83b6b4ecf838e74668abaec",
+      "premise_statements": {
+        "ACT-01.P1": "Declare finite states S_plus, finite actions A, success probabilities p_s(a), tolerance alpha and a deterministic code z.",
+        "ACT-02.P1": "There are two equiprobable states with nonempty disjoint acceptable-action sets.",
+        "ACT-03.P1": "Only fixed sample-count procedures with interval1/2 and no free initial sample are admitted",
+        "ACT-03.P2": "RES-03/04 trajectory premises and imported comparison proof bound the resource horizon by2",
+        "EVID-02.P1": "Trusted source/model hashes, original query, checker and arithmetic execution are intact",
+        "ACT-01.P2": "Define acceptable actions A_alpha(s)={a:p_s(a)>=1-alpha}.",
+        "ACT-01.P3": "For the finite minimum, states are individually feasible; otherwise use an explicit infeasible result.",
+        "ACT-01.P4": "Any estimated probabilities require a separate simultaneous uncertainty procedure before treating the acceptable-action table as certified.",
+        "ACT-02.P2": "A fixed diagnostic has laws P1 and P2 on the same measurable space.",
+        "ACT-02.P3": "The diagnostic does not alter the relevant state, action availability or conditional success probabilities.",
+        "ACT-02.P4": "Use TV(P,Q)=sup_B |P(B)-Q(B)| and distinguish selection error from outcome failure.",
+        "ACT-03.P3": "Given a single fixed hidden label, diagnostic records are iid Bernoulli(3/4) or Bernoulli(1/4)"
+      },
+      "proofs": {
+        "ATLAS-PROOF-ACTION-COVER": {
+          "id": "ATLAS-PROOF-ACTION-COVER",
+          "status": "supplied_argument",
+          "artifact": "PROOFS.md",
+          "section": "Action and evidence",
+          "sha256": "6e58ed856cbdbc63b5229ef407ef5b8be1baf0364e77807f10f3bb1ce4ac87ed",
+          "machine_checked": false,
+          "admission": "Reviewer must accept stated real-analysis/group argument; no proof-assistant certification"
+        },
+        "ATLAS-PROOF-BAYES": {
+          "id": "ATLAS-PROOF-BAYES",
+          "status": "supplied_argument",
+          "artifact": "PROOFS.md",
+          "section": "Action and evidence",
+          "sha256": "6e58ed856cbdbc63b5229ef407ef5b8be1baf0364e77807f10f3bb1ce4ac87ed",
+          "machine_checked": false,
+          "admission": "Reviewer must accept stated real-analysis/group argument; no proof-assistant certification"
+        }
+      },
+      "sources": {
+        "current-11": {
+          "id": "current-11",
+          "path": "sources/current-11.txt",
+          "sha256": "3b7878161e5cd6c1d600236fc705f650253cfb12d032a46d0432be7b29ea7e8d",
+          "line_ranges": [
+            [
+              88,
+              292
+            ],
+            [
+              311,
+              392
+            ]
+          ],
+          "version": "local supplied snapshot; public/live parity unverified"
+        },
+        "current-10": {
+          "id": "current-10",
+          "path": "sources/current-10.txt",
+          "sha256": "5245c3e1f1e7d4eaeebbac454f85483005454e14e484d3b0ade2c266d3ef7af3",
+          "line_ranges": [
+            [
+              233,
+              365
+            ]
+          ],
+          "version": "local supplied snapshot; public/live parity unverified"
+        },
+        "current-01": {
+          "id": "current-01",
+          "path": "sources/current-01.txt",
+          "sha256": "e40b7f4a4956f038f720c295f08f46fcd77e78e8a88bf6372133ee5765018acc",
+          "line_ranges": [
+            [
+              363,
+              590
+            ]
+          ],
+          "version": "local supplied snapshot; public/live parity unverified"
+        }
+      },
+      "conclusions": {
+        "action_cover": {
+          "required_premises": [
+            "ACT-01.P1",
+            "ACT-01.P2",
+            "ACT-01.P3",
+            "ACT-01.P4"
+          ],
+          "required_proofs": [
+            "ATLAS-PROOF-ACTION-COVER"
+          ],
+          "value_reference": "receipts/action_evidence.json#/cover"
+        },
+        "diagnostic_risk": {
+          "required_premises": [
+            "ACT-02.P1",
+            "ACT-02.P2",
+            "ACT-02.P3",
+            "ACT-02.P4",
+            "ACT-03.P3"
+          ],
+          "required_proofs": [
+            "ATLAS-PROOF-BAYES"
+          ],
+          "value_reference": "receipts/action_evidence.json#/diagnosis/risk_by_sample_count"
+        },
+        "deadline_exclusion": {
+          "required_premises": [
+            "ACT-02.P1",
+            "ACT-02.P2",
+            "ACT-02.P3",
+            "ACT-02.P4",
+            "ACT-03.P3",
+            "ACT-03.P1",
+            "ACT-03.P2"
+          ],
+          "required_proofs": [
+            "ATLAS-PROOF-BAYES"
+          ],
+          "value_reference": "receipts/action_evidence.json#/diagnosis/conclusion",
+          "parent": {
+            "case": "resources",
+            "conclusion": "duration_exclusion",
+            "package_object_sha256": "8af1e104df6f5820da4fca9713c8a1938322f31dd4925b59abb3d79da05ee31d"
+          }
+        },
+        "finite_witness": {
+          "required_premises": [
+            "EVID-02.P1"
+          ],
+          "required_proofs": [],
+          "value_reference": "receipts/action_evidence.json#/evidence"
+        }
+      }
+    },
+    "connections": {
+      "model_sha256": "b50ad9dd942d003d17fe976a0f7b5b901f27545ae7467d724fd0c348a14cca41",
+      "package_object_sha256": "6155b1570e1ff450f1a22ec1abd46dd5939b1e700230dd77625fdbdceed3f63d",
+      "receipt_semantic_sha256": "1a0c9c53445192802e018e01cebc14a2f90a331682cfb9661f22f50a4e35ed8f",
+      "premise_statements": {
+        "COMP-03.P1": "One-dimensional projective maps with nonzero denominators, distinct test points, same chart",
+        "REC-03.P1": "Fixed nonnegative weights sum1 and positive exponential mode attenuations",
+        "IDA-02.P1": "Residue uses a positive fixed leak measure; compared paths may differ freely",
+        "GEOM-01.P1": "Only L0=id,La(0)=a and identity gyrations are supplied; full covariance/loop axioms not invoked",
+        "QUANT-01.P1": "Known diagonal filter in fixed basis, positive success event; no statement about coherences"
+      },
+      "proofs": {
+        "ATLAS-PROOF-VARIANCE": {
+          "id": "ATLAS-PROOF-VARIANCE",
+          "status": "supplied_argument",
+          "artifact": "PROOFS.md",
+          "section": "Connection certificates",
+          "sha256": "6e58ed856cbdbc63b5229ef407ef5b8be1baf0364e77807f10f3bb1ce4ac87ed",
+          "machine_checked": false,
+          "admission": "Reviewer must accept stated real-analysis/group argument; no proof-assistant certification"
+        },
+        "ATLAS-PROOF-SECTION": {
+          "id": "ATLAS-PROOF-SECTION",
+          "status": "supplied_argument",
+          "artifact": "PROOFS.md",
+          "section": "Connection certificates",
+          "sha256": "6e58ed856cbdbc63b5229ef407ef5b8be1baf0364e77807f10f3bb1ce4ac87ed",
+          "machine_checked": false,
+          "admission": "Reviewer must accept stated real-analysis/group argument; no proof-assistant certification"
+        }
+      },
+      "sources": {
+        "current-07": {
+          "id": "current-07",
+          "path": "sources/current-07.txt",
+          "sha256": "9570999564f6b8f0aa4f4088ed1c371b61ff761e50afe95b52c19f7b5fe2278a",
+          "line_ranges": [
+            [
+              312,
+              402
+            ]
+          ],
+          "version": "local supplied snapshot; public/live parity unverified"
+        },
+        "current-03": {
+          "id": "current-03",
+          "path": "sources/current-03.txt",
+          "sha256": "9cfd90c4786ed42be10b5ca0a702f17937b55e9fa2b93272da022c5a4ab8ca26",
+          "line_ranges": [
+            [
+              663,
+              710
+            ],
+            [
+              888,
+              952
+            ]
+          ],
+          "version": "local supplied snapshot; public/live parity unverified"
+        },
+        "current-10": {
+          "id": "current-10",
+          "path": "sources/current-10.txt",
+          "sha256": "5245c3e1f1e7d4eaeebbac454f85483005454e14e484d3b0ade2c266d3ef7af3",
+          "line_ranges": [
+            [
+              633,
+              658
+            ]
+          ],
+          "version": "local supplied snapshot; public/live parity unverified"
+        },
+        "legacy-6987278": {
+          "id": "legacy-6987278",
+          "path": "sources/legacy-6987278.txt",
+          "sha256": "f985548fe1a5bf02dcb6dc634662449fd814087094eabbd69688fc70c144eb95",
+          "line_ranges": [
+            [
+              282,
+              378
+            ]
+          ],
+          "version": "local supplied snapshot; public/live parity unverified"
+        },
+        "legacy-6800400": {
+          "id": "legacy-6800400",
+          "path": "sources/legacy-6800400.txt",
+          "sha256": "3ded6275e1d202acc6e7799df0c0b1302557e1be2132529eee97d0e04858d2e3",
+          "line_ranges": [
+            [
+              314,
+              342
+            ]
+          ],
+          "version": "local supplied snapshot; public/live parity unverified"
+        }
+      },
+      "conclusions": {
+        "projective_order": {
+          "required_premises": [
+            "COMP-03.P1"
+          ],
+          "required_proofs": [],
+          "value_reference": "receipts/connections.json#/noncommuting_projective"
+        },
+        "variance_interpretation": {
+          "required_premises": [
+            "REC-03.P1"
+          ],
+          "required_proofs": [
+            "ATLAS-PROOF-VARIANCE"
+          ],
+          "value_reference": "receipts/connections.json#/recovery"
+        },
+        "residue_counterexample": {
+          "required_premises": [
+            "IDA-02.P1"
+          ],
+          "required_proofs": [],
+          "value_reference": "receipts/connections.json#/ida_counterexample"
+        },
+        "section_counterexample": {
+          "required_premises": [
+            "GEOM-01.P1"
+          ],
+          "required_proofs": [
+            "ATLAS-PROOF-SECTION"
+          ],
+          "value_reference": "receipts/connections.json#/boost_section_counterexample"
+        },
+        "conditional_filter": {
+          "required_premises": [
+            "QUANT-01.P1"
+          ],
+          "required_proofs": [],
+          "value_reference": "receipts/connections.json#/diagonal_filter"
+        }
+      }
+    }
+  }
+}

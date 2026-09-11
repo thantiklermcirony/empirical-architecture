@@ -1,0 +1,54 @@
+{
+  "status": "passed",
+  "checks": [
+    "all16 original rule objects preserved field-for-field",
+    "32 unique rule IDs",
+    "41 local source hashes and cited line ranges",
+    "41-entry coverage counts",
+    "four shared envelopes and declared dependency IDs",
+    "source/proof/code/package bindings",
+    "independent ordered-outcome Bayes-risk enumeration for n0..8",
+    "eight actual negative admission fixtures"
+  ],
+  "independent_diagnostic_risks": [
+    {
+      "n": 0,
+      "risk": "1/2"
+    },
+    {
+      "n": 1,
+      "risk": "1/4"
+    },
+    {
+      "n": 2,
+      "risk": "1/4"
+    },
+    {
+      "n": 3,
+      "risk": "5/32"
+    },
+    {
+      "n": 4,
+      "risk": "5/32"
+    },
+    {
+      "n": 5,
+      "risk": "53/512"
+    },
+    {
+      "n": 6,
+      "risk": "53/512"
+    },
+    {
+      "n": 7,
+      "risk": "289/4096"
+    },
+    {
+      "n": 8,
+      "risk": "289/4096"
+    }
+  ],
+  "validation_code_sha256": "623ffea3c66e7eacaca7bdecaf19218f228769afc3b0fd48b12cd720213ef65c",
+  "register_sha256": "7b80a255382d0bf5a076ec4e3dce9c3cb85c4cd879850fe561945ab2b5d2a175",
+  "limits": "Does not prove all source theorems, dependency completeness, source authenticity or empirical adequacy."
+}

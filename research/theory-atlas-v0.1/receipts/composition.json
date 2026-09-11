@@ -1,0 +1,93 @@
+{
+  "certificate_version": "0.1.0",
+  "result_kind": "formal_under_premises",
+  "status": "established_in_scope",
+  "claim_scope": "authored fixed-fixture calculation; use admission_adapter for application to a submitted inquiry",
+  "checks": {
+    "composition": {
+      "exact_polynomial_identity": true,
+      "domain_obligations": [
+        "(1) + (1)*u*x != 0",
+        "((1) + (1)*u*v + (1)*u*x + (1)*v*x) / ((1) + (1)*u*x) != 0",
+        "(1) + (1)*u*v != 0",
+        "((1) + (1)*u*v + (1)*u*x + (1)*v*x) / ((1) + (1)*u*v) != 0"
+      ],
+      "global_domain_proof": "PROOFS.md#composition"
+    },
+    "identity": {
+      "exact_polynomial_identity": true,
+      "domain_obligations": [
+        "(1) != 0"
+      ],
+      "global_domain_proof": "PROOFS.md#composition"
+    },
+    "inverse": {
+      "exact_polynomial_identity": true,
+      "domain_obligations": [
+        "(1) + (1)*u*x != 0",
+        "((1) + (-1)*u**2) / ((1) + (1)*u*x) != 0"
+      ],
+      "global_domain_proof": "PROOFS.md#composition"
+    },
+    "interior_defect": {
+      "exact_polynomial_identity": true,
+      "domain_obligations": [
+        "(1) + (1)*u*x != 0",
+        "(1) + (2)*u*x + (1)*u**2*x**2 != 0"
+      ],
+      "global_domain_proof": "PROOFS.md#composition"
+    },
+    "projective_difference": {
+      "exact_polynomial_identity": true,
+      "domain_obligations": [
+        "(1)*c*p + (1)*d != 0",
+        "(1)*c*q + (1)*d != 0",
+        "(1)*c*d*p + (1)*c*d*q + (1)*c**2*p*q + (1)*d**2 != 0"
+      ],
+      "global_domain_proof": "PROOFS.md#composition"
+    }
+  },
+  "inputs": {
+    "x": "1/4",
+    "u": "1/3",
+    "v": "1/2"
+  },
+  "combined_parameter": "5/7",
+  "final_state": "9/11",
+  "bounded_alternative": {
+    "generator": "h(x)=x/(1-x^2)",
+    "h(UHL(1/2,1/2))-2*h(1/2)": "8/9",
+    "conclusion": "The h-induced bounded group is not UHL in the declared x coordinate."
+  },
+  "cross_ratio": {
+    "before": "4/3",
+    "projective_after": "4/3",
+    "square_map_after": "32/25"
+  },
+  "premise_contrasts": [
+    {
+      "removed_premise": null,
+      "composition_status": "established_in_scope",
+      "bounded_group_counterexample_status": "established_in_scope"
+    },
+    {
+      "removed_premise": "COMP-02.P2",
+      "composition_status": "unresolved",
+      "bounded_group_counterexample_status": "established_in_scope"
+    },
+    {
+      "removed_premise": "COMP-02.P3",
+      "composition_status": "unresolved",
+      "bounded_group_counterexample_status": "established_in_scope"
+    }
+  ],
+  "unproved_by_code": [
+    "Global real-domain arguments and monotone bijection proof supplied in PROOFS.md",
+    "artanh translation requires the stated real-logarithm theorem",
+    "No empirical or physical branch selection is checked"
+  ],
+  "code_sha256": "2fd3996397279d175e6c9a91d5de9a72f11d0c7de50de1abceb30c76b57fda07",
+  "algebra_sha256": "51f9ba41ae512187b8fba86f45e80c7399046f7e234dbf8d8d90b1427ba54f83",
+  "package_sha256": "3fe7a55cd45de3760d497e775fa178e84bcd536a80fa0f441673d2d4f89f077b",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]"
+}

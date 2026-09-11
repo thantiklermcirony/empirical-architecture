@@ -1,0 +1,405 @@
+{
+  "identity": {
+    "id": "atlas-action-evidence-001",
+    "package_version": "0.1.0",
+    "created_date": "2026-09-12",
+    "parent": "proposed extension of integrated-inquiry-programme-rules; common inquiry contract0.1"
+  },
+  "question": {
+    "original": "Which distinctions must an observer retain to select an acceptable action before resources expire?",
+    "target": "Finite deterministic common-action cover; fixed-sample diagnostic exclusion; scoped witnessed result",
+    "scope": "exact finite action tables and a separately declared iid toy diagnostic",
+    "intended_user": "inquiry-engine and experiment-design leads",
+    "useful_output": "Two action-code cells; pairwise test insufficient;7samples needed for error<=.1 but takes3.5 while resource bound permits at most2"
+  },
+  "system": {
+    "entities": [
+      "three states s1,s2,s3",
+      "actions a,b,c",
+      "two hidden diagnostic labels"
+    ],
+    "boundary": "finite decision models",
+    "environment": "resource trajectory from resources package; no other information channel",
+    "coupling": "diagnostic duration must fit resource interval"
+  },
+  "observer": {
+    "measurement": "cell label or iid Bernoulli diagnostic outcomes",
+    "actions": [
+      "a",
+      "b",
+      "c",
+      "fixed sample-count diagnostic"
+    ],
+    "resolution": "exact rational likelihood",
+    "noise": "Bernoulli(.75) vs Bernoulli(.25)",
+    "memory": "retains sample count and outcomes",
+    "clock": "one sample each1/2 time unit; first sample at1/2",
+    "preparation": "equal prior on two fixed hidden labels",
+    "experimental_unit": "one toy system; repeated outcomes conditionally iid, not independent biological replicates",
+    "physical_effects_of_measurement": "nondisturbing measurement assumed, baseline resource consumption continues"
+  },
+  "quantities": [
+    {
+      "id": "A(s)",
+      "meaning": "acceptable deterministic action set",
+      "domain": "finite nonempty subsets",
+      "units": "action identifiers",
+      "representation": "real; exact rational instance"
+    },
+    {
+      "id": "n",
+      "meaning": "sample count",
+      "domain": "nonnegative integers",
+      "units": "samples",
+      "representation": "real; exact rational instance"
+    },
+    {
+      "id": "delta",
+      "meaning": "unacceptable-action selection probability",
+      "domain": "[0,1]",
+      "units": "probability",
+      "representation": "real; exact rational instance"
+    },
+    {
+      "id": "dt",
+      "meaning": "sampling interval",
+      "domain": "(0,infinity)",
+      "units": "time/sample",
+      "representation": "real; exact rational instance"
+    }
+  ],
+  "operations": [
+    {
+      "id": "minimum_action_cover",
+      "inputs": [
+        "A(s)"
+      ],
+      "output": "minimum number of deterministic code cells",
+      "method": "enumerate action subsets"
+    },
+    {
+      "id": "diagnostic",
+      "inputs": [
+        "n",
+        "likelihoods",
+        "priors"
+      ],
+      "output": "1/2 sum_k min(P0(k),P1(k))",
+      "admissibility": "no early stopping, no other diagnostic channel"
+    },
+    {
+      "id": "witness",
+      "inputs": [
+        "original query",
+        "source table",
+        "trusted hashes",
+        "model",
+        "premises"
+      ],
+      "output": "admit only if bindings and recomputation match"
+    }
+  ],
+  "constraints": [
+    "A1={a,b},A2={b,c},A3={a,c}",
+    "static action code excludes recursive controller memory",
+    "diagnostic acceptable action sets for hidden labels are disjoint",
+    "resources certificate supplies necessary upper duration2",
+    "trusted expected hashes supplied independently of candidate witness",
+    "Toy action sets define success p_s(a)=1 inside each set and0 outside with alpha=0; no measured biological probabilities claimed"
+  ],
+  "mechanism": {
+    "family": "finite decision and simple-hypothesis testing",
+    "calibration": "illustrative exact likelihoods; not biological estimates",
+    "alternative": "common abstain collapses cover; faster/different diagnostic changes attainable information; physical resource bound may change"
+  },
+  "premises": [
+    {
+      "id": "ACT-01.P1",
+      "statement": "Declare finite states S_plus, finite actions A, success probabilities p_s(a), tolerance alpha and a deterministic code z.",
+      "status": "assumed",
+      "scope": "formal model",
+      "instance_specialization": "Action sets and deterministic policy library are the complete declared finite problem"
+    },
+    {
+      "id": "ACT-02.P1",
+      "statement": "There are two equiprobable states with nonempty disjoint acceptable-action sets.",
+      "status": "assumed",
+      "scope": "formal model",
+      "instance_specialization": "Equiprobable two fixed hidden states, disjoint acceptable actions, conditionally iid nondisturbing Bernoulli(.75)/(.25) records"
+    },
+    {
+      "id": "ACT-03.P1",
+      "statement": "Only fixed sample-count procedures with interval1/2 and no free initial sample are admitted",
+      "status": "assumed",
+      "scope": "formal model"
+    },
+    {
+      "id": "ACT-03.P2",
+      "statement": "RES-03/04 trajectory premises and imported comparison proof bound the resource horizon by2",
+      "status": "assumed",
+      "scope": "formal model"
+    },
+    {
+      "id": "EVID-02.P1",
+      "statement": "Trusted source/model hashes, original query, checker and arithmetic execution are intact",
+      "status": "assumed",
+      "scope": "formal model"
+    },
+    {
+      "id": "ACT-01.P2",
+      "statement": "Define acceptable actions A_alpha(s)={a:p_s(a)>=1-alpha}.",
+      "status": "assumed",
+      "scope": "toy mathematical action/diagnostic instance"
+    },
+    {
+      "id": "ACT-01.P3",
+      "statement": "For the finite minimum, states are individually feasible; otherwise use an explicit infeasible result.",
+      "status": "assumed",
+      "scope": "toy mathematical action/diagnostic instance"
+    },
+    {
+      "id": "ACT-01.P4",
+      "statement": "Any estimated probabilities require a separate simultaneous uncertainty procedure before treating the acceptable-action table as certified.",
+      "status": "assumed",
+      "scope": "toy mathematical action/diagnostic instance"
+    },
+    {
+      "id": "ACT-02.P2",
+      "statement": "A fixed diagnostic has laws P1 and P2 on the same measurable space.",
+      "status": "assumed",
+      "scope": "toy mathematical action/diagnostic instance"
+    },
+    {
+      "id": "ACT-02.P3",
+      "statement": "The diagnostic does not alter the relevant state, action availability or conditional success probabilities.",
+      "status": "assumed",
+      "scope": "toy mathematical action/diagnostic instance"
+    },
+    {
+      "id": "ACT-02.P4",
+      "statement": "Use TV(P,Q)=sup_B |P(B)-Q(B)| and distinguish selection error from outcome failure.",
+      "status": "assumed",
+      "scope": "toy mathematical action/diagnostic instance"
+    },
+    {
+      "id": "ACT-03.P3",
+      "statement": "Given a single fixed hidden label, diagnostic records are iid Bernoulli(3/4) or Bernoulli(1/4)",
+      "status": "assumed",
+      "scope": "formal model"
+    }
+  ],
+  "execution": {
+    "method_id": "authored-action_evidence-certificate",
+    "version": "0.1.0",
+    "command": "python certify_action_evidence.py",
+    "dependencies": "Python>=3.10 standard library; local pinned rational algebra used only where stated",
+    "input_hashes": {
+      "current-11": "3b7878161e5cd6c1d600236fc705f650253cfb12d032a46d0432be7b29ea7e8d",
+      "current-10": "5245c3e1f1e7d4eaeebbac454f85483005454e14e484d3b0ade2c266d3ef7af3",
+      "current-01": "e40b7f4a4956f038f720c295f08f46fcd77e78e8a88bf6372133ee5765018acc"
+    },
+    "steps": [
+      {
+        "id": "cover",
+        "rule_id": "ACT-01",
+        "depends_on": [
+          "ACT-01.P1",
+          "ACT-01.P2",
+          "ACT-01.P3",
+          "ACT-01.P4"
+        ],
+        "artifact": "receipts/action_evidence.json"
+      },
+      {
+        "id": "risk",
+        "rule_id": "ACT-02",
+        "depends_on": [
+          "ACT-02.P1",
+          "ACT-02.P2",
+          "ACT-02.P3",
+          "ACT-02.P4",
+          "ACT-03.P3"
+        ],
+        "artifact": "receipts/action_evidence.json"
+      },
+      {
+        "id": "deadline",
+        "rule_id": "ACT-03",
+        "depends_on": [
+          "risk",
+          "ACT-03.P1",
+          "ACT-03.P2"
+        ],
+        "parent_package": "atlas-resources-001"
+      },
+      {
+        "id": "witness",
+        "rule_id": "EVID-02",
+        "depends_on": [
+          "cover",
+          "EVID-02.P1"
+        ],
+        "artifact": "receipts/action_evidence.json"
+      }
+    ],
+    "tolerances": "exact Fraction arithmetic and polynomial identities; supplied real-analysis arguments separate",
+    "proof_obligations": [
+      {
+        "id": "ATLAS-PROOF-ACTION-COVER",
+        "status": "supplied_argument",
+        "artifact": "PROOFS.md",
+        "section": "Action and evidence",
+        "sha256": "6e58ed856cbdbc63b5229ef407ef5b8be1baf0364e77807f10f3bb1ce4ac87ed",
+        "machine_checked": false,
+        "admission": "Reviewer must accept stated real-analysis/group argument; no proof-assistant certification"
+      },
+      {
+        "id": "ATLAS-PROOF-BAYES",
+        "status": "supplied_argument",
+        "artifact": "PROOFS.md",
+        "section": "Action and evidence",
+        "sha256": "6e58ed856cbdbc63b5229ef407ef5b8be1baf0364e77807f10f3bb1ce4ac87ed",
+        "machine_checked": false,
+        "admission": "Reviewer must accept stated real-analysis/group argument; no proof-assistant certification"
+      }
+    ],
+    "parent_packages": [
+      {
+        "id": "atlas-resources-001",
+        "path": "packages/resources.json",
+        "required_conclusion": "duration_exclusion",
+        "sha256": "9a8edede193d92ef660177ba569b187ce4b6abb198cfb2a08700f981aecfb15e",
+        "receipt": "receipts/resources.json"
+      }
+    ]
+  },
+  "results": [
+    {
+      "id": "action_code",
+      "value": 2,
+      "units": "declared per quantity",
+      "uncertainty": "exact conditional calculation",
+      "result_kind": "formal_under_premises",
+      "status": "established_in_scope",
+      "depends_on": [
+        "ACT-01.P1",
+        "ACT-01.P2",
+        "ACT-01.P3",
+        "ACT-01.P4"
+      ],
+      "scope": "Three-state static deterministic example"
+    },
+    {
+      "id": "diagnostic_exclusion",
+      "value": {
+        "n_min": 7,
+        "time": "7/2",
+        "available_upper": "2",
+        "risk_at_4": "5/32"
+      },
+      "units": "declared per quantity",
+      "uncertainty": "exact conditional calculation",
+      "result_kind": "formal_under_premises",
+      "status": "established_in_scope",
+      "depends_on": [
+        "ACT-02.P1",
+        "ACT-02.P2",
+        "ACT-02.P3",
+        "ACT-02.P4",
+        "ACT-03.P1",
+        "ACT-03.P2",
+        "ACT-03.P3"
+      ],
+      "scope": "Fixed sample-count family only; error means selecting an unacceptable action, not biological outcome failure"
+    },
+    {
+      "id": "witness",
+      "value": {
+        "positive_admitted": true,
+        "mutations_rejected": 8
+      },
+      "units": "declared per quantity",
+      "uncertainty": "exact conditional calculation",
+      "result_kind": "formal_under_premises",
+      "status": "established_in_scope",
+      "depends_on": [
+        "EVID-02.P1"
+      ],
+      "scope": "Finite authored witness example; no universal safety or source-truth guarantee"
+    }
+  ],
+  "contrast": {
+    "removed": "ACT-03.P2",
+    "expected": "Diagnostic-time exclusion unresolved; finite action cover and likelihood arithmetic survive",
+    "countermodel": "Adding universally acceptable abstain gives minimum1; pairwise intersections never implied triple intersection"
+  },
+  "next_question": {
+    "authorship": "authored",
+    "question": "Can the same inferential unit supply a calibrated nondisturbing diagnostic before its independently measured rescue deadline?"
+  },
+  "provenance": {
+    "sources": [
+      {
+        "id": "current-11",
+        "path": "sources/current-11.txt",
+        "sha256": "3b7878161e5cd6c1d600236fc705f650253cfb12d032a46d0432be7b29ea7e8d",
+        "line_ranges": [
+          [
+            88,
+            292
+          ],
+          [
+            311,
+            392
+          ]
+        ],
+        "version": "local supplied snapshot; public/live parity unverified"
+      },
+      {
+        "id": "current-10",
+        "path": "sources/current-10.txt",
+        "sha256": "5245c3e1f1e7d4eaeebbac454f85483005454e14e484d3b0ade2c266d3ef7af3",
+        "line_ranges": [
+          [
+            233,
+            365
+          ]
+        ],
+        "version": "local supplied snapshot; public/live parity unverified"
+      },
+      {
+        "id": "current-01",
+        "path": "sources/current-01.txt",
+        "sha256": "e40b7f4a4956f038f720c295f08f46fcd77e78e8a88bf6372133ee5765018acc",
+        "line_ranges": [
+          [
+            363,
+            590
+          ]
+        ],
+        "version": "local supplied snapshot; public/live parity unverified"
+      }
+    ],
+    "source_access_date": "2026-09-12",
+    "data": "illustrative exact model inputs, no empirical observations",
+    "base_register_sha256": "190063d0b30cacad1bc3e18ee2b924f7948d3982c24bf44166a41bc309f44220",
+    "code_sha256": "39c99e21084ea3906242a9f7454fb106bb386db66e9001133d95516eac6ef254",
+    "support_files": [
+      {
+        "path": "certificate_support.py",
+        "sha256": "fac12d5cdc7f616b7d33e27c5cad4163bec0c083da3d854290404f62b9850d53"
+      },
+      {
+        "path": "vendor/algebra.py",
+        "sha256": "51f9ba41ae512187b8fba86f45e80c7399046f7e234dbf8d8d90b1427ba54f83"
+      },
+      {
+        "path": "PROOFS.md",
+        "sha256": "6e58ed856cbdbc63b5229ef407ef5b8be1baf0364e77807f10f3bb1ce4ac87ed"
+      }
+    ],
+    "revision_distinction": "Public distribution 0.1.1 of the reviewed local atlas 0.1.0; source-text hashes unchanged. Site deployment and empirical validation are not implied.",
+    "licensing": "supplied manuscripts and authorized internal kernel snapshot; no broader redistribution license inferred",
+    "public_base_register_sha256": "8bced9c77b305cdcdae42c2746c57914949c29623fa029de590e19cb7a803602"
+  }
+}

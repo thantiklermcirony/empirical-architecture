@@ -1,0 +1,3617 @@
+{
+  "schema_version": "1.1.0-proposed",
+  "register_id": "integrated-inquiry-programme-rules",
+  "title": "Paper-to-rule register for the integrated inquiry architecture",
+  "created_date": "2026-09-12",
+  "scope": "Proposed extension: existing16 rules preserved; explicit typing, quantification, source bindings and sixteen additional scoped rules. Four authored certificates, not a universal engine or empirical validation.",
+  "source_root": "sources",
+  "citation_convention": "One-based raw text-file line numbers, including extracted page markers; source SHA-256 binds the cited snapshot.",
+  "rule_kind_definitions": {
+    "formal_conditional": "A mathematical implication under listed premises; classification is not a certificate that an instance satisfies them.",
+    "model_assumption": "An explicitly declared representation or mechanism; not inferred as a fact merely by registering it.",
+    "empirical_hypothesis": "An outcome claim needing prospective or held-out evidence; may emit only scoped test status.",
+    "analogy": "A question-generating correspondence; no automatic entailment or empirical support transfer."
+  },
+  "execution_policy": {
+    "default_instance_status": "unresolved",
+    "allowed_instance_statuses": [
+      "unresolved",
+      "out_of_scope",
+      "conditional_entailment",
+      "counterexample",
+      "model_relative_declaration",
+      "supported_within_scope",
+      "not_supported",
+      "inconclusive",
+      "analogy_only"
+    ],
+    "premise_text_is_not_evidence": true,
+    "registration_is_not_solver_implementation": true,
+    "no_empirical_validation_inherited_from_source_title": true,
+    "on_missing_or_unverified_premise": "unresolved",
+    "on_false_required_premise": "out_of_scope for this theorem application; do not label the theorem refuted",
+    "on_valid_counterexample": "counterexample only to the precisely instantiated claim under verified premises",
+    "on_empty_model_family": "report inconsistent premises/model family; prohibit substantive vacuous entailment",
+    "on_source_hash_change": "mark citations stale and re-read before re-admission",
+    "numeric_contract": "Exact identities prefer rational/symbolic arithmetic. Approximate solvers must expose tolerance, error bounds, domain coverage and unknown regions.",
+    "dependency_contract": "Retain premise, source, model, data and solver-version dependencies in every emitted result.",
+    "domain_transfer_contract": "Biological, physical, AI and arithmetic instances require their own mechanism and observation contracts."
+  },
+  "sources": [
+    {
+      "id": "epistemic",
+      "filename": "current-01.txt",
+      "path": "sources/current-01.txt",
+      "title": "Epistemic Type Safety for Generative AI",
+      "sha256": "e40b7f4a4956f038f720c295f08f46fcd77e78e8a88bf6372133ee5765018acc",
+      "line_locator_verified": true
+    },
+    {
+      "id": "temporal_architecture",
+      "filename": "current-05.txt",
+      "path": "sources/current-05.txt",
+      "title": "The Temporal Architecture of Living Nature",
+      "sha256": "852560940e384108f7af61024b07cdef647a05cb2f41d8c8de16cf7d9421297d",
+      "line_locator_verified": true
+    },
+    {
+      "id": "pharmacology",
+      "filename": "current-06.txt",
+      "path": "sources/current-06.txt",
+      "title": "Aczel-Family Composition in Bounded Pharmacology",
+      "sha256": "eaee5f28c7170353ff6530588d4ce31fcc76a617294ac9491a42a34f9494bb8d",
+      "line_locator_verified": true
+    },
+    {
+      "id": "observer",
+      "filename": "current-07.txt",
+      "path": "sources/current-07.txt",
+      "title": "The Observer and the World",
+      "sha256": "9570999564f6b8f0aa4f4088ed1c371b61ff761e50afe95b52c19f7b5fe2278a",
+      "line_locator_verified": true
+    },
+    {
+      "id": "predictive_closure",
+      "filename": "current-10.txt",
+      "path": "sources/current-10.txt",
+      "title": "Predictive Closure Version 4",
+      "sha256": "5245c3e1f1e7d4eaeebbac454f85483005454e14e484d3b0ade2c266d3ef7af3",
+      "line_locator_verified": true
+    },
+    {
+      "id": "action_sufficiency",
+      "filename": "current-11.txt",
+      "path": "sources/current-11.txt",
+      "title": "From Predictive State to Viable Action",
+      "sha256": "3b7878161e5cd6c1d600236fc705f650253cfb12d032a46d0432be7b29ea7e8d",
+      "line_locator_verified": true
+    },
+    {
+      "id": "redox_model",
+      "filename": "legacy-6754498.txt",
+      "path": "sources/legacy-6754498.txt",
+      "title": "Two failure modes of glutathione homeostasis",
+      "sha256": "43bcb86cacd71a49eddb58ac9a7ce666102fe2f0ed82905939a4f8cab7da1f1c",
+      "line_locator_verified": true
+    },
+    {
+      "id": "ida",
+      "filename": "legacy-6987278.txt",
+      "path": "sources/legacy-6987278.txt",
+      "title": "IDA and the Boundedness Engine",
+      "sha256": "f985548fe1a5bf02dcb6dc634662449fd814087094eabbd69688fc70c144eb95",
+      "line_locator_verified": true
+    },
+    {
+      "id": "current-02",
+      "filename": "current-02.txt",
+      "path": "sources/current-02.txt",
+      "title": "A Law of Biological State Sufficiency: History-conditioned prediction, viable continuation, and a test for when the past may be forgotten",
+      "sha256": "6a3b5096af8e4cd1fdea6cc84172b3afd4f9da78e37df043f54a057f6155bf82",
+      "line_locator_verified": true
+    },
+    {
+      "id": "current-03",
+      "filename": "current-03.txt",
+      "path": "sources/current-03.txt",
+      "title": "The Acute Dose-Response Curve as a Transition Potential: Predictive-State Closure, Quadratic Degeneracy, and Temporal Identifiability",
+      "sha256": "9cfd90c4786ed42be10b5ca0a702f17937b55e9fa2b93272da022c5a4ab8ca26",
+      "line_locator_verified": true
+    },
+    {
+      "id": "current-04",
+      "filename": "current-04.txt",
+      "path": "sources/current-04.txt",
+      "title": "Recursive Predictive Closure in the Prime Sieve: Resolution covariance, finite probability consistency, and gap-word prediction",
+      "sha256": "b90269032c48eb54ac54ab07cbf34d735ad46539db7e5d0fbb220c4b98498546",
+      "line_locator_verified": true
+    },
+    {
+      "id": "current-08",
+      "filename": "current-08.txt",
+      "path": "sources/current-08.txt",
+      "title": "When Equal BED Is Not Equal Biology: Reversal, Graph Closure, and State Recovery",
+      "sha256": "fd26571fcb2f9fd15a5c5c5ed9ed2e56414651825bc88911eae719cad1985f65",
+      "line_locator_verified": true
+    },
+    {
+      "id": "current-09",
+      "filename": "current-09.txt",
+      "path": "sources/current-09.txt",
+      "title": "Finite rescue windows and supply-limited redox commitment in NRF2-active cancer: fold geometry and a discriminating experimental test",
+      "sha256": "d0d0d5e01a7a88a79c38aab73ddc5e09bebd6c18565656442002b9fd00ae9fd0",
+      "line_locator_verified": true
+    },
+    {
+      "id": "legacy-7347861",
+      "filename": "legacy-7347861.txt",
+      "path": "sources/legacy-7347861.txt",
+      "title": "The Observer and the World Predictive Closure, the Projective Shadow, and a First-principles Grammar of Empirical Science",
+      "sha256": "1d3b257a3702dbe582430943841ced5c207e24f6db8f73e253029c27207896af",
+      "line_locator_verified": true
+    },
+    {
+      "id": "legacy-7304339",
+      "filename": "legacy-7304339.txt",
+      "path": "sources/legacy-7304339.txt",
+      "title": "Predictive Closure: A Measurement-Admission Theorem for Evolving Systems",
+      "sha256": "61670c715a763ebb4e4514e461fbddad0ca343d8b93ee68d69d816772eed45c2",
+      "line_locator_verified": true
+    },
+    {
+      "id": "legacy-7302362",
+      "filename": "legacy-7302362.txt",
+      "path": "sources/legacy-7302362.txt",
+      "title": "When Equal BED Is Not Equal Biology: Reversal, Graph Closure, and State Recovery",
+      "sha256": "f1eef338459612b56d52120d69c1a24c140de1cfa98d61ec10437a391b90de8b",
+      "line_locator_verified": true
+    },
+    {
+      "id": "legacy-7181465",
+      "filename": "legacy-7181465.txt",
+      "path": "sources/legacy-7181465.txt",
+      "title": "Finite rescue windows and supply-limited redox commitment in NRF2-active cancer: fold geometry and a decisive experimental test",
+      "sha256": "eb87a0ce98925281f1ebbf4064735d2315bd09429b1e316099a3ec9cf452c899",
+      "line_locator_verified": true
+    },
+    {
+      "id": "legacy-6964098",
+      "filename": "legacy-6964098.txt",
+      "path": "sources/legacy-6964098.txt",
+      "title": "Intelligence - Two Operators in the g Debate: Correlation Identifies Description, Intervention Tests Cause",
+      "sha256": "631dc61ba40901198b62273ed90d0b909ecbedc970c380782c14096f7cde163f",
+      "line_locator_verified": true
+    },
+    {
+      "id": "legacy-6963978",
+      "filename": "legacy-6963978.txt",
+      "path": "sources/legacy-6963978.txt",
+      "title": "Lawful Coordinates in Bounded Science: Measurement, Composition, and the Euclidean Error",
+      "sha256": "9362ff3bbd07570328f73a46fce235d03af9e335abec1d6517f28328c24ef444",
+      "line_locator_verified": true
+    },
+    {
+      "id": "legacy-6963958",
+      "filename": "legacy-6963958.txt",
+      "path": "sources/legacy-6963958.txt",
+      "title": "Dominance Hides in the Bend: Boundary Identifiability and Sampling Design in Diploid Selection",
+      "sha256": "ef2acf96e2eca0ac1640af1146f34edcbd8c4ba4a9bc1720754e0cba02a06a90",
+      "line_locator_verified": true
+    },
+    {
+      "id": "legacy-6963360",
+      "filename": "legacy-6963360.txt",
+      "path": "sources/legacy-6963360.txt",
+      "title": "Projection Geometry of the Niche-Neutral Debate: Hidden Probability Currents in Community Dynamics",
+      "sha256": "8d0f02a85a15a272ef8f9d7063a66bd847666d2884c645a3f6d03e6937873a87",
+      "line_locator_verified": true
+    },
+    {
+      "id": "legacy-6947578",
+      "filename": "legacy-6947578.txt",
+      "path": "sources/legacy-6947578.txt",
+      "title": "Prime-Residue Projection Tomography of Consecutive-Prime Biases: Primorial Recovery and Gap-Word Order Asymmetry",
+      "sha256": "bf62fa239594c9249f1667c45795d76c46b94844e101728cf9f1080736dbe534",
+      "line_locator_verified": true
+    },
+    {
+      "id": "legacy-6914800",
+      "filename": "legacy-6914800.txt",
+      "path": "sources/legacy-6914800.txt",
+      "title": "A Classification of Bounded Composition Laws with Isometric Reassociation Defects: flat rapidity addition, Einstein gyroaddition, and the holonomy that chooses between them",
+      "sha256": "21c6177709d73897520eb3642c7f06d93352bf580cb5249e3b400b7da1cfb775",
+      "line_locator_verified": true
+    },
+    {
+      "id": "legacy-6907938",
+      "filename": "legacy-6907938.txt",
+      "path": "sources/legacy-6907938.txt",
+      "title": "Does Sustained Compulsory Antipsychotic Treatment Meet the Evidentiary Standard That Removal of Consent Requires? A Structured Critical Review",
+      "sha256": "06b7c851b3edb5898ee3c978b7b991f71f9bb47b871e83317052138c23845a0e",
+      "line_locator_verified": true
+    },
+    {
+      "id": "legacy-6865159",
+      "filename": "legacy-6865159.txt",
+      "path": "sources/legacy-6865159.txt",
+      "title": "The Invariance Signature of Public Quantum Measurement Archives: Factorizing Exchangeability Failure, Calibration Sensitivity, Overdispersion, and Job-Index Channel Structure in Leggett-Garg/Time-Order Data",
+      "sha256": "f0458fcb66a9f72a09263fde26ca269afca2a2995d47c2e1ce581ff1fd2f2945",
+      "line_locator_verified": true
+    },
+    {
+      "id": "legacy-6858922",
+      "filename": "legacy-6858922.txt",
+      "path": "sources/legacy-6858922.txt",
+      "title": "Precision-Gated Attractor Reversal: A Triple-Threshold Hypothesis for Exceptional Recovery",
+      "sha256": "26ae54756b614f2b36f28d5dd0acb778b281534dbb3de8ea58431387500afd87",
+      "line_locator_verified": true
+    },
+    {
+      "id": "legacy-6858880",
+      "filename": "legacy-6858880.txt",
+      "path": "sources/legacy-6858880.txt",
+      "title": "c-Ring Stoichiometry, Energetic Slack, and the Limits of Molecular Optimality",
+      "sha256": "589310c34c3ab4a3f1334cd78d196e4243164b1e032a125305bb3e3045ea8418",
+      "line_locator_verified": true
+    },
+    {
+      "id": "legacy-6858878",
+      "filename": "legacy-6858878.txt",
+      "path": "sources/legacy-6858878.txt",
+      "title": "A Coefficient-Locked Test of Atmospheric-Loss Geometry in the Exoplanet Radius Valley",
+      "sha256": "6ec08029d0fa35583b875e3465ac90fff0ff4ac643acdf724d52605d40348695",
+      "line_locator_verified": true
+    },
+    {
+      "id": "legacy-6858838",
+      "filename": "legacy-6858838.txt",
+      "path": "sources/legacy-6858838.txt",
+      "title": "The Measurement Gap in Coercive Psychiatry: When the Justification for Compulsory Antipsychotic Treatment Cannot Meet the Standard the Compulsion Requires",
+      "sha256": "9880ef5220b33f45e6d3de86139eeb8aa97c87d7177b8dab023d9fb652b2145d",
+      "line_locator_verified": true
+    },
+    {
+      "id": "legacy-6858819",
+      "filename": "legacy-6858819.txt",
+      "path": "sources/legacy-6858819.txt",
+      "title": "Hormesis as a Geometric Necessity of Bounded Adaptive Systems: Quantitative Predictions from First Principles",
+      "sha256": "82a3743cd527b604e3c1a241298599ce9338efc8b58e77309d4e52d10c3708c3",
+      "line_locator_verified": true
+    },
+    {
+      "id": "legacy-6858760",
+      "filename": "legacy-6858760.txt",
+      "path": "sources/legacy-6858760.txt",
+      "title": "Response-Coefficient Attenuation Predicts Hormetic Peak Amplitude: A Metabolic-Control Extension of Bounded Adaptive Systems",
+      "sha256": "083834d61a3239b329fdfbbbc6d0e165ba9673b6c226bf05b43c42b9d49ca6ce",
+      "line_locator_verified": true
+    },
+    {
+      "id": "legacy-6800400",
+      "filename": "legacy-6800400.txt",
+      "path": "sources/legacy-6800400.txt",
+      "title": "Bounded Compositional Geometry: Interior-Identity Universality and the One-Dimensional M\u00f6bius Enrichment",
+      "sha256": "3ded6275e1d202acc6e7799df0c0b1302557e1be2132529eee97d0e04858d2e3",
+      "line_locator_verified": true
+    },
+    {
+      "id": "legacy-6779487",
+      "filename": "legacy-6779487.txt",
+      "path": "sources/legacy-6779487.txt",
+      "title": "Thresholded Adaptive Orchestration: Typed Bounded-State Interfaces and Boundary-Stress Testing for Generative Interactive Worlds",
+      "sha256": "f069385a0dd2176278c3045244208ee0f8efe5cc4a237d09a1654efb625a52fc",
+      "line_locator_verified": true
+    },
+    {
+      "id": "legacy-6774878",
+      "filename": "legacy-6774878.txt",
+      "path": "sources/legacy-6774878.txt",
+      "title": "Rapidity Coordinates for Bounded Belief,A Resource-Constrained Predictive Processing Framework with a Falsifiable Inter-Brain Synchrony Test",
+      "sha256": "c2dd3919c3beac2e9539eab7ce4162e2deb0fb14eda5a841e6a26fe104fc6940",
+      "line_locator_verified": true
+    },
+    {
+      "id": "legacy-6773218",
+      "filename": "legacy-6773218.txt",
+      "path": "sources/legacy-6773218.txt",
+      "title": "Bounded Composition Forces Interior Existence A Self-Contained Theorem",
+      "sha256": "f78354dead22c965c4ac55d5590c81f8dbee1935da48445325ab43c36bbf6224",
+      "line_locator_verified": true
+    },
+    {
+      "id": "legacy-6767896",
+      "filename": "legacy-6767896.txt",
+      "path": "sources/legacy-6767896.txt",
+      "title": "Bounded Reflection and M\u00f6bius Composition: A First-Principles Derivation",
+      "sha256": "df997197f0c4ecb679917d22a0ac57139d2a5c54e60d5f500bfcd2faefab2b53",
+      "line_locator_verified": true
+    },
+    {
+      "id": "legacy-6761570",
+      "filename": "legacy-6761570.txt",
+      "path": "sources/legacy-6761570.txt",
+      "title": "An Architectural Classification of Bounded Adaptive Systems",
+      "sha256": "57d170535cd5545156c3f468ce7afd8bb5032c45b20cc8c6ef560dcdee4efd3d",
+      "line_locator_verified": true
+    },
+    {
+      "id": "legacy-6756063",
+      "filename": "legacy-6756063.txt",
+      "path": "sources/legacy-6756063.txt",
+      "title": "Bounded Composition and Deformed Kinematics: An Axiomatic Route to Hyperbolic Momentum Space",
+      "sha256": "51632c3e50ad427fc11bc11e9cd5fb96fcee055a8e02082caf765e3792fca07c",
+      "line_locator_verified": true
+    },
+    {
+      "id": "legacy-6754362",
+      "filename": "legacy-6754362.txt",
+      "path": "sources/legacy-6754362.txt",
+      "title": "The five M\u00f6bius composition laws on the bounded interval",
+      "sha256": "2563c8a6daa015f694fc15ecab0d664c416f4be995493cbbd4816e5787b18d58",
+      "line_locator_verified": true
+    },
+    {
+      "id": "legacy-6754360",
+      "filename": "legacy-6754360.txt",
+      "path": "sources/legacy-6754360.txt",
+      "title": "A Plant\u2013Sensor\u2013Controller\u2013Surveillance Architecture for Bounded Adaptive Homeostasis: Four Threshold-Typed Failure Modes, with the Redox/NRF2 System as Exemplar",
+      "sha256": "db9f4ed9141db9db537a5fb7df30965b938c0bbfcd9db4e75fb74daf32c59528",
+      "line_locator_verified": true
+    },
+    {
+      "id": "legacy-6739201",
+      "filename": "legacy-6739201.txt",
+      "path": "sources/legacy-6739201.txt",
+      "title": "A Universal Composition Law for Bounded Pharmacological Observables:The Acz\u00e9l-Family Structure of Dose-Response, Combination Effects,and Aluminium Toxicology",
+      "sha256": "ed472bbeae974829e330ef6fa078df2e28a3a062bf409b0c595264e4dec3caeb",
+      "line_locator_verified": true
+    }
+  ],
+  "rules": [
+    {
+      "id": "OBS-01",
+      "title": "Declare the observer, unit and question before inference",
+      "kind": "model_assumption",
+      "objects": [
+        "question",
+        "realization",
+        "observer",
+        "measurement",
+        "constraints"
+      ],
+      "citations": [
+        {
+          "source_id": "temporal_architecture",
+          "section": "2, Definition 1",
+          "line_start": 116,
+          "line_end": 140,
+          "verification": "passage_read_in_local_text"
+        },
+        {
+          "source_id": "observer",
+          "section": "1, observer inside the world",
+          "line_start": 35,
+          "line_end": 96,
+          "verification": "passage_read_in_local_text"
+        },
+        {
+          "source_id": "predictive_closure",
+          "section": "2.1, empirical jurisdiction",
+          "line_start": 190,
+          "line_end": 211,
+          "verification": "passage_read_in_local_text"
+        }
+      ],
+      "premises": [
+        {
+          "id": "OBS-01.P1",
+          "statement": "Declare boundary/interface, persistence or identity criterion, and horizon independently of the response pattern later evaluated."
+        },
+        {
+          "id": "OBS-01.P2",
+          "statement": "Declare admitted histories, interventions, observations, timing, operating range, discrepancy margins and observer access."
+        },
+        {
+          "id": "OBS-01.P3",
+          "statement": "Bind the declaration to one version; indicate which quantities are internal, environmental or coupled."
+        }
+      ],
+      "conclusion_schema": {
+        "predicate": "jurisdiction_declared",
+        "fields": [
+          "unit_boundary",
+          "identity_criterion",
+          "horizon",
+          "observer_interface",
+          "future_test_family",
+          "operating_range",
+          "margins",
+          "version"
+        ],
+        "status": "model_relative_declaration",
+        "meaning": "Subsequent state, action and constraint claims are interpreted only within this declaration."
+      },
+      "solver_requirements": {
+        "class": "schema_and_binding_checks",
+        "required_inputs": [
+          "prospective jurisdiction record",
+          "typed interface map"
+        ],
+        "soundness_requirement": "Check completeness and internal compatibility; prospective timing needs provenance, not a self-reported Boolean."
+      },
+      "does_not_follow": [
+        "A declared boundary is the unique natural system boundary.",
+        "The declared measurements already form a sufficient state.",
+        "All sciences share one physical state carrier or one mechanism."
+      ],
+      "revision_context": "Current-05 separates prospective unit declaration from state inference. Current-07 treats the observer as a physical subsystem, without observer-created reality.",
+      "implementation_status": "declarative_specification_only",
+      "empirical_validation_status": "not_established_by_this_register",
+      "typed_inputs": [
+        {
+          "type_contract": "Versioned experiment and interface records; fixed unit, horizon and future family"
+        }
+      ],
+      "domains": "Versioned experiment and interface records; fixed unit, horizon and future family",
+      "units": "All physical quantities must have separately declared units",
+      "quantifiers": "For each admitted inquiry before substantive inference",
+      "hypotheses": {
+        "authoritative": "premises (original stable IDs and meanings retained)",
+        "instance_status": "must be admitted separately"
+      },
+      "allowed_inference": {
+        "predicate": "jurisdiction_declared",
+        "fields": [
+          "unit_boundary",
+          "identity_criterion",
+          "horizon",
+          "observer_interface",
+          "future_test_family",
+          "operating_range",
+          "margins",
+          "version"
+        ],
+        "status": "model_relative_declaration",
+        "meaning": "Subsequent state, action and constraint claims are interpreted only within this declaration."
+      },
+      "forbidden_inference": [
+        "A declared boundary is the unique natural system boundary.",
+        "The declared measurements already form a sufficient state.",
+        "All sciences share one physical state carrier or one mechanism."
+      ],
+      "counterexample_or_falsifier": "Changing the biological unit from cell to well changes the estimand even when labels match.",
+      "proof_obligations": "Completeness is decidable; correct physical boundary is declared, not proved.",
+      "source_bindings": [
+        {
+          "source_id": "temporal_architecture",
+          "sha256": "852560940e384108f7af61024b07cdef647a05cb2f41d8c8de16cf7d9421297d",
+          "line_start": 116,
+          "line_end": 140,
+          "extracted_pdf_page_start": 3,
+          "extracted_pdf_page_end": 4,
+          "status": "local_snapshot_bound; not live parity"
+        },
+        {
+          "source_id": "observer",
+          "sha256": "9570999564f6b8f0aa4f4088ed1c371b61ff761e50afe95b52c19f7b5fe2278a",
+          "line_start": 35,
+          "line_end": 96,
+          "extracted_pdf_page_start": 1,
+          "extracted_pdf_page_end": 3,
+          "status": "local_snapshot_bound; not live parity"
+        },
+        {
+          "source_id": "predictive_closure",
+          "sha256": "5245c3e1f1e7d4eaeebbac454f85483005454e14e484d3b0ade2c266d3ef7af3",
+          "line_start": 190,
+          "line_end": 211,
+          "extracted_pdf_page_start": 6,
+          "extracted_pdf_page_end": 6,
+          "status": "local_snapshot_bound; not live parity"
+        }
+      ],
+      "atlas_certificate_refs": []
+    },
+    {
+      "id": "STATE-01",
+      "title": "Exact predictive quotient",
+      "kind": "formal_conditional",
+      "objects": [
+        "observer",
+        "history",
+        "state",
+        "question"
+      ],
+      "citations": [
+        {
+          "source_id": "predictive_closure",
+          "section": "2.2, predictive quotient theorem",
+          "line_start": 212,
+          "line_end": 240,
+          "verification": "passage_read_in_local_text"
+        }
+      ],
+      "premises": [
+        {
+          "id": "STATE-01.P1",
+          "statement": "Fix a coherent family of future intervention/observation laws on the same admitted history class."
+        },
+        {
+          "id": "STATE-01.P2",
+          "statement": "Define equivalence by equality of every declared future law, including agreement of future admissibility."
+        },
+        {
+          "id": "STATE-01.P3",
+          "statement": "Use exact equality. For continuous records, supply the measurable/common-support and common-null-set qualifications in section 2.1."
+        }
+      ],
+      "conclusion_schema": {
+        "predicate": "exact_predictive_state",
+        "formula": "h ~ h_prime iff for every u in Pi, Law(Y | h,u) = Law(Y | h_prime,u), including admissibility",
+        "consequence": "S_Pi = H / ~ is the coarsest exact sufficient partition; any exact sufficient code z can merge only histories merged by S_Pi.",
+        "status": "formal_conditional"
+      },
+      "solver_requirements": {
+        "class": "finite_kernel_equivalence_or_proof",
+        "required_inputs": [
+          "declared future kernels",
+          "admissibility domains",
+          "finite complete family or proof of all-family equality"
+        ],
+        "soundness_requirement": "A finite sampled future panel alone cannot prove equality for an unrestricted family; return scoped empirical evidence or unresolved."
+      },
+      "does_not_follow": [
+        "Finite-tolerance closeness is transitive.",
+        "The quotient is automatically finite-dimensional or has a convenient measurable realization.",
+        "No richer observer or future test can reveal additional distinctions."
+      ],
+      "revision_context": "Current-10 explicitly identifies the construction with established predictive-state, causal-state, sufficient-statistic and automata ideas; priority is not claimed.",
+      "implementation_status": "declarative_specification_only",
+      "empirical_validation_status": "not_established_by_this_register",
+      "typed_inputs": [
+        {
+          "type_contract": "Histories; measurable future kernels; exact relation on all declared futures"
+        }
+      ],
+      "domains": "Histories; measurable future kernels; exact relation on all declared futures",
+      "units": "Probability laws dimensionless; observable units retained",
+      "quantifiers": "For all h,hprime and all admissible futures; common-null-set qualification if stochastic",
+      "hypotheses": {
+        "authoritative": "premises (original stable IDs and meanings retained)",
+        "instance_status": "must be admitted separately"
+      },
+      "allowed_inference": {
+        "predicate": "exact_predictive_state",
+        "formula": "h ~ h_prime iff for every u in Pi, Law(Y | h,u) = Law(Y | h_prime,u), including admissibility",
+        "consequence": "S_Pi = H / ~ is the coarsest exact sufficient partition; any exact sufficient code z can merge only histories merged by S_Pi.",
+        "status": "formal_conditional"
+      },
+      "forbidden_inference": [
+        "Finite-tolerance closeness is transitive.",
+        "The quotient is automatically finite-dimensional or has a convenient measurable realization.",
+        "No richer observer or future test can reveal additional distinctions."
+      ],
+      "counterexample_or_falsifier": "Distance<=epsilon on values0,.75epsilon,1.5epsilon is not transitive.",
+      "proof_obligations": "Finite table equality can be enumerated; arbitrary-future/measurability theorem imported.",
+      "source_bindings": [
+        {
+          "source_id": "predictive_closure",
+          "sha256": "5245c3e1f1e7d4eaeebbac454f85483005454e14e484d3b0ade2c266d3ef7af3",
+          "line_start": 212,
+          "line_end": 240,
+          "extracted_pdf_page_start": 6,
+          "extracted_pdf_page_end": 7,
+          "status": "local_snapshot_bound; not live parity"
+        }
+      ],
+      "atlas_certificate_refs": []
+    },
+    {
+      "id": "STATE-02",
+      "title": "Admitted continuations descend to state",
+      "kind": "formal_conditional",
+      "objects": [
+        "state",
+        "verb",
+        "history",
+        "measurement"
+      ],
+      "citations": [
+        {
+          "source_id": "predictive_closure",
+          "section": "2.3, partial intervention descent and observed stochastic continuations",
+          "line_start": 241,
+          "line_end": 273,
+          "verification": "passage_read_in_local_text"
+        }
+      ],
+      "premises": [
+        {
+          "id": "STATE-02.P1",
+          "statement": "STATE-01 holds for a continuation-closed future family with admissibility included."
+        },
+        {
+          "id": "STATE-02.P2",
+          "statement": "For deterministic continuation a, the history extension h -> ha is well defined wherever admitted."
+        },
+        {
+          "id": "STATE-02.P3",
+          "statement": "For observed stochastic outcomes retain the record r and use branch h -> har; supply common-support conditions."
+        }
+      ],
+      "conclusion_schema": {
+        "predicate": "state_action_descent",
+        "formula": "T_a([h]) = [ha]; for observed stochastic records use T_(a,r)([h]) = [har]",
+        "consequence": "Equivalent histories have equal action domains and equivalent successors; random action outcomes induce a kernel over record-labelled successor states.",
+        "status": "formal_conditional"
+      },
+      "solver_requirements": {
+        "class": "domain_saturation_and_successor_equivalence",
+        "required_inputs": [
+          "history equivalence relation",
+          "continuation relation",
+          "admissibility table",
+          "record kernels when stochastic"
+        ],
+        "soundness_requirement": "Check both domain and value consistency. Do not discard intermediate records before asserting adaptive-policy equivalence."
+      },
+      "does_not_follow": [
+        "One deterministic posterior state is indexed by a random action alone.",
+        "Commutation after records are discarded proves commutation of all record-conditioned experiments.",
+        "Finite-panel descent has been proved on untested continuations."
+      ],
+      "revision_context": "Current-10 strengthens deterministic descent using continuation closure and separately qualifies stochastic branch semantics.",
+      "implementation_status": "declarative_specification_only",
+      "empirical_validation_status": "not_established_by_this_register",
+      "typed_inputs": [
+        {
+          "type_contract": "Quotient partition and partial continuation or record-conditioned kernel"
+        }
+      ],
+      "domains": "Quotient partition and partial continuation or record-conditioned kernel",
+      "units": "Action/time/record units declared per model",
+      "quantifiers": "For every action and every pair in one cell: equal domains and equivalent successors",
+      "hypotheses": {
+        "authoritative": "premises (original stable IDs and meanings retained)",
+        "instance_status": "must be admitted separately"
+      },
+      "allowed_inference": {
+        "predicate": "state_action_descent",
+        "formula": "T_a([h]) = [ha]; for observed stochastic records use T_(a,r)([h]) = [har]",
+        "consequence": "Equivalent histories have equal action domains and equivalent successors; random action outcomes induce a kernel over record-labelled successor states.",
+        "status": "formal_conditional"
+      },
+      "forbidden_inference": [
+        "One deterministic posterior state is indexed by a random action alone.",
+        "Commutation after records are discarded proves commutation of all record-conditioned experiments.",
+        "Finite-panel descent has been proved on untested continuations."
+      ],
+      "counterexample_or_falsifier": "Merged h0,h1 with action defined only at h0 fails despite no conflicting outputs.",
+      "proof_obligations": "Finite domain/value checker in action certificate; general record theorem supplied by source.",
+      "source_bindings": [
+        {
+          "source_id": "predictive_closure",
+          "sha256": "5245c3e1f1e7d4eaeebbac454f85483005454e14e484d3b0ade2c266d3ef7af3",
+          "line_start": 241,
+          "line_end": 273,
+          "extracted_pdf_page_start": 7,
+          "extracted_pdf_page_end": 8,
+          "status": "local_snapshot_bound; not live parity"
+        }
+      ],
+      "atlas_certificate_refs": [
+        "packages/action_evidence.json"
+      ]
+    },
+    {
+      "id": "COMP-01",
+      "title": "Aczel additive generator for an admitted scalar operation",
+      "kind": "formal_conditional",
+      "objects": [
+        "verb",
+        "composition",
+        "state",
+        "coordinate"
+      ],
+      "citations": [
+        {
+          "source_id": "pharmacology",
+          "section": "2.1, additive generators and their domains",
+          "line_start": 57,
+          "line_end": 84,
+          "verification": "passage_read_in_local_text"
+        }
+      ],
+      "premises": [
+        {
+          "id": "COMP-01.P1",
+          "statement": "I is a nondegenerate real interval and op is total I x I -> I."
+        },
+        {
+          "id": "COMP-01.P2",
+          "statement": "op is continuous, associative and strictly increasing in each argument, with an identity e0."
+        },
+        {
+          "id": "COMP-01.P3",
+          "statement": "Endpoint and domain treatment respect strict monotonicity; saturated limiting endpoints are not silently included."
+        }
+      ],
+      "conclusion_schema": {
+        "predicate": "additive_generator_exists",
+        "formula": "phi(a op b) = phi(a) + phi(b); phi(e0)=0",
+        "consequence": "An increasing homeomorphism phi maps I onto an addition-closed interval; after fixing the identity origin its freedom is positive scale.",
+        "status": "formal_conditional"
+      },
+      "solver_requirements": {
+        "class": "functional_identity_proof",
+        "required_inputs": [
+          "operation definition",
+          "interval and domain",
+          "proofs of theorem hypotheses"
+        ],
+        "soundness_requirement": "Symbolic checks may verify a supplied generator; finite samples cannot establish the unrestricted representation theorem's global premises."
+      },
+      "does_not_follow": [
+        "Boundedness selects artanh, logit, a projective law or a physical metric.",
+        "A fitted local rule automatically satisfies the global theorem.",
+        "A change of coordinate restores information removed from the state."
+      ],
+      "revision_context": "Current-06 supersedes broad universal-coordinate readings. The identity fixes the origin, leaving positive scale rather than arbitrary translation.",
+      "implementation_status": "declarative_specification_only",
+      "empirical_validation_status": "not_established_by_this_register",
+      "typed_inputs": [
+        {
+          "type_contract": "Nondegenerate real interval I; total continuous strictly increasing associative operation with identity"
+        }
+      ],
+      "domains": "Nondegenerate real interval I; total continuous strictly increasing associative operation with identity",
+      "units": "Native units arbitrary; f calibration independent; example normalized",
+      "quantifiers": "For all x,y in I there exists one generator f satisfying f(x op y)=f(x)+f(y); fixed identity leaves positive scale freedom",
+      "hypotheses": {
+        "authoritative": "premises (original stable IDs and meanings retained)",
+        "instance_status": "must be admitted separately"
+      },
+      "allowed_inference": {
+        "predicate": "additive_generator_exists",
+        "formula": "phi(a op b) = phi(a) + phi(b); phi(e0)=0",
+        "consequence": "An increasing homeomorphism phi maps I onto an addition-closed interval; after fixing the identity origin its freedom is positive scale.",
+        "status": "formal_conditional"
+      },
+      "forbidden_inference": [
+        "Boundedness selects artanh, logit, a projective law or a physical metric.",
+        "A fitted local rule automatically satisfies the global theorem.",
+        "A change of coordinate restores information removed from the state."
+      ],
+      "counterexample_or_falsifier": "h(x)=x/(1-x\u00b2) induces a lawful non-UHL group; no unique native artanh.",
+      "proof_obligations": "Aczel theorem imported; compact saturated endpoints incompatible with stated strict setting.",
+      "source_bindings": [
+        {
+          "source_id": "pharmacology",
+          "sha256": "eaee5f28c7170353ff6530588d4ce31fcc76a617294ac9491a42a34f9494bb8d",
+          "line_start": 57,
+          "line_end": 84,
+          "extracted_pdf_page_start": 2,
+          "extracted_pdf_page_end": 2,
+          "status": "local_snapshot_bound; not live parity"
+        }
+      ],
+      "atlas_certificate_refs": []
+    },
+    {
+      "id": "COMP-02",
+      "title": "Declared UHL composition and rapidity action",
+      "kind": "formal_conditional",
+      "objects": [
+        "verb",
+        "composition",
+        "coordinate",
+        "time"
+      ],
+      "citations": [
+        {
+          "source_id": "predictive_closure",
+          "section": "4.2, equation 19 and failure boundary",
+          "line_start": 418,
+          "line_end": 431,
+          "verification": "passage_read_in_local_text"
+        },
+        {
+          "source_id": "pharmacology",
+          "section": "6.1, equations 16-17",
+          "line_start": 248,
+          "line_end": 262,
+          "verification": "passage_read_in_local_text"
+        }
+      ],
+      "premises": [
+        {
+          "id": "COMP-02.P1",
+          "statement": "x,u,v lie in the open interval (-1,1)."
+        },
+        {
+          "id": "COMP-02.P2",
+          "statement": "The admitted action is T_u(x)=(x+u)/(1+u*x); if inferred as a physical family, the endpoint-fixing projective hypothesis and parameter calibration must be independently admitted."
+        },
+        {
+          "id": "COMP-02.P3",
+          "statement": "All compositions use the same state coordinate and declared action convention."
+        }
+      ],
+      "conclusion_schema": {
+        "predicate": "uhl_composition_identity",
+        "formula": "T_v(T_u(x)) = T_w(x), w=(u+v)/(1+u*v); artanh(T_u(x))=artanh(x)+artanh(u)",
+        "consequence": "The declared UHL actions compose by rapidity addition and remain in the open interval.",
+        "status": "formal_conditional",
+        "source_translation": "Current-06 uses e=(x+1)/2 and lambda=(1+u)/(1-u). Its logit(e) equals 2*artanh(x)."
+      },
+      "solver_requirements": {
+        "class": "exact_rational_identity_and_domain_check",
+        "required_inputs": [
+          "x",
+          "u",
+          "v",
+          "declared map"
+        ],
+        "soundness_requirement": "Prove denominators nonzero and domains preserved, then verify exact algebra. Numeric examples are instances only."
+      },
+      "does_not_follow": [
+        "The input u is automatically elapsed time, dose, energy, evidence or resource cost.",
+        "Every bounded physical system obeys this family.",
+        "One-dimensional scalar nonlinearity establishes intrinsic sectional curvature."
+      ],
+      "revision_context": "The current texts require added projective structure. Source translation is elementary algebra, not an additional empirical claim.",
+      "implementation_status": "declarative_specification_only",
+      "empirical_validation_status": "not_established_by_this_register",
+      "typed_inputs": [
+        {
+          "type_contract": "x,u,v in open(-1,1); declared T_u"
+        }
+      ],
+      "domains": "x,u,v in open(-1,1); declared T_u",
+      "units": "Dimensionless normalized chart; physical scale separate",
+      "quantifiers": "For every admissible triple in a common chart",
+      "hypotheses": {
+        "authoritative": "premises (original stable IDs and meanings retained)",
+        "instance_status": "must be admitted separately"
+      },
+      "allowed_inference": {
+        "predicate": "uhl_composition_identity",
+        "formula": "T_v(T_u(x)) = T_w(x), w=(u+v)/(1+u*v); artanh(T_u(x))=artanh(x)+artanh(u)",
+        "consequence": "The declared UHL actions compose by rapidity addition and remain in the open interval.",
+        "status": "formal_conditional",
+        "source_translation": "Current-06 uses e=(x+1)/2 and lambda=(1+u)/(1-u). Its logit(e) equals 2*artanh(x)."
+      },
+      "forbidden_inference": [
+        "The input u is automatically elapsed time, dose, energy, evidence or resource cost.",
+        "Every bounded physical system obeys this family.",
+        "One-dimensional scalar nonlinearity establishes intrinsic sectional curvature."
+      ],
+      "counterexample_or_falsifier": "Bounded h-induced group gives mismatch8/9 at halves; endpoints(1,-1) make0/0.",
+      "proof_obligations": "Rational identities checked; open-domain positivity supplied in PROOFS.md.",
+      "source_bindings": [
+        {
+          "source_id": "predictive_closure",
+          "sha256": "5245c3e1f1e7d4eaeebbac454f85483005454e14e484d3b0ade2c266d3ef7af3",
+          "line_start": 418,
+          "line_end": 431,
+          "extracted_pdf_page_start": 12,
+          "extracted_pdf_page_end": 13,
+          "status": "local_snapshot_bound; not live parity"
+        },
+        {
+          "source_id": "pharmacology",
+          "sha256": "eaee5f28c7170353ff6530588d4ce31fcc76a617294ac9491a42a34f9494bb8d",
+          "line_start": 248,
+          "line_end": 262,
+          "extracted_pdf_page_start": 6,
+          "extracted_pdf_page_end": 6,
+          "status": "local_snapshot_bound; not live parity"
+        }
+      ],
+      "atlas_certificate_refs": [
+        "packages/composition.json"
+      ]
+    },
+    {
+      "id": "TIME-01",
+      "title": "Forgetting order requires commuting partial actions",
+      "kind": "formal_conditional",
+      "objects": [
+        "verb",
+        "composition",
+        "time",
+        "state"
+      ],
+      "citations": [
+        {
+          "source_id": "predictive_closure",
+          "section": "3.1-3.3, equations 8-13",
+          "line_start": 288,
+          "line_end": 339,
+          "verification": "passage_read_in_local_text"
+        }
+      ],
+      "premises": [
+        {
+          "id": "TIME-01.P1",
+          "statement": "A finite standardized intervention alphabet acts by descended partial maps on the declared predictive state."
+        },
+        {
+          "id": "TIME-01.P2",
+          "statement": "Equality of composed partial maps means equal domains and equal outputs on those domains."
+        },
+        {
+          "id": "TIME-01.P3",
+          "statement": "Chronological word a1...ak acts as T_ak composed with ... composed with T_a1."
+        }
+      ],
+      "conclusion_schema": {
+        "predicate": "count_factorization_iff_pairwise_commutation",
+        "formula": "rho(w)=rho_bar(counts(w)) for every word iff T_i*T_j=T_j*T_i as partial maps for all i,j",
+        "consequence": "A verified noncommuting pair refutes the count-only action representation; injective coordinate changes cannot erase that difference.",
+        "status": "formal_conditional",
+        "additional_gate_for_continuous_amount": "Each one-agent family must separately satisfy U_a(s+t)=U_a(s)U_a(t), U_a(0)=I on its admitted range. Counts alone do not provide this gate."
+      },
+      "solver_requirements": {
+        "class": "partial_map_composition_equivalence",
+        "required_inputs": [
+          "generator action definitions",
+          "domains",
+          "common-state coverage"
+        ],
+        "soundness_requirement": "A complete finite table can be checked exhaustively; continuous domains require proof or certified bounds. Testing one unresolved endpoint is insufficient."
+      },
+      "does_not_follow": [
+        "Order dependence proves hidden state dimension exceeds one.",
+        "Pairwise commutation calibrates continuous dose or elapsed time.",
+        "Function composition ceases to be associative when actions do not commute."
+      ],
+      "revision_context": "Current-10 distinguishes standardized counts, calibrated continuous amounts and scalar descent. Current-06 gives a closed scalar counterexample to 'order implies hidden state'.",
+      "implementation_status": "declarative_specification_only",
+      "empirical_validation_status": "not_established_by_this_register",
+      "typed_inputs": [
+        {
+          "type_contract": "Finite alphabet of descended partial state maps"
+        }
+      ],
+      "domains": "Finite alphabet of descended partial state maps",
+      "units": "Counts dimensionless; physical amount needs separate one-agent semigroup",
+      "quantifiers": "Every pair commutes including domain iff all finite words factor through their counts",
+      "hypotheses": {
+        "authoritative": "premises (original stable IDs and meanings retained)",
+        "instance_status": "must be admitted separately"
+      },
+      "allowed_inference": {
+        "predicate": "count_factorization_iff_pairwise_commutation",
+        "formula": "rho(w)=rho_bar(counts(w)) for every word iff T_i*T_j=T_j*T_i as partial maps for all i,j",
+        "consequence": "A verified noncommuting pair refutes the count-only action representation; injective coordinate changes cannot erase that difference.",
+        "status": "formal_conditional",
+        "additional_gate_for_continuous_amount": "Each one-agent family must separately satisfy U_a(s+t)=U_a(s)U_a(t), U_a(0)=I on its admitted range. Counts alone do not provide this gate."
+      },
+      "forbidden_inference": [
+        "Order dependence proves hidden state dimension exceeds one.",
+        "Pairwise commutation calibrates continuous dose or elapsed time.",
+        "Function composition ceases to be associative when actions do not commute."
+      ],
+      "counterexample_or_falsifier": "A(q)=2q,B(q)=q+1 are closed scalar maps and do not commute.",
+      "proof_obligations": "Enumeration for bounded words cannot prove arbitrary words without adjacent-swap argument.",
+      "source_bindings": [
+        {
+          "source_id": "predictive_closure",
+          "sha256": "5245c3e1f1e7d4eaeebbac454f85483005454e14e484d3b0ade2c266d3ef7af3",
+          "line_start": 288,
+          "line_end": 339,
+          "extracted_pdf_page_start": 9,
+          "extracted_pdf_page_end": 10,
+          "status": "local_snapshot_bound; not live parity"
+        }
+      ],
+      "atlas_certificate_refs": [
+        "packages/connections.json"
+      ]
+    },
+    {
+      "id": "TIME-02",
+      "title": "Weak temporal grammar through second order",
+      "kind": "formal_conditional",
+      "objects": [
+        "verb",
+        "time",
+        "composition",
+        "measurement"
+      ],
+      "citations": [
+        {
+          "source_id": "predictive_closure",
+          "section": "5.1, equation 20 and pullback convention",
+          "line_start": 445,
+          "line_end": 455,
+          "verification": "passage_read_in_local_text"
+        },
+        {
+          "source_id": "predictive_closure",
+          "section": "5.2-5.3, weak-word compression",
+          "line_start": 482,
+          "line_end": 506,
+          "verification": "passage_read_in_local_text"
+        }
+      ],
+      "premises": [
+        {
+          "id": "TIME-02.P1",
+          "statement": "A common normed observable/operator space supports U_i(s)=I+s*alpha_i*L_i+s^2*Q_i+O(s^3) uniformly over the declared local window."
+        },
+        {
+          "id": "TIME-02.P2",
+          "statement": "Compare a fixed finite word length and fixed multiplicities; w0 is the canonical sorted word."
+        },
+        {
+          "id": "TIME-02.P3",
+          "statement": "Use the source's observable pullback convention U_w=U_w1...U_wm and k_ij counting occurrences of j before i for i<j."
+        },
+        {
+          "id": "TIME-02.P4",
+          "statement": "A numerical approximation claim additionally has calibrated remainder/error bounds; a qualitative O(s^3) statement supplies no finite-scale confidence guarantee."
+        }
+      ],
+      "conclusion_schema": {
+        "predicate": "second_order_word_compression",
+        "formula": "U_w(s)-U_w0(s)=-s^2*sum_(i<j)(k_ij(w)*alpha_i*alpha_j*[L_i,L_j])+O(s^3)",
+        "consequence": "Fixed-multiset scalar word responses lie through second order in an affine space with one intercept and at most binomial(r,2) directions.",
+        "status": "formal_conditional"
+      },
+      "solver_requirements": {
+        "class": "noncommutative_series_expansion",
+        "required_inputs": [
+          "L_i",
+          "alpha_i",
+          "fixed words",
+          "operator convention",
+          "remainder bounds for quantitative use"
+        ],
+        "soundness_requirement": "Retain multiplication order; verify series assumptions separately from fitting inversion-count coefficients."
+      },
+      "does_not_follow": [
+        "A fitted second-order curve proves complete finite-dimensional predictive closure.",
+        "No order effect exists when a chosen readout annihilates the leading commutator.",
+        "The local expansion holds at arbitrary intervention amplitudes or growing word length."
+      ],
+      "revision_context": "Current-10 calls the nonabelian branch temporal grammar and distinguishes discrete order tests from a calibrated near-identity interpretation.",
+      "implementation_status": "declarative_specification_only",
+      "empirical_validation_status": "not_established_by_this_register",
+      "typed_inputs": [
+        {
+          "type_contract": "Normed operator space and uniformly controlled near-identity expansion"
+        }
+      ],
+      "domains": "Normed operator space and uniformly controlled near-identity expansion",
+      "units": "Scale*generator dimensionless; readout units retained",
+      "quantifiers": "For a fixed finite word and scale tending to0 under the stated common bounds",
+      "hypotheses": {
+        "authoritative": "premises (original stable IDs and meanings retained)",
+        "instance_status": "must be admitted separately"
+      },
+      "allowed_inference": {
+        "predicate": "second_order_word_compression",
+        "formula": "U_w(s)-U_w0(s)=-s^2*sum_(i<j)(k_ij(w)*alpha_i*alpha_j*[L_i,L_j])+O(s^3)",
+        "consequence": "Fixed-multiset scalar word responses lie through second order in an affine space with one intercept and at most binomial(r,2) directions.",
+        "status": "formal_conditional"
+      },
+      "forbidden_inference": [
+        "A fitted second-order curve proves complete finite-dimensional predictive closure.",
+        "No order effect exists when a chosen readout annihilates the leading commutator.",
+        "The local expansion holds at arbitrary intervention amplitudes or growing word length."
+      ],
+      "counterexample_or_falsifier": "Finite order effect with no near-identity/remainder control is not a calibrated Lie-bracket estimate.",
+      "proof_obligations": "Needs noncommutative jets and analytic remainder bounds; current scalar rational core insufficient.",
+      "source_bindings": [
+        {
+          "source_id": "predictive_closure",
+          "sha256": "5245c3e1f1e7d4eaeebbac454f85483005454e14e484d3b0ade2c266d3ef7af3",
+          "line_start": 445,
+          "line_end": 455,
+          "extracted_pdf_page_start": 13,
+          "extracted_pdf_page_end": 13,
+          "status": "local_snapshot_bound; not live parity"
+        },
+        {
+          "source_id": "predictive_closure",
+          "sha256": "5245c3e1f1e7d4eaeebbac454f85483005454e14e484d3b0ade2c266d3ef7af3",
+          "line_start": 482,
+          "line_end": 506,
+          "extracted_pdf_page_start": 14,
+          "extracted_pdf_page_end": 14,
+          "status": "local_snapshot_bound; not live parity"
+        }
+      ],
+      "atlas_certificate_refs": []
+    },
+    {
+      "id": "RES-01",
+      "title": "Declare finite resource and regeneration mechanisms",
+      "kind": "model_assumption",
+      "objects": [
+        "realization",
+        "resource",
+        "constraint",
+        "adaptation"
+      ],
+      "citations": [
+        {
+          "source_id": "redox_model",
+          "section": "2.1-2.2, scope, variables and equations",
+          "line_start": 120,
+          "line_end": 195,
+          "verification": "passage_read_in_local_text"
+        },
+        {
+          "source_id": "temporal_architecture",
+          "section": "13, finite regenerative authority",
+          "line_start": 732,
+          "line_end": 750,
+          "verification": "passage_read_in_local_text"
+        }
+      ],
+      "premises": [
+        {
+          "id": "RES-01.P1",
+          "statement": "Supply a domain-specific model with typed state/resource variables, units, bounds, rate laws and parameters."
+        },
+        {
+          "id": "RES-01.P2",
+          "statement": "For the cited redox instance declare a finite GSH pool, drain/clearance terms, saturable regeneration and a slower regulated capacity."
+        },
+        {
+          "id": "RES-01.P3",
+          "statement": "Bind calibration sources and parameter uncertainty separately from the mechanism assumptions; declare valid operating ranges."
+        }
+      ],
+      "conclusion_schema": {
+        "predicate": "finite_resource_model_admitted_as_assumption",
+        "consequence": "The declared dynamics can be evaluated for supply/demand balance, capacity limits and consequences of slow capacity changes.",
+        "status": "model_relative_declaration"
+      },
+      "solver_requirements": {
+        "class": "typed_ode_or_transition_model_admission",
+        "required_inputs": [
+          "state and flux definitions",
+          "units",
+          "mechanism equations",
+          "parameter ranges",
+          "initial conditions"
+        ],
+        "soundness_requirement": "Check dimensions, domain invariance and numerical error. Carry all mechanism and calibration assumptions into derived thresholds."
+      },
+      "does_not_follow": [
+        "Finite boundedness alone forces the cited rate laws, a four-role architecture, hormesis or collapse.",
+        "A simulated threshold is a validated biological or clinical threshold.",
+        "Resource units from different domains can be interchanged without a calibrated map."
+      ],
+      "revision_context": "The specific redox model is an instantiation. Later programme revisions explicitly separate resource mechanisms, mathematical viability and empirical predictions. This register imports no claimed clinical validation.",
+      "implementation_status": "declarative_specification_only",
+      "empirical_validation_status": "not_established_by_this_register",
+      "typed_inputs": [
+        {
+          "type_contract": "Typed physical resource/capacity state, fluxes, boundary and operating range"
+        }
+      ],
+      "domains": "Typed physical resource/capacity state, fluxes, boundary and operating range",
+      "units": "Amounts, concentrations, flux/time and volumes must be compatible",
+      "quantifiers": "Every physical conclusion applies only to trajectories satisfying that mechanism",
+      "hypotheses": {
+        "authoritative": "premises (original stable IDs and meanings retained)",
+        "instance_status": "must be admitted separately"
+      },
+      "allowed_inference": {
+        "predicate": "finite_resource_model_admitted_as_assumption",
+        "consequence": "The declared dynamics can be evaluated for supply/demand balance, capacity limits and consequences of slow capacity changes.",
+        "status": "model_relative_declaration"
+      },
+      "forbidden_inference": [
+        "Finite boundedness alone forces the cited rate laws, a four-role architecture, hormesis or collapse.",
+        "A simulated threshold is a validated biological or clinical threshold.",
+        "Resource units from different domains can be interchanged without a calibrated map."
+      ],
+      "counterexample_or_falsifier": "G=0 has outward drift in legacy-6754498 above beta_c.",
+      "proof_obligations": "Model declaration not proof of positive invariance, fold, chemical accuracy or clinical forecast.",
+      "source_bindings": [
+        {
+          "source_id": "redox_model",
+          "sha256": "43bcb86cacd71a49eddb58ac9a7ce666102fe2f0ed82905939a4f8cab7da1f1c",
+          "line_start": 120,
+          "line_end": 195,
+          "extracted_pdf_page_start": 3,
+          "extracted_pdf_page_end": 5,
+          "status": "local_snapshot_bound; not live parity"
+        },
+        {
+          "source_id": "temporal_architecture",
+          "sha256": "852560940e384108f7af61024b07cdef647a05cb2f41d8c8de16cf7d9421297d",
+          "line_start": 732,
+          "line_end": 750,
+          "extracted_pdf_page_start": 17,
+          "extracted_pdf_page_end": 17,
+          "status": "local_snapshot_bound; not live parity"
+        }
+      ],
+      "atlas_certificate_refs": [
+        "packages/resources.json"
+      ]
+    },
+    {
+      "id": "RES-02",
+      "title": "Finite-horizon and robust viability",
+      "kind": "formal_conditional",
+      "objects": [
+        "realization",
+        "constraint",
+        "resource",
+        "time",
+        "observer",
+        "action"
+      ],
+      "citations": [
+        {
+          "source_id": "temporal_architecture",
+          "section": "5, viability tube and theorem boundary",
+          "line_start": 289,
+          "line_end": 306,
+          "verification": "passage_read_in_local_text"
+        },
+        {
+          "source_id": "temporal_architecture",
+          "section": "5, robust viability and information order",
+          "line_start": 326,
+          "line_end": 349,
+          "verification": "passage_read_in_local_text"
+        }
+      ],
+      "premises": [
+        {
+          "id": "RES-02.P1",
+          "statement": "Declare a physical realization, admissible dynamics, constraint set K(t), start time t and finite terminal horizon H."
+        },
+        {
+          "id": "RES-02.P2",
+          "statement": "Include resource, environment and timing variables needed for valid state/action closure."
+        },
+        {
+          "id": "RES-02.P3",
+          "statement": "For robustness declare the disturbance family and nonanticipative control information pattern."
+        },
+        {
+          "id": "RES-02.P4",
+          "statement": "Supply existence/regularity hypotheses for continuous dynamics or a complete finite transition relation."
+        }
+      ],
+      "conclusion_schema": {
+        "predicate": "horizon_viability",
+        "formula": "V_H(t)={x in K(t): exists admissible trajectory from x staying in K(s) for every s in [t,H]}; V_H(H)=K(H)",
+        "robust_variant": "Require one admissible nonanticipative strategy to preserve constraints against every allowed disturbance.",
+        "consequence": "With matched conventions and the nominal disturbance included in the robust family, the robust viable set is contained in the nominal set.",
+        "status": "formal_conditional"
+      },
+      "solver_requirements": {
+        "class": "finite_reachability_or_validated_viability",
+        "required_inputs": [
+          "transition/differential model",
+          "constraints",
+          "horizon",
+          "control/disturbance quantifier order"
+        ],
+        "soundness_requirement": "A grid or simulation is not an exact global certificate without error/coverage guarantees. Separate inner bounds, outer bounds and unresolved states."
+      },
+      "does_not_follow": [
+        "A finite-horizon tube equals an infinite-horizon viability kernel.",
+        "A positive local inward margin certifies the entire future.",
+        "Failure of one tested policy proves no viable policy exists.",
+        "An arbitrary predictive quotient preserves physical viability geometry."
+      ],
+      "revision_context": "Current-05 explicitly distinguishes finite-time, nominal, robust and local statements, and labels Nagumo-Aubin viability as established mathematics.",
+      "implementation_status": "declarative_specification_only",
+      "empirical_validation_status": "not_established_by_this_register",
+      "typed_inputs": [
+        {
+          "type_contract": "Physical state x; constraint K(t); admissible controls/disturbances; finite H"
+        }
+      ],
+      "domains": "Physical state x; constraint K(t); admissible controls/disturbances; finite H",
+      "units": "Time and state-space metric units declared",
+      "quantifiers": "Nominal exists trajectory; robust exists ONE nonanticipative policy for all admitted disturbances",
+      "hypotheses": {
+        "authoritative": "premises (original stable IDs and meanings retained)",
+        "instance_status": "must be admitted separately"
+      },
+      "allowed_inference": {
+        "predicate": "horizon_viability",
+        "formula": "V_H(t)={x in K(t): exists admissible trajectory from x staying in K(s) for every s in [t,H]}; V_H(H)=K(H)",
+        "robust_variant": "Require one admissible nonanticipative strategy to preserve constraints against every allowed disturbance.",
+        "consequence": "With matched conventions and the nominal disturbance included in the robust family, the robust viable set is contained in the nominal set.",
+        "status": "formal_conditional"
+      },
+      "forbidden_inference": [
+        "A finite-horizon tube equals an infinite-horizon viability kernel.",
+        "A positive local inward margin certifies the entire future.",
+        "Failure of one tested policy proves no viable policy exists.",
+        "An arbitrary predictive quotient preserves physical viability geometry."
+      ],
+      "counterexample_or_falsifier": "xdot=1,K=[0,1]: finite horizonH=.5 permits x<=.5; infinite horizon permits none.",
+      "proof_obligations": "Imported viability theory; tangent tests require appropriate regularity, not just gradient sign.",
+      "source_bindings": [
+        {
+          "source_id": "temporal_architecture",
+          "sha256": "852560940e384108f7af61024b07cdef647a05cb2f41d8c8de16cf7d9421297d",
+          "line_start": 289,
+          "line_end": 306,
+          "extracted_pdf_page_start": 7,
+          "extracted_pdf_page_end": 7,
+          "status": "local_snapshot_bound; not live parity"
+        },
+        {
+          "source_id": "temporal_architecture",
+          "sha256": "852560940e384108f7af61024b07cdef647a05cb2f41d8c8de16cf7d9421297d",
+          "line_start": 326,
+          "line_end": 349,
+          "extracted_pdf_page_start": 8,
+          "extracted_pdf_page_end": 8,
+          "status": "local_snapshot_bound; not live parity"
+        }
+      ],
+      "atlas_certificate_refs": []
+    },
+    {
+      "id": "ADAPT-01",
+      "title": "Action can alter later environmental constraints",
+      "kind": "formal_conditional",
+      "objects": [
+        "adaptation",
+        "realization",
+        "environment",
+        "constraint",
+        "action"
+      ],
+      "citations": [
+        {
+          "source_id": "temporal_architecture",
+          "section": "7, equation 14 and Proposition 2",
+          "line_start": 463,
+          "line_end": 476,
+          "verification": "passage_read_in_local_text"
+        },
+        {
+          "source_id": "temporal_architecture",
+          "section": "7.1, closed-loop regime",
+          "line_start": 477,
+          "line_end": 492,
+          "verification": "passage_read_in_local_text"
+        }
+      ],
+      "premises": [
+        {
+          "id": "ADAPT-01.P1",
+          "statement": "O_next=F(O,E) and E_next=G(E,O) are admitted structural intervention laws, not merely observational regressions."
+        },
+        {
+          "id": "ADAPT-01.P2",
+          "statement": "The later constraint set is K(E_next)."
+        },
+        {
+          "id": "ADAPT-01.P3",
+          "statement": "Two attainable values O and O_prime at the same E satisfy K(G(E,O)) != K(G(E,O_prime))."
+        }
+      ],
+      "conclusion_schema": {
+        "predicate": "environmental_constraint_feedback",
+        "consequence": "The admitted change in organism/system state changes the later constraint set through the environmental channel.",
+        "status": "formal_conditional"
+      },
+      "solver_requirements": {
+        "class": "coupled_model_substitution_and_set_comparison",
+        "required_inputs": [
+          "F",
+          "G",
+          "K",
+          "attainable perturbation",
+          "shared environmental state"
+        ],
+        "soundness_requirement": "Verify the structural/causal premise and actual set change. A local derivative argument additionally needs the source's regular-boundary and nonredundancy conditions."
+      },
+      "does_not_follow": [
+        "The feedback is beneficial, optimal or anticipatory.",
+        "Every adaptation increases resources or robustness.",
+        "Self-maintenance requires a universal fixed point rather than cycles or other invariant regimes."
+      ],
+      "revision_context": "Current-05 replaces a universal fixed-point interpretation with coupled invariant-regime reasoning. Causal interpretation remains an explicit premise.",
+      "implementation_status": "declarative_specification_only",
+      "empirical_validation_status": "not_established_by_this_register",
+      "typed_inputs": [
+        {
+          "type_contract": "Coupled structural maps F(O,E),G(E,O),constraint K(E)"
+        }
+      ],
+      "domains": "Coupled structural maps F(O,E),G(E,O),constraint K(E)",
+      "units": "Mechanism-specific physical units",
+      "quantifiers": "There exist attainable O,Oprime at one E that change later K",
+      "hypotheses": {
+        "authoritative": "premises (original stable IDs and meanings retained)",
+        "instance_status": "must be admitted separately"
+      },
+      "allowed_inference": {
+        "predicate": "environmental_constraint_feedback",
+        "consequence": "The admitted change in organism/system state changes the later constraint set through the environmental channel.",
+        "status": "formal_conditional"
+      },
+      "forbidden_inference": [
+        "The feedback is beneficial, optimal or anticipatory.",
+        "Every adaptation increases resources or robustness.",
+        "Self-maintenance requires a universal fixed point rather than cycles or other invariant regimes."
+      ],
+      "counterexample_or_falsifier": "If G(E,O) is independent of O, the asserted environmental writing channel disappears.",
+      "proof_obligations": "A causal coupling is a premise; observational association cannot discharge it.",
+      "source_bindings": [
+        {
+          "source_id": "temporal_architecture",
+          "sha256": "852560940e384108f7af61024b07cdef647a05cb2f41d8c8de16cf7d9421297d",
+          "line_start": 463,
+          "line_end": 476,
+          "extracted_pdf_page_start": 11,
+          "extracted_pdf_page_end": 11,
+          "status": "local_snapshot_bound; not live parity"
+        },
+        {
+          "source_id": "temporal_architecture",
+          "sha256": "852560940e384108f7af61024b07cdef647a05cb2f41d8c8de16cf7d9421297d",
+          "line_start": 477,
+          "line_end": 492,
+          "extracted_pdf_page_start": 11,
+          "extracted_pdf_page_end": 11,
+          "status": "local_snapshot_bound; not live parity"
+        }
+      ],
+      "atlas_certificate_refs": []
+    },
+    {
+      "id": "ADAPT-02",
+      "title": "Opposing channels imply a bounded-interval positive maximum",
+      "kind": "formal_conditional",
+      "objects": [
+        "adaptation",
+        "resource",
+        "bounded_response",
+        "measurement"
+      ],
+      "citations": [
+        {
+          "source_id": "temporal_architecture",
+          "section": "12, Theorem 5",
+          "line_start": 699,
+          "line_end": 715,
+          "verification": "passage_read_in_local_text"
+        }
+      ],
+      "premises": [
+        {
+          "id": "ADAPT-02.P1",
+          "statement": "A(d) and B(d) are continuous for d>=0 and differentiable at d=0."
+        },
+        {
+          "id": "ADAPT-02.P2",
+          "statement": "A(0)=B(0)=0 and A_prime(0)>B_prime(0)."
+        },
+        {
+          "id": "ADAPT-02.P3",
+          "statement": "There is a specified D>0 with A(D)<B(D)."
+        }
+      ],
+      "conclusion_schema": {
+        "predicate": "opposing_channel_biphasic_consequence",
+        "formula": "R(d)=A(d)-B(d)",
+        "consequence": "R is positive on some interval (0,delta), has at least one zero after a positive point and before D, and attains a positive maximum on [0,D].",
+        "readout_extension": "A strictly increasing psi preserves ordering and the sign of psi(R)-psi(0), not necessarily the raw sign of psi(R).",
+        "status": "formal_conditional"
+      },
+      "solver_requirements": {
+        "class": "calculus_premise_certificate",
+        "required_inputs": [
+          "A",
+          "B",
+          "D",
+          "continuity/differentiability witness",
+          "strict derivative and endpoint inequalities"
+        ],
+        "soundness_requirement": "Check the actual derivative inequality and negative endpoint. Boundedness or a plotted peak cannot substitute for premises."
+      },
+      "does_not_follow": [
+        "Every bounded system is hormetic.",
+        "The maximum is unique or its location/amplitude is fixed.",
+        "Every low dose is beneficial for every biological endpoint.",
+        "Curve shape identifies the constructive/destructive mechanisms."
+      ],
+      "revision_context": "The current theorem is a sufficient condition, not an iff law. It supersedes broad readings that boundedness alone forces hormesis.",
+      "implementation_status": "declarative_specification_only",
+      "empirical_validation_status": "not_established_by_this_register",
+      "typed_inputs": [
+        {
+          "type_contract": "A,B continuous on[0,infinity), differentiable at0"
+        }
+      ],
+      "domains": "A,B continuous on[0,infinity), differentiable at0",
+      "units": "Common response units; dose same calibrated unit in both channels",
+      "quantifiers": "If slope advantage at0 and damage dominates at someD, exists positive maximum and crossing",
+      "hypotheses": {
+        "authoritative": "premises (original stable IDs and meanings retained)",
+        "instance_status": "must be admitted separately"
+      },
+      "allowed_inference": {
+        "predicate": "opposing_channel_biphasic_consequence",
+        "formula": "R(d)=A(d)-B(d)",
+        "consequence": "R is positive on some interval (0,delta), has at least one zero after a positive point and before D, and attains a positive maximum on [0,D].",
+        "readout_extension": "A strictly increasing psi preserves ordering and the sign of psi(R)-psi(0), not necessarily the raw sign of psi(R).",
+        "status": "formal_conditional"
+      },
+      "forbidden_inference": [
+        "Every bounded system is hormetic.",
+        "The maximum is unique or its location/amplitude is fixed.",
+        "Every low dose is beneficial for every biological endpoint.",
+        "Curve shape identifies the constructive/destructive mechanisms."
+      ],
+      "counterexample_or_falsifier": "A(d)=d/(1+d),B(d)=2d is bounded adaptive benefit channel with no positive net branch.",
+      "proof_obligations": "Elementary calculus supplied; unique peak or universal hormesis not implied.",
+      "source_bindings": [
+        {
+          "source_id": "temporal_architecture",
+          "sha256": "852560940e384108f7af61024b07cdef647a05cb2f41d8c8de16cf7d9421297d",
+          "line_start": 699,
+          "line_end": 715,
+          "extracted_pdf_page_start": 16,
+          "extracted_pdf_page_end": 16,
+          "status": "local_snapshot_bound; not live parity"
+        }
+      ],
+      "atlas_certificate_refs": [
+        "packages/resources.json"
+      ]
+    },
+    {
+      "id": "REC-01",
+      "title": "Recovery residue adds predictive value",
+      "kind": "empirical_hypothesis",
+      "objects": [
+        "adaptation",
+        "measurement",
+        "history",
+        "resource",
+        "evidence"
+      ],
+      "citations": [
+        {
+          "source_id": "ida",
+          "section": "6, recovery residue and claim distinction",
+          "line_start": 282,
+          "line_end": 300,
+          "verification": "passage_read_in_local_text"
+        },
+        {
+          "source_id": "ida",
+          "section": "11, recovery and residue falsifiers",
+          "line_start": 592,
+          "line_end": 606,
+          "verification": "passage_read_in_local_text"
+        }
+      ],
+      "premises": [
+        {
+          "id": "REC-01.P1",
+          "statement": "Freeze the reference, chart, dead-band delta, decay beta and feature construction before the evaluation data."
+        },
+        {
+          "id": "REC-01.P2",
+          "statement": "Compute d(t) as chart distance to the declared reference and R_beta(t)=integral_0^t exp(-beta*(t-s))*max(0,d(s)-delta) ds."
+        },
+        {
+          "id": "REC-01.P3",
+          "statement": "Declare the target outcome, horizon, appropriate static/acute-displacement baselines, held-out split, predictive metric and uncertainty rule."
+        },
+        {
+          "id": "REC-01.P4",
+          "statement": "Prevent leakage from future outcomes, moving baselines or post-hoc feature selection."
+        }
+      ],
+      "conclusion_schema": {
+        "predicate": "recovery_feature_gain_hypothesis",
+        "hypothesis": "R_beta or declared return features improve held-out prediction beyond the declared static/acute-displacement baseline.",
+        "status": "hypothesis_until_tested",
+        "possible_test_outcomes": [
+          "supported_within_scope",
+          "not_supported",
+          "inconclusive"
+        ],
+        "mathematical_subclaim": "The residue is computable under the frozen metric and regularity conditions; computation does not establish predictive value."
+      },
+      "solver_requirements": {
+        "class": "held_out_predictive_comparison",
+        "required_inputs": [
+          "frozen feature contract",
+          "time-series data",
+          "outcome labels",
+          "matched baselines",
+          "uncertainty procedure"
+        ],
+        "soundness_requirement": "Report scoped comparative evidence and uncertainty; do not convert a finite positive result into universal validity."
+      },
+      "does_not_follow": [
+        "The residue measures physical entropy.",
+        "The features are valid biomarkers in an untested domain.",
+        "A predictive gain proves that residue-gated actuation improves recovery or is safe.",
+        "A synthetic illustration supplies human or biological validation."
+      ],
+      "revision_context": "IDA explicitly separates the computable integral from an unproven effective-model hypothesis. Its read-side and write-side failure conditions are separate.",
+      "implementation_status": "declarative_specification_only",
+      "empirical_validation_status": "not_established_by_this_register",
+      "typed_inputs": [
+        {
+          "type_contract": "Frozen chart/reference, deadband, leak kernel, predictive outcome and held-out split"
+        }
+      ],
+      "domains": "Frozen chart/reference, deadband, leak kernel, predictive outcome and held-out split",
+      "units": "Distance*time for unnormalized R; rates1/time; chart units retained",
+      "quantifiers": "Empirical test compares prediction over prespecified population/futures, not all possible systems",
+      "hypotheses": {
+        "authoritative": "premises (original stable IDs and meanings retained)",
+        "instance_status": "must be admitted separately"
+      },
+      "allowed_inference": {
+        "predicate": "recovery_feature_gain_hypothesis",
+        "hypothesis": "R_beta or declared return features improve held-out prediction beyond the declared static/acute-displacement baseline.",
+        "status": "hypothesis_until_tested",
+        "possible_test_outcomes": [
+          "supported_within_scope",
+          "not_supported",
+          "inconclusive"
+        ],
+        "mathematical_subclaim": "The residue is computable under the frozen metric and regularity conditions; computation does not establish predictive value."
+      },
+      "forbidden_inference": [
+        "The residue measures physical entropy.",
+        "The features are valid biomarkers in an untested domain.",
+        "A predictive gain proves that residue-gated actuation improves recovery or is safe.",
+        "A synthetic illustration supplies human or biological validation."
+      ],
+      "counterexample_or_falsifier": "Changing reference with outcomes can manufacture apparent clean return.",
+      "proof_obligations": "Numerical integration plus validation/uncertainty; no empirical predictive result executed here.",
+      "source_bindings": [
+        {
+          "source_id": "ida",
+          "sha256": "f985548fe1a5bf02dcb6dc634662449fd814087094eabbd69688fc70c144eb95",
+          "line_start": 282,
+          "line_end": 300,
+          "extracted_pdf_page_start": 8,
+          "extracted_pdf_page_end": 8,
+          "status": "local_snapshot_bound; not live parity"
+        },
+        {
+          "source_id": "ida",
+          "sha256": "f985548fe1a5bf02dcb6dc634662449fd814087094eabbd69688fc70c144eb95",
+          "line_start": 592,
+          "line_end": 606,
+          "extracted_pdf_page_start": 15,
+          "extracted_pdf_page_end": 15,
+          "status": "local_snapshot_bound; not live parity"
+        }
+      ],
+      "atlas_certificate_refs": []
+    },
+    {
+      "id": "ACT-01",
+      "title": "Common-action sufficiency and minimum finite static code",
+      "kind": "formal_conditional",
+      "objects": [
+        "action",
+        "state",
+        "observer",
+        "constraint"
+      ],
+      "citations": [
+        {
+          "source_id": "action_sufficiency",
+          "section": "3.1-3.3, common-action theorem and recursive limit",
+          "line_start": 88,
+          "line_end": 131,
+          "verification": "passage_read_in_local_text"
+        },
+        {
+          "source_id": "action_sufficiency",
+          "section": "4-4.2, minimum code and set cover",
+          "line_start": 141,
+          "line_end": 184,
+          "verification": "passage_read_in_local_text"
+        }
+      ],
+      "premises": [
+        {
+          "id": "ACT-01.P1",
+          "statement": "Declare finite states S_plus, finite actions A, success probabilities p_s(a), tolerance alpha and a deterministic code z."
+        },
+        {
+          "id": "ACT-01.P2",
+          "statement": "Define acceptable actions A_alpha(s)={a:p_s(a)>=1-alpha}."
+        },
+        {
+          "id": "ACT-01.P3",
+          "statement": "For the finite minimum, states are individually feasible; otherwise use an explicit infeasible result."
+        },
+        {
+          "id": "ACT-01.P4",
+          "statement": "Any estimated probabilities require a separate simultaneous uncertainty procedure before treating the acceptable-action table as certified."
+        }
+      ],
+      "conclusion_schema": {
+        "predicate": "static_action_code_sufficiency",
+        "formula": "z is sufficient iff every occupied code cell C has intersection_(s in C) A_alpha(s) nonempty",
+        "minimum": "m_star=min{|D|:D subset A and union_(a in D){s:a in A_alpha(s)}=S_plus}; infeasible if no cover exists",
+        "consequence": "A covering action can be assigned to each code cell; minimal conflict hypergraph coloring gives the same finite minimum.",
+        "status": "formal_conditional"
+      },
+      "solver_requirements": {
+        "class": "finite_set_intersection_and_exact_set_cover",
+        "required_inputs": [
+          "acceptable-action incidence table",
+          "code partition if testing a supplied code"
+        ],
+        "soundness_requirement": "Check complete cell intersections, not just pairwise compatibility. Exact minimality requires exhaustive/optimality certificate, not a heuristic cover alone."
+      },
+      "does_not_follow": [
+        "m_star is the number of states required by a sequential controller.",
+        "The observer can measure the abstract code without error or cost.",
+        "Full predictive state is necessary for every task.",
+        "A common safe abstention action guarantees useful task coverage."
+      ],
+      "revision_context": "Current-11 explicitly calls the optimization classical set cover and separates static selection from recursive closure and executor memory.",
+      "implementation_status": "declarative_specification_only",
+      "empirical_validation_status": "not_established_by_this_register",
+      "typed_inputs": [
+        {
+          "type_contract": "Finite states/actions; success table; alpha; deterministic code"
+        }
+      ],
+      "domains": "Finite states/actions; success table; alpha; deterministic code",
+      "units": "Success probability dimensionless; code cells integer",
+      "quantifiers": "For every cell exists one action acceptable for every state; minimum over all finite codes",
+      "hypotheses": {
+        "authoritative": "premises (original stable IDs and meanings retained)",
+        "instance_status": "must be admitted separately"
+      },
+      "allowed_inference": {
+        "predicate": "static_action_code_sufficiency",
+        "formula": "z is sufficient iff every occupied code cell C has intersection_(s in C) A_alpha(s) nonempty",
+        "minimum": "m_star=min{|D|:D subset A and union_(a in D){s:a in A_alpha(s)}=S_plus}; infeasible if no cover exists",
+        "consequence": "A covering action can be assigned to each code cell; minimal conflict hypergraph coloring gives the same finite minimum.",
+        "status": "formal_conditional"
+      },
+      "forbidden_inference": [
+        "m_star is the number of states required by a sequential controller.",
+        "The observer can measure the abstract code without error or cost.",
+        "Full predictive state is necessary for every task.",
+        "A common safe abstention action guarantees useful task coverage."
+      ],
+      "counterexample_or_falsifier": "{a,b},{b,c},{a,c}: pairwise intersections nonempty, triple empty; min2.",
+      "proof_obligations": "Exact cover example enumerated; arbitrary large cases combinatorial; success estimation separate.",
+      "source_bindings": [
+        {
+          "source_id": "action_sufficiency",
+          "sha256": "3b7878161e5cd6c1d600236fc705f650253cfb12d032a46d0432be7b29ea7e8d",
+          "line_start": 88,
+          "line_end": 131,
+          "extracted_pdf_page_start": 3,
+          "extracted_pdf_page_end": 4,
+          "status": "local_snapshot_bound; not live parity"
+        },
+        {
+          "source_id": "action_sufficiency",
+          "sha256": "3b7878161e5cd6c1d600236fc705f650253cfb12d032a46d0432be7b29ea7e8d",
+          "line_start": 141,
+          "line_end": 184,
+          "extracted_pdf_page_start": 4,
+          "extracted_pdf_page_end": 5,
+          "status": "local_snapshot_bound; not live parity"
+        }
+      ],
+      "atlas_certificate_refs": [
+        "packages/action_evidence.json"
+      ]
+    },
+    {
+      "id": "ACT-02",
+      "title": "Binary diagnostic selection bound",
+      "kind": "formal_conditional",
+      "objects": [
+        "observer",
+        "measurement",
+        "action",
+        "evidence"
+      ],
+      "citations": [
+        {
+          "source_id": "action_sufficiency",
+          "section": "5.2, equations 14-15 and risk distinction",
+          "line_start": 209,
+          "line_end": 246,
+          "verification": "passage_read_in_local_text"
+        }
+      ],
+      "premises": [
+        {
+          "id": "ACT-02.P1",
+          "statement": "There are two equiprobable states with nonempty disjoint acceptable-action sets."
+        },
+        {
+          "id": "ACT-02.P2",
+          "statement": "A fixed diagnostic has laws P1 and P2 on the same measurable space."
+        },
+        {
+          "id": "ACT-02.P3",
+          "statement": "The diagnostic does not alter the relevant state, action availability or conditional success probabilities."
+        },
+        {
+          "id": "ACT-02.P4",
+          "statement": "Use TV(P,Q)=sup_B |P(B)-Q(B)| and distinguish selection error from outcome failure."
+        }
+      ],
+      "conclusion_schema": {
+        "predicate": "diagnostic_selection_error_bound",
+        "formula": "inf_selection Pr(unacceptable action)=(1-TV(P1,P2))/2",
+        "necessary_condition": "A demanded selection-error tolerance delta requires TV(P1,P2)>=1-2*delta.",
+        "status": "formal_conditional"
+      },
+      "solver_requirements": {
+        "class": "exact_distribution_distance_or_certified_bound",
+        "required_inputs": [
+          "P1",
+          "P2",
+          "acceptable-action sets",
+          "prior",
+          "delta"
+        ],
+        "soundness_requirement": "For an impossibility claim use an upper bound on achievable TV below the required threshold. A noisy estimate or one failed classifier is insufficient."
+      },
+      "does_not_follow": [
+        "Equal-prior Bayes error establishes a uniform per-state guarantee.",
+        "Selection-error lower bounds are automatically biological-failure lower bounds.",
+        "A tested diagnostic's failure excludes every feasible diagnostic or adaptive policy.",
+        "The formula applies unchanged when diagnosis perturbs the relevant risks."
+      ],
+      "revision_context": "Current-11 includes a numerical counterexample separating unacceptable selection from outcome failure, and keeps the one-shot non-disturbing restriction.",
+      "implementation_status": "declarative_specification_only",
+      "empirical_validation_status": "not_established_by_this_register",
+      "typed_inputs": [
+        {
+          "type_contract": "Two equiprobable hidden states, disjoint action sets, fixed nondisturbing record laws"
+        }
+      ],
+      "domains": "Two equiprobable hidden states, disjoint action sets, fixed nondisturbing record laws",
+      "units": "Probability dimensionless; diagnostic duration/cost separate",
+      "quantifiers": "Minimum over record-based action selection equals(1-TV)/2",
+      "hypotheses": {
+        "authoritative": "premises (original stable IDs and meanings retained)",
+        "instance_status": "must be admitted separately"
+      },
+      "allowed_inference": {
+        "predicate": "diagnostic_selection_error_bound",
+        "formula": "inf_selection Pr(unacceptable action)=(1-TV(P1,P2))/2",
+        "necessary_condition": "A demanded selection-error tolerance delta requires TV(P1,P2)>=1-2*delta.",
+        "status": "formal_conditional"
+      },
+      "forbidden_inference": [
+        "Equal-prior Bayes error establishes a uniform per-state guarantee.",
+        "Selection-error lower bounds are automatically biological-failure lower bounds.",
+        "A tested diagnostic's failure excludes every feasible diagnostic or adaptive policy.",
+        "The formula applies unchanged when diagnosis perturbs the relevant risks."
+      ],
+      "counterexample_or_falsifier": "Same observed likelihoods give risk1/2 regardless of physically available state-specific rescue.",
+      "proof_obligations": "Finite exact likelihood calculation executed; this is selection error, not realized outcome failure.",
+      "source_bindings": [
+        {
+          "source_id": "action_sufficiency",
+          "sha256": "3b7878161e5cd6c1d600236fc705f650253cfb12d032a46d0432be7b29ea7e8d",
+          "line_start": 209,
+          "line_end": 246,
+          "extracted_pdf_page_start": 5,
+          "extracted_pdf_page_end": 6,
+          "status": "local_snapshot_bound; not live parity"
+        }
+      ],
+      "atlas_certificate_refs": [
+        "packages/action_evidence.json"
+      ]
+    },
+    {
+      "id": "EVID-01",
+      "title": "Witnessed certified-channel invariant",
+      "kind": "formal_conditional",
+      "objects": [
+        "evidence",
+        "question",
+        "measurement",
+        "consequence"
+      ],
+      "citations": [
+        {
+          "source_id": "epistemic",
+          "section": "4.1, K0-K6 and channel invariant C1",
+          "line_start": 179,
+          "line_end": 220,
+          "verification": "passage_read_in_local_text"
+        },
+        {
+          "source_id": "epistemic",
+          "section": "7.1-7.2, finite jurisdiction and binding",
+          "line_start": 363,
+          "line_end": 426,
+          "verification": "passage_read_in_local_text"
+        }
+      ],
+      "premises": [
+        {
+          "id": "EVID-01.P1",
+          "statement": "Fix an admitted evidence snapshot, derivation relation and claim-language interpretation."
+        },
+        {
+          "id": "EVID-01.P2",
+          "statement": "Initially the channel is empty or supported; admitted evidence remains bound to checked immutable content."
+        },
+        {
+          "id": "EVID-01.P3",
+          "statement": "Every factual write uses a sound verifier and the declared introduction rule; the proposer has no bypass or ability to mutate trusted components/inputs."
+        },
+        {
+          "id": "EVID-01.P4",
+          "statement": "Failed obligations produce ASK/ABSTAIN or separately verified partial output."
+        },
+        {
+          "id": "EVID-01.P5",
+          "statement": "The renderer/parser is semantically sound for the admitted grammar and context, retains qualifications and introduces no additional factual claims."
+        }
+      ],
+      "conclusion_schema": {
+        "predicate": "certified_channel_relative_support",
+        "consequence": "Every factual proposition in the certified channel is supported relative to the declared evidence snapshot and derivation rules.",
+        "status": "formal_conditional"
+      },
+      "solver_requirements": {
+        "class": "certificate_verification_and_write_path_audit",
+        "required_inputs": [
+          "bound query",
+          "evidence hashes",
+          "certificate",
+          "verifier rules",
+          "rendered interpretation",
+          "trusted-path evidence"
+        ],
+        "soundness_requirement": "A typed JSON object or deterministic renderer alone proves nothing about verifier soundness or bypass prevention. Recompute bindings and admitted operations."
+      },
+      "does_not_follow": [
+        "Supported claims are automatically externally true.",
+        "Fluent generation, deterministic code or passing mutation tests proves the entire trusted base sound.",
+        "Finite zero-error tests prove population zero error.",
+        "The architecture alone guarantees useful coverage."
+      ],
+      "revision_context": "Current-01 makes K0-K6 conditional and records limits of finite mutation tests; no universal truth or formal whole-language verification is claimed.",
+      "implementation_status": "declarative_specification_only",
+      "empirical_validation_status": "not_established_by_this_register",
+      "typed_inputs": [
+        {
+          "type_contract": "Fixed evidence, claim grammar, sound verifier and sound renderer"
+        }
+      ],
+      "domains": "Fixed evidence, claim grammar, sound verifier and sound renderer",
+      "units": "Query-specific units and qualifiers must survive rendering",
+      "quantifiers": "Every factual write is supported if the invariant initially holds and all permitted writes preserve it",
+      "hypotheses": {
+        "authoritative": "premises (original stable IDs and meanings retained)",
+        "instance_status": "must be admitted separately"
+      },
+      "allowed_inference": {
+        "predicate": "certified_channel_relative_support",
+        "consequence": "Every factual proposition in the certified channel is supported relative to the declared evidence snapshot and derivation rules.",
+        "status": "formal_conditional"
+      },
+      "forbidden_inference": [
+        "Supported claims are automatically externally true.",
+        "Fluent generation, deterministic code or passing mutation tests proves the entire trusted base sound.",
+        "Finite zero-error tests prove population zero error.",
+        "The architecture alone guarantees useful coverage."
+      ],
+      "counterexample_or_falsifier": "Replacing trusted expected hash together with source defeats authenticity inference from matching hashes.",
+      "proof_obligations": "Trusted-computing-base conditional invariant; finite tests do not prove universal semantic soundness.",
+      "source_bindings": [
+        {
+          "source_id": "epistemic",
+          "sha256": "e40b7f4a4956f038f720c295f08f46fcd77e78e8a88bf6372133ee5765018acc",
+          "line_start": 179,
+          "line_end": 220,
+          "extracted_pdf_page_start": 4,
+          "extracted_pdf_page_end": 6,
+          "status": "local_snapshot_bound; not live parity"
+        },
+        {
+          "source_id": "epistemic",
+          "sha256": "e40b7f4a4956f038f720c295f08f46fcd77e78e8a88bf6372133ee5765018acc",
+          "line_start": 363,
+          "line_end": 426,
+          "extracted_pdf_page_start": 9,
+          "extracted_pdf_page_end": 10,
+          "status": "local_snapshot_bound; not live parity"
+        }
+      ],
+      "atlas_certificate_refs": [
+        "packages/action_evidence.json"
+      ]
+    },
+    {
+      "id": "META-01",
+      "title": "Typed residues organize questions without transferring proofs",
+      "kind": "analogy",
+      "objects": [
+        "question",
+        "measurement",
+        "history",
+        "adaptation",
+        "evidence"
+      ],
+      "citations": [
+        {
+          "source_id": "ida",
+          "section": "2.1-2.2, residue contract and typed ladder",
+          "line_start": 142,
+          "line_end": 190,
+          "verification": "passage_read_in_local_text"
+        }
+      ],
+      "premises": [
+        {
+          "id": "META-01.P1",
+          "statement": "Name the local observable, candidate hidden object/projection, residue definition, comparison baseline and held-out failure condition."
+        },
+        {
+          "id": "META-01.P2",
+          "statement": "Assign the residue its own mathematical/domain type and evidence status."
+        },
+        {
+          "id": "META-01.P3",
+          "statement": "Treat quotient, coordinate, recovery, addressed and microscopic residues as different objects."
+        }
+      ],
+      "conclusion_schema": {
+        "predicate": "cross_domain_question_template",
+        "consequence": "The shared projection-residue schema can organize a new domain-specific hypothesis and test specification.",
+        "status": "analogy_only",
+        "forbidden_promotion": "No empirical or formal conclusion transfers solely from another residue sharing this schema."
+      },
+      "solver_requirements": {
+        "class": "type_and_scope_lint_only",
+        "required_inputs": [
+          "local residue contract",
+          "type label",
+          "domain-specific test"
+        ],
+        "soundness_requirement": "This rule emits a question/template, never a scientific entailment or validated model."
+      },
+      "does_not_follow": [
+        "R0=R1=R2=R3=R4.",
+        "An operational negentropy definition independently validates physical entropy export.",
+        "The schema itself is a falsifiable universal law.",
+        "Success in one scientific domain validates another."
+      ],
+      "revision_context": "IDA explicitly calls schema recurrence a heuristic/filing system and gives separate death conditions. The integrated architecture preserves this distinction.",
+      "implementation_status": "declarative_specification_only",
+      "empirical_validation_status": "not_established_by_this_register",
+      "typed_inputs": [
+        {
+          "type_contract": "Typed local objects, projection, residual and test"
+        }
+      ],
+      "domains": "Typed local objects, projection, residual and test",
+      "units": "No silent equality of recovery distance, information and energy units",
+      "quantifiers": "For each proposed correspondence, explicitly name preserved relations before transfer",
+      "hypotheses": {
+        "authoritative": "premises (original stable IDs and meanings retained)",
+        "instance_status": "must be admitted separately"
+      },
+      "allowed_inference": {
+        "predicate": "cross_domain_question_template",
+        "consequence": "The shared projection-residue schema can organize a new domain-specific hypothesis and test specification.",
+        "status": "analogy_only",
+        "forbidden_promotion": "No empirical or formal conclusion transfers solely from another residue sharing this schema."
+      },
+      "forbidden_inference": [
+        "R0=R1=R2=R3=R4.",
+        "An operational negentropy definition independently validates physical entropy export.",
+        "The schema itself is a falsifiable universal law.",
+        "Success in one scientific domain validates another."
+      ],
+      "counterexample_or_falsifier": "Linear leaky and quadratic energy scores can have opposite rankings.",
+      "proof_obligations": "Analogy proposes tests; consequence transfers only after required structure and domain are checked.",
+      "source_bindings": [
+        {
+          "source_id": "ida",
+          "sha256": "f985548fe1a5bf02dcb6dc634662449fd814087094eabbd69688fc70c144eb95",
+          "line_start": 142,
+          "line_end": 190,
+          "extracted_pdf_page_start": 5,
+          "extracted_pdf_page_end": 5,
+          "status": "local_snapshot_bound; not live parity"
+        }
+      ],
+      "atlas_certificate_refs": [
+        "packages/connections.json"
+      ]
+    },
+    {
+      "id": "COMP-03",
+      "title": "Projective lift and cross-ratio preservation",
+      "kind": "formal_conditional",
+      "objects": [
+        "Positive homogeneous two-vector z modulo common scale",
+        "Invertible2x2 linear map M; valid chart and four distinct points"
+      ],
+      "typed_inputs": [
+        {
+          "type_contract": "Positive homogeneous two-vector z modulo common scale"
+        },
+        {
+          "type_contract": "Invertible2x2 linear map M; valid chart and four distinct points"
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "observer",
+          "section": "Observation Projection Theorem",
+          "line_start": 312,
+          "line_end": 402,
+          "verification": "selected_passage_read_in_local_text"
+        }
+      ],
+      "source_bindings": [
+        {
+          "source_id": "observer",
+          "sha256": "9570999564f6b8f0aa4f4088ed1c371b61ff761e50afe95b52c19f7b5fe2278a",
+          "line_start": 312,
+          "line_end": 402,
+          "extracted_pdf_page_start": 8,
+          "extracted_pdf_page_end": 10,
+          "status": "local_snapshot_bound; not live parity"
+        }
+      ],
+      "premises": [
+        {
+          "id": "COMP-03.P1",
+          "statement": "Erase only common scale; znext=Mz in an admitted cone/chart"
+        },
+        {
+          "id": "COMP-03.P2",
+          "statement": "det(M)!=0 and all needed chart denominators nonzero"
+        }
+      ],
+      "conclusion_schema": {
+        "predicate": "projective_lift_and_cross-ratio_preservation",
+        "formula": "qnext=(a*q+b)/(c*q+d); cross ratios preserved",
+        "status": "formal_conditional"
+      },
+      "solver_requirements": {
+        "class": "rational_identity_plus_domain",
+        "required_inputs": [
+          "Positive homogeneous two-vector z modulo common scale",
+          "Invertible2x2 linear map M; valid chart and four distinct points"
+        ],
+        "soundness_requirement": "Supplied mathematical argument; instance checks only where linked."
+      },
+      "does_not_follow": [
+        "Boundedness selects this model",
+        "The map fixes both endpoints",
+        "Passing finite points proves universal projectivity",
+        "Order effect implies hidden state"
+      ],
+      "revision_context": "Proposed atlas extension; source-specific limits and current successors govern.",
+      "implementation_status": "authored_example_only",
+      "empirical_validation_status": "not_established_by_this_register",
+      "domains": [
+        "Positive homogeneous two-vector z modulo common scale",
+        "Invertible2x2 linear map M; valid chart and four distinct points"
+      ],
+      "units": "Ratio and cross ratio dimensionless; physical channels must admit common scaling",
+      "quantifiers": "For every admissible quadruple under one fixed M",
+      "hypotheses": "Listed premises; observed/assumed/missing tracked per instance",
+      "allowed_inference": "qnext=(a*q+b)/(c*q+d); cross ratios preserved",
+      "forbidden_inference": [
+        "Boundedness selects this model",
+        "The map fixes both endpoints",
+        "Passing finite points proves universal projectivity",
+        "Order effect implies hidden state"
+      ],
+      "counterexample_or_falsifier": "q->q\u00b2 changes4/3 to32/25; A2q andBq+1 preserve invariant but do not commute",
+      "proof_obligations": "Supplied mathematical argument; instance checks only where linked.",
+      "atlas_certificate_refs": [
+        "packages/composition.json"
+      ]
+    },
+    {
+      "id": "COMP-04",
+      "title": "Bliss versus common-Hill-1 Loewe contrast",
+      "kind": "formal_conditional",
+      "objects": [
+        "Common scalar effect a,b in(0,1)",
+        "Specified Bliss and dose-equivalence nulls; common Hill exponent1"
+      ],
+      "typed_inputs": [
+        {
+          "type_contract": "Common scalar effect a,b in(0,1)"
+        },
+        {
+          "type_contract": "Specified Bliss and dose-equivalence nulls; common Hill exponent1"
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "pharmacology",
+          "section": "combination nulls and design",
+          "line_start": 101,
+          "line_end": 240,
+          "verification": "selected_passage_read_in_local_text"
+        }
+      ],
+      "source_bindings": [
+        {
+          "source_id": "pharmacology",
+          "sha256": "eaee5f28c7170353ff6530588d4ce31fcc76a617294ac9491a42a34f9494bb8d",
+          "line_start": 101,
+          "line_end": 240,
+          "extracted_pdf_page_start": 3,
+          "extracted_pdf_page_end": 5,
+          "status": "local_snapshot_bound; not live parity"
+        }
+      ],
+      "premises": [
+        {
+          "id": "COMP-04.P1",
+          "statement": "Bliss E=a+b-ab"
+        },
+        {
+          "id": "COMP-04.P2",
+          "statement": "Common-Hill-1 Loewe E=(a+b-2ab)/(1-ab)"
+        }
+      ],
+      "conclusion_schema": {
+        "predicate": "bliss_versus_common-hill-1_loewe_contrast",
+        "formula": "Bliss-Loewe=a*b*(1-a)*(1-b)/(1-a*b)>0; maximal raw gap at a=b=(sqrt5-1)/2",
+        "status": "formal_conditional"
+      },
+      "solver_requirements": {
+        "class": "rational_identity_plus_calculus",
+        "required_inputs": [
+          "Common scalar effect a,b in(0,1)",
+          "Specified Bliss and dose-equivalence nulls; common Hill exponent1"
+        ],
+        "soundness_requirement": "Supplied mathematical argument; instance checks only where linked."
+      },
+      "does_not_follow": [
+        "Noise-adjusted information universally maximized there",
+        "Bliss exceeds every Loewe model for arbitrary Hill shape",
+        "Same geometry proves molecular independence"
+      ],
+      "revision_context": "Proposed atlas extension; source-specific limits and current successors govern.",
+      "implementation_status": "declarative_specification_only",
+      "empirical_validation_status": "not_established_by_this_register",
+      "domains": [
+        "Common scalar effect a,b in(0,1)",
+        "Specified Bliss and dose-equivalence nulls; common Hill exponent1"
+      ],
+      "units": "Effects dimensionless; doses separately normalized by potency",
+      "quantifiers": "For every a,b in(0,1)",
+      "hypotheses": "Listed premises; observed/assumed/missing tracked per instance",
+      "allowed_inference": "Bliss-Loewe=a*b*(1-a)*(1-b)/(1-a*b)>0; maximal raw gap at a=b=(sqrt5-1)/2",
+      "forbidden_inference": [
+        "Noise-adjusted information universally maximized there",
+        "Bliss exceeds every Loewe model for arbitrary Hill shape",
+        "Same geometry proves molecular independence"
+      ],
+      "counterexample_or_falsifier": "At a=b=1/3 the two outputs are5/9 and1/2, not1/4",
+      "proof_obligations": "Supplied mathematical argument; instance checks only where linked.",
+      "atlas_certificate_refs": []
+    },
+    {
+      "id": "RES-03",
+      "title": "Reducing-equivalent budget",
+      "kind": "formal_conditional",
+      "objects": [
+        "Nonnegative G,O,N,P in one fixed-volume compartment",
+        "Integrable reaction extents and absolutely continuous pool trajectory"
+      ],
+      "typed_inputs": [
+        {
+          "type_contract": "Nonnegative G,O,N,P in one fixed-volume compartment"
+        },
+        {
+          "type_contract": "Integrable reaction extents and absolutely continuous pool trajectory"
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "temporal_architecture",
+          "section": "finite regenerative authority",
+          "line_start": 732,
+          "line_end": 749,
+          "verification": "selected_passage_read_in_local_text"
+        },
+        {
+          "source_id": "redox_model",
+          "section": "model and boundary",
+          "line_start": 170,
+          "line_end": 223,
+          "verification": "selected_passage_read_in_local_text"
+        }
+      ],
+      "source_bindings": [
+        {
+          "source_id": "temporal_architecture",
+          "sha256": "852560940e384108f7af61024b07cdef647a05cb2f41d8c8de16cf7d9421297d",
+          "line_start": 732,
+          "line_end": 749,
+          "extracted_pdf_page_start": 17,
+          "extracted_pdf_page_end": 17,
+          "status": "local_snapshot_bound; not live parity"
+        },
+        {
+          "source_id": "redox_model",
+          "sha256": "43bcb86cacd71a49eddb58ac9a7ce666102fe2f0ed82905939a4f8cab7da1f1c",
+          "line_start": 170,
+          "line_end": 223,
+          "extracted_pdf_page_start": 5,
+          "extracted_pdf_page_end": 6,
+          "status": "local_snapshot_bound; not live parity"
+        }
+      ],
+      "premises": [
+        {
+          "id": "RES-03.P1",
+          "statement": "Gdot=-2Jp+2Jgr+Jg; Odot=Jp-Jgr; Ndot=Jreg-Jgr; Pdot=Jgr-Jreg; pools nonnegative"
+        },
+        {
+          "id": "RES-03.P2",
+          "statement": "Closed source branch setsJg=0; otherwise include it"
+        }
+      ],
+      "conclusion_schema": {
+        "predicate": "reducing-equivalent_budget",
+        "formula": "Bdot=Jreg-Jp+Jg/2; integralJp<=B0+integralJreg+integralJg/2",
+        "status": "formal_conditional"
+      },
+      "solver_requirements": {
+        "class": "linear_stoichiometric_certificate_plus_FTC",
+        "required_inputs": [
+          "Nonnegative G,O,N,P in one fixed-volume compartment",
+          "Integrable reaction extents and absolutely continuous pool trajectory"
+        ],
+        "soundness_requirement": "Stoichiometric equation is an explicit synthesis consistent with biology handoff; not claimed copied from the three-variable legacy model. Integral proof supplied; physical flux model remains assumed."
+      },
+      "does_not_follow": [
+        "Positive B suffices for viability",
+        "Ratio measures absolute reserve",
+        "Budget equality is a death or commitment time"
+      ],
+      "revision_context": "Proposed atlas extension; source-specific limits and current successors govern.",
+      "implementation_status": "authored_example_only",
+      "empirical_validation_status": "not_established_by_this_register",
+      "domains": [
+        "Nonnegative G,O,N,P in one fixed-volume compartment",
+        "Integrable reaction extents and absolutely continuous pool trajectory"
+      ],
+      "units": "B=G/2+N in peroxide-clearance amount; Jg GSH amount/time",
+      "quantifiers": "For every trajectory satisfying the ledger over[0,T]",
+      "hypotheses": "Listed premises; observed/assumed/missing tracked per instance",
+      "allowed_inference": "Bdot=Jreg-Jp+Jg/2; integralJp<=B0+integralJreg+integralJg/2",
+      "forbidden_inference": [
+        "Positive B suffices for viability",
+        "Ratio measures absolute reserve",
+        "Budget equality is a death or commitment time"
+      ],
+      "counterexample_or_falsifier": "External Jg=2 permits positive flux ledger throughT3 despite closed-source exclusion",
+      "proof_obligations": "Stoichiometric equation is an explicit synthesis consistent with biology handoff; not claimed copied from the three-variable legacy model. Integral proof supplied; physical flux model remains assumed.",
+      "atlas_certificate_refs": [
+        "packages/resources.json"
+      ]
+    },
+    {
+      "id": "RES-04",
+      "title": "Delayed-induction duration exclusion",
+      "kind": "formal_conditional",
+      "objects": [
+        "RES-03 budget",
+        "tau>0,a0=0,0<=s<=1, tau adot=s-a",
+        "Jreg<=R0+beta*a; constant full-clearance demandD"
+      ],
+      "typed_inputs": [
+        {
+          "type_contract": "RES-03 budget"
+        },
+        {
+          "type_contract": "tau>0,a0=0,0<=s<=1, tau adot=s-a"
+        },
+        {
+          "type_contract": "Jreg<=R0+beta*a; constant full-clearance demandD"
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "temporal_architecture",
+          "section": "physical viability",
+          "line_start": 270,
+          "line_end": 355,
+          "verification": "selected_passage_read_in_local_text"
+        },
+        {
+          "source_id": "redox_model",
+          "section": "finite regenerative authority",
+          "line_start": 187,
+          "line_end": 223,
+          "verification": "selected_passage_read_in_local_text"
+        }
+      ],
+      "source_bindings": [
+        {
+          "source_id": "temporal_architecture",
+          "sha256": "852560940e384108f7af61024b07cdef647a05cb2f41d8c8de16cf7d9421297d",
+          "line_start": 270,
+          "line_end": 355,
+          "extracted_pdf_page_start": 7,
+          "extracted_pdf_page_end": 8,
+          "status": "local_snapshot_bound; not live parity"
+        },
+        {
+          "source_id": "redox_model",
+          "sha256": "43bcb86cacd71a49eddb58ac9a7ce666102fe2f0ed82905939a4f8cab7da1f1c",
+          "line_start": 187,
+          "line_end": 223,
+          "extracted_pdf_page_start": 5,
+          "extracted_pdf_page_end": 6,
+          "status": "local_snapshot_bound; not live parity"
+        }
+      ],
+      "premises": [
+        {
+          "id": "RES-04.P1",
+          "statement": "Induction comparison and capacity ceiling hold throughout"
+        },
+        {
+          "id": "RES-04.P2",
+          "statement": "No unrecorded source; finite B0 and sustained demand"
+        }
+      ],
+      "conclusion_schema": {
+        "predicate": "delayed-induction_duration_exclusion",
+        "formula": "D*T<=B0+R0*T+beta*[T\u00b2/(2tau) ifT<=tau elseT-tau/2] is necessary",
+        "status": "formal_conditional"
+      },
+      "solver_requirements": {
+        "class": "rational_certificate_plus_scalar_comparison",
+        "required_inputs": [
+          "RES-03 budget",
+          "tau>0,a0=0,0<=s<=1, tau adot=s-a",
+          "Jreg<=R0+beta*a; constant full-clearance demandD"
+        ],
+        "soundness_requirement": "Supplied mathematical argument; instance checks only where linked."
+      },
+      "does_not_follow": [
+        "Inequality proves feasibility",
+        "Instantaneous deficit implies persistent deficit",
+        "Induction is free of substrate and other resource limits"
+      ],
+      "revision_context": "Proposed atlas extension; source-specific limits and current successors govern.",
+      "implementation_status": "authored_example_only",
+      "empirical_validation_status": "not_established_by_this_register",
+      "domains": [
+        "RES-03 budget",
+        "tau>0,a0=0,0<=s<=1, tau adot=s-a",
+        "Jreg<=R0+beta*a; constant full-clearance demandD"
+      ],
+      "units": "R0,beta,D amount/time; tau,T time; a dimensionless",
+      "quantifiers": "For every admissible trajectory and durationT",
+      "hypotheses": "Listed premises; observed/assumed/missing tracked per instance",
+      "allowed_inference": "D*T<=B0+R0*T+beta*[T\u00b2/(2tau) ifT<=tau elseT-tau/2] is necessary",
+      "forbidden_inference": [
+        "Inequality proves feasibility",
+        "Instantaneous deficit implies persistent deficit",
+        "Induction is free of substrate and other resource limits"
+      ],
+      "counterexample_or_falsifier": "Main constants exclude allT>2; open-source trajectory refutes dropping closure",
+      "proof_obligations": "Supplied mathematical argument; instance checks only where linked.",
+      "atlas_certificate_refs": [
+        "packages/resources.json"
+      ]
+    },
+    {
+      "id": "ADAPT-03",
+      "title": "Illustrative induced-response equilibrium and initial slope",
+      "kind": "formal_conditional",
+      "objects": [
+        "Declared clipped two-state model z,a; constant dose d>=0; positive A,K,b,time constants; kappa>=0"
+      ],
+      "typed_inputs": [
+        {
+          "type_contract": "Declared clipped two-state model z,a; constant dose d>=0; positive A,K,b,time constants; kappa>=0"
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "temporal_architecture",
+          "section": "opposing-channel sufficient theorem",
+          "line_start": 699,
+          "line_end": 731,
+          "verification": "selected_passage_read_in_local_text"
+        }
+      ],
+      "source_bindings": [
+        {
+          "source_id": "temporal_architecture",
+          "sha256": "852560940e384108f7af61024b07cdef647a05cb2f41d8c8de16cf7d9421297d",
+          "line_start": 699,
+          "line_end": 731,
+          "extracted_pdf_page_start": 16,
+          "extracted_pdf_page_end": 17,
+          "status": "local_snapshot_bound; not live parity"
+        }
+      ],
+      "premises": [
+        {
+          "id": "ADAPT-03.P1",
+          "statement": "tau_z zdot=z0+A*a-b*d-z; tau_a adot=clip(d/(K+d)+kappa*(z0-z))-a"
+        },
+        {
+          "id": "ADAPT-03.P2",
+          "statement": "Start atz0,a0=0; A>b*K for benefit"
+        }
+      ],
+      "conclusion_schema": {
+        "predicate": "illustrative_induced-response_equilibrium_and_initial_slope",
+        "formula": "R=[A*d/(K+d)-b*d]/(1+A*kappa); initial zdot=-b*d/tau_z",
+        "status": "formal_conditional"
+      },
+      "solver_requirements": {
+        "class": "rational_derivative_plus_piecewise_ODE_obligations",
+        "required_inputs": [
+          "Declared clipped two-state model z,a; constant dose d>=0; positive A,K,b,time constants; kappa>=0"
+        ],
+        "soundness_requirement": "Two-state model is explicit synthesis from shared INQUIRY_SPEC, not current-05 verbatim. Global convergence and branch changes are unproved by this code."
+      },
+      "does_not_follow": [
+        "All bounded adaptation is hormetic",
+        "Shared interval initial_dip is resolved by this distinct exact point",
+        "Endpoint existence alone proves later crossing"
+      ],
+      "revision_context": "Proposed atlas extension; source-specific limits and current successors govern.",
+      "implementation_status": "authored_example_only",
+      "empirical_validation_status": "not_established_by_this_register",
+      "domains": [
+        "Declared clipped two-state model z,a; constant dose d>=0; positive A,K,b,time constants; kappa>=0"
+      ],
+      "units": "z,A dimensionless; b inverse dose; K dose; times physical",
+      "quantifiers": "For each constant dose in the proved unsaturated benefit window",
+      "hypotheses": "Listed premises; observed/assumed/missing tracked per instance",
+      "allowed_inference": "R=[A*d/(K+d)-b*d]/(1+A*kappa); initial zdot=-b*d/tau_z",
+      "forbidden_inference": [
+        "All bounded adaptation is hormetic",
+        "Shared interval initial_dip is resolved by this distinct exact point",
+        "Endpoint existence alone proves later crossing"
+      ],
+      "counterexample_or_falsifier": "Remove induction: R=-bd/(1+A*kappa)<0",
+      "proof_obligations": "Two-state model is explicit synthesis from shared INQUIRY_SPEC, not current-05 verbatim. Global convergence and branch changes are unproved by this code.",
+      "atlas_certificate_refs": [
+        "packages/resources.json"
+      ]
+    },
+    {
+      "id": "ACT-03",
+      "title": "Diagnostic-time resource exclusion",
+      "kind": "formal_conditional",
+      "objects": [
+        "ACT-02 diagnostic risk",
+        "Fixed sample-count diagnostic family and sample interval",
+        "Independent necessary upper resource duration"
+      ],
+      "typed_inputs": [
+        {
+          "type_contract": "ACT-02 diagnostic risk"
+        },
+        {
+          "type_contract": "Fixed sample-count diagnostic family and sample interval"
+        },
+        {
+          "type_contract": "Independent necessary upper resource duration"
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "action_sufficiency",
+          "section": "diagnostic cost and operational recovery",
+          "line_start": 192,
+          "line_end": 292,
+          "verification": "selected_passage_read_in_local_text"
+        }
+      ],
+      "source_bindings": [
+        {
+          "source_id": "action_sufficiency",
+          "sha256": "3b7878161e5cd6c1d600236fc705f650253cfb12d032a46d0432be7b29ea7e8d",
+          "line_start": 192,
+          "line_end": 292,
+          "extracted_pdf_page_start": 5,
+          "extracted_pdf_page_end": 7,
+          "status": "local_snapshot_bound; not live parity"
+        }
+      ],
+      "premises": [
+        {
+          "id": "ACT-03.P1",
+          "statement": "Only fixed sample-count tests are admitted, no free initial sample"
+        },
+        {
+          "id": "ACT-03.P2",
+          "statement": "Resource proof remains valid during diagnosis"
+        },
+        {
+          "id": "ACT-03.P3",
+          "statement": "Conditional iid Bernoulli laws3/4 and1/4 for a fixed hidden label"
+        }
+      ],
+      "conclusion_schema": {
+        "predicate": "diagnostic-time_resource_exclusion",
+        "formula": "No fixed-count test can reach error<=.1 at interval.5 before resource duration<=2; first sufficient count7",
+        "status": "formal_conditional"
+      },
+      "solver_requirements": {
+        "class": "finite_likelihood_enumeration_plus_external_budget",
+        "required_inputs": [
+          "ACT-02 diagnostic risk",
+          "Fixed sample-count diagnostic family and sample interval",
+          "Independent necessary upper resource duration"
+        ],
+        "soundness_requirement": "Supplied mathematical argument; instance checks only where linked."
+      },
+      "does_not_follow": [
+        "No adaptive stopping policy exists",
+        "Diagnostic nondisturbance is measured",
+        "Selection error equals biological failure",
+        "Not excluded means safe"
+      ],
+      "revision_context": "Proposed atlas extension; source-specific limits and current successors govern.",
+      "implementation_status": "authored_example_only",
+      "empirical_validation_status": "not_established_by_this_register",
+      "domains": [
+        "ACT-02 diagnostic risk",
+        "Fixed sample-count diagnostic family and sample interval",
+        "Independent necessary upper resource duration"
+      ],
+      "units": "Selection error probability; sample intervaltime/sample; horizon time",
+      "quantifiers": "For all fixed sample counts that fit the stated resource interval",
+      "hypotheses": "Listed premises; observed/assumed/missing tracked per instance",
+      "allowed_inference": "No fixed-count test can reach error<=.1 at interval.5 before resource duration<=2; first sufficient count7",
+      "forbidden_inference": [
+        "No adaptive stopping policy exists",
+        "Diagnostic nondisturbance is measured",
+        "Selection error equals biological failure",
+        "Not excluded means safe"
+      ],
+      "counterexample_or_falsifier": "Faster interval.25 removes exclusion; common acceptable action removes need for diagnosis",
+      "proof_obligations": "Supplied mathematical argument; instance checks only where linked.",
+      "atlas_certificate_refs": [
+        "packages/action_evidence.json"
+      ]
+    },
+    {
+      "id": "REC-02",
+      "title": "Finite-section deterministic fold passage",
+      "kind": "formal_conditional",
+      "objects": [
+        "Local fold normal form xdot=-M*(a+x\u00b2),a>0,M>0",
+        "Fixed entryA>0,exit-B<0; sigma=0"
+      ],
+      "typed_inputs": [
+        {
+          "type_contract": "Local fold normal form xdot=-M*(a+x\u00b2),a>0,M>0"
+        },
+        {
+          "type_contract": "Fixed entryA>0,exit-B<0; sigma=0"
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "current-09",
+          "section": "fixed-section normal form",
+          "line_start": 280,
+          "line_end": 413,
+          "verification": "selected_passage_read_in_local_text"
+        },
+        {
+          "source_id": "current-09",
+          "section": "forcing and identifiability",
+          "line_start": 512,
+          "line_end": 604,
+          "verification": "selected_passage_read_in_local_text"
+        }
+      ],
+      "source_bindings": [
+        {
+          "source_id": "current-09",
+          "sha256": "d0d0d5e01a7a88a79c38aab73ddc5e09bebd6c18565656442002b9fd00ae9fd0",
+          "line_start": 280,
+          "line_end": 413,
+          "extracted_pdf_page_start": 6,
+          "extracted_pdf_page_end": 10,
+          "status": "local_snapshot_bound; not live parity"
+        },
+        {
+          "source_id": "current-09",
+          "sha256": "d0d0d5e01a7a88a79c38aab73ddc5e09bebd6c18565656442002b9fd00ae9fd0",
+          "line_start": 512,
+          "line_end": 604,
+          "extracted_pdf_page_start": 12,
+          "extracted_pdf_page_end": 14,
+          "status": "local_snapshot_bound; not live parity"
+        }
+      ],
+      "premises": [
+        {
+          "id": "REC-02.P1",
+          "statement": "A true local saddle-node reduction has its nondegeneracy and stable transverse directions"
+        },
+        {
+          "id": "REC-02.P2",
+          "statement": "Depth and mobility held fixed; no noise"
+        }
+      ],
+      "conclusion_schema": {
+        "predicate": "finite-section_deterministic_fold_passage",
+        "formula": "T=[atan(A/sqrta)+atan(B/sqrta)]/(M*sqrta); local exponent lies between1/2 and1",
+        "status": "formal_conditional"
+      },
+      "solver_requirements": {
+        "class": "analytic_integration_and_identifiability",
+        "required_inputs": [
+          "Local fold normal form xdot=-M*(a+x\u00b2),a>0,M>0",
+          "Fixed entryA>0,exit-B<0; sigma=0"
+        ],
+        "soundness_requirement": "Supplied mathematical argument; instance checks only where linked."
+      },
+      "does_not_follow": [
+        "Exponent crossover always monotone for asymmetric sections",
+        "Model passage is populationT50",
+        "Time-varying depth uses same phase without derivative correction"
+      ],
+      "revision_context": "Proposed atlas extension; source-specific limits and current successors govern.",
+      "implementation_status": "declarative_specification_only",
+      "empirical_validation_status": "not_established_by_this_register",
+      "domains": [
+        "Local fold normal form xdot=-M*(a+x\u00b2),a>0,M>0",
+        "Fixed entryA>0,exit-B<0; sigma=0"
+      ],
+      "units": "x dimensionless; a dimensionless squared coordinate; M1/time",
+      "quantifiers": "For fixed sections and coefficients over one deterministic passage",
+      "hypotheses": "Listed premises; observed/assumed/missing tracked per instance",
+      "allowed_inference": "T=[atan(A/sqrta)+atan(B/sqrta)]/(M*sqrta); local exponent lies between1/2 and1",
+      "forbidden_inference": [
+        "Exponent crossover always monotone for asymmetric sections",
+        "Model passage is populationT50",
+        "Time-varying depth uses same phase without derivative correction"
+      ],
+      "counterexample_or_falsifier": "AsymmetryA/B100 admits nonmonotone effective exponent; x->cx,a->c\u00b2a,M->M/c preservesT",
+      "proof_obligations": "Supplied mathematical argument; instance checks only where linked.",
+      "atlas_certificate_refs": []
+    },
+    {
+      "id": "REC-03",
+      "title": "Positive-mode semigroup defect",
+      "kind": "formal_conditional",
+      "objects": [
+        "m(t)=sum w_i exp(-lambda_i*t); fixed w_i>=0,sum1; lambda_i>=0"
+      ],
+      "typed_inputs": [
+        {
+          "type_contract": "m(t)=sum w_i exp(-lambda_i*t); fixed w_i>=0,sum1; lambda_i>=0"
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "current-03",
+          "section": "quadratic degeneracy",
+          "line_start": 663,
+          "line_end": 710,
+          "verification": "selected_passage_read_in_local_text"
+        },
+        {
+          "source_id": "current-03",
+          "section": "multimode recovery",
+          "line_start": 888,
+          "line_end": 952,
+          "verification": "selected_passage_read_in_local_text"
+        }
+      ],
+      "source_bindings": [
+        {
+          "source_id": "current-03",
+          "sha256": "9cfd90c4786ed42be10b5ca0a702f17937b55e9fa2b93272da022c5a4ab8ca26",
+          "line_start": 663,
+          "line_end": 710,
+          "extracted_pdf_page_start": 17,
+          "extracted_pdf_page_end": 18,
+          "status": "local_snapshot_bound; not live parity"
+        },
+        {
+          "source_id": "current-03",
+          "sha256": "9cfd90c4786ed42be10b5ca0a702f17937b55e9fa2b93272da022c5a4ab8ca26",
+          "line_start": 888,
+          "line_end": 952,
+          "extracted_pdf_page_start": 23,
+          "extracted_pdf_page_end": 24,
+          "status": "local_snapshot_bound; not live parity"
+        }
+      ],
+      "premises": [
+        {
+          "id": "REC-03.P1",
+          "statement": "Positive normalized fixed weights and time-homogeneous exponential recovery modes"
+        }
+      ],
+      "conclusion_schema": {
+        "predicate": "positive-mode_semigroup_defect",
+        "formula": "m(2t)-m(t)\u00b2=Var_w(exp(-lambda_i*t))>=0",
+        "status": "formal_conditional"
+      },
+      "solver_requirements": {
+        "class": "exact_moments_plus_variance_identity",
+        "required_inputs": [
+          "m(t)=sum w_i exp(-lambda_i*t); fixed w_i>=0,sum1; lambda_i>=0"
+        ],
+        "soundness_requirement": "Supplied mathematical argument; instance checks only where linked."
+      },
+      "does_not_follow": [
+        "Rejects every scalar nonlinear model",
+        "Positive defect identifies molecular repair",
+        "Immediate quadratic challenge closure proves recovery closure"
+      ],
+      "revision_context": "Proposed atlas extension; source-specific limits and current successors govern.",
+      "implementation_status": "authored_example_only",
+      "empirical_validation_status": "not_established_by_this_register",
+      "domains": [
+        "m(t)=sum w_i exp(-lambda_i*t); fixed w_i>=0,sum1; lambda_i>=0"
+      ],
+      "units": "m dimensionless; lambda1/time",
+      "quantifiers": "For everyt>0 under common weights and calibration",
+      "hypotheses": "Listed premises; observed/assumed/missing tracked per instance",
+      "allowed_inference": "m(2t)-m(t)\u00b2=Var_w(exp(-lambda_i*t))>=0",
+      "forbidden_inference": [
+        "Rejects every scalar nonlinear model",
+        "Positive defect identifies molecular repair",
+        "Immediate quadratic challenge closure proves recovery closure"
+      ],
+      "counterexample_or_falsifier": "Two equal weights with unit attenuations1/2 and1/4 yield1/64; single attenuation gives0",
+      "proof_obligations": "Supplied mathematical argument; instance checks only where linked.",
+      "atlas_certificate_refs": [
+        "packages/connections.json"
+      ]
+    },
+    {
+      "id": "IDA-01",
+      "title": "Operational leaky recovery residue",
+      "kind": "model_assumption",
+      "objects": [
+        "Frozen reference, metric and deadband",
+        "Observed displacement trace; leak beta>=0"
+      ],
+      "typed_inputs": [
+        {
+          "type_contract": "Frozen reference, metric and deadband"
+        },
+        {
+          "type_contract": "Observed displacement trace; leak beta>=0"
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "ida",
+          "section": "recovery functional and operational negentropy",
+          "line_start": 282,
+          "line_end": 378,
+          "verification": "selected_passage_read_in_local_text"
+        }
+      ],
+      "source_bindings": [
+        {
+          "source_id": "ida",
+          "sha256": "f985548fe1a5bf02dcb6dc634662449fd814087094eabbd69688fc70c144eb95",
+          "line_start": 282,
+          "line_end": 378,
+          "extracted_pdf_page_start": 8,
+          "extracted_pdf_page_end": 10,
+          "status": "local_snapshot_bound; not live parity"
+        }
+      ],
+      "premises": [
+        {
+          "id": "IDA-01.P1",
+          "statement": "Reference and chart independently fixed"
+        },
+        {
+          "id": "IDA-01.P2",
+          "statement": "R=int exp(-beta*(t-s))*max(0,d(s)-delta)ds"
+        }
+      ],
+      "conclusion_schema": {
+        "predicate": "operational_leaky_recovery_residue",
+        "formula": "An operational score; a differently named score with identical definition is equal by substitution",
+        "status": "model_relative_declaration"
+      },
+      "solver_requirements": {
+        "class": "quadrature_with_error_and_reference_binding",
+        "required_inputs": [
+          "Frozen reference, metric and deadband",
+          "Observed displacement trace; leak beta>=0"
+        ],
+        "soundness_requirement": "Supplied mathematical argument; instance checks only where linked."
+      },
+      "does_not_follow": [
+        "Score is automatically energy, entropy or prediction",
+        "Moving baseline measures restoration"
+      ],
+      "revision_context": "Proposed atlas extension; source-specific limits and current successors govern.",
+      "implementation_status": "declarative_specification_only",
+      "empirical_validation_status": "not_established_by_this_register",
+      "domains": [
+        "Frozen reference, metric and deadband",
+        "Observed displacement trace; leak beta>=0"
+      ],
+      "units": "R distance*time unless normalized; beta1/time",
+      "quantifiers": "For every declared trace, define functional in frozen coordinates",
+      "hypotheses": "Listed premises; observed/assumed/missing tracked per instance",
+      "allowed_inference": "An operational score; a differently named score with identical definition is equal by substitution",
+      "forbidden_inference": [
+        "Score is automatically energy, entropy or prediction",
+        "Moving baseline measures restoration"
+      ],
+      "counterexample_or_falsifier": "Return to visible baseline with changed future response defeats restoration claim",
+      "proof_obligations": "Supplied mathematical argument; instance checks only where linked.",
+      "atlas_certificate_refs": []
+    },
+    {
+      "id": "IDA-02",
+      "title": "No general linear-to-quadratic residue transfer",
+      "kind": "formal_conditional",
+      "objects": [
+        "Common positive leak measure",
+        "Freely varying nonnegative displacement trajectories"
+      ],
+      "typed_inputs": [
+        {
+          "type_contract": "Common positive leak measure"
+        },
+        {
+          "type_contract": "Freely varying nonnegative displacement trajectories"
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "ida",
+          "section": "claimed monotone energy transform",
+          "line_start": 357,
+          "line_end": 365,
+          "verification": "selected_passage_read_in_local_text"
+        }
+      ],
+      "source_bindings": [
+        {
+          "source_id": "ida",
+          "sha256": "f985548fe1a5bf02dcb6dc634662449fd814087094eabbd69688fc70c144eb95",
+          "line_start": 357,
+          "line_end": 365,
+          "extracted_pdf_page_start": 10,
+          "extracted_pdf_page_end": 10,
+          "status": "local_snapshot_bound; not live parity"
+        }
+      ],
+      "premises": [
+        {
+          "id": "IDA-02.P1",
+          "statement": "Same leak measure for compared paths; no restrictive one-parameter trajectory family"
+        }
+      ],
+      "conclusion_schema": {
+        "predicate": "no_general_linear-to-quadratic_residue_transfer",
+        "formula": "Linear residue does not determine quadratic residue or preserve its ranking",
+        "status": "formal_conditional"
+      },
+      "solver_requirements": {
+        "class": "exact_counterexample",
+        "required_inputs": [
+          "Common positive leak measure",
+          "Freely varying nonnegative displacement trajectories"
+        ],
+        "soundness_requirement": "Supplied mathematical argument; instance checks only where linked."
+      },
+      "does_not_follow": [
+        "All energy-based recovery models fail",
+        "The operational identityN=R is false when definitions coincide"
+      ],
+      "revision_context": "Proposed atlas extension; source-specific limits and current successors govern.",
+      "implementation_status": "authored_example_only",
+      "empirical_validation_status": "not_established_by_this_register",
+      "domains": [
+        "Common positive leak measure",
+        "Freely varying nonnegative displacement trajectories"
+      ],
+      "units": "Linear distance*time versus squared-distance*time",
+      "quantifiers": "There exist paths refuting any general monotone-functional identification",
+      "hypotheses": "Listed premises; observed/assumed/missing tracked per instance",
+      "allowed_inference": "Linear residue does not determine quadratic residue or preserve its ranking",
+      "forbidden_inference": [
+        "All energy-based recovery models fail",
+        "The operational identityN=R is false when definitions coincide"
+      ],
+      "counterexample_or_falsifier": "Weights(.5,1): A(.8,.8) gives(1.2,.96); B(2,0) gives(1,2)",
+      "proof_obligations": "Supplied mathematical argument; instance checks only where linked.",
+      "atlas_certificate_refs": [
+        "packages/connections.json"
+      ]
+    },
+    {
+      "id": "TAO-01",
+      "title": "Typed projective control primitive",
+      "kind": "model_assumption",
+      "objects": [
+        "State meaning, observer/calibration, chart, flow, drive, confidence, fallback, actuator and clock"
+      ],
+      "typed_inputs": [
+        {
+          "type_contract": "State meaning, observer/calibration, chart, flow, drive, confidence, fallback, actuator and clock"
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "legacy-6779487",
+          "section": "charts and state contracts",
+          "line_start": 202,
+          "line_end": 455,
+          "verification": "selected_passage_read_in_local_text"
+        },
+        {
+          "source_id": "legacy-6779487",
+          "section": "switching and safety",
+          "line_start": 566,
+          "line_end": 615,
+          "verification": "selected_passage_read_in_local_text"
+        }
+      ],
+      "source_bindings": [
+        {
+          "source_id": "legacy-6779487",
+          "sha256": "f069385a0dd2176278c3045244208ee0f8efe5cc4a237d09a1654efb625a52fc",
+          "line_start": 202,
+          "line_end": 455,
+          "extracted_pdf_page_start": 7,
+          "extracted_pdf_page_end": 13,
+          "status": "local_snapshot_bound; not live parity"
+        },
+        {
+          "source_id": "legacy-6779487",
+          "sha256": "f069385a0dd2176278c3045244208ee0f8efe5cc4a237d09a1654efb625a52fc",
+          "line_start": 566,
+          "line_end": 615,
+          "extracted_pdf_page_start": 16,
+          "extracted_pdf_page_end": 17,
+          "status": "local_snapshot_bound; not live parity"
+        }
+      ],
+      "premises": [
+        {
+          "id": "TAO-01.P1",
+          "statement": "Chosen flow and its admissible chart/rate domain declared"
+        },
+        {
+          "id": "TAO-01.P2",
+          "statement": "Guard, fallback, coupling and sampled-data implementation specified"
+        }
+      ],
+      "conclusion_schema": {
+        "predicate": "typed_projective_control_primitive",
+        "formula": "Five reference primitives are reusable contracts within a larger projective inward-flow cone",
+        "status": "model_relative_declaration"
+      },
+      "solver_requirements": {
+        "class": "typed_contract_and_hybrid_control_analysis",
+        "required_inputs": [
+          "State meaning, observer/calibration, chart, flow, drive, confidence, fallback, actuator and clock"
+        ],
+        "soundness_requirement": "Supplied mathematical argument; instance checks only where linked."
+      },
+      "does_not_follow": [
+        "Five primitives exhaust all bounded dynamics",
+        "Coordinate continuity implies velocity continuity or sampled safety",
+        "Sensor confidence proves physiological meaning"
+      ],
+      "revision_context": "Proposed atlas extension; source-specific limits and current successors govern.",
+      "implementation_status": "declarative_specification_only",
+      "empirical_validation_status": "not_established_by_this_register",
+      "domains": [
+        "State meaning, observer/calibration, chart, flow, drive, confidence, fallback, actuator and clock"
+      ],
+      "units": "State-dependent chart units; generator*drive*time dimensionless",
+      "quantifiers": "For every controlled channel and each mode transition",
+      "hypotheses": "Listed premises; observed/assumed/missing tracked per instance",
+      "allowed_inference": "Five reference primitives are reusable contracts within a larger projective inward-flow cone",
+      "forbidden_inference": [
+        "Five primitives exhaust all bounded dynamics",
+        "Coordinate continuity implies velocity continuity or sampled safety",
+        "Sensor confidence proves physiological meaning"
+      ],
+      "counterexample_or_falsifier": "Quadratic X(e)=a+b*e+c*e\u00b2 is inward whenX(0)>=0 andX(1)<=0; many noncanonical choices exist",
+      "proof_obligations": "Supplied mathematical argument; instance checks only where linked.",
+      "atlas_certificate_refs": []
+    },
+    {
+      "id": "GEOM-01",
+      "title": "Pure-boost section lemma counterexample",
+      "kind": "formal_conditional",
+      "objects": [
+        "Smooth section L_a of disk automorphisms withL0=id,La0=a",
+        "Induced defectDab=L_(a op b)^(-1)LaLb"
+      ],
+      "typed_inputs": [
+        {
+          "type_contract": "Smooth section L_a of disk automorphisms withL0=id,La0=a"
+        },
+        {
+          "type_contract": "Induced defectDab=L_(a op b)^(-1)LaLb"
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "legacy-6800400",
+          "section": "Lemma2.1",
+          "line_start": 314,
+          "line_end": 342,
+          "verification": "selected_passage_read_in_local_text"
+        }
+      ],
+      "source_bindings": [
+        {
+          "source_id": "legacy-6800400",
+          "sha256": "3ded6275e1d202acc6e7799df0c0b1302557e1be2132529eee97d0e04858d2e3",
+          "line_start": 314,
+          "line_end": 342,
+          "extracted_pdf_page_start": 8,
+          "extracted_pdf_page_end": 9,
+          "status": "local_snapshot_bound; not live parity"
+        }
+      ],
+      "premises": [
+        {
+          "id": "GEOM-01.P1",
+          "statement": "Use only the premises listed in legacy Lemma2.1; full reflection covariance/loop not assumed"
+        }
+      ],
+      "conclusion_schema": {
+        "predicate": "pure-boost_section_lemma_counterexample",
+        "formula": "D0a=Da0=id does not implyLa is the canonical pure boost",
+        "status": "formal_conditional"
+      },
+      "solver_requirements": {
+        "class": "group_identity_plus_exact_complex_pair",
+        "required_inputs": [
+          "Smooth section L_a of disk automorphisms withL0=id,La0=a",
+          "Induced defectDab=L_(a op b)^(-1)LaLb"
+        ],
+        "soundness_requirement": "Supplied mathematical argument; instance checks only where linked."
+      },
+      "does_not_follow": [
+        "The full higher-dimensional theorem is thereby refuted",
+        "Standard quantum propagation fails"
+      ],
+      "revision_context": "Proposed atlas extension; source-specific limits and current successors govern.",
+      "implementation_status": "authored_example_only",
+      "empirical_validation_status": "not_established_by_this_register",
+      "domains": [
+        "Smooth section L_a of disk automorphisms withL0=id,La0=a",
+        "Induced defectDab=L_(a op b)^(-1)LaLb"
+      ],
+      "units": "Complex normalized disk coordinates",
+      "quantifiers": "For any such section, identity defects are automatic",
+      "hypotheses": "Listed premises; observed/assumed/missing tracked per instance",
+      "allowed_inference": "D0a=Da0=id does not implyLa is the canonical pure boost",
+      "forbidden_inference": [
+        "The full higher-dimensional theorem is thereby refuted",
+        "Standard quantum propagation fails"
+      ],
+      "counterexample_or_falsifier": "La=B_a R_theta; theta=9*pi*|a|\u00b2/2 gives(15+16i)/37 vs5/7 at a1/3,z1/2",
+      "proof_obligations": "Supplied mathematical argument; instance checks only where linked.",
+      "atlas_certificate_refs": [
+        "packages/connections.json"
+      ]
+    },
+    {
+      "id": "EVID-02",
+      "title": "Original-query-bound finite witness",
+      "kind": "formal_conditional",
+      "objects": [
+        "Original typed query; trusted expected source/model hashes; finite calculation and required premises"
+      ],
+      "typed_inputs": [
+        {
+          "type_contract": "Original typed query; trusted expected source/model hashes; finite calculation and required premises"
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "epistemic",
+          "section": "witness and binding limits",
+          "line_start": 363,
+          "line_end": 590,
+          "verification": "selected_passage_read_in_local_text"
+        }
+      ],
+      "source_bindings": [
+        {
+          "source_id": "epistemic",
+          "sha256": "e40b7f4a4956f038f720c295f08f46fcd77e78e8a88bf6372133ee5765018acc",
+          "line_start": 363,
+          "line_end": 590,
+          "extracted_pdf_page_start": 9,
+          "extracted_pdf_page_end": 13,
+          "status": "local_snapshot_bound; not live parity"
+        }
+      ],
+      "premises": [
+        {
+          "id": "EVID-02.P1",
+          "statement": "Trusted inputs/checker intact; no bypass or authority from proposer text"
+        }
+      ],
+      "conclusion_schema": {
+        "predicate": "original-query-bound_finite_witness",
+        "formula": "Accept result2 for the declared table; reject eight targeted binding/value/premise mutations, including erased required dependencies",
+        "status": "formal_conditional"
+      },
+      "solver_requirements": {
+        "class": "finite_typed_witness_recomputation",
+        "required_inputs": [
+          "Original typed query; trusted expected source/model hashes; finite calculation and required premises"
+        ],
+        "soundness_requirement": "Supplied mathematical argument; instance checks only where linked."
+      },
+      "does_not_follow": [
+        "Hashes authenticate source truth",
+        "This proves arbitrary semantic entailment or adversarial robustness",
+        "Well-formed package proves its likelihood"
+      ],
+      "revision_context": "Proposed atlas extension; source-specific limits and current successors govern.",
+      "implementation_status": "authored_example_only",
+      "empirical_validation_status": "not_established_by_this_register",
+      "domains": [
+        "Original typed query; trusted expected source/model hashes; finite calculation and required premises"
+      ],
+      "units": "Query-specific exact result units",
+      "quantifiers": "Every accepted witness in this finite checker matches bindings and recomputation",
+      "hypotheses": "Listed premises; observed/assumed/missing tracked per instance",
+      "allowed_inference": "Accept result2 for the declared table; reject eight targeted binding/value/premise mutations, including erased required dependencies",
+      "forbidden_inference": [
+        "Hashes authenticate source truth",
+        "This proves arbitrary semantic entailment or adversarial robustness",
+        "Well-formed package proves its likelihood"
+      ],
+      "counterexample_or_falsifier": "Changing query units to patients is rejected even with unchanged numeric value",
+      "proof_obligations": "Supplied mathematical argument; instance checks only where linked.",
+      "atlas_certificate_refs": [
+        "packages/action_evidence.json"
+      ]
+    },
+    {
+      "id": "SIEVE-01",
+      "title": "Finite inclusion-exclusion probability gate",
+      "kind": "formal_conditional",
+      "objects": [
+        "Finite site universe and all required subset moments",
+        "Common cutoff/phase and conditioning event"
+      ],
+      "typed_inputs": [
+        {
+          "type_contract": "Finite site universe and all required subset moments"
+        },
+        {
+          "type_contract": "Common cutoff/phase and conditioning event"
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "current-04",
+          "section": "probability obstruction and finite universe",
+          "line_start": 256,
+          "line_end": 343,
+          "verification": "selected_passage_read_in_local_text"
+        },
+        {
+          "source_id": "current-04",
+          "section": "reproducibility limits",
+          "line_start": 520,
+          "line_end": 548,
+          "verification": "selected_passage_read_in_local_text"
+        }
+      ],
+      "source_bindings": [
+        {
+          "source_id": "current-04",
+          "sha256": "b90269032c48eb54ac54ab07cbf34d735ad46539db7e5d0fbb220c4b98498546",
+          "line_start": 256,
+          "line_end": 343,
+          "extracted_pdf_page_start": 5,
+          "extracted_pdf_page_end": 7,
+          "status": "local_snapshot_bound; not live parity"
+        },
+        {
+          "source_id": "current-04",
+          "sha256": "b90269032c48eb54ac54ab07cbf34d735ad46539db7e5d0fbb220c4b98498546",
+          "line_start": 520,
+          "line_end": 548,
+          "extracted_pdf_page_start": 11,
+          "extracted_pdf_page_end": 12,
+          "status": "local_snapshot_bound; not live parity"
+        }
+      ],
+      "premises": [
+        {
+          "id": "SIEVE-01.P1",
+          "statement": "Complete consistent finite subset moments with normalized empty moment"
+        },
+        {
+          "id": "SIEVE-01.P2",
+          "statement": "All atom masses nonnegative and event has positive mass before conditioning"
+        }
+      ],
+      "conclusion_schema": {
+        "predicate": "finite_inclusion-exclusion_probability_gate",
+        "formula": "Only then interpret the finite inclusion-exclusion functional as a probability distribution",
+        "status": "formal_conditional"
+      },
+      "solver_requirements": {
+        "class": "exact_subset_enumeration",
+        "required_inputs": [
+          "Finite site universe and all required subset moments",
+          "Common cutoff/phase and conditioning event"
+        ],
+        "soundness_requirement": "Supplied mathematical argument; instance checks only where linked."
+      },
+      "does_not_follow": [
+        "Truncated signed moments always define probabilities",
+        "Finite-product CRT identities prove prime asymptotics",
+        "Archived summary counts are independent enumeration"
+      ],
+      "revision_context": "Proposed atlas extension; source-specific limits and current successors govern.",
+      "implementation_status": "declarative_specification_only",
+      "empirical_validation_status": "not_established_by_this_register",
+      "domains": [
+        "Finite site universe and all required subset moments",
+        "Common cutoff/phase and conditioning event"
+      ],
+      "units": "Normalized masses dimensionless",
+      "quantifiers": "Every inclusion-exclusion atom must be nonnegative; conditioning mass strictly positive",
+      "hypotheses": "Listed premises; observed/assumed/missing tracked per instance",
+      "allowed_inference": "Only then interpret the finite inclusion-exclusion functional as a probability distribution",
+      "forbidden_inference": [
+        "Truncated signed moments always define probabilities",
+        "Finite-product CRT identities prove prime asymptotics",
+        "Archived summary counts are independent enumeration"
+      ],
+      "counterexample_or_falsifier": "Singleton moments1,1 and pair momentc<1 give empty atomc-1<0",
+      "proof_obligations": "Supplied mathematical argument; instance checks only where linked.",
+      "atlas_certificate_refs": []
+    },
+    {
+      "id": "OBS-02",
+      "title": "Finite-battery equivalence with coverage",
+      "kind": "formal_conditional",
+      "objects": [
+        "Frozen future battery, separating distances, margins",
+        "Simultaneous upper bounds and matching-distortion allowance",
+        "Optional compact future domain eta-net and uniform Lipschitz L"
+      ],
+      "typed_inputs": [
+        {
+          "type_contract": "Frozen future battery, separating distances, margins"
+        },
+        {
+          "type_contract": "Simultaneous upper bounds and matching-distortion allowance"
+        },
+        {
+          "type_contract": "Optional compact future domain eta-net and uniform Lipschitz L"
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "current-02",
+          "section": "equivalence design",
+          "line_start": 105,
+          "line_end": 365,
+          "verification": "selected_passage_read_in_local_text"
+        },
+        {
+          "source_id": "current-02",
+          "section": "joint hidden carriers",
+          "line_start": 428,
+          "line_end": 460,
+          "verification": "selected_passage_read_in_local_text"
+        }
+      ],
+      "source_bindings": [
+        {
+          "source_id": "current-02",
+          "sha256": "6a3b5096af8e4cd1fdea6cc84172b3afd4f9da78e37df043f54a057f6155bf82",
+          "line_start": 105,
+          "line_end": 365,
+          "extracted_pdf_page_start": 3,
+          "extracted_pdf_page_end": 8,
+          "status": "local_snapshot_bound; not live parity"
+        },
+        {
+          "source_id": "current-02",
+          "sha256": "6a3b5096af8e4cd1fdea6cc84172b3afd4f9da78e37df043f54a057f6155bf82",
+          "line_start": 428,
+          "line_end": 460,
+          "extracted_pdf_page_start": 9,
+          "extracted_pdf_page_end": 10,
+          "status": "local_snapshot_bound; not live parity"
+        }
+      ],
+      "premises": [
+        {
+          "id": "OBS-02.P1",
+          "statement": "Valid simultaneous uncertainty and transport assumptions"
+        },
+        {
+          "id": "OBS-02.P2",
+          "statement": "For extension, uniform Lipschitz bound and net coverage justified"
+        }
+      ],
+      "conclusion_schema": {
+        "predicate": "finite-battery_equivalence_with_coverage",
+        "formula": "sup discrepancy<=max tested upper discrepancy+L*eta; report separated/equivalent/unresolved within scope",
+        "status": "formal_conditional"
+      },
+      "solver_requirements": {
+        "class": "statistical_adapter_plus_coverage_theorem",
+        "required_inputs": [
+          "Frozen future battery, separating distances, margins",
+          "Simultaneous upper bounds and matching-distortion allowance",
+          "Optional compact future domain eta-net and uniform Lipschitz L"
+        ],
+        "soundness_requirement": "Supplied mathematical argument; instance checks only where linked."
+      },
+      "does_not_follow": [
+        "Failure to reject proves equivalence",
+        "Post-treatment matching identifies causal memory",
+        "Unshifted individual marginal excludes joint hidden carrier"
+      ],
+      "revision_context": "Proposed atlas extension; source-specific limits and current successors govern.",
+      "implementation_status": "declarative_specification_only",
+      "empirical_validation_status": "not_established_by_this_register",
+      "domains": [
+        "Frozen future battery, separating distances, margins",
+        "Simultaneous upper bounds and matching-distortion allowance",
+        "Optional compact future domain eta-net and uniform Lipschitz L"
+      ],
+      "units": "Discrepancy units normalized by margins; eta future-space metric units",
+      "quantifiers": "For all tested futures jointly; extension to all futures only with coverage",
+      "hypotheses": "Listed premises; observed/assumed/missing tracked per instance",
+      "allowed_inference": "sup discrepancy<=max tested upper discrepancy+L*eta; report separated/equivalent/unresolved within scope",
+      "forbidden_inference": [
+        "Failure to reject proves equivalence",
+        "Post-treatment matching identifies causal memory",
+        "Unshifted individual marginal excludes joint hidden carrier"
+      ],
+      "counterexample_or_falsifier": "Fair bits with Z2=Z1 vsZ2=1-Z1 retain equal marginals but XORfuture differs",
+      "proof_obligations": "Supplied mathematical argument; instance checks only where linked.",
+      "atlas_certificate_refs": []
+    },
+    {
+      "id": "TIME-03",
+      "title": "Reversal graph exactness",
+      "kind": "formal_conditional",
+      "objects": [
+        "Antisymmetric edge valuesCij on complete graph; same endpoint scale and population-processing law"
+      ],
+      "typed_inputs": [
+        {
+          "type_contract": "Antisymmetric edge valuesCij on complete graph; same endpoint scale and population-processing law"
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "current-08",
+          "section": "graph exactness",
+          "line_start": 150,
+          "line_end": 248,
+          "verification": "selected_passage_read_in_local_text"
+        },
+        {
+          "source_id": "current-08",
+          "section": "pooling boundary",
+          "line_start": 340,
+          "line_end": 415,
+          "verification": "selected_passage_read_in_local_text"
+        }
+      ],
+      "source_bindings": [
+        {
+          "source_id": "current-08",
+          "sha256": "fd26571fcb2f9fd15a5c5c5ed9ed2e56414651825bc88911eae719cad1985f65",
+          "line_start": 150,
+          "line_end": 248,
+          "extracted_pdf_page_start": 4,
+          "extracted_pdf_page_end": 6,
+          "status": "local_snapshot_bound; not live parity"
+        },
+        {
+          "source_id": "current-08",
+          "sha256": "fd26571fcb2f9fd15a5c5c5ed9ed2e56414651825bc88911eae719cad1985f65",
+          "line_start": 340,
+          "line_end": 415,
+          "extracted_pdf_page_start": 9,
+          "extracted_pdf_page_end": 10,
+          "status": "local_snapshot_bound; not live parity"
+        }
+      ],
+      "premises": [
+        {
+          "id": "TIME-03.P1",
+          "statement": "Cij=-Cji; complete fixed graph"
+        },
+        {
+          "id": "TIME-03.P2",
+          "statement": "Triangle sums vanish exactly"
+        }
+      ],
+      "conclusion_schema": {
+        "predicate": "reversal_graph_exactness",
+        "formula": "Exists node potentialu withCij=ui-uj; potential unique up to constant on connected graph",
+        "status": "formal_conditional"
+      },
+      "solver_requirements": {
+        "class": "finite_linear_algebra_and_cycle_certificate",
+        "required_inputs": [
+          "Antisymmetric edge valuesCij on complete graph; same endpoint scale and population-processing law"
+        ],
+        "soundness_requirement": "Supplied mathematical argument; instance checks only where linked."
+      },
+      "does_not_follow": [
+        "Node potential is a sufficient physical state",
+        "Metric non-exactness means ordinal cycle",
+        "Nonlinear pooling preserves exact edge structure"
+      ],
+      "revision_context": "Proposed atlas extension; source-specific limits and current successors govern.",
+      "implementation_status": "declarative_specification_only",
+      "empirical_validation_status": "not_established_by_this_register",
+      "domains": [
+        "Antisymmetric edge valuesCij on complete graph; same endpoint scale and population-processing law"
+      ],
+      "units": "All edge values in one common response unit",
+      "quantifiers": "For all triangles in the complete graph",
+      "hypotheses": "Listed premises; observed/assumed/missing tracked per instance",
+      "allowed_inference": "Exists node potentialu withCij=ui-uj; potential unique up to constant on connected graph",
+      "forbidden_inference": [
+        "Node potential is a sufficient physical state",
+        "Metric non-exactness means ordinal cycle",
+        "Nonlinear pooling preserves exact edge structure"
+      ],
+      "counterexample_or_falsifier": "C12=1,C23=1,C13=3 has metric residual but no ordinal cycle",
+      "proof_obligations": "Supplied mathematical argument; instance checks only where linked.",
+      "atlas_certificate_refs": []
+    }
+  ],
+  "extension_version": "atlas-0.1.0",
+  "base_register_sha256": "190063d0b30cacad1bc3e18ee2b924f7948d3982c24bf44166a41bc309f44220",
+  "public_base_register_sha256": "8bced9c77b305cdcdae42c2746c57914949c29623fa029de590e19cb7a803602"
+}

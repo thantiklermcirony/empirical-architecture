@@ -1,0 +1,1613 @@
+{
+  "version": "0.1.0",
+  "corpus_sha256": "9beddf5e1653b295dae860a1936988b93cc19022baf13ae6c95359d93c1cca95",
+  "counts": {
+    "total": 41,
+    "current": 11,
+    "legacy": 30
+  },
+  "method": "Conservative confirmed passages, not a percentage-read metric. Large outputs were sometimes truncated; only recovered/visibly reviewed substantive ranges are listed. Abstract-only entries are accounted for but not mathematically validated. Local inventory status does not certify present public or journal version.",
+  "records": [
+    {
+      "key": "current-01",
+      "ssrn_id": "7426838",
+      "title": "Epistemic Type Safety for Generative AI: Witnessed Assertion, Fail-Closed Kernels, and Why the Model Need Not Be the World",
+      "corpus_kind": "current",
+      "programme_status": "current",
+      "inheritance": "Current epistemic spine",
+      "role": "Evidence admission",
+      "inspection": "substantive selected main-text passages",
+      "inspected_spans": [
+        {
+          "lines": [
+            1,
+            675
+          ],
+          "extracted_pages": [
+            1,
+            15
+          ]
+        }
+      ],
+      "assessment": "Witnessed support is channel-relative; trusted verifier/renderer/source binding required; targeted mutation tests do not establish arbitrary truth.",
+      "dependencies_and_open_evidence": "Evidence snapshot, typed query, arithmetic and trusted-computing-base assumptions.",
+      "corpus_note": "",
+      "source_path": "sources/current-01.txt",
+      "source_sha256": "e40b7f4a4956f038f720c295f08f46fcd77e78e8a88bf6372133ee5765018acc",
+      "total_lines": 782,
+      "pdf_page_count": 17,
+      "external_version_parity": "unverified",
+      "whole_manuscript_validated": false
+    },
+    {
+      "key": "current-02",
+      "ssrn_id": "7425878",
+      "title": "A Law of Biological State Sufficiency: History-conditioned prediction, viable continuation, and a test for when the past may be forgotten",
+      "corpus_kind": "current",
+      "programme_status": "current",
+      "inheritance": "Current state standard",
+      "role": "State and restoration measurement",
+      "inspection": "substantive selected main-text passages",
+      "inspected_spans": [
+        {
+          "lines": [
+            1,
+            253
+          ],
+          "extracted_pages": [
+            1,
+            6
+          ]
+        },
+        {
+          "lines": [
+            259,
+            365
+          ],
+          "extracted_pages": [
+            6,
+            8
+          ]
+        },
+        {
+          "lines": [
+            377,
+            572
+          ],
+          "extracted_pages": [
+            8,
+            12
+          ]
+        }
+      ],
+      "assessment": "Exact quotient and finite-tolerance battery differ; common support, simultaneous uncertainty and joint carrier distribution matter.",
+      "dependencies_and_open_evidence": "Future kernels, history generation, matching-distortion bounds; E.coli calibration is prospective.",
+      "corpus_note": "",
+      "source_path": "sources/current-02.txt",
+      "source_sha256": "6a3b5096af8e4cd1fdea6cc84172b3afd4f9da78e37df043f54a057f6155bf82",
+      "total_lines": 852,
+      "pdf_page_count": 18,
+      "external_version_parity": "unverified",
+      "whole_manuscript_validated": false
+    },
+    {
+      "key": "current-03",
+      "ssrn_id": "7426880",
+      "title": "The Acute Dose-Response Curve as a Transition Potential: Predictive-State Closure, Quadratic Degeneracy, and Temporal Identifiability",
+      "corpus_kind": "current",
+      "programme_status": "current",
+      "inheritance": "Current dose/recovery branch",
+      "role": "Dose-to-time transport",
+      "inspection": "substantive selected main-text passages",
+      "inspected_spans": [
+        {
+          "lines": [
+            235,
+            408
+          ],
+          "extracted_pages": [
+            6,
+            10
+          ]
+        },
+        {
+          "lines": [
+            525,
+            630
+          ],
+          "extracted_pages": [
+            14,
+            17
+          ]
+        },
+        {
+          "lines": [
+            663,
+            710
+          ],
+          "extracted_pages": [
+            17,
+            18
+          ]
+        },
+        {
+          "lines": [
+            793,
+            835
+          ],
+          "extracted_pages": [
+            21,
+            22
+          ]
+        },
+        {
+          "lines": [
+            888,
+            952
+          ],
+          "extracted_pages": [
+            23,
+            24
+          ]
+        },
+        {
+          "lines": [
+            1115,
+            1183
+          ],
+          "extracted_pages": [
+            26,
+            27
+          ]
+        }
+      ],
+      "assessment": "Quadratic challenge response can hide multiple repair modes; acute potential does not determine gap dynamics or frailty transport.",
+      "dependencies_and_open_evidence": "Loading cocycle, autonomous recovery, observation layer; historical cell clocks not independently validated.",
+      "corpus_note": "",
+      "source_path": "sources/current-03.txt",
+      "source_sha256": "9cfd90c4786ed42be10b5ca0a702f17937b55e9fa2b93272da022c5a4ab8ca26",
+      "total_lines": 1513,
+      "pdf_page_count": 34,
+      "external_version_parity": "unverified",
+      "whole_manuscript_validated": false
+    },
+    {
+      "key": "current-04",
+      "ssrn_id": "7426882",
+      "title": "Recursive Predictive Closure in the Prime Sieve: Resolution covariance, finite probability consistency, and gap-word prediction",
+      "corpus_kind": "current",
+      "programme_status": "current",
+      "inheritance": "Successor develops legacy-6947578",
+      "role": "Exact arithmetic testbed",
+      "inspection": "substantive selected main-text passages",
+      "inspected_spans": [
+        {
+          "lines": [
+            89,
+            343
+          ],
+          "extracted_pages": [
+            2,
+            7
+          ]
+        },
+        {
+          "lines": [
+            365,
+            425
+          ],
+          "extracted_pages": [
+            8,
+            9
+          ]
+        },
+        {
+          "lines": [
+            520,
+            572
+          ],
+          "extracted_pages": [
+            11,
+            12
+          ]
+        }
+      ],
+      "assessment": "CRT averaging is exact in scope; signed inclusion-exclusion needs probability admission; truncated predictors do not prove prime asymptotics.",
+      "dependencies_and_open_evidence": "Tuple assumptions, common cutoff, positivity, conditioning; original interval enumeration source missing from described archive.",
+      "corpus_note": "",
+      "source_path": "sources/current-04.txt",
+      "source_sha256": "b90269032c48eb54ac54ab07cbf34d735ad46539db7e5d0fbb220c4b98498546",
+      "total_lines": 689,
+      "pdf_page_count": 14,
+      "external_version_parity": "unverified",
+      "whole_manuscript_validated": false
+    },
+    {
+      "key": "current-05",
+      "ssrn_id": "7426938",
+      "title": "The Temporal Architecture of Living Nature: Predictive state, robust viability, and the recursive construction of biological futures",
+      "corpus_kind": "current",
+      "programme_status": "current",
+      "inheritance": "Current biological architecture",
+      "role": "Temporal/environment/adaptation backbone",
+      "inspection": "substantive selected main-text passages",
+      "inspected_spans": [
+        {
+          "lines": [
+            116,
+            812
+          ],
+          "extracted_pages": [
+            3,
+            18
+          ]
+        },
+        {
+          "lines": [
+            927,
+            1020
+          ],
+          "extracted_pages": [
+            20,
+            22
+          ]
+        }
+      ],
+      "assessment": "Viability belongs to physical realization; robust policy quantifiers, opposing channels and independent restoration tests remain separate.",
+      "dependencies_and_open_evidence": "Dynamics, disturbances, coupled environment, unit persistence; cited redox numerical anchors inherit source/calibration obligations.",
+      "corpus_note": "",
+      "source_path": "sources/current-05.txt",
+      "source_sha256": "852560940e384108f7af61024b07cdef647a05cb2f41d8c8de16cf7d9421297d",
+      "total_lines": 1240,
+      "pdf_page_count": 27,
+      "external_version_parity": "unverified",
+      "whole_manuscript_validated": false
+    },
+    {
+      "key": "current-06",
+      "ssrn_id": "7426978",
+      "title": "Acz\u00e9l-Family Composition in Bounded Pharmacology: Mechanism-selected generators, combination effects, and an aluminium-toxicology test",
+      "corpus_kind": "current",
+      "programme_status": "current",
+      "inheritance": "Supersedes broad6739201 and narrows6963978",
+      "role": "Mechanism-selected composition",
+      "inspection": "entire extracted text, including theory, examples and limitations",
+      "inspected_spans": [
+        {
+          "lines": [
+            1,
+            483
+          ],
+          "extracted_pages": [
+            1,
+            10
+          ]
+        }
+      ],
+      "assessment": "Aczel generator has positive-scale freedom after identity normalization; Bliss/Loewe comparison is model-specific; projective metric differs from Fisher.",
+      "dependencies_and_open_evidence": "Total interval operation plus regularity; empirical mechanism supplies coordinate and parameters.",
+      "corpus_note": "",
+      "source_path": "sources/current-06.txt",
+      "source_sha256": "eaee5f28c7170353ff6530588d4ce31fcc76a617294ac9491a42a34f9494bb8d",
+      "total_lines": 483,
+      "pdf_page_count": 10,
+      "external_version_parity": "unverified",
+      "whole_manuscript_validated": false
+    },
+    {
+      "key": "current-07",
+      "ssrn_id": "7426998",
+      "title": "The Observer and the World: Predictive state, lawful forgetting, and the geometry of empirical reality",
+      "corpus_kind": "current",
+      "programme_status": "current",
+      "inheritance": "Expanded successor of7347861",
+      "role": "Observer/projective representation",
+      "inspection": "substantive selected main-text passages",
+      "inspected_spans": [
+        {
+          "lines": [
+            75,
+            481
+          ],
+          "extracted_pages": [
+            3,
+            12
+          ]
+        },
+        {
+          "lines": [
+            492,
+            577
+          ],
+          "extracted_pages": [
+            13,
+            14
+          ]
+        },
+        {
+          "lines": [
+            635,
+            690
+          ],
+          "extracted_pages": [
+            16,
+            17
+          ]
+        },
+        {
+          "lines": [
+            770,
+            960
+          ],
+          "extracted_pages": [
+            19,
+            22
+          ]
+        }
+      ],
+      "assessment": "Scale-blind2D linear lift yields projective ratio law; point-map gate precedes finite invariant battery; hidden channel can break scalar closure.",
+      "dependencies_and_open_evidence": "Measurable quotient, invertible lift, cone/chart validity; synthetic results and prospective HepG2 remain distinct.",
+      "corpus_note": "",
+      "source_path": "sources/current-07.txt",
+      "source_sha256": "9570999564f6b8f0aa4f4088ed1c371b61ff761e50afe95b52c19f7b5fe2278a",
+      "total_lines": 1188,
+      "pdf_page_count": 27,
+      "external_version_parity": "unverified",
+      "whole_manuscript_validated": false
+    },
+    {
+      "key": "current-08",
+      "ssrn_id": "7427058",
+      "title": "When Equal BED Is Not Equal Biology: Reversal, Graph Closure, and State Recovery",
+      "corpus_kind": "current",
+      "programme_status": "current",
+      "inheritance": "Corrected successor of7302362",
+      "role": "Order and graph integrability",
+      "inspection": "substantive selected main-text passages",
+      "inspected_spans": [
+        {
+          "lines": [
+            72,
+            248
+          ],
+          "extracted_pages": [
+            2,
+            6
+          ]
+        },
+        {
+          "lines": [
+            340,
+            415
+          ],
+          "extracted_pages": [
+            9,
+            10
+          ]
+        },
+        {
+          "lines": [
+            627,
+            737
+          ],
+          "extracted_pages": [
+            15,
+            17
+          ]
+        }
+      ],
+      "assessment": "Reversal rejects specified order-blind summary; nonlinear pooling can create metric cycles; potential is not sufficient state.",
+      "dependencies_and_open_evidence": "Common preparation, endpoint/scale/unit, fixed gap, multiplicity; no independent biological reanalysis here.",
+      "corpus_note": "",
+      "source_path": "sources/current-08.txt",
+      "source_sha256": "fd26571fcb2f9fd15a5c5c5ed9ed2e56414651825bc88911eae719cad1985f65",
+      "total_lines": 1088,
+      "pdf_page_count": 23,
+      "external_version_parity": "unverified",
+      "whole_manuscript_validated": false
+    },
+    {
+      "key": "current-09",
+      "ssrn_id": "7427059",
+      "title": "Finite rescue windows and supply-limited redox commitment in NRF2-active cancer: fold geometry and a discriminating experimental test",
+      "corpus_kind": "current",
+      "programme_status": "current",
+      "inheritance": "Corrected successor of7181465",
+      "role": "Finite rescue and fold regime",
+      "inspection": "substantive selected main-text passages",
+      "inspected_spans": [
+        {
+          "lines": [
+            1,
+            243
+          ],
+          "extracted_pages": [
+            1,
+            6
+          ]
+        },
+        {
+          "lines": [
+            280,
+            706
+          ],
+          "extracted_pages": [
+            6,
+            16
+          ]
+        }
+      ],
+      "assessment": "Fixed deterministic sections yield passage formula; asymmetry need not give monotone exponent; moving depth requires extra phase term.",
+      "dependencies_and_open_evidence": "Fold nondegeneracy and calibration, mobility, boundary and durable fate; source corrections retained, model remains prospective.",
+      "corpus_note": "",
+      "source_path": "sources/current-09.txt",
+      "source_sha256": "d0d0d5e01a7a88a79c38aab73ddc5e09bebd6c18565656442002b9fd00ae9fd0",
+      "total_lines": 927,
+      "pdf_page_count": 20,
+      "external_version_parity": "unverified",
+      "whole_manuscript_validated": false
+    },
+    {
+      "key": "current-10",
+      "ssrn_id": "7427098",
+      "title": "Predictive Closure: State, action, and the experimental compression of history",
+      "corpus_kind": "current",
+      "programme_status": "current",
+      "inheritance": "V4 successor of7304339",
+      "role": "Descent/composition/temporal grammar",
+      "inspection": "substantive selected main-text passages",
+      "inspected_spans": [
+        {
+          "lines": [
+            190,
+            570
+          ],
+          "extracted_pages": [
+            6,
+            16
+          ]
+        },
+        {
+          "lines": [
+            605,
+            690
+          ],
+          "extracted_pages": [
+            17,
+            19
+          ]
+        },
+        {
+          "lines": [
+            742,
+            795
+          ],
+          "extracted_pages": [
+            21,
+            22
+          ]
+        },
+        {
+          "lines": [
+            849,
+            910
+          ],
+          "extracted_pages": [
+            23,
+            25
+          ]
+        }
+      ],
+      "assessment": "Domain and record preservation precede action algebra; commutation differs from amount calibration; rank is linear realization, not universal memory size.",
+      "dependencies_and_open_evidence": "Continuation closure; operator regularity/remainders; held-out state reconstruction, scale and inferential-unit calibration.",
+      "corpus_note": "",
+      "source_path": "sources/current-10.txt",
+      "source_sha256": "5245c3e1f1e7d4eaeebbac454f85483005454e14e484d3b0ade2c266d3ef7af3",
+      "total_lines": 1576,
+      "pdf_page_count": 37,
+      "external_version_parity": "unverified",
+      "whole_manuscript_validated": false
+    },
+    {
+      "key": "current-11",
+      "ssrn_id": "7427100",
+      "title": "From Predictive State to Viable Action: Action Sufficiency, Safe Diagnosis, and the Operational Recoverability Bound",
+      "corpus_kind": "current",
+      "programme_status": "current",
+      "inheritance": "Current decision layer",
+      "role": "Action and diagnosis",
+      "inspection": "substantive selected main-text passages",
+      "inspected_spans": [
+        {
+          "lines": [
+            1,
+            290
+          ],
+          "extracted_pages": [
+            1,
+            7
+          ]
+        },
+        {
+          "lines": [
+            306,
+            392
+          ],
+          "extracted_pages": [
+            7,
+            9
+          ]
+        }
+      ],
+      "assessment": "Whole-cell action intersection yields static set cover; diagnostic time can make physical rescue operationally inaccessible.",
+      "dependencies_and_open_evidence": "Finite admissible library, acceptable-action probabilities, measurement disturbance and robust information pattern.",
+      "corpus_note": "",
+      "source_path": "sources/current-11.txt",
+      "source_sha256": "3b7878161e5cd6c1d600236fc705f650253cfb12d032a46d0432be7b29ea7e8d",
+      "total_lines": 543,
+      "pdf_page_count": 12,
+      "external_version_parity": "unverified",
+      "whole_manuscript_validated": false
+    },
+    {
+      "key": "legacy-7347861",
+      "ssrn_id": "7347861",
+      "title": "The Observer and the World Predictive Closure, the Projective Shadow, and a First-principles Grammar of Empirical Science",
+      "corpus_kind": "legacy",
+      "programme_status": "superseded",
+      "inheritance": "Superseded bycurrent-07; read withcurrent-10",
+      "role": "Observer predecessor",
+      "inspection": "abstract excerpt and/or contents outline plus corpus metadata/revision notice",
+      "inspected_spans": [
+        {
+          "lines": [
+            54,
+            83
+          ],
+          "extracted_pages": [
+            2,
+            2
+          ]
+        }
+      ],
+      "assessment": "Retain projective conditional branch; successor governs support, measurable quotient and finite equivalence.",
+      "dependencies_and_open_evidence": "Abstract and corpus update notice only; no independent old proof validation.",
+      "corpus_note": "Programme update, 7 September 2026. This earlier formulation is preserved. The current expanded treatment is The Observer and the World: Predictive state, lawful forgetting, and the geometry of empirical reality (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7426998), read with Predictive Closure (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7427098). Use the newer statements of quotient measurability and support, matched-present/common-future tests, and confidence bounds for empirical equivalence. A failure to reject a difference is not a certificate of equivalence. Order reversal diagnoses a specified order-blind representation; it does not by itself prove that every scalar state description fails. Projective geometry remains conditional on the declared observation structure, as this earlier abstract also states. New successor records cited in this notice were submitted on 7 September 2026 and are awaiting SSRN review; their pages may not yet be publicly available.",
+      "source_path": "sources/legacy-7347861.txt",
+      "source_sha256": "1d3b257a3702dbe582430943841ced5c207e24f6db8f73e253029c27207896af",
+      "total_lines": 1670,
+      "pdf_page_count": 30,
+      "external_version_parity": "unverified",
+      "whole_manuscript_validated": false
+    },
+    {
+      "key": "legacy-7304339",
+      "ssrn_id": "7304339",
+      "title": "Predictive Closure: A Measurement-Admission Theorem for Evolving Systems",
+      "corpus_kind": "legacy",
+      "programme_status": "superseded",
+      "inheritance": "Superseded bycurrent-10",
+      "role": "Closure predecessor",
+      "inspection": "contents outline and corpus revision notice; expanded successor substantively read",
+      "inspected_spans": [
+        {
+          "lines": [
+            36,
+            65
+          ],
+          "extracted_pages": [
+            2,
+            2
+          ]
+        }
+      ],
+      "assessment": "Successor governs stochastic record/domain semantics, graph interpretation and noisy rank.",
+      "dependencies_and_open_evidence": "Selected contents outline and corpus notice only; current successor substantively reviewed.",
+      "corpus_note": "Programme update, 7 September 2026. The current expanded formulation is Predictive Closure: State, action, and the experimental compression of history (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7427098). This earlier paper remains available. Use the successor for the unified treatment of stochastic successor kernels, record-conditioned partial actions and their domains, temporal contrasts, realization and action sufficiency. Kernel composition and record-conditioned updates are distinct constructions; a cycle residual is not automatically a ranking of histories, and finite noisy reconstruction does not establish an unrestricted exact state dimension. These qualifications delimit the claims rather than replacing the requirement to declare the measurement and future-test scope. New successor records cited in this notice were submitted on 7 September 2026 and are awaiting SSRN review; their pages may not yet be publicly available.",
+      "source_path": "sources/legacy-7304339.txt",
+      "source_sha256": "61670c715a763ebb4e4514e461fbddad0ca343d8b93ee68d69d816772eed45c2",
+      "total_lines": 944,
+      "pdf_page_count": 22,
+      "external_version_parity": "unverified",
+      "whole_manuscript_validated": false
+    },
+    {
+      "key": "legacy-7302362",
+      "ssrn_id": "7302362",
+      "title": "When Equal BED Is Not Equal Biology: Reversal, Graph Closure, and State Recovery",
+      "corpus_kind": "legacy",
+      "programme_status": "superseded",
+      "inheritance": "Superseded bycurrent-08, linkedcurrent-03",
+      "role": "Reversal predecessor",
+      "inspection": "abstract excerpt and/or contents outline plus corpus metadata/revision notice",
+      "inspected_spans": [
+        {
+          "lines": [
+            15,
+            44
+          ],
+          "extracted_pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "assessment": "Corrected mean/variance and multiplicity rules govern; reversal alone is not universal scalar-state failure.",
+      "dependencies_and_open_evidence": "Abstract excerpt and revision notice; no older simulation rerun.",
+      "corpus_note": "Update, 7 September 2026. For the reviewed formulation and corrected supporting calculations, see When Equal BED Is Not Equal Biology: Reversal, Graph Closure, and State Recovery (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7427058), together with The Acute Dose-Response Curve as a Transition Potential (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7426880). The original paper is preserved. Mean/variance adequacy must not be treated as equivalence of complete response laws. A rejection rule that triggers on either component requires appropriate multiplicity control; use the reviewed simulation tables and supplement for that rule. Reversal rejects the specified order-blind dose representation and does not, by itself, identify a biological mechanism or rule out every closed scalar dynamical model. Population mixing, measurement scale and technical noise remain part of the declared test. New successor records cited in this notice were submitted on 7 September 2026 and are awaiting SSRN review; their pages may not yet be publicly available.",
+      "source_path": "sources/legacy-7302362.txt",
+      "source_sha256": "f1eef338459612b56d52120d69c1a24c140de1cfa98d61ec10437a391b90de8b",
+      "total_lines": 1258,
+      "pdf_page_count": 54,
+      "external_version_parity": "unverified",
+      "whole_manuscript_validated": false
+    },
+    {
+      "key": "legacy-7181465",
+      "ssrn_id": "7181465",
+      "title": "Finite rescue windows and supply-limited redox commitment in NRF2-active cancer: fold geometry and a decisive experimental test",
+      "corpus_kind": "legacy",
+      "programme_status": "superseded",
+      "inheritance": "Superseded bycurrent-09",
+      "role": "Rescue predecessor",
+      "inspection": "abstract excerpt and/or contents outline plus corpus metadata/revision notice",
+      "inspected_spans": [
+        {
+          "lines": [
+            38,
+            67
+          ],
+          "extracted_pages": [
+            2,
+            2
+          ]
+        }
+      ],
+      "assessment": "Monotone crossover claim and evidence attribution corrected; grey+orange death bars must be combined.",
+      "dependencies_and_open_evidence": "Abstract and notice; current mathematical/evidence corrections read.",
+      "corpus_note": "Correction and update, 7 September 2026. Please use the corrected successor, Finite rescue windows and supply-limited redox commitment in NRF2-active cancer: fold geometry and a discriminating experimental test (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7427059). The earlier crossover description must not be read as universally monotone: asymmetric finite entry/exit sections can produce a nonmonotone effective-exponent profile. A changing forcing depth also requires the additional time-dependent phase term. The fixed-section passage formula is a deterministic model result and is not automatically a population T50 law. The attribution in Section 2.3 of a timed cystine-withdrawal/repletion rescue experiment to Poursaitidis et al. is withdrawn. In the Wiernicki source plot, the grey component is death already present at rescue addition and orange is subsequent additional death; their sum is final death, and grey is not an untreated control. The corrected paper separates these evidence corrections from the still-prospective fold-model test. The original PDF is preserved. New successor records cited in this notice were submitted on 7 September 2026 and are awaiting SSRN review; their pages may not yet be publicly available.",
+      "source_path": "sources/legacy-7181465.txt",
+      "source_sha256": "eb87a0ce98925281f1ebbf4064735d2315bd09429b1e316099a3ec9cf452c899",
+      "total_lines": 570,
+      "pdf_page_count": 14,
+      "external_version_parity": "unverified",
+      "whole_manuscript_validated": false
+    },
+    {
+      "key": "legacy-6987278",
+      "ssrn_id": "6987278",
+      "title": "IDA and the Boundedness Engine",
+      "corpus_kind": "legacy",
+      "programme_status": "superseded_in_part",
+      "inheritance": "Historical synthesis; current01/02/05/10/11 narrow scope",
+      "role": "IDA recovery and programme synthesis",
+      "inspection": "substantive selected main-text passages",
+      "inspected_spans": [
+        {
+          "lines": [
+            106,
+            190
+          ],
+          "extracted_pages": [
+            4,
+            5
+          ]
+        },
+        {
+          "lines": [
+            215,
+            378
+          ],
+          "extracted_pages": [
+            6,
+            10
+          ]
+        },
+        {
+          "lines": [
+            447,
+            508
+          ],
+          "extracted_pages": [
+            12,
+            13
+          ]
+        },
+        {
+          "lines": [
+            21,
+            50
+          ],
+          "extracted_pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "assessment": "Operational leaky score retained; generator affine freedom, Hill/logit substitution and quadratic-energy monotone-transfer claim need correction.",
+      "dependencies_and_open_evidence": "Frozen chart/reference; independent validation of prediction and closed-loop benefit; microscopic rung remains conjectural.",
+      "corpus_note": "Programme status update, 7 September 2026. The statement that this would be the programme's final new manuscript is no longer current. Subsequent work develops biological state sufficiency (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7425878), Predictive Closure (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7427098), the temporal architecture of living nature (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7426938), action sufficiency and safe diagnosis (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7427100), and epistemic type safety for generative AI (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7426838). This synthesis remains a historical programme document. Its proposed instruments, empirical tests and optional microscopic conjectures should retain their stated hypothesis status; the newer papers specify the current mathematical scope and experimental priorities. New successor records cited in this notice were submitted on 7 September 2026 and are awaiting SSRN review; their pages may not yet be publicly available.",
+      "source_path": "sources/legacy-6987278.txt",
+      "source_sha256": "f985548fe1a5bf02dcb6dc634662449fd814087094eabbd69688fc70c144eb95",
+      "total_lines": 1358,
+      "pdf_page_count": 35,
+      "external_version_parity": "unverified",
+      "whole_manuscript_validated": false
+    },
+    {
+      "key": "legacy-6964098",
+      "ssrn_id": "6964098",
+      "title": "Intelligence - Two Operators in the g Debate: Correlation Identifies Description, Intervention Tests Cause",
+      "corpus_kind": "legacy",
+      "programme_status": "uncertain_currentness_retained_legacy",
+      "inheritance": "Retained legacy domain branch; replacement not verified",
+      "role": "Intelligence transfer operator",
+      "inspection": "abstract excerpt and/or contents outline plus corpus metadata/revision notice",
+      "inspected_spans": [
+        {
+          "lines": [
+            16,
+            45
+          ],
+          "extracted_pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "assessment": "Covariance and intervention-response rank answer different questions; positive manifold requires the stated nonnegative model.",
+      "dependencies_and_open_evidence": "Abstract only; causal transfer, intervention reach and experimental calibration unreviewed.",
+      "corpus_note": "",
+      "source_path": "sources/legacy-6964098.txt",
+      "source_sha256": "631dc61ba40901198b62273ed90d0b909ecbedc970c380782c14096f7cde163f",
+      "total_lines": 745,
+      "pdf_page_count": 22,
+      "external_version_parity": "unverified",
+      "whole_manuscript_validated": false
+    },
+    {
+      "key": "legacy-6963978",
+      "ssrn_id": "6963978",
+      "title": "Lawful Coordinates in Bounded Science: Measurement, Composition, and the Euclidean Error",
+      "corpus_kind": "legacy",
+      "programme_status": "superseded_in_part",
+      "inheritance": "Partly superseded bycurrent-06/10 scope",
+      "role": "Lawful measurement coordinates",
+      "inspection": "abstract excerpt and/or contents outline plus corpus metadata/revision notice",
+      "inspected_spans": [
+        {
+          "lines": [
+            4,
+            33
+          ],
+          "extracted_pages": [
+            1,
+            1
+          ]
+        }
+      ],
+      "assessment": "Generator depends on operation; positive scale, not arbitrary affine shift after identity0; raw-gap optimum not universal information optimum.",
+      "dependencies_and_open_evidence": "Abstract and correction notice; no public SynergyFinder case rerun.",
+      "corpus_note": "Scope clarification and related work, 7 September 2026. A lawful coordinate is tied to a specified operation; boundedness alone does not select it. With the additive identity normalized to zero, generator freedom is positive scale. The approximately 0.618 combination-design point maximizes a particular raw effect gap under the common-shape n=1 model; it is not a universal optimum independent of noise, costs or the inferential target. See Acz\u00e9l-Family Composition in Bounded Pharmacology (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7426978) and Predictive Closure (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7427098) for the current treatment. The original paper is preserved. New successor records cited in this notice were submitted on 7 September 2026 and are awaiting SSRN review; their pages may not yet be publicly available.",
+      "source_path": "sources/legacy-6963978.txt",
+      "source_sha256": "9362ff3bbd07570328f73a46fce235d03af9e335abec1d6517f28328c24ef444",
+      "total_lines": 321,
+      "pdf_page_count": 9,
+      "external_version_parity": "unverified",
+      "whole_manuscript_validated": false
+    },
+    {
+      "key": "legacy-6963958",
+      "ssrn_id": "6963958",
+      "title": "Dominance Hides in the Bend: Boundary Identifiability and Sampling Design in Diploid Selection",
+      "corpus_kind": "legacy",
+      "programme_status": "uncertain_currentness_retained_legacy",
+      "inheritance": "Retained legacy domain branch; replacement not verified",
+      "role": "Diploid boundary identifiability",
+      "inspection": "abstract excerpt and/or contents outline plus corpus metadata/revision notice",
+      "inspected_spans": [
+        {
+          "lines": [
+            16,
+            45
+          ],
+          "extracted_pages": [
+            1,
+            1
+          ]
+        }
+      ],
+      "assessment": "Rare-allele limit identifieshs; bend exposes additional coefficient under declared model.",
+      "dependencies_and_open_evidence": "Abstract only; population-genetic assumptions, inversion proof and data replication not audited.",
+      "corpus_note": "",
+      "source_path": "sources/legacy-6963958.txt",
+      "source_sha256": "ef2acf96e2eca0ac1640af1146f34edcbd8c4ba4a9bc1720754e0cba02a06a90",
+      "total_lines": 517,
+      "pdf_page_count": 12,
+      "external_version_parity": "unverified",
+      "whole_manuscript_validated": false
+    },
+    {
+      "key": "legacy-6963360",
+      "ssrn_id": "6963360",
+      "title": "Projection Geometry of the Niche-Neutral Debate: Hidden Probability Currents in Community Dynamics",
+      "corpus_kind": "legacy",
+      "programme_status": "uncertain_currentness_retained_legacy",
+      "inheritance": "Retained legacy domain branch; replacement not verified",
+      "role": "Ecological stationary currents",
+      "inspection": "abstract excerpt and/or contents outline plus corpus metadata/revision notice",
+      "inspected_spans": [
+        {
+          "lines": [
+            10,
+            39
+          ],
+          "extracted_pages": [
+            1,
+            1
+          ]
+        }
+      ],
+      "assessment": "Density-only observation erases divergence-free probability currents; time-order tests need nuisance controls.",
+      "dependencies_and_open_evidence": "Abstract only; no detailed diffusion/boundary proof or ecological dataset validation.",
+      "corpus_note": "",
+      "source_path": "sources/legacy-6963360.txt",
+      "source_sha256": "8d0f02a85a15a272ef8f9d7063a66bd847666d2884c645a3f6d03e6937873a87",
+      "total_lines": 1174,
+      "pdf_page_count": 30,
+      "external_version_parity": "unverified",
+      "whole_manuscript_validated": false
+    },
+    {
+      "key": "legacy-6947578",
+      "ssrn_id": "6947578",
+      "title": "Prime-Residue Projection Tomography of Consecutive-Prime Biases: Primorial Recovery and Gap-Word Order Asymmetry",
+      "corpus_kind": "legacy",
+      "programme_status": "uncertain_currentness_retained_legacy",
+      "inheritance": "Retained predecessor; current-04 extends",
+      "role": "Prime projection tomography",
+      "inspection": "abstract excerpt and/or contents outline plus corpus metadata/revision notice",
+      "inspected_spans": [
+        {
+          "lines": [
+            28,
+            57
+          ],
+          "extracted_pages": [
+            2,
+            2
+          ]
+        }
+      ],
+      "assessment": "Refined primorial projection and Markov residuals are reported numerical results, not new prime asymptotics.",
+      "dependencies_and_open_evidence": "Abstract and follow-up notice;3million-prime computation not rerun.",
+      "corpus_note": "Follow-up, 7 September 2026. This original prime-residue projection paper is retained. Recursive Predictive Closure in the Prime Sieve (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7426882) develops the subsequent resolution and gap-word prediction framework. Read exact CRT/Euler-factor identities separately from the assumptions needed to interpret an inclusion\u2013exclusion functional as a probability law and from asymptotic claims about actual primes. The follow-up reports its frozen predictor checks and remaining limits. This link does not withdraw the predecessor's projection results or turn correlated computational checks into independent empirical replications. New successor records cited in this notice were submitted on 7 September 2026 and are awaiting SSRN review; their pages may not yet be publicly available.",
+      "source_path": "sources/legacy-6947578.txt",
+      "source_sha256": "bf62fa239594c9249f1667c45795d76c46b94844e101728cf9f1080736dbe534",
+      "total_lines": 1353,
+      "pdf_page_count": 15,
+      "external_version_parity": "unverified",
+      "whole_manuscript_validated": false
+    },
+    {
+      "key": "legacy-6914800",
+      "ssrn_id": "6914800",
+      "title": "A Classification of Bounded Composition Laws with Isometric Reassociation Defects: flat rapidity addition, Einstein gyroaddition, and the holonomy that chooses between them",
+      "corpus_kind": "legacy",
+      "programme_status": "uncertain_currentness_retained_legacy",
+      "inheritance": "Retained later foundations branch; full theorem audit incomplete",
+      "role": "Flat/curved classification",
+      "inspection": "substantive selected main-text passages",
+      "inspected_spans": [
+        {
+          "lines": [
+            206,
+            248
+          ],
+          "extracted_pages": [
+            3,
+            3
+          ]
+        },
+        {
+          "lines": [
+            481,
+            555
+          ],
+          "extracted_pages": [
+            5,
+            6
+          ]
+        },
+        {
+          "lines": [
+            8,
+            37
+          ],
+          "extracted_pages": [
+            1,
+            1
+          ]
+        }
+      ],
+      "assessment": "Isometric reassociation defect is strong; radial UHL is an axiom; flat associative branch survives until nontrivial holonomy selection.",
+      "dependencies_and_open_evidence": "Axioms/flat passage inspected; full differential-geometric proof, dimension cases and chiral classification remain independently unaudited.",
+      "corpus_note": "",
+      "source_path": "sources/legacy-6914800.txt",
+      "source_sha256": "21c6177709d73897520eb3642c7f06d93352bf580cb5249e3b400b7da1cfb775",
+      "total_lines": 1762,
+      "pdf_page_count": 16,
+      "external_version_parity": "unverified",
+      "whole_manuscript_validated": false
+    },
+    {
+      "key": "legacy-6907938",
+      "ssrn_id": "6907938",
+      "title": "Does Sustained Compulsory Antipsychotic Treatment Meet the Evidentiary Standard That Removal of Consent Requires? A Structured Critical Review",
+      "corpus_kind": "legacy",
+      "programme_status": "uncertain_currentness_retained_legacy",
+      "inheritance": "Retained later review; supersedes6858838 emphasis",
+      "role": "Evidence/estimand critique",
+      "inspection": "abstract excerpt and/or contents outline plus corpus metadata/revision notice",
+      "inspected_spans": [
+        {
+          "lines": [
+            10,
+            39
+          ],
+          "extracted_pages": [
+            1,
+            1
+          ]
+        }
+      ],
+      "assessment": "Adding legal compulsion and giving a drug are different interventions/estimands.",
+      "dependencies_and_open_evidence": "Abstract only; no endorsement of current clinical/legal claims and no fresh review replication.",
+      "corpus_note": "",
+      "source_path": "sources/legacy-6907938.txt",
+      "source_sha256": "06b7c851b3edb5898ee3c978b7b991f71f9bb47b871e83317052138c23845a0e",
+      "total_lines": 1348,
+      "pdf_page_count": 32,
+      "external_version_parity": "unverified",
+      "whole_manuscript_validated": false
+    },
+    {
+      "key": "legacy-6865159",
+      "ssrn_id": "6865159",
+      "title": "The Invariance Signature of Public Quantum Measurement Archives: Factorizing Exchangeability Failure, Calibration Sensitivity, Overdispersion, and Job-Index Channel Structure in Leggett-Garg/Time-Order Data",
+      "corpus_kind": "legacy",
+      "programme_status": "uncertain_currentness_retained_legacy",
+      "inheritance": "Retained legacy empirical branch; frozen archive v1 required",
+      "role": "Quantum archive invariance",
+      "inspection": "abstract excerpt and/or contents outline plus corpus metadata/revision notice",
+      "inspected_spans": [
+        {
+          "lines": [
+            10,
+            39
+          ],
+          "extracted_pages": [
+            1,
+            1
+          ]
+        }
+      ],
+      "assessment": "Job-index dependence, calibration and overdispersion are not microscopic memory or Born-rule anomaly.",
+      "dependencies_and_open_evidence": "Abstract only; original parser/data unavailable to quantum lead; archive counts not independently reproduced.",
+      "corpus_note": "",
+      "source_path": "sources/legacy-6865159.txt",
+      "source_sha256": "f0458fcb66a9f72a09263fde26ca269afca2a2995d47c2e1ce581ff1fd2f2945",
+      "total_lines": 391,
+      "pdf_page_count": 11,
+      "external_version_parity": "unverified",
+      "whole_manuscript_validated": false
+    },
+    {
+      "key": "legacy-6858922",
+      "ssrn_id": "6858922",
+      "title": "Precision-Gated Attractor Reversal: A Triple-Threshold Hypothesis for Exceptional Recovery",
+      "corpus_kind": "legacy",
+      "programme_status": "uncertain_currentness_retained_legacy",
+      "inheritance": "Historical hypothesis; current02/05/11 supply operational framework",
+      "role": "Precision-gated recovery hypothesis",
+      "inspection": "abstract excerpt and/or contents outline plus corpus metadata/revision notice",
+      "inspected_spans": [
+        {
+          "lines": [
+            16,
+            45
+          ],
+          "extracted_pages": [
+            1,
+            1
+          ]
+        }
+      ],
+      "assessment": "Triple gate and fast-slow coupling remain proposed mechanisms, not consequences of state/viability mathematics.",
+      "dependencies_and_open_evidence": "Abstract and scope notice; independent biological tests required.",
+      "corpus_note": "Related-work and evidence-status note, 7 September 2026. The precision-gated recovery mechanism and proposed coupling tests in this paper remain hypotheses. The current operational treatment of measured state, viable continuation and recovery is developed in A Law of Biological State Sufficiency (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7425878), The Temporal Architecture of Living Nature (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7426938), and From Predictive State to Viable Action (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7427100). Those mathematical and experimental frameworks do not by themselves validate this earlier biological mechanism. The original preprint is retained. New successor records cited in this notice were submitted on 7 September 2026 and are awaiting SSRN review; their pages may not yet be publicly available.",
+      "source_path": "sources/legacy-6858922.txt",
+      "source_sha256": "26ae54756b614f2b36f28d5dd0acb778b281534dbb3de8ea58431387500afd87",
+      "total_lines": 378,
+      "pdf_page_count": 14,
+      "external_version_parity": "unverified",
+      "whole_manuscript_validated": false
+    },
+    {
+      "key": "legacy-6858880",
+      "ssrn_id": "6858880",
+      "title": "c-Ring Stoichiometry, Energetic Slack, and the Limits of Molecular Optimality",
+      "corpus_kind": "legacy",
+      "programme_status": "uncertain_currentness_retained_legacy",
+      "inheritance": "Retained legacy domain hypothesis",
+      "role": "Energetic slack in ATP synthase",
+      "inspection": "abstract excerpt and/or contents outline plus corpus metadata/revision notice",
+      "inspected_spans": [
+        {
+          "lines": [
+            15,
+            44
+          ],
+          "extracted_pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "assessment": "Admissibility slack and evolutionary optimality are different; pressure index must not contain fitted solution.",
+      "dependencies_and_open_evidence": "Abstract only; units/proxy validity and comparative data not independently audited.",
+      "corpus_note": "",
+      "source_path": "sources/legacy-6858880.txt",
+      "source_sha256": "589310c34c3ab4a3f1334cd78d196e4243164b1e032a125305bb3e3045ea8418",
+      "total_lines": 1389,
+      "pdf_page_count": 16,
+      "external_version_parity": "unverified",
+      "whole_manuscript_validated": false
+    },
+    {
+      "key": "legacy-6858878",
+      "ssrn_id": "6858878",
+      "title": "A Coefficient-Locked Test of Atmospheric-Loss Geometry in the Exoplanet Radius Valley",
+      "corpus_kind": "legacy",
+      "programme_status": "uncertain_currentness_retained_legacy",
+      "inheritance": "Retained legacy negative-control case",
+      "role": "Atmospheric-loss regime boundary",
+      "inspection": "abstract excerpt and/or contents outline plus corpus metadata/revision notice",
+      "inspected_spans": [
+        {
+          "lines": [
+            26,
+            55
+          ],
+          "extracted_pages": [
+            2,
+            2
+          ]
+        }
+      ],
+      "assessment": "Paper reports data do not select locked exponent; similar predictive score does not identify mechanism.",
+      "dependencies_and_open_evidence": "Abstract only;493planet data/model analysis not rerun.",
+      "corpus_note": "",
+      "source_path": "sources/legacy-6858878.txt",
+      "source_sha256": "6ec08029d0fa35583b875e3465ac90fff0ff4ac643acdf724d52605d40348695",
+      "total_lines": 821,
+      "pdf_page_count": 9,
+      "external_version_parity": "unverified",
+      "whole_manuscript_validated": false
+    },
+    {
+      "key": "legacy-6858838",
+      "ssrn_id": "6858838",
+      "title": "The Measurement Gap in Coercive Psychiatry: When the Justification for Compulsory Antipsychotic Treatment Cannot Meet the Standard the Compulsion Requires",
+      "corpus_kind": "legacy",
+      "programme_status": "superseded",
+      "inheritance": "Superseded/developed bylegacy-6907938",
+      "role": "Measurement-gap predecessor",
+      "inspection": "abstract excerpt and/or contents outline plus corpus metadata/revision notice",
+      "inspected_spans": [
+        {
+          "lines": [
+            112,
+            141
+          ],
+          "extracted_pages": [
+            3,
+            3
+          ]
+        }
+      ],
+      "assessment": "Preserve pharmacology-versus-compulsion evidence distinction without automatic clinical/legal verdict.",
+      "dependencies_and_open_evidence": "Abstract excerpt and corpus update; original evidence chain not independently assessed.",
+      "corpus_note": "Related-work update, 7 September 2026. The subsequent structured review develops the evidentiary argument in this earlier paper: Does Sustained Compulsory Antipsychotic Treatment Meet the Evidentiary Standard That Removal of Consent Requires? (https://papers.ssrn.com/abstract=6907938). Please distinguish the evidence for a pharmacological intervention from the evidence for adding legal compulsion when citing either paper. This note preserves the original preprint and does not add a new clinical outcome claim.",
+      "source_path": "sources/legacy-6858838.txt",
+      "source_sha256": "9880ef5220b33f45e6d3de86139eeb8aa97c87d7177b8dab023d9fb652b2145d",
+      "total_lines": 1828,
+      "pdf_page_count": 18,
+      "external_version_parity": "unverified",
+      "whole_manuscript_validated": false
+    },
+    {
+      "key": "legacy-6858819",
+      "ssrn_id": "6858819",
+      "title": "Hormesis as a Geometric Necessity of Bounded Adaptive Systems: Quantitative Predictions from First Principles",
+      "corpus_kind": "legacy",
+      "programme_status": "superseded_in_part",
+      "inheritance": "Scoped legacy; journal development cited in corpus",
+      "role": "Mechanistic hormesis",
+      "inspection": "substantive selected main-text passages",
+      "inspected_spans": [
+        {
+          "lines": [
+            87,
+            153
+          ],
+          "extracted_pages": [
+            3,
+            4
+          ]
+        },
+        {
+          "lines": [
+            6,
+            35
+          ],
+          "extracted_pages": [
+            1,
+            1
+          ]
+        }
+      ],
+      "assessment": "Opposing-channel model can be useful; statements that Aczel selects artanh are too strong; current-05 theorem needs explicit slopes/crossing.",
+      "dependencies_and_open_evidence": "Abstract and premises/mechanism passages read; aggregate amplitude/database validation not rerun; journal parity unverified.",
+      "corpus_note": "Scope clarification, 7 September 2026. The hormetic response in this paper is conditional on its specified adaptive-activation, repair and toxicity model. Boundedness alone does not imply hormesis, and the result does not assert that every low exposure is beneficial. Model assumptions and baseline-relative benefit must accompany applications. The current broader biological framework is The Temporal Architecture of Living Nature (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7426938), with mechanism-dependent composition discussed in Acz\u00e9l-Family Composition in Bounded Pharmacology (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7426978). This preprint remains part of the research record. The published journal version appeared in Dose-Response 24(3) on 22 July 2026: https://doi.org/10.1177/15593258261469171. New successor records cited in this notice were submitted on 7 September 2026 and are awaiting SSRN review; their pages may not yet be publicly available.",
+      "source_path": "sources/legacy-6858819.txt",
+      "source_sha256": "82a3743cd527b604e3c1a241298599ce9338efc8b58e77309d4e52d10c3708c3",
+      "total_lines": 699,
+      "pdf_page_count": 17,
+      "external_version_parity": "unverified",
+      "whole_manuscript_validated": false
+    },
+    {
+      "key": "legacy-6858760",
+      "ssrn_id": "6858760",
+      "title": "Response-Coefficient Attenuation Predicts Hormetic Peak Amplitude: A Metabolic-Control Extension of Bounded Adaptive Systems",
+      "corpus_kind": "legacy",
+      "programme_status": "uncertain_currentness_retained_legacy",
+      "inheritance": "Retained legacy domain extension",
+      "role": "Metabolic response attenuation",
+      "inspection": "abstract excerpt and/or contents outline plus corpus metadata/revision notice",
+      "inspected_spans": [
+        {
+          "lines": [
+            14,
+            43
+          ],
+          "extracted_pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "assessment": "Response coefficient sumC_i*epsilon_i is first-order; n/m attenuation needs comparable co-directional targets.",
+      "dependencies_and_open_evidence": "Abstract only; finite-amplitude, same-system coefficient and data checks remain open.",
+      "corpus_note": "",
+      "source_path": "sources/legacy-6858760.txt",
+      "source_sha256": "083834d61a3239b329fdfbbbc6d0e165ba9673b6c226bf05b43c42b9d49ca6ce",
+      "total_lines": 561,
+      "pdf_page_count": 14,
+      "external_version_parity": "unverified",
+      "whole_manuscript_validated": false
+    },
+    {
+      "key": "legacy-6800400",
+      "ssrn_id": "6800400",
+      "title": "Bounded Compositional Geometry: Interior-Identity Universality and the One-Dimensional M\u00f6bius Enrichment",
+      "corpus_kind": "legacy",
+      "programme_status": "uncertain_currentness_retained_legacy",
+      "inheritance": "Later foundations narrowing earlier uniqueness claims",
+      "role": "Projective selector and five-flow scope",
+      "inspection": "substantive selected main-text passages",
+      "inspected_spans": [
+        {
+          "lines": [
+            202,
+            342
+          ],
+          "extracted_pages": [
+            6,
+            9
+          ]
+        },
+        {
+          "lines": [
+            408,
+            467
+          ],
+          "extracted_pages": [
+            11,
+            12
+          ]
+        },
+        {
+          "lines": [
+            7,
+            36
+          ],
+          "extracted_pages": [
+            1,
+            1
+          ]
+        }
+      ],
+      "assessment": "A6 is an added selector; marked triple limits five-flow classification; Lemma2.1 listed premises fail to select pure boosts.",
+      "dependencies_and_open_evidence": "Axioms and lemma checked; full extra-axiom theorem not refuted or fully validated;1D has no negative sectional-curvature planes.",
+      "corpus_note": "",
+      "source_path": "sources/legacy-6800400.txt",
+      "source_sha256": "3ded6275e1d202acc6e7799df0c0b1302557e1be2132529eee97d0e04858d2e3",
+      "total_lines": 1379,
+      "pdf_page_count": 34,
+      "external_version_parity": "unverified",
+      "whole_manuscript_validated": false
+    },
+    {
+      "key": "legacy-6779487",
+      "ssrn_id": "6779487",
+      "title": "Thresholded Adaptive Orchestration: Typed Bounded-State Interfaces and Boundary-Stress Testing for Generative Interactive Worlds",
+      "corpus_kind": "legacy",
+      "programme_status": "uncertain_currentness_retained_legacy",
+      "inheritance": "Retained engineering branch; replacement not verified",
+      "role": "TAO bounded control contracts",
+      "inspection": "substantive selected main-text passages",
+      "inspected_spans": [
+        {
+          "lines": [
+            202,
+            455
+          ],
+          "extracted_pages": [
+            7,
+            13
+          ]
+        },
+        {
+          "lines": [
+            566,
+            615
+          ],
+          "extracted_pages": [
+            16,
+            17
+          ]
+        },
+        {
+          "lines": [
+            1115,
+            1185
+          ],
+          "extracted_pages": [
+            31,
+            32
+          ]
+        },
+        {
+          "lines": [
+            22,
+            51
+          ],
+          "extracted_pages": [
+            2,
+            2
+          ]
+        }
+      ],
+      "assessment": "Five curated flows, typed state contracts, confidence/fallback and hybrid safety; semantics do not establish physiological state estimation.",
+      "dependencies_and_open_evidence": "Substantive charts/contracts/switching and implementation limits inspected; synthetic benchmark not independently rerun.",
+      "corpus_note": "",
+      "source_path": "sources/legacy-6779487.txt",
+      "source_sha256": "f069385a0dd2176278c3045244208ee0f8efe5cc4a237d09a1654efb625a52fc",
+      "total_lines": 1283,
+      "pdf_page_count": 35,
+      "external_version_parity": "unverified",
+      "whole_manuscript_validated": false
+    },
+    {
+      "key": "legacy-6774878",
+      "ssrn_id": "6774878",
+      "title": "Rapidity Coordinates for Bounded Belief,A Resource-Constrained Predictive Processing Framework with a Falsifiable Inter-Brain Synchrony Test",
+      "corpus_kind": "legacy",
+      "programme_status": "uncertain_currentness_retained_legacy",
+      "inheritance": "Retained legacy hypothesis branch",
+      "role": "Bounded Bayesian belief",
+      "inspection": "abstract excerpt and/or contents outline plus corpus metadata/revision notice",
+      "inspected_spans": [
+        {
+          "lines": [
+            17,
+            46
+          ],
+          "extracted_pages": [
+            1,
+            1
+          ]
+        }
+      ],
+      "assessment": "Bayesian odds multiplication supplies a log-odds coordinate; metabolic metric, neural rate and sinh coupling are additional hypotheses.",
+      "dependencies_and_open_evidence": "Abstract excerpt only; no neural/data or metric derivation validation.",
+      "corpus_note": "",
+      "source_path": "sources/legacy-6774878.txt",
+      "source_sha256": "c2dd3919c3beac2e9539eab7ce4162e2deb0fb14eda5a841e6a26fe104fc6940",
+      "total_lines": 881,
+      "pdf_page_count": 27,
+      "external_version_parity": "unverified",
+      "whole_manuscript_validated": false
+    },
+    {
+      "key": "legacy-6773218",
+      "ssrn_id": "6773218",
+      "title": "Bounded Composition Forces Interior Existence A Self-Contained Theorem",
+      "corpus_kind": "legacy",
+      "programme_status": "uncertain_currentness_retained_legacy",
+      "inheritance": "Scoped mathematical predecessor",
+      "role": "Interior group existence",
+      "inspection": "abstract excerpt and/or contents outline plus corpus metadata/revision notice",
+      "inspected_spans": [
+        {
+          "lines": [
+            14,
+            43
+          ],
+          "extracted_pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "assessment": "Open-interval group assumptions imply an additive representation; not physical existence or unique artanh metric.",
+      "dependencies_and_open_evidence": "Abstract and scope notice only; current-06 governs general generator freedom.",
+      "corpus_note": "Programme scope note, 7 September 2026. This is a mathematical result about an operation satisfying the stated open-interval, smoothness, identity, associativity and monotonicity assumptions. It should not be read as a proof of physical existence, a unique artanh/logit coordinate, or a universal metric from boundedness alone. For later composition scope see https://papers.ssrn.com/abstract=6800400; for the operational distinction between measured quantities and predictive state see Predictive Closure (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7427098). The theorem's declared mathematical jurisdiction and the original PDF are retained. New successor records cited in this notice were submitted on 7 September 2026 and are awaiting SSRN review; their pages may not yet be publicly available.",
+      "source_path": "sources/legacy-6773218.txt",
+      "source_sha256": "f78354dead22c965c4ac55d5590c81f8dbee1935da48445325ab43c36bbf6224",
+      "total_lines": 655,
+      "pdf_page_count": 18,
+      "external_version_parity": "unverified",
+      "whole_manuscript_validated": false
+    },
+    {
+      "key": "legacy-6767896",
+      "ssrn_id": "6767896",
+      "title": "Bounded Reflection and M\u00f6bius Composition: A First-Principles Derivation",
+      "corpus_kind": "legacy",
+      "programme_status": "superseded_in_part",
+      "inheritance": "Partly superseded by6800400/6914800 corrections",
+      "role": "Reflection and disk derivation",
+      "inspection": "abstract excerpt and/or contents outline plus corpus metadata/revision notice",
+      "inspected_spans": [
+        {
+          "lines": [
+            7,
+            36
+          ],
+          "extracted_pages": [
+            1,
+            1
+          ]
+        }
+      ],
+      "assessment": "Boundary-unbounded generator does not uniquely fixartanh; physical two-port transfer law must supply missing structure.",
+      "dependencies_and_open_evidence": "Abstract and explicit correction notice; no inherited broad uniqueness theorem.",
+      "corpus_note": "Scope correction, 7 September 2026. The inference that surjectivity of an additive coordinate onto the real line pins that coordinate to artanh is not valid without additional structure. Boundary preservation alone must not be used to infer that specific generator or to exclude a flat compositional branch. For the corrected distinction between general composition, added projective assumptions and flat/curved branches, see Bounded Compositional Geometry (https://papers.ssrn.com/abstract=6800400) and A Classification of Bounded Composition Laws with Isometric Reassociation Defects (https://papers.ssrn.com/abstract=6914800). Applications based on an independently specified physical transfer law require that physical input; the broad uniqueness inference in this earlier derivation should not be cited without the added hypotheses. The original PDF is preserved.",
+      "source_path": "sources/legacy-6767896.txt",
+      "source_sha256": "df997197f0c4ecb679917d22a0ac57139d2a5c54e60d5f500bfcd2faefab2b53",
+      "total_lines": 888,
+      "pdf_page_count": 22,
+      "external_version_parity": "unverified",
+      "whole_manuscript_validated": false
+    },
+    {
+      "key": "legacy-6761570",
+      "ssrn_id": "6761570",
+      "title": "An Architectural Classification of Bounded Adaptive Systems",
+      "corpus_kind": "legacy",
+      "programme_status": "superseded_in_part",
+      "inheritance": "Partly superseded bycurrent05/06/02 and6800400",
+      "role": "Unified architecture perspective",
+      "inspection": "abstract excerpt and/or contents outline plus corpus metadata/revision notice",
+      "inspected_spans": [
+        {
+          "lines": [
+            9,
+            38
+          ],
+          "extracted_pages": [
+            1,
+            1
+          ]
+        }
+      ],
+      "assessment": "Universal PSL and four-role claims need model-class restriction; no new mathematics claimed by this perspective.",
+      "dependencies_and_open_evidence": "Abstract and scope correction; broad synthesis not admitted as independent proof.",
+      "corpus_note": "Scope correction and update, 7 September 2026. The abstract's broad claim that any associative, boundary-preserving bounded observable is forced into a unique PSL(2,R) geometry should not be relied on without the additional projective and mechanism assumptions stated in the body and later work. Boundedness alone does not establish a universal four-role architecture or guarantee hormesis. For the revised composition scope see https://papers.ssrn.com/abstract=6800400 and Acz\u00e9l-Family Composition in Bounded Pharmacology (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7426978). For the current biological framework see The Temporal Architecture of Living Nature (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7426938) and A Law of Biological State Sufficiency (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7425878). Architectural classes, predictive sufficiency, viability conditions and prospective biological claims are stated separately there. The original paper is preserved. New successor records cited in this notice were submitted on 7 September 2026 and are awaiting SSRN review; their pages may not yet be publicly available.",
+      "source_path": "sources/legacy-6761570.txt",
+      "source_sha256": "57d170535cd5545156c3f468ce7afd8bb5032c45b20cc8c6ef560dcdee4efd3d",
+      "total_lines": 574,
+      "pdf_page_count": 14,
+      "external_version_parity": "unverified",
+      "whole_manuscript_validated": false
+    },
+    {
+      "key": "legacy-6756063",
+      "ssrn_id": "6756063",
+      "title": "Bounded Composition and Deformed Kinematics: An Axiomatic Route to Hyperbolic Momentum Space",
+      "corpus_kind": "legacy",
+      "programme_status": "superseded_in_part",
+      "inheritance": "Partly superseded by6800400/6914800 corrections",
+      "role": "Deformed kinematics",
+      "inspection": "abstract excerpt and/or contents outline plus corpus metadata/revision notice",
+      "inspected_spans": [
+        {
+          "lines": [
+            8,
+            37
+          ],
+          "extracted_pages": [
+            1,
+            1
+          ]
+        }
+      ],
+      "assessment": "Boundedness does not uniquely select Einstein/Snyder branch; quantization/physical bounds need independent premises.",
+      "dependencies_and_open_evidence": "Abstract and correction notice; no quantum-gravity derivation or cosmic-ray evidence validation.",
+      "corpus_note": "Scope correction, 7 September 2026. Do not rely on the unrestricted claim that the stated bounded-composition axioms alone uniquely select artanh coordinates, Einstein addition or hyperbolic momentum space. A flat branch and additional selection assumptions must be considered. The later Bounded Compositional Geometry (https://papers.ssrn.com/abstract=6800400) and Classification of Bounded Composition Laws with Isometric Reassociation Defects (https://papers.ssrn.com/abstract=6914800) give the revised scope. Kinematic and quantization conclusions in this historical paper are conditional on the extra structure selecting their branch; they are not independent empirical verification of that selection. The original PDF remains available.",
+      "source_path": "sources/legacy-6756063.txt",
+      "source_sha256": "51632c3e50ad427fc11bc11e9cd5fb96fcee055a8e02082caf765e3792fca07c",
+      "total_lines": 525,
+      "pdf_page_count": 14,
+      "external_version_parity": "unverified",
+      "whole_manuscript_validated": false
+    },
+    {
+      "key": "legacy-6754498",
+      "ssrn_id": "6754498",
+      "title": "Two Failure Modes of Glutathione Homeostasis: A Calibrated Dynamical Model Recovers G6PD Severe-Deficiency Contraindications and Forecasts a Phase II NSCLC Trial Outcome",
+      "corpus_kind": "legacy",
+      "programme_status": "uncertain_currentness_retained_legacy",
+      "inheritance": "Retained mechanistic source; journal development and current successors cited",
+      "role": "Redox model and capacity calibration",
+      "inspection": "substantive selected main-text passages",
+      "inspected_spans": [
+        {
+          "lines": [
+            119,
+            315
+          ],
+          "extracted_pages": [
+            3,
+            7
+          ]
+        },
+        {
+          "lines": [
+            502,
+            579
+          ],
+          "extracted_pages": [
+            12,
+            14
+          ]
+        },
+        {
+          "lines": [
+            34,
+            63
+          ],
+          "extracted_pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "assessment": "Printed G=0 smooth depleted equilibrium fails; finite capacity concept survives with explicit boundary and supply model.",
+      "dependencies_and_open_evidence": "Substantive ODE/calibration/forecast scope read; journal version, kinetics and clinical forecast not validated.",
+      "corpus_note": "Update, 7 September 2026. This paper's trial forecast is a conditional model prediction, not an observed clinical result or treatment recommendation. For current state, commitment and recovery work see A Law of Biological State Sufficiency (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7425878), Finite rescue windows (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7427059), and From Predictive State to Viable Action (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7427100). The original preprint is retained. Published journal development: https://doi.org/10.1016/j.rbc.2026.100084. New successor records cited in this notice were submitted on 7 September 2026 and are awaiting SSRN review; their pages may not yet be publicly available.",
+      "source_path": "sources/legacy-6754498.txt",
+      "source_sha256": "43bcb86cacd71a49eddb58ac9a7ce666102fe2f0ed82905939a4f8cab7da1f1c",
+      "total_lines": 629,
+      "pdf_page_count": 15,
+      "external_version_parity": "unverified",
+      "whole_manuscript_validated": false
+    },
+    {
+      "key": "legacy-6754362",
+      "ssrn_id": "6754362",
+      "title": "The five M\u00f6bius composition laws on the bounded interval",
+      "corpus_kind": "legacy",
+      "programme_status": "superseded_in_part",
+      "inheritance": "Partly superseded/narrowed by6800400/current06",
+      "role": "Five canonical Mobius flows",
+      "inspection": "abstract excerpt and/or contents outline plus corpus metadata/revision notice",
+      "inspected_spans": [
+        {
+          "lines": [
+            22,
+            51
+          ],
+          "extracted_pages": [
+            1,
+            1
+          ]
+        }
+      ],
+      "assessment": "Classification restricted to marked{0,1,infinity}, not all bounded projective flows.",
+      "dependencies_and_open_evidence": "Abstract and correction notice; TAO body provides current curated-contract reading.",
+      "corpus_note": "Scope clarification, 7 September 2026. The five canonical flows discussed here belong to the declared marked-point classification involving {0,1,infinity}; they are not a classification of every possible bounded composition operation or every boundary-preserving flow. Do not use the phrase 'all boundary configurations' without this restriction and the stated projective assumptions. See Bounded Compositional Geometry (https://papers.ssrn.com/abstract=6800400) for the later formulation, and Acz\u00e9l-Family Composition in Bounded Pharmacology (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7426978) for mechanism-selected pharmacological generators and combination-model limits. This earlier PDF is retained. New successor records cited in this notice were submitted on 7 September 2026 and are awaiting SSRN review; their pages may not yet be publicly available.",
+      "source_path": "sources/legacy-6754362.txt",
+      "source_sha256": "2563c8a6daa015f694fc15ecab0d664c416f4be995493cbbd4816e5787b18d58",
+      "total_lines": 3057,
+      "pdf_page_count": 31,
+      "external_version_parity": "unverified",
+      "whole_manuscript_validated": false
+    },
+    {
+      "key": "legacy-6754360",
+      "ssrn_id": "6754360",
+      "title": "A Plant\u2013Sensor\u2013Controller\u2013Surveillance Architecture for Bounded Adaptive Homeostasis: Four Threshold-Typed Failure Modes, with the Redox/NRF2 System as Exemplar",
+      "corpus_kind": "legacy",
+      "programme_status": "uncertain_currentness_retained_legacy",
+      "inheritance": "Historical detailed model class; current02/05/11 govern general framework",
+      "role": "Plant/sensor/controller/surveillance",
+      "inspection": "abstract excerpt and/or contents outline plus corpus metadata/revision notice",
+      "inspected_spans": [
+        {
+          "lines": [
+            14,
+            43
+          ],
+          "extracted_pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "assessment": "Four-role exhaustion applies to declared topology; a failed policy is not nonexistence of viable policies.",
+      "dependencies_and_open_evidence": "Abstract and programme notice only;215page bundle and calcium/surveillance calculations not audited.",
+      "corpus_note": "Programme update, 7 September 2026. This detailed architecture manuscript is preserved. Its four roles and threshold-typed modes apply to the declared model class, not every possible living system. Calibrated examples and prospective predictions retain their separate evidence status. For the current treatment of predictive state, finite-horizon viability and recovery, see A Law of Biological State Sufficiency (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7425878), The Temporal Architecture of Living Nature (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7426938), and From Predictive State to Viable Action (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7427100). A failed tested policy is not proof that no viable policy exists. New successor records cited in this notice were submitted on 7 September 2026 and are awaiting SSRN review; their pages may not yet be publicly available.",
+      "source_path": "sources/legacy-6754360.txt",
+      "source_sha256": "db9f4ed9141db9db537a5fb7df30965b938c0bbfcd9db4e75fb74daf32c59528",
+      "total_lines": 16023,
+      "pdf_page_count": 215,
+      "external_version_parity": "unverified",
+      "whole_manuscript_validated": false
+    },
+    {
+      "key": "legacy-6739201",
+      "ssrn_id": "6739201",
+      "title": "A Universal Composition Law for Bounded Pharmacological Observables:The Acz\u00e9l-Family Structure of Dose-Response, Combination Effects,and Aluminium Toxicology",
+      "corpus_kind": "legacy",
+      "programme_status": "superseded",
+      "inheritance": "Superseded bycurrent-06",
+      "role": "Pharmacology predecessor",
+      "inspection": "abstract excerpt and/or contents outline plus corpus metadata/revision notice",
+      "inspected_spans": [
+        {
+          "lines": [
+            57,
+            86
+          ],
+          "extracted_pages": [
+            3,
+            4
+          ]
+        }
+      ],
+      "assessment": "Mechanism-selecting generator, Hill1 scope, baseline and uncertainty corrections govern.",
+      "dependencies_and_open_evidence": "Abstract and update notice; current-06 read in full; aluminium mechanisms not independently validated.",
+      "corpus_note": "Update, 7 September 2026. This earlier preprint is retained as part of the research record. For the current formulation, see Acz\u00e9l-Family Composition in Bounded Pharmacology (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7426978). Do not rely on readings in which boundedness or endpoint preservation alone selects a unique logit, M\u00f6bius law or biological mechanism. The generator depends on the specified composition and, with its identity origin fixed, is unique only up to positive scale. The stated strict Bliss\u2013Loewe ordering and approximately 0.0902 maximum gap concern the common-shape, n=1 model; the approximately 0.618 target maximizes the raw effect gap, not every noise-adjusted measure of experimental information. Order dependence alone does not establish hidden state: closed scalar dynamics may also fail to commute. The aluminium-toxicology mechanism and proposed tests remain conditional. Use the successor's assumptions and scope for current citations. New successor records cited in this notice were submitted on 7 September 2026 and are awaiting SSRN review; their pages may not yet be publicly available.",
+      "source_path": "sources/legacy-6739201.txt",
+      "source_sha256": "ed472bbeae974829e330ef6fa078df2e28a3a062bf409b0c595264e4dec3caeb",
+      "total_lines": 1288,
+      "pdf_page_count": 44,
+      "external_version_parity": "unverified",
+      "whole_manuscript_validated": false
+    }
+  ]
+}

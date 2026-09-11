@@ -2,7 +2,7 @@
 
 **[CURRENT PROGRAMME DEVELOPMENT — 12 September 2026](https://github.com/thantiklermcirony/empirical-observatory/blob/main/PROGRAMME_STATUS.md)**
 
-The next connected Observatory release brings together the mathematical atlas, quantum mechanisms and cellular adaptation through explicit operations, constraints, observation and evidence. A quantum-input repair and its regression tests are now published. [See the verified work, current assignments and publication status](https://github.com/thantiklermcirony/empirical-observatory/blob/main/PROGRAMME_STATUS.md). The three new research packages remain under review; this is not a claim that they are deployed.
+The next connected Observatory release brings together the mathematical atlas, quantum mechanisms and cellular adaptation through explicit operations, constraints, observation and evidence. A quantum-input repair and its regression tests are now published. [See the verified work, current assignments and publication status](https://github.com/thantiklermcirony/empirical-observatory/blob/main/PROGRAMME_STATUS.md). The [mathematical foundations and executable theory atlas](research/theory-atlas-v0.1/) is now published: 41 source records, 32 proposed rules preserving the original 16, four executable certificate packages, supplied proofs, counterexamples and reproduction records. Quantum and biology integration continues. Repository publication does not imply hosted deployment or empirical validation.
 
 **[TRY ACTIVE CONTEXT: RESUME WITH EVIDENCE →](https://empirical-observatory.madmanmuzza.chatgpt.site/active-context)**
 

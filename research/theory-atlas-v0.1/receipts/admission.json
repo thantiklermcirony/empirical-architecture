@@ -1,0 +1,675 @@
+{
+  "version": "0.1.0",
+  "adapter_sha256": "4edd2ed5d31f462635cd004e2fe6fcf27b8677b9cc6b2f434d140b895fae1bae",
+  "trusted_contracts_sha256": "c9120b97634a9fe0702834c437bb7c59a4750e2b0e24090c3e2f7e8d31ffb782",
+  "baseline": {
+    "composition": {
+      "case": "composition",
+      "submitted_package_sha256": "08e408d670fbf485a9f1a308bdcc22409d5f30e921f07af6169dd784c9d269b0",
+      "fixture_facts_status": "established_in_scope",
+      "fixture_facts_scope": "Fixed authored mathematics; does not assert applicability to the submitted inquiry",
+      "findings": [],
+      "source_errors": [],
+      "conclusions": {
+        "combined_operation": {
+          "status": "established_in_scope",
+          "result_kind": "formal_under_premises",
+          "missing": [],
+          "changed": [],
+          "parent_problem": null,
+          "required_premises": [
+            "COMP-02.P1",
+            "COMP-02.P2",
+            "COMP-02.P3"
+          ],
+          "proof_status": "supplied_argument_not_machine_verified",
+          "value_reference": "receipts/composition.json#/final_state"
+        },
+        "bounded_countermodel": {
+          "status": "established_in_scope",
+          "result_kind": "formal_under_premises",
+          "missing": [],
+          "changed": [],
+          "parent_problem": null,
+          "required_premises": [],
+          "proof_status": "supplied_argument_not_machine_verified",
+          "value_reference": "receipts/composition.json#/bounded_alternative"
+        }
+      },
+      "trusted_contract_sha256": "d716f9c30c3b73acda6c617b2729606000923e79e78ac443dbeca1a0ea0d67e2",
+      "adapter_sha256": "4edd2ed5d31f462635cd004e2fe6fcf27b8677b9cc6b2f434d140b895fae1bae",
+      "boundary": "Four fixture contracts only. Required dependencies are trusted inputs; their scientific completeness and supplied proofs require review."
+    },
+    "resources": {
+      "case": "resources",
+      "submitted_package_sha256": "8af1e104df6f5820da4fca9713c8a1938322f31dd4925b59abb3d79da05ee31d",
+      "fixture_facts_status": "established_in_scope",
+      "fixture_facts_scope": "Fixed authored mathematics; does not assert applicability to the submitted inquiry",
+      "findings": [],
+      "source_errors": [],
+      "conclusions": {
+        "balance": {
+          "status": "established_in_scope",
+          "result_kind": "formal_under_premises",
+          "missing": [],
+          "changed": [],
+          "parent_problem": null,
+          "required_premises": [
+            "RES-03.P1"
+          ],
+          "proof_status": "fixed_instance_arithmetic",
+          "value_reference": "receipts/resources.json#/identities/reducing_equivalent_balance"
+        },
+        "duration_exclusion": {
+          "status": "established_in_scope",
+          "result_kind": "formal_under_premises",
+          "missing": [],
+          "changed": [],
+          "parent_problem": null,
+          "required_premises": [
+            "RES-03.P1",
+            "RES-03.P2",
+            "RES-04.P1",
+            "RES-04.P2"
+          ],
+          "proof_status": "supplied_argument_not_machine_verified",
+          "value_reference": "receipts/resources.json#/duration_exclusion"
+        },
+        "initial_slope": {
+          "status": "established_in_scope",
+          "result_kind": "formal_under_premises",
+          "missing": [],
+          "changed": [],
+          "parent_problem": null,
+          "required_premises": [
+            "ADAPT-03.P1"
+          ],
+          "proof_status": "fixed_instance_arithmetic",
+          "value_reference": "receipts/resources.json#/adaptation/initial_z_slope"
+        }
+      },
+      "trusted_contract_sha256": "0d4886894ea26f202bc8072d21e98b2f46345c06f5fa37e40ed8da8a1f91304a",
+      "adapter_sha256": "4edd2ed5d31f462635cd004e2fe6fcf27b8677b9cc6b2f434d140b895fae1bae",
+      "boundary": "Four fixture contracts only. Required dependencies are trusted inputs; their scientific completeness and supplied proofs require review."
+    },
+    "action_evidence": {
+      "case": "action_evidence",
+      "submitted_package_sha256": "71b33ec89f463e18035a7f93a390c031146ea43c7303152525e6cf158667d366",
+      "fixture_facts_status": "established_in_scope",
+      "fixture_facts_scope": "Fixed authored mathematics; does not assert applicability to the submitted inquiry",
+      "findings": [],
+      "source_errors": [],
+      "conclusions": {
+        "action_cover": {
+          "status": "established_in_scope",
+          "result_kind": "formal_under_premises",
+          "missing": [],
+          "changed": [],
+          "parent_problem": null,
+          "required_premises": [
+            "ACT-01.P1",
+            "ACT-01.P2",
+            "ACT-01.P3",
+            "ACT-01.P4"
+          ],
+          "proof_status": "supplied_argument_not_machine_verified",
+          "value_reference": "receipts/action_evidence.json#/cover"
+        },
+        "diagnostic_risk": {
+          "status": "established_in_scope",
+          "result_kind": "formal_under_premises",
+          "missing": [],
+          "changed": [],
+          "parent_problem": null,
+          "required_premises": [
+            "ACT-02.P1",
+            "ACT-02.P2",
+            "ACT-02.P3",
+            "ACT-02.P4",
+            "ACT-03.P3"
+          ],
+          "proof_status": "supplied_argument_not_machine_verified",
+          "value_reference": "receipts/action_evidence.json#/diagnosis/risk_by_sample_count"
+        },
+        "deadline_exclusion": {
+          "status": "established_in_scope",
+          "result_kind": "formal_under_premises",
+          "missing": [],
+          "changed": [],
+          "parent_problem": null,
+          "required_premises": [
+            "ACT-02.P1",
+            "ACT-02.P2",
+            "ACT-02.P3",
+            "ACT-02.P4",
+            "ACT-03.P3",
+            "ACT-03.P1",
+            "ACT-03.P2"
+          ],
+          "proof_status": "supplied_argument_not_machine_verified",
+          "value_reference": "receipts/action_evidence.json#/diagnosis/conclusion"
+        },
+        "finite_witness": {
+          "status": "established_in_scope",
+          "result_kind": "formal_under_premises",
+          "missing": [],
+          "changed": [],
+          "parent_problem": null,
+          "required_premises": [
+            "EVID-02.P1"
+          ],
+          "proof_status": "fixed_instance_arithmetic",
+          "value_reference": "receipts/action_evidence.json#/evidence"
+        }
+      },
+      "trusted_contract_sha256": "7ed8d03b1679ac7940cf19527ad5681a96a59ce290cb88274492d574e9a7bb52",
+      "adapter_sha256": "4edd2ed5d31f462635cd004e2fe6fcf27b8677b9cc6b2f434d140b895fae1bae",
+      "boundary": "Four fixture contracts only. Required dependencies are trusted inputs; their scientific completeness and supplied proofs require review."
+    },
+    "connections": {
+      "case": "connections",
+      "submitted_package_sha256": "6155b1570e1ff450f1a22ec1abd46dd5939b1e700230dd77625fdbdceed3f63d",
+      "fixture_facts_status": "established_in_scope",
+      "fixture_facts_scope": "Fixed authored mathematics; does not assert applicability to the submitted inquiry",
+      "findings": [],
+      "source_errors": [],
+      "conclusions": {
+        "projective_order": {
+          "status": "established_in_scope",
+          "result_kind": "formal_under_premises",
+          "missing": [],
+          "changed": [],
+          "parent_problem": null,
+          "required_premises": [
+            "COMP-03.P1"
+          ],
+          "proof_status": "fixed_instance_arithmetic",
+          "value_reference": "receipts/connections.json#/noncommuting_projective"
+        },
+        "variance_interpretation": {
+          "status": "established_in_scope",
+          "result_kind": "formal_under_premises",
+          "missing": [],
+          "changed": [],
+          "parent_problem": null,
+          "required_premises": [
+            "REC-03.P1"
+          ],
+          "proof_status": "supplied_argument_not_machine_verified",
+          "value_reference": "receipts/connections.json#/recovery"
+        },
+        "residue_counterexample": {
+          "status": "established_in_scope",
+          "result_kind": "formal_under_premises",
+          "missing": [],
+          "changed": [],
+          "parent_problem": null,
+          "required_premises": [
+            "IDA-02.P1"
+          ],
+          "proof_status": "fixed_instance_arithmetic",
+          "value_reference": "receipts/connections.json#/ida_counterexample"
+        },
+        "section_counterexample": {
+          "status": "established_in_scope",
+          "result_kind": "formal_under_premises",
+          "missing": [],
+          "changed": [],
+          "parent_problem": null,
+          "required_premises": [
+            "GEOM-01.P1"
+          ],
+          "proof_status": "supplied_argument_not_machine_verified",
+          "value_reference": "receipts/connections.json#/boost_section_counterexample"
+        },
+        "conditional_filter": {
+          "status": "established_in_scope",
+          "result_kind": "formal_under_premises",
+          "missing": [],
+          "changed": [],
+          "parent_problem": null,
+          "required_premises": [
+            "QUANT-01.P1"
+          ],
+          "proof_status": "fixed_instance_arithmetic",
+          "value_reference": "receipts/connections.json#/diagonal_filter"
+        }
+      },
+      "trusted_contract_sha256": "e7ed6b649a64a049c2ce7653d02ee588b1247e25cc01a290b96af3119db2d345",
+      "adapter_sha256": "4edd2ed5d31f462635cd004e2fe6fcf27b8677b9cc6b2f434d140b895fae1bae",
+      "boundary": "Four fixture contracts only. Required dependencies are trusted inputs; their scientific completeness and supplied proofs require review."
+    }
+  },
+  "negative_fixtures": [
+    {
+      "name": "missing_COMP-02.P2",
+      "report": {
+        "case": "composition",
+        "submitted_package_sha256": "c00861cb21b8778dbb4125f1ab86987066542551f031784bc458e21575e4d354",
+        "fixture_facts_status": "established_in_scope",
+        "fixture_facts_scope": "Fixed authored mathematics; does not assert applicability to the submitted inquiry",
+        "findings": [],
+        "source_errors": [],
+        "conclusions": {
+          "combined_operation": {
+            "status": "unresolved",
+            "result_kind": "formal_under_premises",
+            "missing": [
+              "COMP-02.P2"
+            ],
+            "changed": [],
+            "parent_problem": null,
+            "required_premises": [
+              "COMP-02.P1",
+              "COMP-02.P2",
+              "COMP-02.P3"
+            ],
+            "proof_status": "supplied_argument_not_machine_verified",
+            "value_reference": null
+          },
+          "bounded_countermodel": {
+            "status": "established_in_scope",
+            "result_kind": "formal_under_premises",
+            "missing": [],
+            "changed": [],
+            "parent_problem": null,
+            "required_premises": [],
+            "proof_status": "supplied_argument_not_machine_verified",
+            "value_reference": "receipts/composition.json#/bounded_alternative"
+          }
+        },
+        "trusted_contract_sha256": "d716f9c30c3b73acda6c617b2729606000923e79e78ac443dbeca1a0ea0d67e2",
+        "adapter_sha256": "4edd2ed5d31f462635cd004e2fe6fcf27b8677b9cc6b2f434d140b895fae1bae",
+        "boundary": "Four fixture contracts only. Required dependencies are trusted inputs; their scientific completeness and supplied proofs require review."
+      }
+    },
+    {
+      "name": "missing_RES-03.P2",
+      "report": {
+        "case": "resources",
+        "submitted_package_sha256": "1eef86ef29a9444064a0b88b2e1501e463300b78ae0fca88841809aecb3c27fb",
+        "fixture_facts_status": "established_in_scope",
+        "fixture_facts_scope": "Fixed authored mathematics; does not assert applicability to the submitted inquiry",
+        "findings": [],
+        "source_errors": [],
+        "conclusions": {
+          "balance": {
+            "status": "established_in_scope",
+            "result_kind": "formal_under_premises",
+            "missing": [],
+            "changed": [],
+            "parent_problem": null,
+            "required_premises": [
+              "RES-03.P1"
+            ],
+            "proof_status": "fixed_instance_arithmetic",
+            "value_reference": "receipts/resources.json#/identities/reducing_equivalent_balance"
+          },
+          "duration_exclusion": {
+            "status": "unresolved",
+            "result_kind": "formal_under_premises",
+            "missing": [
+              "RES-03.P2"
+            ],
+            "changed": [],
+            "parent_problem": null,
+            "required_premises": [
+              "RES-03.P1",
+              "RES-03.P2",
+              "RES-04.P1",
+              "RES-04.P2"
+            ],
+            "proof_status": "supplied_argument_not_machine_verified",
+            "value_reference": null
+          },
+          "initial_slope": {
+            "status": "established_in_scope",
+            "result_kind": "formal_under_premises",
+            "missing": [],
+            "changed": [],
+            "parent_problem": null,
+            "required_premises": [
+              "ADAPT-03.P1"
+            ],
+            "proof_status": "fixed_instance_arithmetic",
+            "value_reference": "receipts/resources.json#/adaptation/initial_z_slope"
+          }
+        },
+        "trusted_contract_sha256": "0d4886894ea26f202bc8072d21e98b2f46345c06f5fa37e40ed8da8a1f91304a",
+        "adapter_sha256": "4edd2ed5d31f462635cd004e2fe6fcf27b8677b9cc6b2f434d140b895fae1bae",
+        "boundary": "Four fixture contracts only. Required dependencies are trusted inputs; their scientific completeness and supplied proofs require review."
+      }
+    },
+    {
+      "name": "missing_REC-03.P1",
+      "report": {
+        "case": "connections",
+        "submitted_package_sha256": "1c089962351da34eeb8f9f1f11cae4b0a0bd7d69fa594896e4b5d8fa385c7b00",
+        "fixture_facts_status": "established_in_scope",
+        "fixture_facts_scope": "Fixed authored mathematics; does not assert applicability to the submitted inquiry",
+        "findings": [],
+        "source_errors": [],
+        "conclusions": {
+          "projective_order": {
+            "status": "established_in_scope",
+            "result_kind": "formal_under_premises",
+            "missing": [],
+            "changed": [],
+            "parent_problem": null,
+            "required_premises": [
+              "COMP-03.P1"
+            ],
+            "proof_status": "fixed_instance_arithmetic",
+            "value_reference": "receipts/connections.json#/noncommuting_projective"
+          },
+          "variance_interpretation": {
+            "status": "unresolved",
+            "result_kind": "formal_under_premises",
+            "missing": [
+              "REC-03.P1"
+            ],
+            "changed": [],
+            "parent_problem": null,
+            "required_premises": [
+              "REC-03.P1"
+            ],
+            "proof_status": "supplied_argument_not_machine_verified",
+            "value_reference": null
+          },
+          "residue_counterexample": {
+            "status": "established_in_scope",
+            "result_kind": "formal_under_premises",
+            "missing": [],
+            "changed": [],
+            "parent_problem": null,
+            "required_premises": [
+              "IDA-02.P1"
+            ],
+            "proof_status": "fixed_instance_arithmetic",
+            "value_reference": "receipts/connections.json#/ida_counterexample"
+          },
+          "section_counterexample": {
+            "status": "established_in_scope",
+            "result_kind": "formal_under_premises",
+            "missing": [],
+            "changed": [],
+            "parent_problem": null,
+            "required_premises": [
+              "GEOM-01.P1"
+            ],
+            "proof_status": "supplied_argument_not_machine_verified",
+            "value_reference": "receipts/connections.json#/boost_section_counterexample"
+          },
+          "conditional_filter": {
+            "status": "established_in_scope",
+            "result_kind": "formal_under_premises",
+            "missing": [],
+            "changed": [],
+            "parent_problem": null,
+            "required_premises": [
+              "QUANT-01.P1"
+            ],
+            "proof_status": "fixed_instance_arithmetic",
+            "value_reference": "receipts/connections.json#/diagonal_filter"
+          }
+        },
+        "trusted_contract_sha256": "e7ed6b649a64a049c2ce7653d02ee588b1247e25cc01a290b96af3119db2d345",
+        "adapter_sha256": "4edd2ed5d31f462635cd004e2fe6fcf27b8677b9cc6b2f434d140b895fae1bae",
+        "boundary": "Four fixture contracts only. Required dependencies are trusted inputs; their scientific completeness and supplied proofs require review."
+      }
+    },
+    {
+      "name": "changed_operation_not_executed_as_UHL",
+      "report": {
+        "case": "composition",
+        "submitted_package_sha256": "fef767091c4d2a5f44f3aba13dbe8e00eeece66ed4b5d06a23c687941544420d",
+        "fixture_facts_status": "established_in_scope",
+        "fixture_facts_scope": "Fixed authored mathematics; does not assert applicability to the submitted inquiry",
+        "findings": [
+          "submitted_model_differs_from_fixed_fixture"
+        ],
+        "source_errors": [],
+        "conclusions": {
+          "combined_operation": {
+            "status": "out_of_scope",
+            "result_kind": "formal_under_premises",
+            "missing": [],
+            "changed": [
+              "COMP-02.P2:statement_changed"
+            ],
+            "parent_problem": null,
+            "required_premises": [
+              "COMP-02.P1",
+              "COMP-02.P2",
+              "COMP-02.P3"
+            ],
+            "proof_status": "supplied_argument_not_machine_verified",
+            "value_reference": null
+          },
+          "bounded_countermodel": {
+            "status": "established_in_scope",
+            "result_kind": "formal_under_premises",
+            "missing": [],
+            "changed": [],
+            "parent_problem": null,
+            "required_premises": [],
+            "proof_status": "supplied_argument_not_machine_verified",
+            "value_reference": "receipts/composition.json#/bounded_alternative"
+          }
+        },
+        "trusted_contract_sha256": "d716f9c30c3b73acda6c617b2729606000923e79e78ac443dbeca1a0ea0d67e2",
+        "adapter_sha256": "4edd2ed5d31f462635cd004e2fe6fcf27b8677b9cc6b2f434d140b895fae1bae",
+        "boundary": "Four fixture contracts only. Required dependencies are trusted inputs; their scientific completeness and supplied proofs require review."
+      }
+    },
+    {
+      "name": "unknown_status_rejected",
+      "report": {
+        "case": "composition",
+        "submitted_package_sha256": "0250abe252a528fed88d14e00a6a8cb30803d5964e60a7c90b21c08a9ce26949",
+        "fixture_facts_status": "established_in_scope",
+        "fixture_facts_scope": "Fixed authored mathematics; does not assert applicability to the submitted inquiry",
+        "findings": [
+          "invalid_premise_record"
+        ],
+        "source_errors": [],
+        "conclusions": {
+          "combined_operation": {
+            "status": "execution_error",
+            "result_kind": "formal_under_premises",
+            "missing": [],
+            "changed": [
+              "COMP-02.P2:evidence_status_not_supported_by_this_fixture"
+            ],
+            "parent_problem": null,
+            "required_premises": [
+              "COMP-02.P1",
+              "COMP-02.P2",
+              "COMP-02.P3"
+            ],
+            "proof_status": "supplied_argument_not_machine_verified",
+            "value_reference": null
+          },
+          "bounded_countermodel": {
+            "status": "execution_error",
+            "result_kind": "formal_under_premises",
+            "missing": [],
+            "changed": [],
+            "parent_problem": null,
+            "required_premises": [],
+            "proof_status": "supplied_argument_not_machine_verified",
+            "value_reference": null
+          }
+        },
+        "trusted_contract_sha256": "d716f9c30c3b73acda6c617b2729606000923e79e78ac443dbeca1a0ea0d67e2",
+        "adapter_sha256": "4edd2ed5d31f462635cd004e2fe6fcf27b8677b9cc6b2f434d140b895fae1bae",
+        "boundary": "Four fixture contracts only. Required dependencies are trusted inputs; their scientific completeness and supplied proofs require review."
+      }
+    },
+    {
+      "name": "missing_named_proof",
+      "report": {
+        "case": "composition",
+        "submitted_package_sha256": "e7f84b260962a90f0e0110b9cfbd16544e6909b51079f6889142e004ffb5b426",
+        "fixture_facts_status": "established_in_scope",
+        "fixture_facts_scope": "Fixed authored mathematics; does not assert applicability to the submitted inquiry",
+        "findings": [],
+        "source_errors": [],
+        "conclusions": {
+          "combined_operation": {
+            "status": "established_in_scope",
+            "result_kind": "formal_under_premises",
+            "missing": [],
+            "changed": [],
+            "parent_problem": null,
+            "required_premises": [
+              "COMP-02.P1",
+              "COMP-02.P2",
+              "COMP-02.P3"
+            ],
+            "proof_status": "supplied_argument_not_machine_verified",
+            "value_reference": "receipts/composition.json#/final_state"
+          },
+          "bounded_countermodel": {
+            "status": "unresolved",
+            "result_kind": "formal_under_premises",
+            "missing": [
+              "ATLAS-PROOF-H-BIJECTION"
+            ],
+            "changed": [],
+            "parent_problem": null,
+            "required_premises": [],
+            "proof_status": "supplied_argument_not_machine_verified",
+            "value_reference": null
+          }
+        },
+        "trusted_contract_sha256": "d716f9c30c3b73acda6c617b2729606000923e79e78ac443dbeca1a0ea0d67e2",
+        "adapter_sha256": "4edd2ed5d31f462635cd004e2fe6fcf27b8677b9cc6b2f434d140b895fae1bae",
+        "boundary": "Four fixture contracts only. Required dependencies are trusted inputs; their scientific completeness and supplied proofs require review."
+      }
+    },
+    {
+      "name": "changed_parent_blocks_deadline",
+      "report": {
+        "case": "action_evidence",
+        "submitted_package_sha256": "71b33ec89f463e18035a7f93a390c031146ea43c7303152525e6cf158667d366",
+        "fixture_facts_status": "established_in_scope",
+        "fixture_facts_scope": "Fixed authored mathematics; does not assert applicability to the submitted inquiry",
+        "findings": [],
+        "source_errors": [],
+        "conclusions": {
+          "action_cover": {
+            "status": "established_in_scope",
+            "result_kind": "formal_under_premises",
+            "missing": [],
+            "changed": [],
+            "parent_problem": null,
+            "required_premises": [
+              "ACT-01.P1",
+              "ACT-01.P2",
+              "ACT-01.P3",
+              "ACT-01.P4"
+            ],
+            "proof_status": "supplied_argument_not_machine_verified",
+            "value_reference": "receipts/action_evidence.json#/cover"
+          },
+          "diagnostic_risk": {
+            "status": "established_in_scope",
+            "result_kind": "formal_under_premises",
+            "missing": [],
+            "changed": [],
+            "parent_problem": null,
+            "required_premises": [
+              "ACT-02.P1",
+              "ACT-02.P2",
+              "ACT-02.P3",
+              "ACT-02.P4",
+              "ACT-03.P3"
+            ],
+            "proof_status": "supplied_argument_not_machine_verified",
+            "value_reference": "receipts/action_evidence.json#/diagnosis/risk_by_sample_count"
+          },
+          "deadline_exclusion": {
+            "status": "unresolved",
+            "result_kind": "formal_under_premises",
+            "missing": [],
+            "changed": [],
+            "parent_problem": "missing_or_changed_parent_package",
+            "required_premises": [
+              "ACT-02.P1",
+              "ACT-02.P2",
+              "ACT-02.P3",
+              "ACT-02.P4",
+              "ACT-03.P3",
+              "ACT-03.P1",
+              "ACT-03.P2"
+            ],
+            "proof_status": "supplied_argument_not_machine_verified",
+            "value_reference": null
+          },
+          "finite_witness": {
+            "status": "established_in_scope",
+            "result_kind": "formal_under_premises",
+            "missing": [],
+            "changed": [],
+            "parent_problem": null,
+            "required_premises": [
+              "EVID-02.P1"
+            ],
+            "proof_status": "fixed_instance_arithmetic",
+            "value_reference": "receipts/action_evidence.json#/evidence"
+          }
+        },
+        "trusted_contract_sha256": "7ed8d03b1679ac7940cf19527ad5681a96a59ce290cb88274492d574e9a7bb52",
+        "adapter_sha256": "4edd2ed5d31f462635cd004e2fe6fcf27b8677b9cc6b2f434d140b895fae1bae",
+        "boundary": "Four fixture contracts only. Required dependencies are trusted inputs; their scientific completeness and supplied proofs require review."
+      }
+    },
+    {
+      "name": "changed_source_content",
+      "report": {
+        "case": "composition",
+        "submitted_package_sha256": "08e408d670fbf485a9f1a308bdcc22409d5f30e921f07af6169dd784c9d269b0",
+        "fixture_facts_status": "established_in_scope",
+        "fixture_facts_scope": "Fixed authored mathematics; does not assert applicability to the submitted inquiry",
+        "findings": [
+          "source_integrity_failure"
+        ],
+        "source_errors": [
+          "current-06:content"
+        ],
+        "conclusions": {
+          "combined_operation": {
+            "status": "unresolved",
+            "result_kind": "formal_under_premises",
+            "missing": [],
+            "changed": [],
+            "parent_problem": null,
+            "required_premises": [
+              "COMP-02.P1",
+              "COMP-02.P2",
+              "COMP-02.P3"
+            ],
+            "proof_status": "supplied_argument_not_machine_verified",
+            "value_reference": null
+          },
+          "bounded_countermodel": {
+            "status": "unresolved",
+            "result_kind": "formal_under_premises",
+            "missing": [],
+            "changed": [],
+            "parent_problem": null,
+            "required_premises": [],
+            "proof_status": "supplied_argument_not_machine_verified",
+            "value_reference": null
+          }
+        },
+        "trusted_contract_sha256": "d716f9c30c3b73acda6c617b2729606000923e79e78ac443dbeca1a0ea0d67e2",
+        "adapter_sha256": "4edd2ed5d31f462635cd004e2fe6fcf27b8677b9cc6b2f434d140b895fae1bae",
+        "boundary": "Four fixture contracts only. Required dependencies are trusted inputs; their scientific completeness and supplied proofs require review."
+      }
+    }
+  ],
+  "status": "passed",
+  "scope": "Actual four-fixture admission execution; no arbitrary-expression execution or generic DAG inference"
+}

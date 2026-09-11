@@ -1,0 +1,78 @@
+{
+  "status": "established_in_scope",
+  "check_count": 13,
+  "noncommuting_projective": {
+    "q": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "A_then_B": [
+      "3",
+      "5",
+      "7",
+      "9"
+    ],
+    "B_then_A": [
+      "4",
+      "6",
+      "8",
+      "10"
+    ],
+    "all_cross_ratios": "4/3",
+    "order_difference": "1",
+    "inference": "Order dependence is compatible with closed scalar projective state; endpoint-fixing UHL is an additional restriction."
+  },
+  "recovery": {
+    "m1": "3/8",
+    "m2": "5/32",
+    "semigroup_defect": "1/64",
+    "interpretation": "Positive variance of mode attenuation rejects one exponential on these gaps under fixed positive weights."
+  },
+  "ida_counterexample": {
+    "linear_A": "6/5",
+    "quadratic_A": "24/25",
+    "linear_B": "1",
+    "quadratic_B": "2",
+    "same_linear_different_quadratic": [
+      [
+        "1",
+        "1"
+      ],
+      [
+        "1",
+        "2"
+      ]
+    ]
+  },
+  "boost_section_counterexample": {
+    "rotated_real": "15/37",
+    "rotated_imag": "16/37",
+    "pure": "5/7",
+    "scope": "Lemma2.1 listed premises only; full A1-A6 theorem not refuted by this example"
+  },
+  "diagonal_filter": {
+    "success_mass": "5/12",
+    "posterior_population": "3/5",
+    "posterior_contrast": "1/5",
+    "scope": "Conditional classical probability sector only; no phase deletion or full quantum theorem"
+  },
+  "unproved_by_code": [
+    "General cross-ratio, mixture-variance and section arguments in PROOFS.md",
+    "No empirical mechanism or priority claim; no general complex ODE or classification proved"
+  ],
+  "certificate_version": "0.1.0",
+  "result_kind": "formal_under_premises",
+  "claim_scope": "authored fixed-fixture calculation; use admission_adapter for application to a submitted inquiry",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "code_sha256": "f5de2719024e367a6e9bd756ac3b4cfb06050a90f9ad8a6dc1f66e7ee213a07f",
+  "package_sha256": "8a11e722a65143484d2aefcf9303fbdb419783a02b08623395e2aeeb7a50cc3f",
+  "source_hashes": {
+    "current-07": "9570999564f6b8f0aa4f4088ed1c371b61ff761e50afe95b52c19f7b5fe2278a",
+    "current-03": "9cfd90c4786ed42be10b5ca0a702f17937b55e9fa2b93272da022c5a4ab8ca26",
+    "current-10": "5245c3e1f1e7d4eaeebbac454f85483005454e14e484d3b0ade2c266d3ef7af3",
+    "legacy-6987278": "f985548fe1a5bf02dcb6dc634662449fd814087094eabbd69688fc70c144eb95",
+    "legacy-6800400": "3ded6275e1d202acc6e7799df0c0b1302557e1be2132529eee97d0e04858d2e3"
+  }
+}
