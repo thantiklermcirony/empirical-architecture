@@ -1,0 +1,1163 @@
+{
+  "schema_version": "1.0.0",
+  "register_id": "integrated-inquiry-programme-rules",
+  "title": "Paper-to-rule register for the integrated inquiry architecture",
+  "created_date": "2026-09-12",
+  "scope": "Sixteen bounded declarations, conditional rules and hypotheses extracted from actual local programme texts; no implementation or empirical validation is asserted.",
+  "source_root": "sources",
+  "citation_convention": "One-based raw text-file line numbers, including extracted page markers; source SHA-256 binds the cited snapshot.",
+  "rule_kind_definitions": {
+    "formal_conditional": "A mathematical implication under listed premises; classification is not a certificate that an instance satisfies them.",
+    "model_assumption": "An explicitly declared representation or mechanism; not inferred as a fact merely by registering it.",
+    "empirical_hypothesis": "An outcome claim needing prospective or held-out evidence; may emit only scoped test status.",
+    "analogy": "A question-generating correspondence; no automatic entailment or empirical support transfer."
+  },
+  "execution_policy": {
+    "default_instance_status": "unresolved",
+    "allowed_instance_statuses": [
+      "unresolved",
+      "out_of_scope",
+      "conditional_entailment",
+      "counterexample",
+      "model_relative_declaration",
+      "supported_within_scope",
+      "not_supported",
+      "inconclusive",
+      "analogy_only"
+    ],
+    "premise_text_is_not_evidence": true,
+    "registration_is_not_solver_implementation": true,
+    "no_empirical_validation_inherited_from_source_title": true,
+    "on_missing_or_unverified_premise": "unresolved",
+    "on_false_required_premise": "out_of_scope for this theorem application; do not label the theorem refuted",
+    "on_valid_counterexample": "counterexample only to the precisely instantiated claim under verified premises",
+    "on_empty_model_family": "report inconsistent premises/model family; prohibit substantive vacuous entailment",
+    "on_source_hash_change": "mark citations stale and re-read before re-admission",
+    "numeric_contract": "Exact identities prefer rational/symbolic arithmetic. Approximate solvers must expose tolerance, error bounds, domain coverage and unknown regions.",
+    "dependency_contract": "Retain premise, source, model, data and solver-version dependencies in every emitted result.",
+    "domain_transfer_contract": "Biological, physical, AI and arithmetic instances require their own mechanism and observation contracts."
+  },
+  "sources": [
+    {
+      "id": "epistemic",
+      "filename": "current-01.txt",
+      "path": "sources/current-01.txt",
+      "title": "Epistemic Type Safety for Generative AI",
+      "sha256": "e40b7f4a4956f038f720c295f08f46fcd77e78e8a88bf6372133ee5765018acc",
+      "line_locator_verified": true
+    },
+    {
+      "id": "temporal_architecture",
+      "filename": "current-05.txt",
+      "path": "sources/current-05.txt",
+      "title": "The Temporal Architecture of Living Nature",
+      "sha256": "852560940e384108f7af61024b07cdef647a05cb2f41d8c8de16cf7d9421297d",
+      "line_locator_verified": true
+    },
+    {
+      "id": "pharmacology",
+      "filename": "current-06.txt",
+      "path": "sources/current-06.txt",
+      "title": "Aczel-Family Composition in Bounded Pharmacology",
+      "sha256": "eaee5f28c7170353ff6530588d4ce31fcc76a617294ac9491a42a34f9494bb8d",
+      "line_locator_verified": true
+    },
+    {
+      "id": "observer",
+      "filename": "current-07.txt",
+      "path": "sources/current-07.txt",
+      "title": "The Observer and the World",
+      "sha256": "9570999564f6b8f0aa4f4088ed1c371b61ff761e50afe95b52c19f7b5fe2278a",
+      "line_locator_verified": true
+    },
+    {
+      "id": "predictive_closure",
+      "filename": "current-10.txt",
+      "path": "sources/current-10.txt",
+      "title": "Predictive Closure Version 4",
+      "sha256": "5245c3e1f1e7d4eaeebbac454f85483005454e14e484d3b0ade2c266d3ef7af3",
+      "line_locator_verified": true
+    },
+    {
+      "id": "action_sufficiency",
+      "filename": "current-11.txt",
+      "path": "sources/current-11.txt",
+      "title": "From Predictive State to Viable Action",
+      "sha256": "3b7878161e5cd6c1d600236fc705f650253cfb12d032a46d0432be7b29ea7e8d",
+      "line_locator_verified": true
+    },
+    {
+      "id": "redox_model",
+      "filename": "legacy-6754498.txt",
+      "path": "sources/legacy-6754498.txt",
+      "title": "Two failure modes of glutathione homeostasis",
+      "sha256": "43bcb86cacd71a49eddb58ac9a7ce666102fe2f0ed82905939a4f8cab7da1f1c",
+      "line_locator_verified": true
+    },
+    {
+      "id": "ida",
+      "filename": "legacy-6987278.txt",
+      "path": "sources/legacy-6987278.txt",
+      "title": "IDA and the Boundedness Engine",
+      "sha256": "f985548fe1a5bf02dcb6dc634662449fd814087094eabbd69688fc70c144eb95",
+      "line_locator_verified": true
+    }
+  ],
+  "rules": [
+    {
+      "id": "OBS-01",
+      "title": "Declare the observer, unit and question before inference",
+      "kind": "model_assumption",
+      "objects": [
+        "question",
+        "realization",
+        "observer",
+        "measurement",
+        "constraints"
+      ],
+      "citations": [
+        {
+          "source_id": "temporal_architecture",
+          "section": "2, Definition 1",
+          "line_start": 116,
+          "line_end": 140,
+          "verification": "passage_read_in_local_text"
+        },
+        {
+          "source_id": "observer",
+          "section": "1, observer inside the world",
+          "line_start": 35,
+          "line_end": 96,
+          "verification": "passage_read_in_local_text"
+        },
+        {
+          "source_id": "predictive_closure",
+          "section": "2.1, empirical jurisdiction",
+          "line_start": 190,
+          "line_end": 211,
+          "verification": "passage_read_in_local_text"
+        }
+      ],
+      "premises": [
+        {
+          "id": "OBS-01.P1",
+          "statement": "Declare boundary/interface, persistence or identity criterion, and horizon independently of the response pattern later evaluated."
+        },
+        {
+          "id": "OBS-01.P2",
+          "statement": "Declare admitted histories, interventions, observations, timing, operating range, discrepancy margins and observer access."
+        },
+        {
+          "id": "OBS-01.P3",
+          "statement": "Bind the declaration to one version; indicate which quantities are internal, environmental or coupled."
+        }
+      ],
+      "conclusion_schema": {
+        "predicate": "jurisdiction_declared",
+        "fields": [
+          "unit_boundary",
+          "identity_criterion",
+          "horizon",
+          "observer_interface",
+          "future_test_family",
+          "operating_range",
+          "margins",
+          "version"
+        ],
+        "status": "model_relative_declaration",
+        "meaning": "Subsequent state, action and constraint claims are interpreted only within this declaration."
+      },
+      "solver_requirements": {
+        "class": "schema_and_binding_checks",
+        "required_inputs": [
+          "prospective jurisdiction record",
+          "typed interface map"
+        ],
+        "soundness_requirement": "Check completeness and internal compatibility; prospective timing needs provenance, not a self-reported Boolean."
+      },
+      "does_not_follow": [
+        "A declared boundary is the unique natural system boundary.",
+        "The declared measurements already form a sufficient state.",
+        "All sciences share one physical state carrier or one mechanism."
+      ],
+      "revision_context": "Current-05 separates prospective unit declaration from state inference. Current-07 treats the observer as a physical subsystem, without observer-created reality.",
+      "implementation_status": "declarative_specification_only",
+      "empirical_validation_status": "not_established_by_this_register"
+    },
+    {
+      "id": "STATE-01",
+      "title": "Exact predictive quotient",
+      "kind": "formal_conditional",
+      "objects": [
+        "observer",
+        "history",
+        "state",
+        "question"
+      ],
+      "citations": [
+        {
+          "source_id": "predictive_closure",
+          "section": "2.2, predictive quotient theorem",
+          "line_start": 212,
+          "line_end": 240,
+          "verification": "passage_read_in_local_text"
+        }
+      ],
+      "premises": [
+        {
+          "id": "STATE-01.P1",
+          "statement": "Fix a coherent family of future intervention/observation laws on the same admitted history class."
+        },
+        {
+          "id": "STATE-01.P2",
+          "statement": "Define equivalence by equality of every declared future law, including agreement of future admissibility."
+        },
+        {
+          "id": "STATE-01.P3",
+          "statement": "Use exact equality. For continuous records, supply the measurable/common-support and common-null-set qualifications in section 2.1."
+        }
+      ],
+      "conclusion_schema": {
+        "predicate": "exact_predictive_state",
+        "formula": "h ~ h_prime iff for every u in Pi, Law(Y | h,u) = Law(Y | h_prime,u), including admissibility",
+        "consequence": "S_Pi = H / ~ is the coarsest exact sufficient partition; any exact sufficient code z can merge only histories merged by S_Pi.",
+        "status": "formal_conditional"
+      },
+      "solver_requirements": {
+        "class": "finite_kernel_equivalence_or_proof",
+        "required_inputs": [
+          "declared future kernels",
+          "admissibility domains",
+          "finite complete family or proof of all-family equality"
+        ],
+        "soundness_requirement": "A finite sampled future panel alone cannot prove equality for an unrestricted family; return scoped empirical evidence or unresolved."
+      },
+      "does_not_follow": [
+        "Finite-tolerance closeness is transitive.",
+        "The quotient is automatically finite-dimensional or has a convenient measurable realization.",
+        "No richer observer or future test can reveal additional distinctions."
+      ],
+      "revision_context": "Current-10 explicitly identifies the construction with established predictive-state, causal-state, sufficient-statistic and automata ideas; priority is not claimed.",
+      "implementation_status": "declarative_specification_only",
+      "empirical_validation_status": "not_established_by_this_register"
+    },
+    {
+      "id": "STATE-02",
+      "title": "Admitted continuations descend to state",
+      "kind": "formal_conditional",
+      "objects": [
+        "state",
+        "verb",
+        "history",
+        "measurement"
+      ],
+      "citations": [
+        {
+          "source_id": "predictive_closure",
+          "section": "2.3, partial intervention descent and observed stochastic continuations",
+          "line_start": 241,
+          "line_end": 273,
+          "verification": "passage_read_in_local_text"
+        }
+      ],
+      "premises": [
+        {
+          "id": "STATE-02.P1",
+          "statement": "STATE-01 holds for a continuation-closed future family with admissibility included."
+        },
+        {
+          "id": "STATE-02.P2",
+          "statement": "For deterministic continuation a, the history extension h -> ha is well defined wherever admitted."
+        },
+        {
+          "id": "STATE-02.P3",
+          "statement": "For observed stochastic outcomes retain the record r and use branch h -> har; supply common-support conditions."
+        }
+      ],
+      "conclusion_schema": {
+        "predicate": "state_action_descent",
+        "formula": "T_a([h]) = [ha]; for observed stochastic records use T_(a,r)([h]) = [har]",
+        "consequence": "Equivalent histories have equal action domains and equivalent successors; random action outcomes induce a kernel over record-labelled successor states.",
+        "status": "formal_conditional"
+      },
+      "solver_requirements": {
+        "class": "domain_saturation_and_successor_equivalence",
+        "required_inputs": [
+          "history equivalence relation",
+          "continuation relation",
+          "admissibility table",
+          "record kernels when stochastic"
+        ],
+        "soundness_requirement": "Check both domain and value consistency. Do not discard intermediate records before asserting adaptive-policy equivalence."
+      },
+      "does_not_follow": [
+        "One deterministic posterior state is indexed by a random action alone.",
+        "Commutation after records are discarded proves commutation of all record-conditioned experiments.",
+        "Finite-panel descent has been proved on untested continuations."
+      ],
+      "revision_context": "Current-10 strengthens deterministic descent using continuation closure and separately qualifies stochastic branch semantics.",
+      "implementation_status": "declarative_specification_only",
+      "empirical_validation_status": "not_established_by_this_register"
+    },
+    {
+      "id": "COMP-01",
+      "title": "Aczel additive generator for an admitted scalar operation",
+      "kind": "formal_conditional",
+      "objects": [
+        "verb",
+        "composition",
+        "state",
+        "coordinate"
+      ],
+      "citations": [
+        {
+          "source_id": "pharmacology",
+          "section": "2.1, additive generators and their domains",
+          "line_start": 57,
+          "line_end": 84,
+          "verification": "passage_read_in_local_text"
+        }
+      ],
+      "premises": [
+        {
+          "id": "COMP-01.P1",
+          "statement": "I is a nondegenerate real interval and op is total I x I -> I."
+        },
+        {
+          "id": "COMP-01.P2",
+          "statement": "op is continuous, associative and strictly increasing in each argument, with an identity e0."
+        },
+        {
+          "id": "COMP-01.P3",
+          "statement": "Endpoint and domain treatment respect strict monotonicity; saturated limiting endpoints are not silently included."
+        }
+      ],
+      "conclusion_schema": {
+        "predicate": "additive_generator_exists",
+        "formula": "phi(a op b) = phi(a) + phi(b); phi(e0)=0",
+        "consequence": "An increasing homeomorphism phi maps I onto an addition-closed interval; after fixing the identity origin its freedom is positive scale.",
+        "status": "formal_conditional"
+      },
+      "solver_requirements": {
+        "class": "functional_identity_proof",
+        "required_inputs": [
+          "operation definition",
+          "interval and domain",
+          "proofs of theorem hypotheses"
+        ],
+        "soundness_requirement": "Symbolic checks may verify a supplied generator; finite samples cannot establish the unrestricted representation theorem's global premises."
+      },
+      "does_not_follow": [
+        "Boundedness selects artanh, logit, a projective law or a physical metric.",
+        "A fitted local rule automatically satisfies the global theorem.",
+        "A change of coordinate restores information removed from the state."
+      ],
+      "revision_context": "Current-06 supersedes broad universal-coordinate readings. The identity fixes the origin, leaving positive scale rather than arbitrary translation.",
+      "implementation_status": "declarative_specification_only",
+      "empirical_validation_status": "not_established_by_this_register"
+    },
+    {
+      "id": "COMP-02",
+      "title": "Declared UHL composition and rapidity action",
+      "kind": "formal_conditional",
+      "objects": [
+        "verb",
+        "composition",
+        "coordinate",
+        "time"
+      ],
+      "citations": [
+        {
+          "source_id": "predictive_closure",
+          "section": "4.2, equation 19 and failure boundary",
+          "line_start": 418,
+          "line_end": 431,
+          "verification": "passage_read_in_local_text"
+        },
+        {
+          "source_id": "pharmacology",
+          "section": "6.1, equations 16-17",
+          "line_start": 248,
+          "line_end": 262,
+          "verification": "passage_read_in_local_text"
+        }
+      ],
+      "premises": [
+        {
+          "id": "COMP-02.P1",
+          "statement": "x,u,v lie in the open interval (-1,1)."
+        },
+        {
+          "id": "COMP-02.P2",
+          "statement": "The admitted action is T_u(x)=(x+u)/(1+u*x); if inferred as a physical family, the endpoint-fixing projective hypothesis and parameter calibration must be independently admitted."
+        },
+        {
+          "id": "COMP-02.P3",
+          "statement": "All compositions use the same state coordinate and declared action convention."
+        }
+      ],
+      "conclusion_schema": {
+        "predicate": "uhl_composition_identity",
+        "formula": "T_v(T_u(x)) = T_w(x), w=(u+v)/(1+u*v); artanh(T_u(x))=artanh(x)+artanh(u)",
+        "consequence": "The declared UHL actions compose by rapidity addition and remain in the open interval.",
+        "status": "formal_conditional",
+        "source_translation": "Current-06 uses e=(x+1)/2 and lambda=(1+u)/(1-u). Its logit(e) equals 2*artanh(x)."
+      },
+      "solver_requirements": {
+        "class": "exact_rational_identity_and_domain_check",
+        "required_inputs": [
+          "x",
+          "u",
+          "v",
+          "declared map"
+        ],
+        "soundness_requirement": "Prove denominators nonzero and domains preserved, then verify exact algebra. Numeric examples are instances only."
+      },
+      "does_not_follow": [
+        "The input u is automatically elapsed time, dose, energy, evidence or resource cost.",
+        "Every bounded physical system obeys this family.",
+        "One-dimensional scalar nonlinearity establishes intrinsic sectional curvature."
+      ],
+      "revision_context": "The current texts require added projective structure. Source translation is elementary algebra, not an additional empirical claim.",
+      "implementation_status": "declarative_specification_only",
+      "empirical_validation_status": "not_established_by_this_register"
+    },
+    {
+      "id": "TIME-01",
+      "title": "Forgetting order requires commuting partial actions",
+      "kind": "formal_conditional",
+      "objects": [
+        "verb",
+        "composition",
+        "time",
+        "state"
+      ],
+      "citations": [
+        {
+          "source_id": "predictive_closure",
+          "section": "3.1-3.3, equations 8-13",
+          "line_start": 288,
+          "line_end": 339,
+          "verification": "passage_read_in_local_text"
+        }
+      ],
+      "premises": [
+        {
+          "id": "TIME-01.P1",
+          "statement": "A finite standardized intervention alphabet acts by descended partial maps on the declared predictive state."
+        },
+        {
+          "id": "TIME-01.P2",
+          "statement": "Equality of composed partial maps means equal domains and equal outputs on those domains."
+        },
+        {
+          "id": "TIME-01.P3",
+          "statement": "Chronological word a1...ak acts as T_ak composed with ... composed with T_a1."
+        }
+      ],
+      "conclusion_schema": {
+        "predicate": "count_factorization_iff_pairwise_commutation",
+        "formula": "rho(w)=rho_bar(counts(w)) for every word iff T_i*T_j=T_j*T_i as partial maps for all i,j",
+        "consequence": "A verified noncommuting pair refutes the count-only action representation; injective coordinate changes cannot erase that difference.",
+        "status": "formal_conditional",
+        "additional_gate_for_continuous_amount": "Each one-agent family must separately satisfy U_a(s+t)=U_a(s)U_a(t), U_a(0)=I on its admitted range. Counts alone do not provide this gate."
+      },
+      "solver_requirements": {
+        "class": "partial_map_composition_equivalence",
+        "required_inputs": [
+          "generator action definitions",
+          "domains",
+          "common-state coverage"
+        ],
+        "soundness_requirement": "A complete finite table can be checked exhaustively; continuous domains require proof or certified bounds. Testing one unresolved endpoint is insufficient."
+      },
+      "does_not_follow": [
+        "Order dependence proves hidden state dimension exceeds one.",
+        "Pairwise commutation calibrates continuous dose or elapsed time.",
+        "Function composition ceases to be associative when actions do not commute."
+      ],
+      "revision_context": "Current-10 distinguishes standardized counts, calibrated continuous amounts and scalar descent. Current-06 gives a closed scalar counterexample to 'order implies hidden state'.",
+      "implementation_status": "declarative_specification_only",
+      "empirical_validation_status": "not_established_by_this_register"
+    },
+    {
+      "id": "TIME-02",
+      "title": "Weak temporal grammar through second order",
+      "kind": "formal_conditional",
+      "objects": [
+        "verb",
+        "time",
+        "composition",
+        "measurement"
+      ],
+      "citations": [
+        {
+          "source_id": "predictive_closure",
+          "section": "5.1, equation 20 and pullback convention",
+          "line_start": 445,
+          "line_end": 455,
+          "verification": "passage_read_in_local_text"
+        },
+        {
+          "source_id": "predictive_closure",
+          "section": "5.2-5.3, weak-word compression",
+          "line_start": 482,
+          "line_end": 506,
+          "verification": "passage_read_in_local_text"
+        }
+      ],
+      "premises": [
+        {
+          "id": "TIME-02.P1",
+          "statement": "A common normed observable/operator space supports U_i(s)=I+s*alpha_i*L_i+s^2*Q_i+O(s^3) uniformly over the declared local window."
+        },
+        {
+          "id": "TIME-02.P2",
+          "statement": "Compare a fixed finite word length and fixed multiplicities; w0 is the canonical sorted word."
+        },
+        {
+          "id": "TIME-02.P3",
+          "statement": "Use the source's observable pullback convention U_w=U_w1...U_wm and k_ij counting occurrences of j before i for i<j."
+        },
+        {
+          "id": "TIME-02.P4",
+          "statement": "A numerical approximation claim additionally has calibrated remainder/error bounds; a qualitative O(s^3) statement supplies no finite-scale confidence guarantee."
+        }
+      ],
+      "conclusion_schema": {
+        "predicate": "second_order_word_compression",
+        "formula": "U_w(s)-U_w0(s)=-s^2*sum_(i<j)(k_ij(w)*alpha_i*alpha_j*[L_i,L_j])+O(s^3)",
+        "consequence": "Fixed-multiset scalar word responses lie through second order in an affine space with one intercept and at most binomial(r,2) directions.",
+        "status": "formal_conditional"
+      },
+      "solver_requirements": {
+        "class": "noncommutative_series_expansion",
+        "required_inputs": [
+          "L_i",
+          "alpha_i",
+          "fixed words",
+          "operator convention",
+          "remainder bounds for quantitative use"
+        ],
+        "soundness_requirement": "Retain multiplication order; verify series assumptions separately from fitting inversion-count coefficients."
+      },
+      "does_not_follow": [
+        "A fitted second-order curve proves complete finite-dimensional predictive closure.",
+        "No order effect exists when a chosen readout annihilates the leading commutator.",
+        "The local expansion holds at arbitrary intervention amplitudes or growing word length."
+      ],
+      "revision_context": "Current-10 calls the nonabelian branch temporal grammar and distinguishes discrete order tests from a calibrated near-identity interpretation.",
+      "implementation_status": "declarative_specification_only",
+      "empirical_validation_status": "not_established_by_this_register"
+    },
+    {
+      "id": "RES-01",
+      "title": "Declare finite resource and regeneration mechanisms",
+      "kind": "model_assumption",
+      "objects": [
+        "realization",
+        "resource",
+        "constraint",
+        "adaptation"
+      ],
+      "citations": [
+        {
+          "source_id": "redox_model",
+          "section": "2.1-2.2, scope, variables and equations",
+          "line_start": 120,
+          "line_end": 195,
+          "verification": "passage_read_in_local_text"
+        },
+        {
+          "source_id": "temporal_architecture",
+          "section": "13, finite regenerative authority",
+          "line_start": 732,
+          "line_end": 750,
+          "verification": "passage_read_in_local_text"
+        }
+      ],
+      "premises": [
+        {
+          "id": "RES-01.P1",
+          "statement": "Supply a domain-specific model with typed state/resource variables, units, bounds, rate laws and parameters."
+        },
+        {
+          "id": "RES-01.P2",
+          "statement": "For the cited redox instance declare a finite GSH pool, drain/clearance terms, saturable regeneration and a slower regulated capacity."
+        },
+        {
+          "id": "RES-01.P3",
+          "statement": "Bind calibration sources and parameter uncertainty separately from the mechanism assumptions; declare valid operating ranges."
+        }
+      ],
+      "conclusion_schema": {
+        "predicate": "finite_resource_model_admitted_as_assumption",
+        "consequence": "The declared dynamics can be evaluated for supply/demand balance, capacity limits and consequences of slow capacity changes.",
+        "status": "model_relative_declaration"
+      },
+      "solver_requirements": {
+        "class": "typed_ode_or_transition_model_admission",
+        "required_inputs": [
+          "state and flux definitions",
+          "units",
+          "mechanism equations",
+          "parameter ranges",
+          "initial conditions"
+        ],
+        "soundness_requirement": "Check dimensions, domain invariance and numerical error. Carry all mechanism and calibration assumptions into derived thresholds."
+      },
+      "does_not_follow": [
+        "Finite boundedness alone forces the cited rate laws, a four-role architecture, hormesis or collapse.",
+        "A simulated threshold is a validated biological or clinical threshold.",
+        "Resource units from different domains can be interchanged without a calibrated map."
+      ],
+      "revision_context": "The specific redox model is an instantiation. Later programme revisions explicitly separate resource mechanisms, mathematical viability and empirical predictions. This register imports no claimed clinical validation.",
+      "implementation_status": "declarative_specification_only",
+      "empirical_validation_status": "not_established_by_this_register"
+    },
+    {
+      "id": "RES-02",
+      "title": "Finite-horizon and robust viability",
+      "kind": "formal_conditional",
+      "objects": [
+        "realization",
+        "constraint",
+        "resource",
+        "time",
+        "observer",
+        "action"
+      ],
+      "citations": [
+        {
+          "source_id": "temporal_architecture",
+          "section": "5, viability tube and theorem boundary",
+          "line_start": 289,
+          "line_end": 306,
+          "verification": "passage_read_in_local_text"
+        },
+        {
+          "source_id": "temporal_architecture",
+          "section": "5, robust viability and information order",
+          "line_start": 326,
+          "line_end": 349,
+          "verification": "passage_read_in_local_text"
+        }
+      ],
+      "premises": [
+        {
+          "id": "RES-02.P1",
+          "statement": "Declare a physical realization, admissible dynamics, constraint set K(t), start time t and finite terminal horizon H."
+        },
+        {
+          "id": "RES-02.P2",
+          "statement": "Include resource, environment and timing variables needed for valid state/action closure."
+        },
+        {
+          "id": "RES-02.P3",
+          "statement": "For robustness declare the disturbance family and nonanticipative control information pattern."
+        },
+        {
+          "id": "RES-02.P4",
+          "statement": "Supply existence/regularity hypotheses for continuous dynamics or a complete finite transition relation."
+        }
+      ],
+      "conclusion_schema": {
+        "predicate": "horizon_viability",
+        "formula": "V_H(t)={x in K(t): exists admissible trajectory from x staying in K(s) for every s in [t,H]}; V_H(H)=K(H)",
+        "robust_variant": "Require one admissible nonanticipative strategy to preserve constraints against every allowed disturbance.",
+        "consequence": "With matched conventions and the nominal disturbance included in the robust family, the robust viable set is contained in the nominal set.",
+        "status": "formal_conditional"
+      },
+      "solver_requirements": {
+        "class": "finite_reachability_or_validated_viability",
+        "required_inputs": [
+          "transition/differential model",
+          "constraints",
+          "horizon",
+          "control/disturbance quantifier order"
+        ],
+        "soundness_requirement": "A grid or simulation is not an exact global certificate without error/coverage guarantees. Separate inner bounds, outer bounds and unresolved states."
+      },
+      "does_not_follow": [
+        "A finite-horizon tube equals an infinite-horizon viability kernel.",
+        "A positive local inward margin certifies the entire future.",
+        "Failure of one tested policy proves no viable policy exists.",
+        "An arbitrary predictive quotient preserves physical viability geometry."
+      ],
+      "revision_context": "Current-05 explicitly distinguishes finite-time, nominal, robust and local statements, and labels Nagumo-Aubin viability as established mathematics.",
+      "implementation_status": "declarative_specification_only",
+      "empirical_validation_status": "not_established_by_this_register"
+    },
+    {
+      "id": "ADAPT-01",
+      "title": "Action can alter later environmental constraints",
+      "kind": "formal_conditional",
+      "objects": [
+        "adaptation",
+        "realization",
+        "environment",
+        "constraint",
+        "action"
+      ],
+      "citations": [
+        {
+          "source_id": "temporal_architecture",
+          "section": "7, equation 14 and Proposition 2",
+          "line_start": 463,
+          "line_end": 476,
+          "verification": "passage_read_in_local_text"
+        },
+        {
+          "source_id": "temporal_architecture",
+          "section": "7.1, closed-loop regime",
+          "line_start": 477,
+          "line_end": 492,
+          "verification": "passage_read_in_local_text"
+        }
+      ],
+      "premises": [
+        {
+          "id": "ADAPT-01.P1",
+          "statement": "O_next=F(O,E) and E_next=G(E,O) are admitted structural intervention laws, not merely observational regressions."
+        },
+        {
+          "id": "ADAPT-01.P2",
+          "statement": "The later constraint set is K(E_next)."
+        },
+        {
+          "id": "ADAPT-01.P3",
+          "statement": "Two attainable values O and O_prime at the same E satisfy K(G(E,O)) != K(G(E,O_prime))."
+        }
+      ],
+      "conclusion_schema": {
+        "predicate": "environmental_constraint_feedback",
+        "consequence": "The admitted change in organism/system state changes the later constraint set through the environmental channel.",
+        "status": "formal_conditional"
+      },
+      "solver_requirements": {
+        "class": "coupled_model_substitution_and_set_comparison",
+        "required_inputs": [
+          "F",
+          "G",
+          "K",
+          "attainable perturbation",
+          "shared environmental state"
+        ],
+        "soundness_requirement": "Verify the structural/causal premise and actual set change. A local derivative argument additionally needs the source's regular-boundary and nonredundancy conditions."
+      },
+      "does_not_follow": [
+        "The feedback is beneficial, optimal or anticipatory.",
+        "Every adaptation increases resources or robustness.",
+        "Self-maintenance requires a universal fixed point rather than cycles or other invariant regimes."
+      ],
+      "revision_context": "Current-05 replaces a universal fixed-point interpretation with coupled invariant-regime reasoning. Causal interpretation remains an explicit premise.",
+      "implementation_status": "declarative_specification_only",
+      "empirical_validation_status": "not_established_by_this_register"
+    },
+    {
+      "id": "ADAPT-02",
+      "title": "Opposing channels imply a bounded-interval positive maximum",
+      "kind": "formal_conditional",
+      "objects": [
+        "adaptation",
+        "resource",
+        "bounded_response",
+        "measurement"
+      ],
+      "citations": [
+        {
+          "source_id": "temporal_architecture",
+          "section": "12, Theorem 5",
+          "line_start": 699,
+          "line_end": 715,
+          "verification": "passage_read_in_local_text"
+        }
+      ],
+      "premises": [
+        {
+          "id": "ADAPT-02.P1",
+          "statement": "A(d) and B(d) are continuous for d>=0 and differentiable at d=0."
+        },
+        {
+          "id": "ADAPT-02.P2",
+          "statement": "A(0)=B(0)=0 and A_prime(0)>B_prime(0)."
+        },
+        {
+          "id": "ADAPT-02.P3",
+          "statement": "There is a specified D>0 with A(D)<B(D)."
+        }
+      ],
+      "conclusion_schema": {
+        "predicate": "opposing_channel_biphasic_consequence",
+        "formula": "R(d)=A(d)-B(d)",
+        "consequence": "R is positive on some interval (0,delta), has at least one zero after a positive point and before D, and attains a positive maximum on [0,D].",
+        "readout_extension": "A strictly increasing psi preserves ordering and the sign of psi(R)-psi(0), not necessarily the raw sign of psi(R).",
+        "status": "formal_conditional"
+      },
+      "solver_requirements": {
+        "class": "calculus_premise_certificate",
+        "required_inputs": [
+          "A",
+          "B",
+          "D",
+          "continuity/differentiability witness",
+          "strict derivative and endpoint inequalities"
+        ],
+        "soundness_requirement": "Check the actual derivative inequality and negative endpoint. Boundedness or a plotted peak cannot substitute for premises."
+      },
+      "does_not_follow": [
+        "Every bounded system is hormetic.",
+        "The maximum is unique or its location/amplitude is fixed.",
+        "Every low dose is beneficial for every biological endpoint.",
+        "Curve shape identifies the constructive/destructive mechanisms."
+      ],
+      "revision_context": "The current theorem is a sufficient condition, not an iff law. It supersedes broad readings that boundedness alone forces hormesis.",
+      "implementation_status": "declarative_specification_only",
+      "empirical_validation_status": "not_established_by_this_register"
+    },
+    {
+      "id": "REC-01",
+      "title": "Recovery residue adds predictive value",
+      "kind": "empirical_hypothesis",
+      "objects": [
+        "adaptation",
+        "measurement",
+        "history",
+        "resource",
+        "evidence"
+      ],
+      "citations": [
+        {
+          "source_id": "ida",
+          "section": "6, recovery residue and claim distinction",
+          "line_start": 282,
+          "line_end": 300,
+          "verification": "passage_read_in_local_text"
+        },
+        {
+          "source_id": "ida",
+          "section": "11, recovery and residue falsifiers",
+          "line_start": 592,
+          "line_end": 606,
+          "verification": "passage_read_in_local_text"
+        }
+      ],
+      "premises": [
+        {
+          "id": "REC-01.P1",
+          "statement": "Freeze the reference, chart, dead-band delta, decay beta and feature construction before the evaluation data."
+        },
+        {
+          "id": "REC-01.P2",
+          "statement": "Compute d(t) as chart distance to the declared reference and R_beta(t)=integral_0^t exp(-beta*(t-s))*max(0,d(s)-delta) ds."
+        },
+        {
+          "id": "REC-01.P3",
+          "statement": "Declare the target outcome, horizon, appropriate static/acute-displacement baselines, held-out split, predictive metric and uncertainty rule."
+        },
+        {
+          "id": "REC-01.P4",
+          "statement": "Prevent leakage from future outcomes, moving baselines or post-hoc feature selection."
+        }
+      ],
+      "conclusion_schema": {
+        "predicate": "recovery_feature_gain_hypothesis",
+        "hypothesis": "R_beta or declared return features improve held-out prediction beyond the declared static/acute-displacement baseline.",
+        "status": "hypothesis_until_tested",
+        "possible_test_outcomes": [
+          "supported_within_scope",
+          "not_supported",
+          "inconclusive"
+        ],
+        "mathematical_subclaim": "The residue is computable under the frozen metric and regularity conditions; computation does not establish predictive value."
+      },
+      "solver_requirements": {
+        "class": "held_out_predictive_comparison",
+        "required_inputs": [
+          "frozen feature contract",
+          "time-series data",
+          "outcome labels",
+          "matched baselines",
+          "uncertainty procedure"
+        ],
+        "soundness_requirement": "Report scoped comparative evidence and uncertainty; do not convert a finite positive result into universal validity."
+      },
+      "does_not_follow": [
+        "The residue measures physical entropy.",
+        "The features are valid biomarkers in an untested domain.",
+        "A predictive gain proves that residue-gated actuation improves recovery or is safe.",
+        "A synthetic illustration supplies human or biological validation."
+      ],
+      "revision_context": "IDA explicitly separates the computable integral from an unproven effective-model hypothesis. Its read-side and write-side failure conditions are separate.",
+      "implementation_status": "declarative_specification_only",
+      "empirical_validation_status": "not_established_by_this_register"
+    },
+    {
+      "id": "ACT-01",
+      "title": "Common-action sufficiency and minimum finite static code",
+      "kind": "formal_conditional",
+      "objects": [
+        "action",
+        "state",
+        "observer",
+        "constraint"
+      ],
+      "citations": [
+        {
+          "source_id": "action_sufficiency",
+          "section": "3.1-3.3, common-action theorem and recursive limit",
+          "line_start": 88,
+          "line_end": 131,
+          "verification": "passage_read_in_local_text"
+        },
+        {
+          "source_id": "action_sufficiency",
+          "section": "4-4.2, minimum code and set cover",
+          "line_start": 141,
+          "line_end": 184,
+          "verification": "passage_read_in_local_text"
+        }
+      ],
+      "premises": [
+        {
+          "id": "ACT-01.P1",
+          "statement": "Declare finite states S_plus, finite actions A, success probabilities p_s(a), tolerance alpha and a deterministic code z."
+        },
+        {
+          "id": "ACT-01.P2",
+          "statement": "Define acceptable actions A_alpha(s)={a:p_s(a)>=1-alpha}."
+        },
+        {
+          "id": "ACT-01.P3",
+          "statement": "For the finite minimum, states are individually feasible; otherwise use an explicit infeasible result."
+        },
+        {
+          "id": "ACT-01.P4",
+          "statement": "Any estimated probabilities require a separate simultaneous uncertainty procedure before treating the acceptable-action table as certified."
+        }
+      ],
+      "conclusion_schema": {
+        "predicate": "static_action_code_sufficiency",
+        "formula": "z is sufficient iff every occupied code cell C has intersection_(s in C) A_alpha(s) nonempty",
+        "minimum": "m_star=min{|D|:D subset A and union_(a in D){s:a in A_alpha(s)}=S_plus}; infeasible if no cover exists",
+        "consequence": "A covering action can be assigned to each code cell; minimal conflict hypergraph coloring gives the same finite minimum.",
+        "status": "formal_conditional"
+      },
+      "solver_requirements": {
+        "class": "finite_set_intersection_and_exact_set_cover",
+        "required_inputs": [
+          "acceptable-action incidence table",
+          "code partition if testing a supplied code"
+        ],
+        "soundness_requirement": "Check complete cell intersections, not just pairwise compatibility. Exact minimality requires exhaustive/optimality certificate, not a heuristic cover alone."
+      },
+      "does_not_follow": [
+        "m_star is the number of states required by a sequential controller.",
+        "The observer can measure the abstract code without error or cost.",
+        "Full predictive state is necessary for every task.",
+        "A common safe abstention action guarantees useful task coverage."
+      ],
+      "revision_context": "Current-11 explicitly calls the optimization classical set cover and separates static selection from recursive closure and executor memory.",
+      "implementation_status": "declarative_specification_only",
+      "empirical_validation_status": "not_established_by_this_register"
+    },
+    {
+      "id": "ACT-02",
+      "title": "Binary diagnostic selection bound",
+      "kind": "formal_conditional",
+      "objects": [
+        "observer",
+        "measurement",
+        "action",
+        "evidence"
+      ],
+      "citations": [
+        {
+          "source_id": "action_sufficiency",
+          "section": "5.2, equations 14-15 and risk distinction",
+          "line_start": 209,
+          "line_end": 246,
+          "verification": "passage_read_in_local_text"
+        }
+      ],
+      "premises": [
+        {
+          "id": "ACT-02.P1",
+          "statement": "There are two equiprobable states with nonempty disjoint acceptable-action sets."
+        },
+        {
+          "id": "ACT-02.P2",
+          "statement": "A fixed diagnostic has laws P1 and P2 on the same measurable space."
+        },
+        {
+          "id": "ACT-02.P3",
+          "statement": "The diagnostic does not alter the relevant state, action availability or conditional success probabilities."
+        },
+        {
+          "id": "ACT-02.P4",
+          "statement": "Use TV(P,Q)=sup_B |P(B)-Q(B)| and distinguish selection error from outcome failure."
+        }
+      ],
+      "conclusion_schema": {
+        "predicate": "diagnostic_selection_error_bound",
+        "formula": "inf_selection Pr(unacceptable action)=(1-TV(P1,P2))/2",
+        "necessary_condition": "A demanded selection-error tolerance delta requires TV(P1,P2)>=1-2*delta.",
+        "status": "formal_conditional"
+      },
+      "solver_requirements": {
+        "class": "exact_distribution_distance_or_certified_bound",
+        "required_inputs": [
+          "P1",
+          "P2",
+          "acceptable-action sets",
+          "prior",
+          "delta"
+        ],
+        "soundness_requirement": "For an impossibility claim use an upper bound on achievable TV below the required threshold. A noisy estimate or one failed classifier is insufficient."
+      },
+      "does_not_follow": [
+        "Equal-prior Bayes error establishes a uniform per-state guarantee.",
+        "Selection-error lower bounds are automatically biological-failure lower bounds.",
+        "A tested diagnostic's failure excludes every feasible diagnostic or adaptive policy.",
+        "The formula applies unchanged when diagnosis perturbs the relevant risks."
+      ],
+      "revision_context": "Current-11 includes a numerical counterexample separating unacceptable selection from outcome failure, and keeps the one-shot non-disturbing restriction.",
+      "implementation_status": "declarative_specification_only",
+      "empirical_validation_status": "not_established_by_this_register"
+    },
+    {
+      "id": "EVID-01",
+      "title": "Witnessed certified-channel invariant",
+      "kind": "formal_conditional",
+      "objects": [
+        "evidence",
+        "question",
+        "measurement",
+        "consequence"
+      ],
+      "citations": [
+        {
+          "source_id": "epistemic",
+          "section": "4.1, K0-K6 and channel invariant C1",
+          "line_start": 179,
+          "line_end": 220,
+          "verification": "passage_read_in_local_text"
+        },
+        {
+          "source_id": "epistemic",
+          "section": "7.1-7.2, finite jurisdiction and binding",
+          "line_start": 363,
+          "line_end": 426,
+          "verification": "passage_read_in_local_text"
+        }
+      ],
+      "premises": [
+        {
+          "id": "EVID-01.P1",
+          "statement": "Fix an admitted evidence snapshot, derivation relation and claim-language interpretation."
+        },
+        {
+          "id": "EVID-01.P2",
+          "statement": "Initially the channel is empty or supported; admitted evidence remains bound to checked immutable content."
+        },
+        {
+          "id": "EVID-01.P3",
+          "statement": "Every factual write uses a sound verifier and the declared introduction rule; the proposer has no bypass or ability to mutate trusted components/inputs."
+        },
+        {
+          "id": "EVID-01.P4",
+          "statement": "Failed obligations produce ASK/ABSTAIN or separately verified partial output."
+        },
+        {
+          "id": "EVID-01.P5",
+          "statement": "The renderer/parser is semantically sound for the admitted grammar and context, retains qualifications and introduces no additional factual claims."
+        }
+      ],
+      "conclusion_schema": {
+        "predicate": "certified_channel_relative_support",
+        "consequence": "Every factual proposition in the certified channel is supported relative to the declared evidence snapshot and derivation rules.",
+        "status": "formal_conditional"
+      },
+      "solver_requirements": {
+        "class": "certificate_verification_and_write_path_audit",
+        "required_inputs": [
+          "bound query",
+          "evidence hashes",
+          "certificate",
+          "verifier rules",
+          "rendered interpretation",
+          "trusted-path evidence"
+        ],
+        "soundness_requirement": "A typed JSON object or deterministic renderer alone proves nothing about verifier soundness or bypass prevention. Recompute bindings and admitted operations."
+      },
+      "does_not_follow": [
+        "Supported claims are automatically externally true.",
+        "Fluent generation, deterministic code or passing mutation tests proves the entire trusted base sound.",
+        "Finite zero-error tests prove population zero error.",
+        "The architecture alone guarantees useful coverage."
+      ],
+      "revision_context": "Current-01 makes K0-K6 conditional and records limits of finite mutation tests; no universal truth or formal whole-language verification is claimed.",
+      "implementation_status": "declarative_specification_only",
+      "empirical_validation_status": "not_established_by_this_register"
+    },
+    {
+      "id": "META-01",
+      "title": "Typed residues organize questions without transferring proofs",
+      "kind": "analogy",
+      "objects": [
+        "question",
+        "measurement",
+        "history",
+        "adaptation",
+        "evidence"
+      ],
+      "citations": [
+        {
+          "source_id": "ida",
+          "section": "2.1-2.2, residue contract and typed ladder",
+          "line_start": 142,
+          "line_end": 190,
+          "verification": "passage_read_in_local_text"
+        }
+      ],
+      "premises": [
+        {
+          "id": "META-01.P1",
+          "statement": "Name the local observable, candidate hidden object/projection, residue definition, comparison baseline and held-out failure condition."
+        },
+        {
+          "id": "META-01.P2",
+          "statement": "Assign the residue its own mathematical/domain type and evidence status."
+        },
+        {
+          "id": "META-01.P3",
+          "statement": "Treat quotient, coordinate, recovery, addressed and microscopic residues as different objects."
+        }
+      ],
+      "conclusion_schema": {
+        "predicate": "cross_domain_question_template",
+        "consequence": "The shared projection-residue schema can organize a new domain-specific hypothesis and test specification.",
+        "status": "analogy_only",
+        "forbidden_promotion": "No empirical or formal conclusion transfers solely from another residue sharing this schema."
+      },
+      "solver_requirements": {
+        "class": "type_and_scope_lint_only",
+        "required_inputs": [
+          "local residue contract",
+          "type label",
+          "domain-specific test"
+        ],
+        "soundness_requirement": "This rule emits a question/template, never a scientific entailment or validated model."
+      },
+      "does_not_follow": [
+        "R0=R1=R2=R3=R4.",
+        "An operational negentropy definition independently validates physical entropy export.",
+        "The schema itself is a falsifiable universal law.",
+        "Success in one scientific domain validates another."
+      ],
+      "revision_context": "IDA explicitly calls schema recurrence a heuristic/filing system and gives separate death conditions. The integrated architecture preserves this distinction.",
+      "implementation_status": "declarative_specification_only",
+      "empirical_validation_status": "not_established_by_this_register"
+    }
+  ]
+}
