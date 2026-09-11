@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "distribution_version": "0.1.1",
+  "origin_atlas_archive_sha256": "d628b6bddfdcf8b8ac60e8372190cc5aaea70bef0573c94a3a1b0dd14bf6d6cb",
+  "executed_at_utc": "2026-09-11T23:28:54.992400+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "commands": [
+    {
+      "command": "python -B certify_composition.py",
+      "return_code": 0,
+      "stdout": "{\"certificate\": \"composition\", \"status\": \"passed\", \"exact_identities\": 5, \"final_state\": \"9/11\", \"counterexample_gap\": \"8/9\"}\n"
+    },
+    {
+      "command": "python -B certify_resources.py",
+      "return_code": 0,
+      "stdout": "{\"certificate\": \"resources\", \"status\": \"passed\", \"checks\": 14}\n"
+    },
+    {
+      "command": "python -B certify_action_evidence.py",
+      "return_code": 0,
+      "stdout": "{\"certificate\": \"action_evidence\", \"status\": \"passed\", \"checks\": 21}\n"
+    },
+    {
+      "command": "python -B certify_connections.py",
+      "return_code": 0,
+      "stdout": "{\"certificate\": \"connections\", \"status\": \"passed\", \"checks\": 13}\n"
+    },
+    {
+      "command": "python -B run_admission.py",
+      "return_code": 0,
+      "stdout": "{\"admission\": \"passed\", \"baseline_cases\": 4, \"negative_fixtures\": 8}\n"
+    },
+    {
+      "command": "python -B validate_atlas.py",
+      "return_code": 0,
+      "stdout": "{\"release_validation\": \"passed\", \"preserved_rules\": 16, \"total_rules\": 32, \"sources\": 41, \"independent_risk_cases\": 9}\n"
+    }
+  ],
+  "core_code_byte_identical": [
+    "certify_composition.py",
+    "certify_resources.py",
+    "certify_action_evidence.py",
+    "certify_connections.py",
+    "certificate_support.py",
+    "admission_adapter.py",
+    "vendor/algebra.py"
+  ],
+  "original_16_rule_definitions_unchanged": true,
+  "scope": "Re-executed after public path/provenance adaptation using the original 41 hash-matching external text snapshots. No new empirical replication or public-source availability claim."
+}

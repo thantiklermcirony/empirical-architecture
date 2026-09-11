@@ -1,0 +1,164 @@
+{
+  "review_version": "0.1.0",
+  "status": "arithmetic_passed",
+  "rows_recomputed": 24,
+  "cases": [
+    {
+      "observer": "fraction_only",
+      "target_mM": 0.55,
+      "upper_bound_exact": null,
+      "conclusion": "unresolved"
+    },
+    {
+      "observer": "fraction_only",
+      "target_mM": 0.6,
+      "upper_bound_exact": null,
+      "conclusion": "unresolved"
+    },
+    {
+      "observer": "fraction_only",
+      "target_mM": 0.64,
+      "upper_bound_exact": null,
+      "conclusion": "unresolved"
+    },
+    {
+      "observer": "fraction_only",
+      "target_mM": 0.8,
+      "upper_bound_exact": null,
+      "conclusion": "unresolved"
+    },
+    {
+      "observer": "fraction_plus_absolute_pool",
+      "target_mM": 0.55,
+      "upper_bound_exact": "319944339077903/500000000000000",
+      "conclusion": "not_excluded"
+    },
+    {
+      "observer": "fraction_plus_absolute_pool",
+      "target_mM": 0.6,
+      "upper_bound_exact": "319944339077903/500000000000000",
+      "conclusion": "not_excluded"
+    },
+    {
+      "observer": "fraction_plus_absolute_pool",
+      "target_mM": 0.64,
+      "upper_bound_exact": "319944339077903/500000000000000",
+      "conclusion": "excluded"
+    },
+    {
+      "observer": "fraction_plus_absolute_pool",
+      "target_mM": 0.8,
+      "upper_bound_exact": "319944339077903/500000000000000",
+      "conclusion": "excluded"
+    },
+    {
+      "observer": "fraction_pool_and_cofactor",
+      "target_mM": 0.55,
+      "upper_bound_exact": "71255318243571681/125000000000000000",
+      "conclusion": "not_excluded"
+    },
+    {
+      "observer": "fraction_pool_and_cofactor",
+      "target_mM": 0.6,
+      "upper_bound_exact": "71255318243571681/125000000000000000",
+      "conclusion": "excluded"
+    },
+    {
+      "observer": "fraction_pool_and_cofactor",
+      "target_mM": 0.64,
+      "upper_bound_exact": "71255318243571681/125000000000000000",
+      "conclusion": "excluded"
+    },
+    {
+      "observer": "fraction_pool_and_cofactor",
+      "target_mM": 0.8,
+      "upper_bound_exact": "71255318243571681/125000000000000000",
+      "conclusion": "excluded"
+    },
+    {
+      "observer": "illustrative_assay_intervals",
+      "target_mM": 0.55,
+      "upper_bound_exact": "593153867792767449/1000000000000000000",
+      "conclusion": "not_excluded"
+    },
+    {
+      "observer": "illustrative_assay_intervals",
+      "target_mM": 0.6,
+      "upper_bound_exact": "593153867792767449/1000000000000000000",
+      "conclusion": "excluded"
+    },
+    {
+      "observer": "illustrative_assay_intervals",
+      "target_mM": 0.64,
+      "upper_bound_exact": "593153867792767449/1000000000000000000",
+      "conclusion": "excluded"
+    },
+    {
+      "observer": "illustrative_assay_intervals",
+      "target_mM": 0.8,
+      "upper_bound_exact": "593153867792767449/1000000000000000000",
+      "conclusion": "excluded"
+    },
+    {
+      "observer": "cofactor_with_added_gsh_source",
+      "target_mM": 0.55,
+      "upper_bound_exact": "108755318243571681/125000000000000000",
+      "conclusion": "not_excluded"
+    },
+    {
+      "observer": "cofactor_with_added_gsh_source",
+      "target_mM": 0.6,
+      "upper_bound_exact": "108755318243571681/125000000000000000",
+      "conclusion": "not_excluded"
+    },
+    {
+      "observer": "cofactor_with_added_gsh_source",
+      "target_mM": 0.64,
+      "upper_bound_exact": "108755318243571681/125000000000000000",
+      "conclusion": "not_excluded"
+    },
+    {
+      "observer": "cofactor_with_added_gsh_source",
+      "target_mM": 0.8,
+      "upper_bound_exact": "108755318243571681/125000000000000000",
+      "conclusion": "not_excluded"
+    },
+    {
+      "observer": "cofactor_without_regeneration_ceiling",
+      "target_mM": 0.55,
+      "upper_bound_exact": null,
+      "conclusion": "unresolved"
+    },
+    {
+      "observer": "cofactor_without_regeneration_ceiling",
+      "target_mM": 0.6,
+      "upper_bound_exact": null,
+      "conclusion": "unresolved"
+    },
+    {
+      "observer": "cofactor_without_regeneration_ceiling",
+      "target_mM": 0.64,
+      "upper_bound_exact": null,
+      "conclusion": "unresolved"
+    },
+    {
+      "observer": "cofactor_without_regeneration_ceiling",
+      "target_mM": 0.8,
+      "upper_bound_exact": null,
+      "conclusion": "unresolved"
+    }
+  ],
+  "findings": [
+    {
+      "id": "BIO-REVIEW-FIXED-VOLUME",
+      "status": "integration_obligation",
+      "detail": "The result uses concentrations. Bind fixed common volume and complete reaction accounting to each bound; BIO-ENV is declared but absent from these result dependency lists. The same requirement applies to the concentration moiety claim. A dedicated narrower premise is also valid."
+    }
+  ],
+  "input_sha256": {
+    "external/biology-inquiry/results/continuation.json": "3a494d0bdc2ebcf970417035e0d84b3fc8b1dcf60ab1fa7be145dcf06c028ad9",
+    "external/biology-inquiry/continuation_inquiry.json": "0d065b92d42ab7bb1b806dc1b34e82a5669dacb516dc160ef79e4375d7b5d1e6"
+  },
+  "review_code_sha256": "d7c7d5b4fe59b5b3a2dfc537b15688fef8e4830e4b605a2dcd8fc5b959981e38",
+  "scope": "Exact rational recomputation of reported decimal inputs. Does not rerun the ODE, validate empirical calibration, authenticate sources, or establish successful clearance. Missing bound means unresolved only by this inequality."
+}

@@ -1,0 +1,98 @@
+{
+  "status": "established_in_scope",
+  "check_count": 14,
+  "identities": {
+    "glutathione_balance": {
+      "equal": true,
+      "original_denominators": []
+    },
+    "nicotinamide_balance": {
+      "equal": true,
+      "original_denominators": []
+    },
+    "reducing_equivalent_balance": {
+      "equal": true,
+      "original_denominators": [
+        "(2)",
+        "(2)"
+      ]
+    },
+    "early_budget_factorization": {
+      "equal": true,
+      "original_denominators": [
+        "(4)",
+        "(8)",
+        "(8)"
+      ]
+    },
+    "late_budget_factorization": {
+      "equal": true,
+      "original_denominators": [
+        "(4)",
+        "(2)",
+        "(4)"
+      ]
+    },
+    "adaptation_response": {
+      "equal": true,
+      "original_denominators": [
+        "(1) + (1)*d",
+        "(2)",
+        "(4) + (4)*d"
+      ]
+    }
+  },
+  "units": "B in peroxide-clearance equivalents; fluxes in corresponding amount per time; illustrative normalized values",
+  "duration_exclusion": {
+    "T": "3",
+    "required": "3",
+    "upper_budget": "11/4",
+    "shortfall": "1/4",
+    "general_statement": "For this envelope, every T>2 is excluded; T<=2 is only not excluded."
+  },
+  "adaptation": {
+    "peak_dose": "1",
+    "crossing_dose": "3",
+    "peak_rapidity_shift": "1/4",
+    "initial_z_slope": "-1/2",
+    "initial_x_slope": "-1/2",
+    "no_induction_shift": "-1/4",
+    "shared_interval_initial_dip_status": "unchanged: unresolved in supplied shared receipt"
+  },
+  "boundary_counterexample": {
+    "drift_at_G_zero": "-1/2",
+    "claim_refuted": "The printed smooth vector field makes G=0 an invariant depleted equilibrium."
+  },
+  "premise_contrasts": [
+    {
+      "removed": null,
+      "budget_status": "established_in_scope"
+    },
+    {
+      "removed": "RES-03.P2",
+      "budget_status": "unresolved",
+      "conservation_identity_status": "established_in_scope",
+      "explicit_open_pool_countermodel": "Jg=2 permits the declared positive ledger through T=3"
+    },
+    {
+      "removed": "RES-04.P1",
+      "budget_status": "unresolved"
+    }
+  ],
+  "unproved_by_code": [
+    "Integral balance and induction comparison proof in PROOFS.md",
+    "Existence, nonnegative kinetics and actual biological calibration are additional obligations",
+    "No proof of actual rescue, durable fate, hormesis universality or depleted attractor"
+  ],
+  "certificate_version": "0.1.0",
+  "result_kind": "formal_under_premises",
+  "claim_scope": "authored fixed-fixture calculation; use admission_adapter for application to a submitted inquiry",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "code_sha256": "f9007fee70e59011c92c09a7d00c8d347b4e458c5b751e26eae1892b58c50cce",
+  "package_sha256": "9a8edede193d92ef660177ba569b187ce4b6abb198cfb2a08700f981aecfb15e",
+  "source_hashes": {
+    "current-05": "852560940e384108f7af61024b07cdef647a05cb2f41d8c8de16cf7d9421297d",
+    "legacy-6754498": "43bcb86cacd71a49eddb58ac9a7ce666102fe2f0ed82905939a4f8cab7da1f1c",
+    "legacy-6987278": "f985548fe1a5bf02dcb6dc634662449fd814087094eabbd69688fc70c144eb95"
+  }
+}

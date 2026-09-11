@@ -1,0 +1,168 @@
+{
+  "status": "established_in_scope",
+  "check_count": 21,
+  "cover": {
+    "sets": {
+      "s1": [
+        "a",
+        "b"
+      ],
+      "s2": [
+        "b",
+        "c"
+      ],
+      "s3": [
+        "a",
+        "c"
+      ]
+    },
+    "pairwise_intersections": {
+      "s1/s2": [
+        "b"
+      ],
+      "s1/s3": [
+        "a"
+      ],
+      "s2/s3": [
+        "c"
+      ]
+    },
+    "triple_intersection": [],
+    "minimum_cells": 2,
+    "cover_actions": [
+      "a",
+      "b"
+    ],
+    "adding_common_abstain_cells": 1
+  },
+  "partial_action": {
+    "value": false,
+    "reason": "domain_not_saturated"
+  },
+  "diagnosis": {
+    "risk_by_sample_count": {
+      "0": "1/2",
+      "1": "1/4",
+      "2": "1/4",
+      "3": "5/32",
+      "4": "5/32",
+      "5": "53/512",
+      "6": "53/512",
+      "7": "289/4096",
+      "8": "289/4096"
+    },
+    "target_error": "1/10",
+    "first_sufficient_n": 7,
+    "sample_interval": "1/2",
+    "duration": "7/2",
+    "resource_horizon_upper_bound": "2",
+    "conclusion": "No fixed sample-count member meets both constraints; even four samples have minimum error 5/32.",
+    "fast_sample_interval": "1/4",
+    "fast_duration": "7/4",
+    "fast_status": "not excluded by resource bound; feasible diagnostic and rescue not established"
+  },
+  "evidence": {
+    "positive_witness": {
+      "query_sha256": "320fc3bfa3a8ac2629a016c3a66d226a70b6f0a6ddc9a6af5ff1891a9ba62aa7",
+      "source_sha256": "6c6a7a292e660714b2c27b4f0167bac19489ffe1aa3f995fdff8aa4f63817e60",
+      "model_sha256": "93e9ee644e9aedc85e47aa8a2a6c06acd16d853d98d3a1e705ae973646c7b63a",
+      "depends_on": [
+        "sets_calibrated",
+        "library_complete"
+      ],
+      "value": 2
+    },
+    "rejected_mutations": {
+      "query_units": [
+        false,
+        "query"
+      ],
+      "source_data": [
+        false,
+        "source"
+      ],
+      "claimed_result": [
+        false,
+        "recomputation"
+      ],
+      "model_binding": [
+        false,
+        "model"
+      ],
+      "missing_premise": [
+        false,
+        "premise"
+      ],
+      "erased_required_dependencies": [
+        false,
+        "required_dependencies"
+      ],
+      "omitted_library_dependency": [
+        false,
+        "required_dependencies"
+      ],
+      "absent_trusted_premise": [
+        false,
+        "premise"
+      ]
+    },
+    "authentication": "Trusted local expected hashes only; replacing both trusted inputs and artifacts is outside this check"
+  },
+  "premise_contrasts": [
+    {
+      "removed": null,
+      "exclusion": "established_in_scope"
+    },
+    {
+      "removed": "ACT-02.P1",
+      "exclusion": "unresolved",
+      "finite_cover": "established_in_scope"
+    },
+    {
+      "removed": "ACT-02.P2",
+      "exclusion": "unresolved",
+      "finite_cover": "established_in_scope"
+    },
+    {
+      "removed": "ACT-02.P3",
+      "exclusion": "unresolved",
+      "finite_cover": "established_in_scope"
+    },
+    {
+      "removed": "ACT-02.P4",
+      "exclusion": "unresolved",
+      "finite_cover": "established_in_scope"
+    },
+    {
+      "removed": "ACT-03.P1",
+      "exclusion": "unresolved",
+      "finite_cover": "established_in_scope"
+    },
+    {
+      "removed": "ACT-03.P2",
+      "exclusion": "unresolved",
+      "finite_cover": "established_in_scope"
+    },
+    {
+      "removed": "ACT-03.P3",
+      "exclusion": "unresolved",
+      "finite_cover": "established_in_scope"
+    }
+  ],
+  "unproved_by_code": [
+    "Physical validity of the diagnostic likelihood, experimental unit and nondisturbance",
+    "Resource duration upper bound imports resources package and supplied comparison proof",
+    "No result for arbitrary sequential stopping rules, alternative diagnostics, or actual biological failure probability"
+  ],
+  "certificate_version": "0.1.0",
+  "result_kind": "formal_under_premises",
+  "claim_scope": "authored fixed-fixture calculation; use admission_adapter for application to a submitted inquiry",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "code_sha256": "39c99e21084ea3906242a9f7454fb106bb386db66e9001133d95516eac6ef254",
+  "package_sha256": "84072b1abc0de203ef3bf696cdc13b303f4d442d0be3c196f658d685cc0661ef",
+  "source_hashes": {
+    "current-11": "3b7878161e5cd6c1d600236fc705f650253cfb12d032a46d0432be7b29ea7e8d",
+    "current-10": "5245c3e1f1e7d4eaeebbac454f85483005454e14e484d3b0ade2c266d3ef7af3",
+    "current-01": "e40b7f4a4956f038f720c295f08f46fcd77e78e8a88bf6372133ee5765018acc"
+  }
+}
