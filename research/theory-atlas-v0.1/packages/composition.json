@@ -1,0 +1,257 @@
+{
+  "identity": {
+    "id": "atlas-composition-001",
+    "package_version": "0.1.0",
+    "created_date": "2026-09-12",
+    "parent": "uhl_verb_composition / COMP-02; independent certificate extension"
+  },
+  "question": {
+    "original": "When can two bounded interventions be collapsed into one?",
+    "target": "Exact UHL composition and branch-selection countermodel",
+    "scope": "declared real scalar projective operations",
+    "useful_output": "Combined parameter 5/7, state 9/11; reject unjustified universal branch inference",
+    "intended_user": "composition and integration leads"
+  },
+  "system": {
+    "entities": [
+      "normalized scalar state",
+      "admitted interventions"
+    ],
+    "boundary": "single scalar mathematical model",
+    "environment": "external operation selection",
+    "coupling": "input parameters u,v"
+  },
+  "observer": {
+    "measurement": "identity chart x",
+    "actions": [
+      "T_u",
+      "T_v"
+    ],
+    "resolution": "exact rational inputs for instance",
+    "noise": "none in mathematical case",
+    "memory": "retains x and calibrated operation parameters",
+    "clock": "composition order only",
+    "experimental_unit": "one mathematical state; no empirical observations"
+  },
+  "quantities": [
+    {
+      "id": "x",
+      "domain": "(-1,1)",
+      "representation": "real; rational example",
+      "units": "dimensionless"
+    },
+    {
+      "id": "u",
+      "domain": "(-1,1)",
+      "representation": "real; rational example",
+      "units": "dimensionless"
+    },
+    {
+      "id": "v",
+      "domain": "(-1,1)",
+      "representation": "real; rational example",
+      "units": "dimensionless"
+    },
+    {
+      "id": "w",
+      "domain": "(-1,1)",
+      "representation": "real; rational example",
+      "units": "dimensionless"
+    }
+  ],
+  "operations": [
+    {
+      "id": "T",
+      "inputs": [
+        "x",
+        "u"
+      ],
+      "output": "x_next",
+      "formula": "(x+u)/(1+x*u)",
+      "composition": "T_v after T_u",
+      "duration": "unspecified; not a physical time claim"
+    }
+  ],
+  "constraints": [
+    "open interval",
+    "fixed chart and calibration",
+    "nonzero original denominators"
+  ],
+  "mechanism": {
+    "family": "declared endpoint-fixing orientation-preserving projective map",
+    "physical_selection": "not established",
+    "alternative": "h-induced additive group with h(x)=x/(1-x^2)"
+  },
+  "premises": [
+    {
+      "id": "COMP-02.P1",
+      "statement": "x,u,v lie in the open interval (-1,1).",
+      "status": "assumed",
+      "scope": "formal domain",
+      "instance_specialization": "x,u,v lie in the open interval (-1,1)."
+    },
+    {
+      "id": "COMP-02.P2",
+      "statement": "The admitted action is T_u(x)=(x+u)/(1+u*x); if inferred as a physical family, the endpoint-fixing projective hypothesis and parameter calibration must be independently admitted.",
+      "status": "assumed",
+      "scope": "chosen model; not empirical",
+      "instance_specialization": "The admitted action is T_u(x)=(x+u)/(1+u*x); if inferred as a physical family, the endpoint-fixing projective hypothesis and parameter calibration must be independently admitted."
+    },
+    {
+      "id": "COMP-02.P3",
+      "statement": "All compositions use the same state coordinate and declared action convention.",
+      "status": "assumed",
+      "scope": "composed operations",
+      "instance_specialization": "All compositions use the same state coordinate and declared action convention."
+    }
+  ],
+  "execution": {
+    "method_id": "authored-rational-composition-certificate",
+    "version": "0.1.0",
+    "command": "python certify_composition.py",
+    "dependencies": "Python >=3.10 standard library; bundled pinned algebra.py",
+    "input_hashes": {
+      "current-06": "eaee5f28c7170353ff6530588d4ce31fcc76a617294ac9491a42a34f9494bb8d",
+      "current-07": "9570999564f6b8f0aa4f4088ed1c371b61ff761e50afe95b52c19f7b5fe2278a",
+      "current-10": "5245c3e1f1e7d4eaeebbac454f85483005454e14e484d3b0ade2c266d3ef7af3"
+    },
+    "steps": [
+      {
+        "id": "composition",
+        "rule_id": "COMP-02",
+        "depends_on": [
+          "COMP-02.P1",
+          "COMP-02.P2",
+          "COMP-02.P3"
+        ],
+        "artifact": "receipts/composition.json"
+      },
+      {
+        "id": "countermodel",
+        "depends_on": [
+          "ATLAS-PROOF-H-BIJECTION"
+        ],
+        "artifact": "PROOFS.md"
+      }
+    ],
+    "tolerances": "exact rational polynomial calculations; no numerical tolerance",
+    "proof_obligations": [
+      {
+        "id": "ATLAS-PROOF-UHL-DOMAIN",
+        "status": "supplied_argument",
+        "artifact": "PROOFS.md",
+        "section": "Composition",
+        "sha256": "6e58ed856cbdbc63b5229ef407ef5b8be1baf0364e77807f10f3bb1ce4ac87ed",
+        "machine_checked": false,
+        "admission": "Reviewer must accept stated real-analysis/group argument; no proof-assistant certification"
+      },
+      {
+        "id": "ATLAS-PROOF-H-BIJECTION",
+        "status": "supplied_argument",
+        "artifact": "PROOFS.md",
+        "section": "Composition",
+        "sha256": "6e58ed856cbdbc63b5229ef407ef5b8be1baf0364e77807f10f3bb1ce4ac87ed",
+        "machine_checked": false,
+        "admission": "Reviewer must accept stated real-analysis/group argument; no proof-assistant certification"
+      }
+    ]
+  },
+  "results": [
+    {
+      "id": "combined-operation",
+      "value": {
+        "w": "5/7",
+        "x_next": "9/11"
+      },
+      "units": "dimensionless",
+      "result_kind": "formal_under_premises",
+      "status": "established_in_scope",
+      "depends_on": [
+        "COMP-02.P1",
+        "COMP-02.P2",
+        "COMP-02.P3",
+        "ATLAS-PROOF-UHL-DOMAIN"
+      ],
+      "scope": "declared operations only"
+    }
+  ],
+  "contrast": {
+    "removed": "COMP-02.P2",
+    "expected": "composition about the actual operation becomes unresolved; countermodel remains valid",
+    "counterexample": "h(x)=x/(1-x^2); h(UHL(1/2,1/2))-2h(1/2)=8/9"
+  },
+  "next_question": {
+    "authorship": "authored",
+    "question": "What mechanism or held-out map test supports endpoint-fixing projective dynamics in the declared physical coordinate?"
+  },
+  "provenance": {
+    "sources": [
+      {
+        "id": "current-06",
+        "path": "sources/current-06.txt",
+        "sha256": "eaee5f28c7170353ff6530588d4ce31fcc76a617294ac9491a42a34f9494bb8d",
+        "line_ranges": [
+          [
+            57,
+            81
+          ],
+          [
+            248,
+            275
+          ]
+        ],
+        "version": "local revised September 2026 snapshot; external parity unverified"
+      },
+      {
+        "id": "current-07",
+        "path": "sources/current-07.txt",
+        "sha256": "9570999564f6b8f0aa4f4088ed1c371b61ff761e50afe95b52c19f7b5fe2278a",
+        "line_ranges": [
+          [
+            312,
+            402
+          ],
+          [
+            903,
+            942
+          ]
+        ],
+        "version": "local revised September 2026 snapshot; external parity unverified"
+      },
+      {
+        "id": "current-10",
+        "path": "sources/current-10.txt",
+        "sha256": "5245c3e1f1e7d4eaeebbac454f85483005454e14e484d3b0ade2c266d3ef7af3",
+        "line_ranges": [
+          [
+            418,
+            431
+          ]
+        ],
+        "version": "local revised September 2026 snapshot; external parity unverified"
+      }
+    ],
+    "base_register_sha256": "190063d0b30cacad1bc3e18ee2b924f7948d3982c24bf44166a41bc309f44220",
+    "code_sha256": "2fd3996397279d175e6c9a91d5de9a72f11d0c7de50de1abceb30c76b57fda07",
+    "algebra_sha256": "51f9ba41ae512187b8fba86f45e80c7399046f7e234dbf8d8d90b1427ba54f83",
+    "source_access_date": "2026-09-12",
+    "data": "no empirical data",
+    "licensing": "local supplied manuscripts; algebra snapshot retained for authorized internal reproducibility, no license inferred",
+    "revision_distinction": "Public distribution 0.1.1 of the reviewed local atlas 0.1.0; source-text hashes unchanged. Site deployment and empirical validation are not implied.",
+    "support_files": [
+      {
+        "path": "certificate_support.py",
+        "sha256": "fac12d5cdc7f616b7d33e27c5cad4163bec0c083da3d854290404f62b9850d53"
+      },
+      {
+        "path": "vendor/algebra.py",
+        "sha256": "51f9ba41ae512187b8fba86f45e80c7399046f7e234dbf8d8d90b1427ba54f83"
+      },
+      {
+        "path": "PROOFS.md",
+        "sha256": "6e58ed856cbdbc63b5229ef407ef5b8be1baf0364e77807f10f3bb1ce4ac87ed"
+      }
+    ],
+    "public_base_register_sha256": "8bced9c77b305cdcdae42c2746c57914949c29623fa029de590e19cb7a803602"
+  }
+}
