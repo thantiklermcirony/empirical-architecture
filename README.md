@@ -1,3 +1,22 @@
+<div align="center">
+
+<sub>THE EMPIRICAL ARCHITECTURE · DANIEL JOHN MURRAY</sub>
+
+# The universe leaves clues.
+
+*Some questions deserve a laboratory.*
+
+[![Enter the Observatory](https://img.shields.io/badge/LABORATORY-ENTER_THE_OBSERVATORY-9bffad?style=for-the-badge&labelColor=102319)](https://empirical-observatory.madmanmuzza.chatgpt.site/)
+
+<a href="https://empirical-observatory.madmanmuzza.chatgpt.site/"><img src="https://raw.githubusercontent.com/thantiklermcirony/thantiklermcirony/main/observatory-entrance.png" alt="A mysterious observatory at night: telescope, research files, an old computer and a waiting printer." width="1100" /></a>
+
+Explore the research files. Bring a question to the terminal. Collect your report.
+
+</div>
+
+<details>
+<summary><strong>Open the programme · papers, results and reproduction</strong></summary>
+
 # The Empirical Architecture
 
 [![Laboratory — enter the Observatory](https://img.shields.io/badge/LABORATORY-ENTER_THE_OBSERVATORY-87e6a1?style=for-the-badge&labelColor=10231a)](https://empirical-observatory.madmanmuzza.chatgpt.site/)
@@ -337,4 +356,8 @@ Founded by **Daniel J. Murray**. Research and software development continue open
 
 
 The historical archive preserves the PDF versions collected before the repository consolidation. Current research is organized through the programme and corpus indexes above.
+
+
+
+</details>
 
