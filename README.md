@@ -1,5 +1,7 @@
 # Empirical Architecture
 
+> Part of [The Bounded Observer](https://github.com/thantiklermcirony/bounded-observer). This repository holds earlier foundations, manuscripts and executable certificates. The [current project map](https://thantiklermcirony.github.io/bounded-observer/project.html) and [mathematical library](https://github.com/thantiklermcirony/bounded-observer/tree/main/papers) provide the common entrance. The sources below retain their versions, premises, licences and individual outcomes.
+
 **Daniel John Murray · Foundations of the Empirical Architecture Observatory**
 
 A research programme about systems and observers acting within finite capacities: what a measurement preserves, what it conceals, and when the missing distinction changes a prediction or an available action.
